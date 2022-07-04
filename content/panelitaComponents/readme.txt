@@ -1,0 +1,1 @@
+Here we have Panelita components ready to add in codeBoxes to interact with them
