@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     background-color: white;
+    box-shadow: var(--drop-shadow);
 }
 
 .panelitaLogo{
@@ -26,7 +27,7 @@ a{
     margin-right: 5%;
     font-style: normal;
     font-size: 14px;
-    color: #474D66;
+    color: var(--text-color);
 }
 
 div{
@@ -37,8 +38,8 @@ div{
 }
 
 form {
-    color: #555;
-    background-color: #F3F6FF;
+    color: var(--text-color);
+    background-color: var(--lightest-blue);
     display: flex;
     padding: 0.125em;
     border-radius: 0.313em;
@@ -66,7 +67,7 @@ input:focus {
   }
   
   input[type=search]::placeholder {
-    color: #8F95B2;
+    color: var(--text-color);
   }
 
   button[type=submit] {
