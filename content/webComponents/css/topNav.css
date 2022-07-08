@@ -12,6 +12,13 @@
 .panelitaLogo{
     margin-left: 5%;
     margin-right: 5%;
+    display: block;
+}
+
+.panelitaIso{
+  margin-left: 5%;
+  margin-right: 10%;
+  display: none;
 }
 
 ul{
@@ -32,7 +39,7 @@ a{
 
 div{
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     padding-inline-start: 5% ;
     padding-inline-end: 5%;
 }
@@ -81,10 +88,37 @@ input:focus {
     cursor: pointer;
   }
 
-  @media screen and (max-width: 980px) {
-    div {
-        background-color: blue;
-        opacity: 50%;
-        display: none;
-    }
+/*Tablet*/
+/*Portrait*/
+@media (max-width: 991.98px){
+  .panelitaLogo{
+    display: none;
   }
+
+.panelitaIso{
+  display: block;
+  }
+}
+/*fin tablet*/
+
+/*movil*/
+/*Portrait*/
+/*Default*/
+@media (max-width: 575.98px){
+  .panelitaLogo{
+    display: none;
+  }
+
+.panelitaIso{
+  display: block;
+  }
+
+  a{
+    margin-left: 1%;
+    margin-right: 3%;
+    font-style: normal;
+    font-size: 12px;
+    color: var(--text-color);
+  }
+}
+/*fin movil*/
