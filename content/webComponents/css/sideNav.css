@@ -1,0 +1,46 @@
+.sideNavLoader{
+    width: 20em;
+    position: fixed;
+    background-color: var(--lightest-blue);
+    max-width: 20em;
+    height: 1080px;
+    /*min-width: calc(11.5em + 9em); */
+}
+
+.sideNav {
+    display: flex;
+    padding-left: 8em;
+    flex-direction: column;
+}
+
+.itemSideNav {
+    width: 12em;
+}
+
+.itemSideNav li:active {
+    cursor: pointer;
+    background-color: var(--light-blue);
+}
+
+.itemSideNav a {
+     color: var(--text-color);
+}
+
+.itemSideNav li:active a {
+    color: var(--default-blue);
+}
+
+
+@media (max-width: 900px){
+    .sideNavLoader{
+        width: 12em;
+    }
+
+    .sideNav{
+        padding-left: 4em;
+    }
+
+    .itemSideNav {
+        width: 8em;
+    }
+}

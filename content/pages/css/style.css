@@ -12,11 +12,6 @@
     unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
   }
 
-/*Elimina subrayados de links en general, en excepciones utilizar !important*/
-a:link, a:visited, a:active {
-    text-decoration:none;
-}
-
 /*Paleta de colores de web panelita*/
 :root {
     --default-blue: #3366FF;
@@ -38,11 +33,11 @@ a:link, a:visited, a:active {
 
 /*Establecemos ancho de la pagina*/
 html {
-    height: 100%;
     font-family: 'Open Sans';
+
 }
 body {
-    min-height: 100%;
+    width: 100%;
 }
 
 * { 
@@ -53,21 +48,30 @@ body {
 
 main{
     width: 100%;
-    margin: auto;
-    
-    display: flex;
-    gap: 32px;
-    justify-content: left;
-}
-
-.sideNavLoader{
-    width: 20%;
-    position: sticky;
-    justify-content: left;
-    background-color: var(--dark-grey);
+    height: 1920px;
 }
 
 .commonBody{
-    width: 80%;
+    display: flex;
+    margin-left: calc(20em + 32px);
+    margin-right: 7em;
     background-color: var(--hover-blue);
 }
+
+@media (max-width: 900px){
+    .commonBody{
+        margin-right: 4em;
+        margin-left: calc(12em + 32px);
+        background-color: var(--hover-blue);
+    }
+}
+
+/*Elimina subrayados de links en general, en excepciones utilizar !important*/
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+ul{
+    list-style: none;
+}
+
