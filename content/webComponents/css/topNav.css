@@ -1,13 +1,7 @@
-/*si bien este css está incluido en topnav, al insertarse en la página los estilos van a afectar a todos los otros elementos del sitio, por eso conviene prefijar todos los selectores de acá con #topNav (o sea #topNav ul, #topNav a, etc)*/
-
 #topNav{
     width: 100%;
-    /* este alto lo pondría en px también, en em es como que se relaciona con el tamaño de fuente de la página y en realidad queremos que tenga el mismo alto siempre */
-    height: 5.625em;
-    /* el font-family puede ir directo en el elemento body en style.css ya que se usa en toda la página*/
-    font-family: 'Open Sans';
-    /* para font-size conviene tener un tamaño fijo en px o em para poder manejarnos con un valor exacto */
-    font-size: small;
+    height: 5.5em;
+    font-size: 0.8em;
     display: flex;
     align-items: center;
     background-color: white;
@@ -15,19 +9,19 @@
 }
 
 .panelitaLogo{
-    /* márgenes conviene que vayan en px (o en em, aunque yo no lo uso mucho, pero se puede) para tener más presente la medida exacta */
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 9em;
+    margin-right: 9em;
     display: block;
 }
 
 .panelitaIso{
-  margin-left: 5%;
-  margin-right: 10%;
-  display: none;
+    margin-left: 6em;
+    margin-right: 6em;
+    display: none;
 }
 
-ul{
+#topNav li{
+    list-style-type: none;
     width: 80%;
     display: inline-flex;
     justify-content: center;
@@ -35,7 +29,7 @@ ul{
     padding-inline-end: 5%;
 }
 
-a{
+#topNav a{
     margin-left: 2%;
     margin-right: 5%;
     font-style: normal;
@@ -43,51 +37,48 @@ a{
     color: var(--text-color);
 }
 
-/* conviene ponerle una clase o id, div es demasiado general y cuando haya otros divs en la página (que van a ser muchos) este estilo va a aplicar a todos (ver notita de arriba de todo) */
-div{
+#topNav div{
+    margin-right: 9em;
     display: flex;
     justify-content: flex-end;
     padding-inline-start: 5% ;
-    padding-inline-end: 5%;
+    display: block;
 }
 
-form {
+#topNav form {
     color: var(--text-color);
     background-color: var(--lightest-blue);
     display: flex;
-    padding: 0.125em;
-    border-radius: 0.313em;
-  }
+    padding: 0.1em;
+    border-radius: 0.3em;
+}
   
-input{
+#topNav input{
     float: left;
     border-left: none;
     cursor: pointer;
 }
 
-input:focus { 
+#topNav input:focus { 
     outline: transparent; 
 }
 
-  input[type=search] {
+#topNav input[type=search] {
     border: none;
     background: transparent;
     margin-left: 0.2em;
-    /* creo que no hace falta taaanta precisión, tal vez sea mejor usar px */
-    padding: 0.438em 0.6em;
+    padding: 0.4em 0.6em;
     font-size: 14px;
     color: inherit;
     border-radius: inherit;
     border: 0px solid transparent;
-  }
+}
   
-  input[type=search]::placeholder {
+#topNav input[type=search]::placeholder {
     color: var(--text-color);
-  }
+}
 
-  button[type=submit] {
-    /* este text-indent me parece que no hace nada */
-    text-indent: -999px;
+#topNav button[type=submit] {
     overflow: hidden;
     width: 2.9em;
     border: 0px solid transparent;
@@ -95,40 +86,70 @@ input:focus {
     background: transparent
     url("/content/assets/search.svg") no-repeat center;
     cursor: pointer;
-  }
+}
 
 /*Tablet*/
+/*Landscape*/
+@media (max-width: 1080px){
+  .panelitaLogo{
+    margin-left: 4em;
+    margin-right: 4em;
+  }
+
+  #topNav li{
+    padding-inline-start: 2% ;
+    padding-inline-end: 2%;
+  }
+}
+
 /*Portrait*/
-/* no sé si hacen falta los decimales, yo redondearía para que quede más limpio */
-@media (max-width: 991.98px){
+@media (max-width: 800px){
   .panelitaLogo{
     display: none;
   }
 
-.panelitaIso{
+  .panelitaIso{
   display: block;
+  margin-left: 4em;
+  margin-right: 2.5em;
+  }
+
+  #topNav li{
+    padding-inline-start: 2% ;
+    padding-inline-end: 2%;
+}
+
+  #topNav div{
+    display: none;
   }
 }
+
 /*fin tablet*/
 
 /*movil*/
 /*Portrait*/
 /*Default*/
-@media (max-width: 575.98px){
+@media (max-width: 600px){
   .panelitaLogo{
     display: none;
   }
 
-.panelitaIso{
+  .panelitaIso{
   display: block;
+  margin-left: 4em;
+  margin-right: 2em;
   }
 
-  a{
+  #topNav a{
     margin-left: 1%;
     margin-right: 3%;
     font-style: normal;
     font-size: 12px;
     color: var(--text-color);
+  }
+
+  #topNav div{
+    display: none;
   }
 }
 /*fin movil*/
