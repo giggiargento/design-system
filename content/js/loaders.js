@@ -11,4 +11,8 @@ $(document).ready(function() {
     $('#footerLoader').load('../webComponents/footer.html', function() {
         $('footer').unwrap();
     })
+
+    $('#sideNavLoader').load('../webComponents/sideNav.html', function() {
+        $('sideNav').unwrap();
+    })
 })

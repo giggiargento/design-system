@@ -1,5 +1,6 @@
 @import url('/content/webComponents/css/topNav.css');
 @import url('/content/webComponents/css/footer.css');
+@import url('/content/webComponents/css/sideNav.css');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,300');
 
 @font-face {
@@ -48,4 +49,25 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    margin: auto;
+    
+    display: flex;
+    gap: 32px;
+    justify-content: left;
+}
+
+.sideNavLoader{
+    width: 20%;
+    position: sticky;
+    justify-content: left;
+    background-color: var(--dark-grey);
+}
+
+.commonBody{
+    width: 80%;
+    background-color: var(--hover-blue);
 }
