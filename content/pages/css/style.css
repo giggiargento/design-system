@@ -40,30 +40,13 @@ body {
     width: 100%;
 }
 
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+div.mainLayout {
+    padding-top: 56px;
 }
 
-main{
-    width: 100%;
+main {
+    background-color: green;
     height: 1920px;
-}
-
-.commonBody{
-    display: flex;
-    margin-left: calc(20em + 32px);
-    margin-right: 7em;
-    background-color: var(--hover-blue);
-}
-
-@media (max-width: 900px){
-    .commonBody{
-        margin-right: 4em;
-        margin-left: calc(12em + 32px);
-        background-color: var(--hover-blue);
-    }
 }
 
 /*Elimina subrayados de links en general, en excepciones utilizar !important*/

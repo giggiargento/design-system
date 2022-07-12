@@ -5,7 +5,7 @@
 
 $(document).ready(function() {
     $('#navLoader').load('../webComponents/topNav.html', function() {
-        $('#topNav').unwrap();
+        $('topNav').unwrap();
     })
 
     $('#footerLoader').load('../webComponents/footer.html', function() {
