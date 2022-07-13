@@ -1,0 +1,47 @@
+#codeBox .card{
+    box-shadow: 0px 0px 10px #EBF0FF;
+    border-radius: 8px;
+    border: none;
+}
+
+#codeBox .card-header{
+    background-color: white;
+    align-content: left;
+    border-bottom: none;
+}
+
+#codeBox .card-img-top{
+    position: relative;
+    padding: 6px;
+    width: 40%;
+}
+
+#codeBox .card-body{
+    background-color: #EBF0FF ;
+    border-radius: 8px 8px 0 0;
+    color: #696F8C;
+    font-size: 14px;
+}
+
+#codeBox .card-text{
+    padding-right: 10%;
+}
+
+#codeBox .card-footer{
+    border-top: none;
+    padding: 0;
+    background-color: #F3F6FF; 
+}
+
+#codeBox .btn{
+    color: #3366FF !important;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration:none;
+}
+
+#codeBox .bi-chevron-up{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 2px
+}
