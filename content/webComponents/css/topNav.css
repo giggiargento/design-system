@@ -1,13 +1,18 @@
 .panelitaLogo{
     display: block;
-}
-
-.panelitaIso{
-    display: none;
+    margin-right: 40px;
 }
 
 #topNav {
   background-color: white;
+}
+
+#topNav .active {
+  color: var(--default-blue);
+}
+
+#topNav a.nav-link{
+  margin-right: 20px;
 }
 
 #topNav form {
@@ -18,11 +23,6 @@
 #topNav .form-control:focus {
   box-shadow: none;
 }
-
-#topNav .active {
-  color: var(--default-blue);
-}
-
 
 #topNav input[type=search] {
     color: var(--text-color);
@@ -46,34 +46,10 @@
     cursor: pointer;
 }
 
-/*Tablet*/
-/*Landscape*/
-@media (max-width: 1080px){
+.navbar-toggler{
+  border-color: transparent !important;
 }
 
-/*Portrait*/
-@media (max-width: 900px){
-  .panelitaLogo{
-    display: none;
-  }
-
-  .panelitaIso{
-    display: block;
-  }
+.navbar-toggler:focus{
+  box-shadow: none !important;
 }
-
-/*fin tablet*/
-
-/*movil*/
-/*Portrait*/
-/*Default*/
-@media (max-width: 600px){
-  .panelitaLogo{
-    display: none;
-  }
-
-  .panelitaIso{
-    display: block;
-  }
-}
-/*fin movil*/

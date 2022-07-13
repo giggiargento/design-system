@@ -1,4 +1,32 @@
 nav#sideNav {
-  background-color: red;
   height: 100%;
+}
+
+nav.position-fixed{
+  width: 12%;
+  max-width: 180px;
+}
+
+.titlePage{
+  font-weight: 600 !important;
+  color: var(--text-color);
+}
+
+nav#sideNav a.nav-link{
+  color: var(--text-color);
+  margin-left: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+nav#sideNav a.nav-link.active {
+  border-inline-start: 4px solid var(--default-blue);
+  background-color: var(--white-blue);
+  color: var(--default-blue);
+  margin-left: 0px;
+}
+
+nav#sideNav a.nav-link:hover{
+  background-color: var(--white-blue);
+  color: var(--default-blue);
 }

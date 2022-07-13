@@ -41,13 +41,16 @@ body {
 }
 
 div.mainLayout {
-    padding-top: 56px;
+    padding-top: 100px;
 }
 
+
 main {
-    background-color: green;
     height: 1920px;
+    background-color: #EBF0FF;
+    padding-top: 10px;
 }
+
 
 /*Elimina subrayados de links en general, en excepciones utilizar !important*/
 a:link, a:visited, a:active {
