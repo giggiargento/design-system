@@ -41,8 +41,8 @@
     width: 2.9em;
     border: 0px solid transparent;
     border-radius: inherit;
-    background: transparent
-    url("/content/assets/search.svg") no-repeat center;
+    background-color: transparent;
+    color: var(--default-blue);
     cursor: pointer;
 }
 
