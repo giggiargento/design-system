@@ -36,11 +36,9 @@
     color: var(--text-color);
 }
 
-#topNav button[type=submit] {
-    overflow: hidden;
-    width: 2.9em;
+#topNav span[type=submit] {
+    padding: 4px;
     border: 0px solid transparent;
-    border-radius: inherit;
     background-color: transparent;
     color: var(--default-blue);
     cursor: pointer;

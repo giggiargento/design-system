@@ -12,7 +12,8 @@
 
 #codeBox .card-img-top{
     position: relative;
-    padding: 6px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     width: 40%;
 }
 
@@ -30,18 +31,32 @@
 #codeBox .card-footer{
     border-top: none;
     padding: 0;
-    background-color: #F3F6FF; 
+    background-color: #F3F6FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #codeBox .btn{
-    color: #3366FF !important;
     font-size: 14px;
     font-weight: 600;
-    text-decoration:none;
+    text-decoration: none;
 }
 
-#codeBox .bi-chevron-up{
-    font-size: 14px;
-    font-weight: 600;
-    padding: 2px
+#codeBox .text-center{
+    position: relative;
+    justify-content: center;
+    margin-left: 2px;
+}
+
+#codeBox .text-end{
+    color: var(--text-color);
+    border: 0px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 12px;
+    
 }
