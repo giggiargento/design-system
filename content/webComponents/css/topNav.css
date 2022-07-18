@@ -15,6 +15,7 @@
   margin-right: 20px;
 }
 
+/*Search*/
 #topNav form {
     background-color: var(--lightest-blue);
     border-radius: 0.3em;
@@ -33,7 +34,7 @@
 }
   
 #topNav input[type=search]::placeholder {
-    color: var(--text-color);
+    color: var(--dark-grey);
 }
 
 #topNav span[type=submit] {
