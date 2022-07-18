@@ -86,10 +86,9 @@ div.mainLayout {
     padding-top: 100px;
 }
 
-
+/*Establecemos alto y padding de la pagina*/
 main {
     height: 1920px;
-    background-color: #EBF0FF;
     padding-top: 10px;
 }
 
@@ -103,3 +102,59 @@ ul{
     list-style: none;
 }
 
+/*------------------Components------------------*/
+div#titleSection{
+    /*background-color: #9DB5FF; */
+}
+
+h1.title{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-top: 12px;
+}
+
+h2.description{
+    font-size: 14px;
+    color: var(--text-color);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*Search*/
+#sectionHeader form {
+    background-color: var(--lightest-blue);
+    border-radius: 0.3em;
+}
+
+#sectionHeader .form-control:focus {
+  box-shadow: none;
+}
+
+#sectionHeader input[type=search] {
+    color: var(--text-color);
+    border: none;
+    background-color: var(--lightest-blue);
+    padding: 0.4em 0.6em;
+    font-size: 14px;
+}
+  
+#sectionHeader input[type=search]::placeholder {
+    color: var(--dark-grey);
+}
+
+#sectionHeader span[type=submit] {
+    padding: 4px;
+    border: 0px solid transparent;
+    background-color: transparent;
+    color: var(--default-blue);
+    cursor: pointer;
+}
+
+div#imgSection{
+    display: flex;
+/*    background-color: #D8DAE5; */
+    justify-content: center;
+}
+
+/*------------------end components------------------*/
