@@ -3,8 +3,10 @@
     margin-right: 40px;
 }
 
-#topNav {
+/*Se activa unicamente al hacer scroll desde jquery*/
+#topNav { 
   background-color: white;
+  box-shadow: var(--nav-shadow); /*No se visualiza ????*/
 }
 
 #topNav .active {

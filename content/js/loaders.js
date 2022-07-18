@@ -15,5 +15,29 @@ $(document).ready(function() {
     $('#sideNavLoader').load('../webComponents/sideNav.html', function() {
         $('sideNav').unwrap();
     })
+
+    $('#sectionBtnLoader1').load('../webComponents/sectionBtn.html', function() {
+        $('sectionBtn').unwrap();
+    })
+
+    $('#sectionBtnLoader2').load('../webComponents/sectionBtn.html', function() {
+        $('sectionBtn').unwrap();
+    })
+
+    $('#sectionBtnLoader3').load('../webComponents/sectionBtn.html', function() {
+        $('sectionBtn').unwrap();
+    })
+
+    $('#sectionBtnLoader4').load('../webComponents/sectionBtn.html', function() {
+        $('sectionBtn').unwrap();
+    })
+
+    $('#sectionBtnLoader5').load('../webComponents/sectionBtn.html', function() {
+        $('sectionBtn').unwrap();
+    })
+
+    $('#sectionBtnLoader6').load('../webComponents/sectionBtn.html', function() {
+        $('sectionBtn').unwrap();
+    })
 })
 

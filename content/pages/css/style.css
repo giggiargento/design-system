@@ -1,6 +1,7 @@
 @import url('/content/webComponents/css/topNav.css');
 @import url('/content/webComponents/css/footer.css');
 @import url('/content/webComponents/css/sideNav.css');
+@import url('/content/webComponents/css/sectionBtn.css');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,300');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 @import url(https://example.com/material-icons.woff);
@@ -155,6 +156,10 @@ div#imgSection{
     display: flex;
 /*    background-color: #D8DAE5; */
     justify-content: center;
+}
+
+#sectionBtnContainer{
+    margin-top: 40px;
 }
 
 /*------------------end components------------------*/

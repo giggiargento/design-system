@@ -1,5 +1,6 @@
+@import url('/content/webComponents/css/sectionBtn.css');
+
 #sectionBtn{
-    margin: 20px;
     width: 150px;
     border: none;
     background-color: white;
@@ -26,3 +27,8 @@ img.card-img-top{
     align-items: center;
 }
 
+p.card-text{
+    color: var(--text-color);
+    text-decoration: none;
+    list-style: none;
+}
