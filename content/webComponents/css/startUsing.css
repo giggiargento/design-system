@@ -2,10 +2,9 @@
     color: #3366FF;
     font-family: 'Open Sans';
     font-weight: 600;
-    padding-left: 14px;
 }
 
-.startUsingContent.container{
+.startUsingContent{
     padding-top: 40px;
     max-width: 100%;
 }

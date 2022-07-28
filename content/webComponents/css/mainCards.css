@@ -1,0 +1,37 @@
+#mainCard{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.mainCardBody{
+    margin: 0;
+    border-radius: 10px;
+    background-color: white;
+    border-inline-start: 4px solid var(--default-blue);
+    box-shadow: 0px 0px 15px #F3F6FF;
+}
+
+#mainCard:hover{
+    box-shadow: 0px 0px 10px #EBF0FF;
+}
+
+#mainCard h5.card-title{
+    color: var(--text-color);
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#mainCard p.card-text{
+    color: var(--subtext-color);
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#mainCard a.card-link{
+    font-family: 'Open Sans';
+    font-size: 14px;
+}

@@ -4,18 +4,22 @@
 // lo mismo con el footer
 
 $(document).ready(function() {
+//Top Nav
     $('#navLoader').load('../webComponents/topNav.html', function() {
         $('topNav').unwrap();
     })
 
+//Footer
     $('#footerLoader').load('../webComponents/footer.html', function() {
         $('footer').unwrap();
     })
 
+//Side Nav
     $('#sideNavLoader').load('../webComponents/sideNav.html', function() {
         $('sideNav').unwrap();
     })
 
+//Section Btn
     $('#sectionBtnLoader1').load('../webComponents/sectionBtn.html', function() {
         $('sectionBtn').unwrap();
     })
@@ -51,5 +55,13 @@ $(document).ready(function() {
     $('#sectionBtnLoader9').load('../webComponents/sectionBtn.html', function() {
         $('sectionBtn').unwrap();
     })
+
+//Main Cards
+    $('#mainCardsLoader1').load('../webComponents/mainCards.html', function() {
+        $('mainCards').unwrap();
+    }) 
+    $('#mainCardsLoader2').load('../webComponents/mainCards.html', function() {
+        $('mainCards').unwrap();
+    }) 
 })
 
