@@ -1,7 +1,11 @@
+/* HTML */
 @import url('/content/webComponents/css/topNav.css');
 @import url('/content/webComponents/css/footer.css');
 @import url('/content/webComponents/css/sideNav.css');
 @import url('/content/webComponents/css/sectionBtn.css');
+@import url('/content/webComponents/css/startUsing.css');
+
+/* DEP */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,300');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 @import url(https://example.com/material-icons.woff);
@@ -65,6 +69,7 @@
     --white-blue: #F3F6FF; /* Se usa en muy pocos casos*/
     --structure-color: #101840;
     --text-color: #474D66;
+    --subtext-color: #696F8C;
     --dark-grey: #8F95B2;
     --medium-grey: #C1C4D6;
     --light-grey: #D8DAE5;

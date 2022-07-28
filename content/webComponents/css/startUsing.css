@@ -1,0 +1,38 @@
+.startUsingTitle{
+    color: #3366FF;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    padding-left: 14px;
+}
+
+.startUsingContent.container{
+    padding-top: 40px;
+    max-width: 100%;
+}
+
+.sectionPreviewContent{
+    margin-bottom: 40px;
+}
+
+.sectionBtnTriad{
+    max-width: fit-content;
+}
+
+.sectionPreviewTitle{
+    color: var(--text-color);
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+
+.sectionPreviewText{
+    color: var(--subtext-color);
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.sectionPreviewLink{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+}

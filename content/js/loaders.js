@@ -39,5 +39,17 @@ $(document).ready(function() {
     $('#sectionBtnLoader6').load('../webComponents/sectionBtn.html', function() {
         $('sectionBtn').unwrap();
     })
+
+    $('#sectionBtnLoader7').load('../webComponents/sectionBtn.html', function() {
+        $('sectionBtn').unwrap();
+    })
+
+    $('#sectionBtnLoader8').load('../webComponents/sectionBtn.html', function() {
+        $('sectionBtn').unwrap();
+    })
+
+    $('#sectionBtnLoader9').load('../webComponents/sectionBtn.html', function() {
+        $('sectionBtn').unwrap();
+    })
 })
 
