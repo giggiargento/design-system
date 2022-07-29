@@ -88,6 +88,10 @@ html {
 }
 body {
     width: 100%;
+    background-image: url("/content/assets/homeBackground.svg");
+    background-repeat: repeat-y;
+    background-position: center top;
+    overflow-x: hidden;
 }
 
 div.mainLayout {
@@ -114,6 +118,11 @@ ul{
 #homeHeader{
     margin-top: 80px;
 }
+
+#homeHeader #titleSection{
+    margin-bottom: 40px;
+}
+
 .sectionBtnContent{
     display: flex;
     justify-content: left;
@@ -143,10 +152,6 @@ ul{
 }
 
 /*------------------Components------------------*/
-div#titleSection{
-    /*background-color: #9DB5FF; */
-}
-
 h1.title{
     font-family: 'Open Sans';
     font-size: 40px;
@@ -204,3 +209,4 @@ div#imgSection{
 }
 
 /*------------------end components------------------*/
+
