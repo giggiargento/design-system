@@ -86,7 +86,7 @@ html {
     font-family: 'Open Sans';
 
 }
-body {
+body#homeBody {
     width: 100%;
     background-image: url("/content/assets/homeBackground.svg");
     background-repeat: repeat-y;
