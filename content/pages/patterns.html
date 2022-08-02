@@ -5,8 +5,61 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
+
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Boostrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
     </head>
     <body>
-    
+        <div id="navLoader"></div>
+        <div class="container">
+            <div class="row mainLayout">
+                <div id="sideNavLoader" class="col-2 d-none d-lg-block"></div>
+                <main id="mainContent" class="col-12 col-lg-10">
+                    <div class="commonBody">
+                        <header id="sectionHeader" class="row sectionHeader">
+                            <div id="titleSection" class="col-12 col-lg-6">
+                                <h1 id="title" class="title">Patterns</h1>
+                                <h2 id="description" class="description">
+                                    Patterns are reusable combinations of components that solve common user problems.
+                                    These best practice solutions help users achieve their goals and help ensure consistency across experiences.
+                                </h2>
+                                 <!--Search-->
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search components by name" aria-label="Search">
+                                    <span type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search" class="material-icons">search</span>
+                                </form>
+                            </div>
+                            <div id="imgSection" class="col-12 col-lg-6">
+                                <img src="/content/assets/patternsHeader.svg">
+                            </div>
+                        
+                        </header>
+                            <div id="sectionBtnContainer" class="row row-cols-1 row-cols-xxl-6 row-cols-xl-5 row-cols-lg-4 row-cols-md-4 row-cols-sm-3 g-4">
+                                <a id="sectionBtnLoader1" class="sectionBtn" href="#"></a>
+                                <a id="sectionBtnLoader2" class="sectionBtn" href="#"></a>
+                                <a id="sectionBtnLoader3" class="sectionBtn" href="#"></a>
+                            </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <div id="footerLoader" class="footerLoader"></div>
     </body>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- archivo que carga el top nav y el footer -->
+    <script src="../js/loaders.js"></script>
+    <!-- Inicializa tooltips -->
+    <script src="content/js/tooltips.js"></script>
 </html>
