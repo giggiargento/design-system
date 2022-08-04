@@ -114,7 +114,7 @@ ul{
     list-style: none;
 }
 
-/*------------------Home------------------*/
+/*------------------ Home ------------------*/
 #homeHeader{
     margin-top: 80px;
 }
@@ -151,8 +151,8 @@ ul{
     background-color: var(--dark-blue) !important;
 }
 
-/*------------------Components------------------*/
-h1.title{
+/*------------------ Sections Home ------------------*/
+#sectionHeader .title{
     font-family: 'Open Sans';
     font-size: 40px;
     font-weight: 600;
@@ -160,7 +160,7 @@ h1.title{
     margin-top: 12px;
 }
 
-h2.description{
+#sectionHeader .description{
     font-family: 'Open Sans';
     font-size: 16px;
     color: var(--subtext-color);
@@ -208,5 +208,26 @@ div#imgSection{
     margin-top: 40px;
 }
 
-/*------------------end components------------------*/
+/*------------------ Pages Body ------------------*/
+#pageHeader .title{
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-top: 12px;
+}
 
+#pageHeader .description{
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: var(--subtext-color);
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+/*------------------ Paragraph styles ------------------*/
+:root{
+    --page-font:'Open Sans';
+    --page-size: 14px;
+    --page-title-weight: 600;
+}
