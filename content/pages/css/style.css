@@ -131,6 +131,21 @@ ul{
     margin-bottom: 40px;
 }
 
+#homeHeader .title{
+    font-family: 'Open Sans';
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+#homeHeader .description{
+    font-family: 'Open Sans';
+    font-size: 18px;
+    color: var(--subtext-color);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .sectionBtnContent{
     display: flex;
     justify-content: left;
