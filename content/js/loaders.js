@@ -63,5 +63,23 @@ $(document).ready(function() {
     $('#mainCardsLoader2').load('../webComponents/mainCards.html', function() {
         $('mainCards').unwrap();
     }) 
+
+    //Download Cards
+    $('#downloadCardLoader').load('../webComponents/downloadCards.html', function() {
+        $('downloadCard').unwrap();
+    }) 
+
+    //Code box
+    $('#codeBoxLoader').load('../webComponents/codeBox.html', function() {
+        $('codeBox').unwrap();
+    }) 
+
+    $('#codeBoxLoader2').load('../webComponents/codeBox.html', function() {
+        $('codeBox').unwrap();
+    }) 
+
+    $('#codeBoxLoader3').load('../webComponents/codeBox.html', function() {
+        $('codeBox').unwrap();
+    }) 
 })
 

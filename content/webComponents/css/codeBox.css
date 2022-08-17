@@ -1,5 +1,6 @@
-body #codeBox{
-    padding: 20px;
+#codeBox{
+    margin-top: 16px;
+    margin-bottom: 40px;
 }
 
 #codeBox .card{

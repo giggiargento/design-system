@@ -5,6 +5,7 @@
 @import url('/content/webComponents/css/sectionBtn.css');
 @import url('/content/webComponents/css/startUsing.css');
 @import url('/content/webComponents/mainCards.css');
+@import url('/content/webComponents/codeBox.css');
 
 
 /* DEP */
@@ -232,6 +233,31 @@ div#imgSection{
 }
 
 /*------------------ Pages Body ------------------*/
+#pageNav .nav-link.active{
+    color: var(--default-blue);
+    border-color: var(--default-blue);
+    font-weight: 600;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    border-width: 2px;
+}
+
+#pageNav .nav-link{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+#pageNav .nav-link:hover{
+    color: var(--default-blue);
+    border-color: var(--default-blue);
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    border-width: 2px;
+}
+
 #pageHeader .title{
     font-family: 'Open Sans';
     font-size: 24px;
@@ -248,6 +274,9 @@ div#imgSection{
     margin-bottom: 40px;
 }
 
+#pageContent .pageNav{
+    margin-bottom: 40px;
+}
 #pageContent .text{
     font-family: 'Open Sans';
     font-size: 14px;
@@ -268,7 +297,7 @@ div#imgSection{
     margin-bottom: 16px;
 }
 
-#pageContent li{
+#pageContent .text li{
     margin-left: 12px;
 }
 
