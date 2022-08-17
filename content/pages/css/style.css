@@ -81,6 +81,14 @@
     --nav-shadow: drop-shadow(0px 4px 20px rgb(71 77 102 10));
 }
 
+/*------------------ Paragraph styles ------------------*/
+:root{
+    --page-font:'Open Sans';
+    --page-size: 14px;
+    --page-title-weight: 600;
+    --page-links-color: var(--default-blue); 
+}
+
 /*Establecemos ancho de la pagina*/
 html {
     font-family: 'Open Sans';
@@ -225,9 +233,36 @@ div#imgSection{
     margin-bottom: 40px;
 }
 
-/*------------------ Paragraph styles ------------------*/
-:root{
-    --page-font:'Open Sans';
-    --page-size: 14px;
-    --page-title-weight: 600;
+#pageContent .text{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: var(--subtext-color);
+}
+
+#pageContent .textLink{
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+
+#pageContent .textTitle{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--subtext-color);
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+#pageContent li{
+    margin-left: 12px;
+}
+
+#pageContent .imgContent{
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+#pageContent img{
+    padding-right: 32px;
 }
