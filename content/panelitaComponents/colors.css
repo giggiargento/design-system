@@ -1,0 +1,131 @@
+:root,
+:before {
+  /* 30/9/2021 */
+  /* nomenclatura de colores: de 900 (m�s oscuro) a 50 (m�s claro) */
+  /* NEUTRALES (grises) */
+  --color-n900: #101840;
+  --color-n800: #474D66;
+  --color-n700: #696F8C;
+  --color-n600: #8F95B2;
+  --color-n500: #C1C4D6;
+  --color-n400: #D8DAE5;
+  --color-n300: #E6E8F0;
+  --color-n200: #EDEFF5;
+  --color-n100: #F4F6FA;
+  --color-n75: #F9FAFC;
+  --color-n50: #FAFBFF;
+  --color-n0: #FFFFFF;
+
+  /* AZUL */
+  --color-b600: #1F3D99;
+  --color-b500: #2952CC;
+  --color-b400: #3366FF;
+  --color-b300: #9DB5FF;
+  --color-b200: #D6E0FF;
+  --color-b100: #EBF0FF;
+  --color-b50: #F3F6FF;
+
+  /* VERDE */
+  --color-g600: #317159;
+  --color-g500: #429777;
+  --color-g400: #52BD94;
+  --color-g300: #A3E6CD;
+  --color-g200: #DCF2EA;
+  --color-g100: #EEF8F4;
+  --color-g50: #F5FBF8;
+
+  /* AMARILLO */
+  --color-y600: #FF8B00;
+  --color-y500: #FF991F;
+  --color-y400: #FFAB00;
+  --color-y300: #FFC400;
+  --color-y200: #FFE380;
+  --color-y100: #FFF0B3;
+  --color-y50: #FFFAE6;
+
+  /* ROJO */
+  --color-r700: #7D2828;
+  --color-r600: #BF2600;
+  --color-r500: #DE350B;
+  --color-r400: #FF5630;
+  --color-r300: #FF7452;
+  --color-r200: #FF8F73;
+  --color-r100: #FFBDAD;
+  --color-r50: #FFEBE6;
+
+  /* TEAL (turquesa?) */
+  --color-t600: #0F5156;
+  --color-t500: #10899E;
+  --color-t400: #25CBD6;
+  --color-t300: #7CE0E6;
+  --color-t200: #A8EAEF;
+  --color-t100: #D3F5F7;
+  --color-t50: #F2FCFD;
+
+  /* VIOLETA */
+  --color-v600: #524988;
+  --color-v500: #6E62B6;
+  --color-v400: #897AE3;
+  --color-v300: #B8AFEE;
+  --color-v200: #D0CAF4;
+  --color-v100: #E7E4F9;
+  --color-v50: #F8F7FD;
+
+
+  --color-bukeala-blue: var(--color-b400);
+  --color-bukeala-neutral: var(--color-n800);
+  --color-bukeala-white: var(--color-n0);
+
+  --color-main: #004990;
+  --color-main-dark: #00274D;
+  --color-main-light: #D8EDFE;
+  --color-main-accent: #0C57C7;
+  --color-error: var(--color-r600);
+  --color-error-dark: #E53535;
+  --color-error-med: #FF5C5C;
+  --color-error-light: #FF8080;
+  --color-warning: #FFCC00;
+  --color-warning-dark: #E5B800;
+  --color-warning-med: #FDDD48;
+  --color-warning-light: #FDED72;
+  --color-info: #0063F7;
+  --color-info-dark :#004FC4;
+  --color-info-med: #004FC4;
+  --color-info-light: #9DBFF9;
+  --color-success: #06C270;
+  --color-success-dark: #05A660;
+  --color-success-med: #39D98A;
+  --color-success-light: #57EBA1 15%;
+  
+  --color-grey-dark1: #3A3A3C;
+  --color-grey-dark2: #6B7588;
+  --color-grey-dark3: #8F90A6;
+  --color-grey-dark4: #C7C9D9;
+  --color-grey-light1: #DDE5E9;
+  --color-grey-light2: #EBEBF0;
+  --color-grey-light3: #F2F2F5;
+  --color-grey-light4: #FAFAFC;
+
+  --color-white: #FFFFFF;
+  --color-black: #333333;
+  --color-bg-light: #F2F6FA;
+
+  --color-alert-text: #172B4D;
+  --color-alert-blue-bg: #DEEBFF;
+  --color-alert-green-bg: #E3FCEF;
+  --color-alert-red-bg: #FFEBE6;
+  --color-alert-yellow-bg: #FFFAE6;
+
+  /* filtros para convertir el color de los �conos a otros colores cuando est�n como background-image (por ejemplo si quiero que el �cono sea azul en :hover)  */
+  --filter-white: brightness(0) invert(1);
+  --filter-n700: brightness(0) saturate(100%) invert(43%) sepia(12%) saturate(819%) hue-rotate(192deg) brightness(96%) contrast(87%);
+  --filter-b400: brightness(0) saturate(100%) invert(29%) sepia(75%) saturate(2515%) hue-rotate(219deg) brightness(102%) contrast(102%);
+  --filter-b500: brightness(0) saturate(100%) invert(30%) sepia(32%) saturate(5219%) hue-rotate(219deg) brightness(81%) contrast(96%);
+  --filter-b600: brightness(0) saturate(100%) invert(18%) sepia(33%) saturate(7484%) hue-rotate(7deg) brightness(101%) contrast(102%);
+  --filter-r600: brightness(0) saturate(100%) invert(20%) sepia(51%) saturate(3651%) hue-rotate(3deg) brightness(101%) contrast(112%);
+  --filter-r500: brightness(0) saturate(100%) invert(28%) sepia(75%) saturate(7090%) hue-rotate(13deg) brightness(99%) contrast(91%);
+  --filter-y400: brightness(0) saturate(100%) invert(74%) sepia(60%) saturate(3441%) hue-rotate(359deg) brightness(103%) contrast(106%);
+  --filter-g400: brightness(0) saturate(100%) invert(71%) sepia(5%) saturate(4522%) hue-rotate(105deg) brightness(98%) contrast(70%);
+
+  --filter-celesturquesa: brightness(0) saturate(100%) invert(46%) sepia(50%) saturate(4634%) hue-rotate(168deg) brightness(94%) contrast(102%);
+}

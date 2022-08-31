@@ -1,0 +1,105 @@
+:root {
+  --font-family: 'Open Sans';
+  --font-color-main: var(--color-n800);
+
+  --letter-spacing: -0.1px;
+
+  --h600-size: 28px;
+  --h600-weight: 600;
+  --h600-line-height: 36px;
+
+  --h500-size: 24px;
+  --h500-weight: 600;
+  --h500-line-height: 36px;
+
+  --h400-size: 18px;
+  --h400-weight: 600;
+  --h400-line-height: 24px;
+
+  --h300-size: 16px;
+  --h300-weight: 600;
+  --h300-line-height: 20px;
+
+  --h200-size: 16px;
+  --h200-weight: 400;
+  --h200-line-height: 20px;
+
+  --h100-size: 14px;
+  --h100-weight: 400;
+  --h100-line-height: 18px;
+
+  --h50-size: 12px;
+  --h50-weight: 400;
+  --h50-line-height: 16px;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--font-color-main)!important;
+}
+
+.h600,
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.1px;
+  line-height: 36px;
+}
+
+.h500 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.1px;
+  line-height: 36px;
+}
+
+.h400 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.1px;
+  line-height: 24px;
+}
+
+.h300 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.1px;
+  line-height: 20px;
+}
+
+.h200 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  line-height: 20px;
+}
+
+.h100 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  line-height: 18px;
+}
+
+.h50 {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  line-height: 16px;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
