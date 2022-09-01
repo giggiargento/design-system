@@ -15,7 +15,23 @@ $(document).ready(function() {
     })
 
 //Side Nav
+    $('#sideNavBrand').load('../webComponents/sideNavBrand.html', function() {
+        $('sideNav').unwrap();
+    })
+
+    $('#sideNavFoundations').load('../webComponents/sideNavFoundations.html', function() {
+        $('sideNav').unwrap();
+    })
+
     $('#sideNavComponents').load('../webComponents/sideNavComponents.html', function() {
+        $('sideNav').unwrap();
+    })
+
+    $('#sideNavPatterns').load('../webComponents/sideNavPatterns.html', function() {
+        $('sideNav').unwrap();
+    })
+
+    $('#sideNavResources').load('../webComponents/sideNavResources.html', function() {
         $('sideNav').unwrap();
     })
 
