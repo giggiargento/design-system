@@ -24,6 +24,5 @@ nav#sideNav a.nav-link.active {
 }
 
 nav#sideNav a.nav-link:hover{
-  background-color: var(--white-blue);
   color: var(--default-blue);
 }
