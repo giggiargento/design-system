@@ -15,11 +15,13 @@ $(document).ready(function() {
     })
 
 //Side Nav
-    $('#sideNavLoader').load('../webComponents/sideNav.html', function() {
+    $('#sideNavComponents').load('../webComponents/sideNavComponents.html', function() {
         $('sideNav').unwrap();
     })
 
-//Section Btn
+//Section Btn Brand
+//Section Btn Foundations
+//Section Btn Components
     $('#sectionBtnButtons').load('../webComponents/sectionBtn.html', function() {
         $('sectionBtn').unwrap();
         const p = $(this).find('p.card-text');
@@ -29,37 +31,152 @@ $(document).ready(function() {
         img.attr('alt', 'Buttons');
     })
 
-    $('#sectionBtnLoader2').load('../webComponents/sectionBtn.html', function() {
+    $('#sectionBtnCalendar').load('../webComponents/sectionBtn.html', function() {
         $('sectionBtn').unwrap();
+        const p = $(this).find('p.card-text');
+        p.text("Calendar");
+        const img = $(this).find('img.card-img-top');
+        img.attr('src', '/content/assets/icons/calendar.svg');
+        img.attr('alt', 'Calendar');
     })
 
-    $('#sectionBtnLoader3').load('../webComponents/sectionBtn.html', function() {
+    $('#sectionBtnCards').load('../webComponents/sectionBtn.html', function() {
         $('sectionBtn').unwrap();
+        const p = $(this).find('p.card-text');
+        p.text("Cards");
+        const img = $(this).find('img.card-img-top');
+        img.attr('src', '/content/assets/icons/cards.svg');
+        img.attr('alt', 'Cards');
     })
 
-    $('#sectionBtnLoader4').load('../webComponents/sectionBtn.html', function() {
+    $('#sectionBtnCheckbox').load('../webComponents/sectionBtn.html', function() {
         $('sectionBtn').unwrap();
+        const p = $(this).find('p.card-text');
+        p.text("Checkbox");
+        const img = $(this).find('img.card-img-top');
+        img.attr('src', '/content/assets/icons/checkbox.svg');
+        img.attr('alt', 'Checkbox');
     })
 
-    $('#sectionBtnLoader5').load('../webComponents/sectionBtn.html', function() {
+    $('#sectionBtnDropdowns').load('../webComponents/sectionBtn.html', function() {
         $('sectionBtn').unwrap();
+        const p = $(this).find('p.card-text');
+        p.text("Dropdowns");
+        const img = $(this).find('img.card-img-top');
+        img.attr('src', '/content/assets/icons/dropdowns.svg');
+        img.attr('alt', 'Dropdowns');
     })
 
-    $('#sectionBtnLoader6').load('../webComponents/sectionBtn.html', function() {
+    $('#sectionBtnForms').load('../webComponents/sectionBtn.html', function() {
         $('sectionBtn').unwrap();
+        const p = $(this).find('p.card-text');
+        p.text("Forms");
+        const img = $(this).find('img.card-img-top');
+        img.attr('src', '/content/assets/icons/forms.svg');
+        img.attr('alt', 'Forms');
     })
 
-    $('#sectionBtnLoader7').load('../webComponents/sectionBtn.html', function() {
+    $('#sectionBtnNavigation').load('../webComponents/sectionBtn.html', function() {
         $('sectionBtn').unwrap();
+        const p = $(this).find('p.card-text');
+        p.text("Navigation");
+        const img = $(this).find('img.card-img-top');
+        img.attr('src', '/content/assets/icons/navigation.svg');
+        img.attr('alt', 'Navigation');
     })
 
-    $('#sectionBtnLoader8').load('../webComponents/sectionBtn.html', function() {
+    $('#sectionBtnNotifications').load('../webComponents/sectionBtn.html', function() {
         $('sectionBtn').unwrap();
+        const p = $(this).find('p.card-text');
+        p.text("Notifications");
+        const img = $(this).find('img.card-img-top');
+        img.attr('src', '/content/assets/icons/notifications.svg');
+        img.attr('alt', 'Notifications');
     })
 
-    $('#sectionBtnLoader9').load('../webComponents/sectionBtn.html', function() {
+    $('#sectionBtnPagination').load('../webComponents/sectionBtn.html', function() {
         $('sectionBtn').unwrap();
+        const p = $(this).find('p.card-text');
+        p.text("Pagination");
+        const img = $(this).find('img.card-img-top');
+        img.attr('src', '/content/assets/icons/pagination.svg');
+        img.attr('alt', 'Pagination');
     })
+
+    $('#sectionBtnRadio').load('../webComponents/sectionBtn.html', function() {
+        $('sectionBtn').unwrap();
+        const p = $(this).find('p.card-text');
+        p.text("Radio");
+        const img = $(this).find('img.card-img-top');
+        img.attr('src', '/content/assets/icons/radio.svg');
+        img.attr('alt', 'Radio');
+    })
+
+    $('#sectionBtnSelect').load('../webComponents/sectionBtn.html', function() {
+        $('sectionBtn').unwrap();
+        const p = $(this).find('p.card-text');
+        p.text("Select");
+        const img = $(this).find('img.card-img-top');
+        img.attr('src', '/content/assets/icons/select.svg');
+        img.attr('alt', 'Select');
+    })
+
+    $('#sectionBtnSidesheet').load('../webComponents/sectionBtn.html', function() {
+        $('sectionBtn').unwrap();
+        const p = $(this).find('p.card-text');
+        p.text("Sidesheet");
+        const img = $(this).find('img.card-img-top');
+        img.attr('src', '/content/assets/icons/sidesheet.svg');
+        img.attr('alt', 'Sidesheet');
+    })
+
+    $('#sectionBtnSwitch').load('../webComponents/sectionBtn.html', function() {
+        $('sectionBtn').unwrap();
+        const p = $(this).find('p.card-text');
+        p.text("Switch");
+        const img = $(this).find('img.card-img-top');
+        img.attr('src', '/content/assets/icons/switch.svg');
+        img.attr('alt', 'Switch');
+    })
+
+    $('#sectionBtnTable').load('../webComponents/sectionBtn.html', function() {
+        $('sectionBtn').unwrap();
+        const p = $(this).find('p.card-text');
+        p.text("Table");
+        const img = $(this).find('img.card-img-top');
+        img.attr('src', '/content/assets/icons/table.svg');
+        img.attr('alt', 'Table');
+    })
+
+    $('#sectionBtnTabs').load('../webComponents/sectionBtn.html', function() {
+        $('sectionBtn').unwrap();
+        const p = $(this).find('p.card-text');
+        p.text("Tabs");
+        const img = $(this).find('img.card-img-top');
+        img.attr('src', '/content/assets/icons/tabs.svg');
+        img.attr('alt', 'Tabs');
+    })
+
+    $('#sectionBtnTags').load('../webComponents/sectionBtn.html', function() {
+        $('sectionBtn').unwrap();
+        const p = $(this).find('p.card-text');
+        p.text("Tags");
+        const img = $(this).find('img.card-img-top');
+        img.attr('src', '/content/assets/icons/tags.svg');
+        img.attr('alt', 'Tags');
+    })
+
+    $('#sectionBtnTooltip').load('../webComponents/sectionBtn.html', function() {
+        $('sectionBtn').unwrap();
+        const p = $(this).find('p.card-text');
+        p.text("Tooltip");
+        const img = $(this).find('img.card-img-top');
+        img.attr('src', '/content/assets/icons/tooltip.svg');
+        img.attr('alt', 'Tooltip');
+    })
+
+//Section Btn Patterns
+//Section Btn Resources
 
 //Main Cards
     $('#mainCardsLoader1').load('../webComponents/mainCards.html', function() {
