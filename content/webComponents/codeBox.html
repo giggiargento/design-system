@@ -1,4 +1,3 @@
-        <link rel="stylesheet" href="/content/webComponents/css/codeBox.css">
         <div id="codeBox" class="row row-cols-12">
             <div class="col">
                 <div class="card h-100">
@@ -13,23 +12,16 @@
                     </div>
                     <div class="card-footer">
                         <div class="text-center">
-                            <small type="button" class="btn btn-link"
-                                type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Hide code">
-                                Hide code                            
-                            </small>
+                            <small class="btn btn-link"
+                            type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Hide code">Hide code</small>
                         </div>
                         <div class="text-end">
-                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard" 
-                            id="copyBtn" type="button" class="copyBtn material-icons">content_copy</span>
+                            <span type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copy to clipboard" 
+                            id="copyBtn" class="copyBtn material-icons">content_copy</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>  
+        </div> 
 
-        <!-- Inicializa tooltips -->
-        <script>
-            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-        </script>
 

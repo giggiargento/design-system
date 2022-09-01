@@ -20,8 +20,13 @@ $(document).ready(function() {
     })
 
 //Section Btn
-    $('#sectionBtnLoader1').load('../webComponents/sectionBtn.html', function() {
+    $('#sectionBtnButtons').load('../webComponents/sectionBtn.html', function() {
         $('sectionBtn').unwrap();
+        const p = $(this).find('p.card-text');
+        p.text("Buttons");
+        const img = $(this).find('img.card-img-top');
+        img.attr('src', '/content/assets/icons/buttons.svg');
+        img.attr('alt', 'Buttons');
     })
 
     $('#sectionBtnLoader2').load('../webComponents/sectionBtn.html', function() {
