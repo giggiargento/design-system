@@ -19,7 +19,22 @@
         <div id="navLoader"></div>
         <div class="container">
             <div class="row mainLayout">
-                <div id="sideNavLoader" class="col-2 d-none d-lg-block"></div>
+                <!--Side Nav-->
+                <div id="sideNavComponent" class="col-2 d-none d-lg-block">
+                    <nav id="sideNav" class="nav flex-column nav-pills position-fixed">
+                        <div>
+                            <a class="nav-link disabled titlePage" aria-current="page">Resources</a>
+                            <a class="nav-link" href="/content/pages/buttons.html"
+                            type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Buttons">Introduction</a>
+                        
+                            <a class="nav-link active" href="#"
+                            type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Calendar">Download</a>
+                        
+                            <a class="nav-link" href="#"
+                            type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Cards">Versions</a>
+                        </div>   
+                    </nav>
+            </div>
                 <main id="mainContent" class="col-12 col-lg-10">
                     <div class="commonBody">
                         <header id="pageHeader" class="row pageHeader">
@@ -65,7 +80,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                         </section>
     </body>
