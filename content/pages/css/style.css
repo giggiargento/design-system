@@ -176,6 +176,10 @@ ul{
     background-color: var(--dark-blue) !important;
 }
 
+.startUsing{
+    margin-top: 40px;
+}
+
 /*------------------ Sections Home ------------------*/
 #sectionHeader .title{
     font-family: 'Open Sans';
