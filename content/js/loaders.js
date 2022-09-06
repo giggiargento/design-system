@@ -369,7 +369,6 @@ $(document).ready(function() {
 // cada vez que se carga un loader, suma 1 a la lista de loaders que ya cargaron
 function triggerLoaded(el) {
     loadersLoaded += 1;
-    console.log(loadersLoaded)
 
     // comparo cuántos loaders hay en la página y cuántos ya cargaron, si son el mismo número, inicializo tooltips
     if (loadersLoaded == loaderTotal) {
