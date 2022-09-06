@@ -36,7 +36,88 @@ $(document).ready(function() {
     })
 
 //Section Btn Brand
+$('#sectionBtnMission').load('../webComponents/sectionBtn.html', function() {
+    $('sectionBtn').unwrap();
+    const p = $(this).find('p.card-text');
+    p.text("Mission");
+    const img = $(this).find('img.card-img-top');
+    img.attr('src', '/content/assets/icons/mission.svg');
+    img.attr('alt', 'Mission');
+})
+
+$('#sectionBtnPersonality').load('../webComponents/sectionBtn.html', function() {
+    $('sectionBtn').unwrap();
+    const p = $(this).find('p.card-text');
+    p.text("Personality");
+    const img = $(this).find('img.card-img-top');
+    img.attr('src', '/content/assets/icons/personality.svg');
+    img.attr('alt', 'Personality');
+})
+
+$('#sectionBtnPromise').load('../webComponents/sectionBtn.html', function() {
+    $('sectionBtn').unwrap();
+    const p = $(this).find('p.card-text');
+    p.text("Promise");
+    const img = $(this).find('img.card-img-top');
+    img.attr('src', '/content/assets/icons/promise.svg');
+    img.attr('alt', 'Promise');
+})
+
+$('#sectionBtnValues').load('../webComponents/sectionBtn.html', function() {
+    $('sectionBtn').unwrap();
+    const p = $(this).find('p.card-text');
+    p.text("Values");
+    const img = $(this).find('img.card-img-top');
+    img.attr('src', '/content/assets/icons/values.svg');
+    img.attr('alt', 'Values');
+})
+
 //Section Btn Foundations
+$('#sectionBtnGrids').load('../webComponents/sectionBtn.html', function() {
+    $('sectionBtn').unwrap();
+    const p = $(this).find('p.card-text');
+    p.text("Grids");
+    const img = $(this).find('img.card-img-top');
+    img.attr('src', '/content/assets/icons/grids.svg');
+    img.attr('alt', 'Grids');
+})
+
+$('#sectionBtnIcons').load('../webComponents/sectionBtn.html', function() {
+    $('sectionBtn').unwrap();
+    const p = $(this).find('p.card-text');
+    p.text("Icons");
+    const img = $(this).find('img.card-img-top');
+    img.attr('src', '/content/assets/icons/icons.svg');
+    img.attr('alt', 'Icons');
+})
+
+$('#sectionBtnTypography').load('../webComponents/sectionBtn.html', function() {
+    $('sectionBtn').unwrap();
+    const p = $(this).find('p.card-text');
+    p.text("Typography");
+    const img = $(this).find('img.card-img-top');
+    img.attr('src', '/content/assets/icons/typography.svg');
+    img.attr('alt', 'Typography');
+})
+
+$('#sectionBtnColors').load('../webComponents/sectionBtn.html', function() {
+    $('sectionBtn').unwrap();
+    const p = $(this).find('p.card-text');
+    p.text("Colors");
+    const img = $(this).find('img.card-img-top');
+    img.attr('src', '/content/assets/icons/colors.svg');
+    img.attr('alt', 'Colors');
+})
+
+$('#sectionBtnIllustrations').load('../webComponents/sectionBtn.html', function() {
+    $('sectionBtn').unwrap();
+    const p = $(this).find('p.card-text');
+    p.text("Illustrations");
+    const img = $(this).find('img.card-img-top');
+    img.attr('src', '/content/assets/icons/illustrations.svg');
+    img.attr('alt', 'Illustrations');
+})
+
 //Section Btn Components
     $('#sectionBtnButtons').load('../webComponents/sectionBtn.html', function() {
         $('sectionBtn').unwrap();
@@ -192,7 +273,32 @@ $(document).ready(function() {
     })
 
 //Section Btn Patterns
-//Section Btn Resources
+$('#sectionBtnEmptyStates').load('../webComponents/sectionBtn.html', function() {
+    $('sectionBtn').unwrap();
+    const p = $(this).find('p.card-text');
+    p.text("Empty States");
+    const img = $(this).find('img.card-img-top');
+    img.attr('src', '/content/assets/icons/emptyStates.svg');
+    img.attr('alt', 'Empty States');
+})
+
+$('#sectionBtnForms').load('../webComponents/sectionBtn.html', function() {
+    $('sectionBtn').unwrap();
+    const p = $(this).find('p.card-text');
+    p.text("Forms");
+    const img = $(this).find('img.card-img-top');
+    img.attr('src', '/content/assets/icons/forms.svg');
+    img.attr('alt', 'Forms');
+})
+
+$('#sectionBtnMessages').load('../webComponents/sectionBtn.html', function() {
+    $('sectionBtn').unwrap();
+    const p = $(this).find('p.card-text');
+    p.text("Messages");
+    const img = $(this).find('img.card-img-top');
+    img.attr('src', '/content/assets/icons/messages.svg');
+    img.attr('alt', 'Messages');
+})
 
 //Main Cards
     $('#mainCardsLoader1').load('../webComponents/mainCards.html', function() {
@@ -221,7 +327,8 @@ $(document).ready(function() {
     }) 
 })
 
-$(window).on('load', function() {
-    initTooltips();
-})
+//Funcion tooltips
+    $(window).on('load', function() {
+        initTooltips();
+    })
 
