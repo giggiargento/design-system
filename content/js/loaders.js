@@ -6,7 +6,7 @@
 $(document).ready(function() {
 //Top Nav
     $('#navLoader').load('../webComponents/topNav.html', function() {
-        $('topNav').unwrap();
+        $('#topNav').unwrap();
     })
 
 //Footer
@@ -219,5 +219,9 @@ $(document).ready(function() {
     $('#codeBoxLoader3').load('../webComponents/codeBox.html', function() {
         $('codeBox').unwrap();
     }) 
+})
+
+$(window).on('load', function() {
+    initTooltips();
 })
 
