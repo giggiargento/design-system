@@ -47,6 +47,10 @@
     cursor: pointer;
 }
 
+#topNav .navbar-brand{
+  margin-right: 52px;
+}
+
 .navbar-toggler{
   border-color: transparent !important;
 }
