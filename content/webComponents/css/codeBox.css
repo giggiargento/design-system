@@ -29,10 +29,6 @@
     font-size: 14px;
 }
 
-#codeBox .card-text{
-    padding-right: 10%;
-}
-
 #codeBox .card-footer{
     border-top: none;
     padding: 0;
@@ -51,7 +47,6 @@
 #codeBox .text-center{
     position: relative;
     justify-content: center;
-    margin-left: 2px;
 }
 
 #codeBox .text-end{
@@ -69,6 +64,6 @@
     font-size: 20px;
 }
 
-p.accordion-body{
+#codeBox .card-body{
     padding: 0;
 }

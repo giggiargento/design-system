@@ -37,12 +37,12 @@
                             <div id="pageText" class="col-12 col-lg-12">
                             
                             <!-- Nav -->
-                            <ul id="pageNav" class="pageNav nav nav-tabs">
+                            <ul id="pageNav" class="pageNav nav nav-tabs" role="tablist">
                                 <li class="nav-item" data-bs-toggle="tooltip" type="submit" data-bs-placement="bottom" title="Code">
-                                  <a class="nav-link active" aria-current="page" href="#" data-bs-target="#buttonCodeTab" data-bs-toggle="tab" data-lang="en">Code</a>
+                                  <a class="nav-link active" type="button" aria-current="page" data-bs-target="#buttonCodeTab" data-bs-toggle="tab" role="tab" data-lang="en">Code</a>
                                 </li>
                                 <li class="nav-item" data-bs-toggle="tooltip" type="submit" data-bs-placement="bottom" title="Usage" >
-                                  <a class="nav-link" href="#" data-bs-target="#buttonUsageTab" data-bs-toggle="tab" data-lang="en">Usage</a>
+                                  <a class="nav-link" type="button" data-bs-target="#buttonUsageTab" data-bs-toggle="tab" role="tab" data-lang="en">Usage</a>
                                 </li>
                               </ul>
 
@@ -70,7 +70,7 @@
                                                     </div>
                                                     <div class="accordion accordion-flush" id="accordionFlushExample1">
                                                         <div class="accordion-item">
-                                                            <div id="flush-collapseOne1" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample1">
+                                                            <div id="flush-collapseOne" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                                                 <p id="myCode" class="card-text accordion-body" type="text">
                                                                     This is a wider card with supporting text below as a natural lead-in to additional content.
                                                                     This content is a little bit longer.</p>
@@ -78,12 +78,12 @@
                                                             <div class="card-footer accordion-header" id="flush-headingOne">
                                                                 <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
                                                                     <button class="btn btn-link collapsed" data-lang="en"
-                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" 
+                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" 
                                                                     aria-expanded="false" aria-controls="flush-collapseOne1">Show code
                                                                     </button>
                                                                 </div>
-                                                                <div id="copyBtn" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copy to clipboard" onclick="copyToClipboard(event)">
-                                                                    content_copy
+                                                                <div id="copyBtn" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard(event)">content_copy
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -118,7 +118,7 @@
 
                                 </div>
                                     <!--Usage-->
-                                    <div class="tab-pane fade show active" id="buttonUsageTab">
+                                    <div class="tab-pane fade" id="buttonUsageTab">
                                         <!-- contenido de usage -->
                                         <p>usage</p>
                                     </div>
