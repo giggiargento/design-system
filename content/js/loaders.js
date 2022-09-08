@@ -344,18 +344,28 @@ $(document).ready(function() {
     $('#codeBoxLoader').load('../webComponents/codeBox.html', function() {
         $('codeBox').unwrap();
         triggerLoaded($(this));
-    }) 
-
-    $('#codeBoxLoader2').load('../webComponents/codeBox.html', function() {
-        $('codeBox').unwrap();
-        triggerLoaded($(this));
-    }) 
-
-    $('#codeBoxLoader3').load('../webComponents/codeBox.html', function() {
-        $('codeBox').unwrap();
-        triggerLoaded($(this));
-    }) 
+    })
 })
+
+//Panelita components
+    //Buttons
+    $('#primaryButtonLoader').load('../panelitaComponents/primaryButton.html', function() {
+        $('primaryButton').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#secondaryButtonLoader').load('../panelitaComponents/secondaryButton.html', function() {
+        $('secondaryButton').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#errorButtonLoader').load('../panelitaComponents/errorButton.html', function() {
+        $('errorButton').unwrap();
+        triggerLoaded($(this));
+    })
+
+
+
 
 var loaderTotal
 var loadersLoaded = 0;
@@ -375,4 +385,3 @@ function triggerLoaded(el) {
         initTooltips()
     }
 }
-

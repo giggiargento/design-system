@@ -9,7 +9,8 @@ button {
   cursor: pointer;
 }
 
-.btn {
+.pbtn {
+  margin-right: 12px;
   height: 32px;
   display: flex;
   align-items: center;
@@ -34,99 +35,99 @@ button {
               width .3s ease-in-out;
 }
 
-.btn:focus,
-.btn:focus-within,
-.btn:active {
+.pbtn:focus,
+.pbtn:focus-within,
+.pbtn:active {
   outline: 0;
 }
 
-.btn.btn-primary {
+.pbtn.btn-primary {
   --btn-bg-color: var(--color-b400);
   --btn-text-color: var(--color-n0);
 }
 
-.btn.btn-primary:hover,
-.btn.btn-primary:focus {
+.pbtn.btn-primary:hover,
+.pbtn.btn-primary:focus {
   --btn-bg-color: var(--color-b500);
 }
 
-.btn.btn-primary:active {
+.pbtn.btn-primary:active {
   --btn-bg-color: var(--color-b600);
 }
 
-.btn.btn-primary.btn-disabled,
-.btn.btn-primary:disabled {
+.pbtn.btn-primary.btn-disabled,
+.pbtn.btn-primary:disabled {
   --btn-bg-color: var(--color-b200);
 }
 
-.btn.btn-secondary {
+.pbtn.btn-secondary {
   --btn-bg-color: var(--color-n0);
   --btn-text-color: var(--color-n700);
   --btn-border-color: var(--color-n400);
 }
 
-.btn.btn-secondary:hover,
-.btn.btn-secondary:active,
-.btn.btn-secondary:focus {
+.pbtn.btn-secondary:hover,
+.pbtn.btn-secondary:active,
+.pbtn.btn-secondary:focus {
   --btn-text-color: var(--color-n800);
 }
 
-.btn.btn-secondary:hover {
+.pbtn.btn-secondary:hover {
   --btn-border-color: var(--color-n600);
 }
 
-.btn.btn-secondary:focus {
+.pbtn.btn-secondary:focus {
   --btn-border-color: var(--color-b200);
 }
 
-.btn.btn-secondary:active {
+.pbtn.btn-secondary:active {
   --btn-bg-color: var(--color-n100);
   --btn-border-color: var(--color-n500);
 }
 
-.btn.btn-secondary.btn-disabled,
-.btn.btn-secondary:disabled {
+.pbtn.btn-secondary.btn-disabled,
+.pbtn.btn-secondary:disabled {
   --btn-bg-color: var(--color-n0);
   --btn-text-color: var(--color-n500);
   --btn-border-color: var(--color-n300);
 }
 
-.btn.btn-red {
+.pbtn.btn-red {
   --btn-bg-color: var(--color-r500);
   --btn-text-color: var(--color-n0);
   --btn-border-color: var(--color-r500);
 }
 
-.btn.btn-red:hover {
+.pbtn.btn-red:hover {
   --btn-bg-color: var(--color-r600);
   --btn-border-color: var(--color-r600);
 }
 
-.btn.btn-red:active {
+.pbtn.btn-red:active {
   --btn-bg-color: var(--color-r700);
   --btn-border-color: var(--color-r700);
 }
 
-.btn.btn-red:focus {
+.pbtn.btn-red:focus {
   --btn-bg-color: var(--color-r600);
   --btn-border-color: var(--color-r600);
 }
 
-.btn.btn-red.btn-disabled,
-.btn.btn-red:disabled {
+.pbtn.btn-red.btn-disabled,
+.pbtn.btn-red:disabled {
   --btn-bg-color: var(--color-r100);
   --btn-border-color: var(--color-r100);
 }
 
-.btn .material-icons {
+.pbtn .material-icons {
   font-size: 16px;
 }
 
-.btn:not(.btn-icon) .material-icons {
+.pbtn:not(.btn-icon) .material-icons {
   margin-right: 8px;
 }
 
 /* bot�n sin texto, s�lo �cono */
-.btn.btn-icon {
+.pbtn.btn-icon {
   padding: 8px;
 }

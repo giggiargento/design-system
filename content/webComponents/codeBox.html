@@ -3,21 +3,24 @@
         <div class="card h-100">
             <div class="card-header">
                 <!-- Here we will add panelitaComponents -->
-                <img src="/content/assets/sampleComponent.svg" class="card-img-top" alt="...">
+                <div id="primaryButtonLoader" class="primaryButton card-img-top" alt="..."></div>
             </div>
-            <div class="accordion accordion-flush" id="accordionFlushExample1">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                     <div id="flush-collapseOne" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <p id="myCode" class="card-text accordion-body" type="text">
-                            This is a wider card with supporting text below as a natural lead-in to additional content.
-                            This content is a little bit longer.</p>
-                    </div>
+                        <div id="myCode">
+                            <!-- id to call codeBox code with JavaScript -->
+                            <p id="primaryButtonCode" class="card-text accordion-body" type="text"></p>
+                        </div>
+                        </div>
                     <div class="card-footer accordion-header" id="flush-headingOne">
                         <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
-                            <button class="btn btn-link collapsed" data-lang="en"
+                            
+                            <button id="showHideCode" class="closed btn btn-link collapsed" data-lang="en"
                             type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" 
-                            aria-expanded="false" aria-controls="flush-collapseOne1">Show code
+                            aria-expanded="false" aria-controls="flush-collapseOne">Show code
                             </button>
+
                         </div>
                         <div id="copyBtn" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
                             title="Copy to clipboard" onclick="copyToClipboard(event)">content_copy

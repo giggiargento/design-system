@@ -1,4 +1,4 @@
-:root,
+ :root,
 :before {
   /* 30/9/2021 */
   /* nomenclatura de colores: de 900 (m�s oscuro) a 50 (m�s claro) */
@@ -46,11 +46,11 @@
   /* ROJO */
   --color-r700: #7D2828;
   --color-r600: #BF2600;
-  --color-r500: #DE350B;
+  --color-r500: #D14343;
   --color-r400: #FF5630;
   --color-r300: #FF7452;
   --color-r200: #FF8F73;
-  --color-r100: #FFBDAD;
+  --color-r100: #F9DADA;
   --color-r50: #FFEBE6;
 
   /* TEAL (turquesa?) */

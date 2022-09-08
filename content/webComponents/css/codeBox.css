@@ -22,6 +22,10 @@
     width: 40%;
 }
 
+#codeBox .primaryButton{
+    display: flex;
+}
+
 #codeBox .card-body{
     background-color: #EBF0FF ;
     border-radius: 8px 8px 0 0;
