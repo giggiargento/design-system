@@ -68,3 +68,7 @@
 #codeBox .copyBtn{
     font-size: 20px;
 }
+
+p.accordion-body{
+    padding: 0;
+}
