@@ -286,6 +286,7 @@ div#imgSection{
     font-family: 'Open Sans';
     font-size: 14px;
     color: var(--subtext-color);
+
 }
 
 #pageContent .textLink{
@@ -308,10 +309,39 @@ div#imgSection{
 
 #pageContent .imgContent{
     display: flex;
-    margin-top: 32px;
+    justify-content: center;
+    border: 2px solid var(--white-blue);
+    padding: 16px;
+    background: white;
+    background-clip: content-box;
+    border-radius: 10px;
+    margin-top: 16px;
     margin-bottom: 32px;
 }
 
 #pageContent img{
     padding-right: 32px;
+}
+
+
+#pageContent .numberDotContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+#pageContent .imgExplanation{
+    display: grid;
+    gap: 16px;
+}
+
+#pageContent .numberDot{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: var(--structure-color);
+    border-radius: 100px;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
 }
