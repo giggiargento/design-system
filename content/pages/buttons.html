@@ -71,22 +71,37 @@
                                                     <div class="accordion accordion-flush" id="accordionFlushExample">
                                                         <div class="accordion-item">
                                                             <div id="flush-collapseOne" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                                                <div id="myCode">
+                                                                <div id="myCode" class="myCode">
                                                                     <!-- id to call codeBox code with JavaScript -->
-                                                                    <p id="primaryButtonCode" class="card-text accordion-body" type="text"></p>
+                                                                    <pre id="codeId1" class="card-text accordion-body" type="text"><code>&ltbutton class="pbtn btn-primary"&gtLabel&lt/button&gt
+
+&ltbutton class="pbtn btn-primary"&gt
+  &ltspan class="material-icons"&gtarrow_forward&lt/span&gtLabel
+&lt/button&gt
+&ltbutton class="pbtn btn-primary btn-icon"&gt
+  &ltspan class="material-icons"&gtmore_horiz&lt/span&gt
+&lt/button&gt
+&ltbutton class="pbtn btn-primary btn-disabled"&gtLabel&lt/button&gt
+
+&ltbutton class="pbtn btn-primary btn-disabled"&gt
+  &ltspan class="material-icons"&gtarrow_forward&lt/span&gtLabel
+&lt/button&gt
+&ltbutton class="pbtn btn-primary btn-icon btn-disabled"&gt
+  &ltspan class="material-icons"&gtmore_horiz&lt/span&gt
+&lt/button&gt</code></pre>
                                                                 </div>
                                                                 </div>
                                                             <div class="card-footer accordion-header" id="flush-headingOne">
                                                                 <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
                                                                     
-                                                                    <button id="showHideCode" class="closed btn btn-link collapsed" data-lang="en"
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
                                                                     type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" 
                                                                     aria-expanded="false" aria-controls="flush-collapseOne" onclick="changeHideShowCode()">Show code
                                                                     </button>
 
                                                                 </div>
-                                                                <div id="copyBtn" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
-                                                                    title="Copy to clipboard" onclick="copyToClipboard(event)">content_copy
+                                                                <div id="copyBtn1" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId1')">content_copy
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -112,22 +127,40 @@
                                                     <div class="accordion accordion-flush" id="accordionFlushExample1">
                                                         <div class="accordion-item">
                                                             <div id="flush-collapseOne1" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample1">
-                                                                <div id="myCode">
+                                                                <div id="myCode" class="myCode">
                                                                     <!-- id to call codeBox code with JavaScript -->
-                                                                    <p id="secondaryButtonCode" class="card-text accordion-body" type="text"></p>
+                                                                    <pre id="codeId2" class="card-text accordion-body" type="text"><code>&ltbutton class="pbtn btn-secondary"&gtLabel&lt/button&gt
+
+&ltbutton class="pbtn btn-secondary"&gt
+    &ltspan class="material-icons"&gtarrow_forward&lt/span&gtLabel
+&lt/button&gt
+
+&ltbutton class="pbtn btn-secondary btn-icon"&gt
+    &ltspan class="material-icons"&gtmore_horiz&lt/span&gt
+&lt/button&gt
+
+&ltbutton class="pbtn btn-secondary btn-disabled"&gtLabel&lt/button&gt
+
+&ltbutton class="pbtn btn-secondary btn-disabled"&gt
+    &ltspan class="material-icons"&gtarrow_forward&lt/span&gtLabel
+&lt/button&gt
+
+&ltbutton class="pbtn btn-secondary btn-icon btn-disabled"&gt
+    &ltspan class="material-icons"&gtmore_horiz&lt/span&gt
+&lt/button></code></pre>
                                                                 </div>
                                                                 </div>
                                                             <div class="card-footer accordion-header" id="flush-headingOne">
                                                                 <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
 
-                                                                    <button id="showHideCode" class="closed btn btn-link collapsed" data-lang="en"
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
                                                                     type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" 
                                                                     aria-expanded="false" aria-controls="flush-collapseOne1">Show code
                                                                     </button>
 
                                                                 </div>
-                                                                <div id="copyBtn" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
-                                                                    title="Copy to clipboard" onclick="copyToClipboard(event)">content_copy
+                                                                <div id="copyBtn2" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId2')">content_copy
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -154,20 +187,20 @@
                                                     <div class="accordion accordion-flush" id="accordionFlushExample2">
                                                         <div class="accordion-item">
                                                             <div id="flush-collapseOne2" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample2">
-                                                                <div id="myCode">
+                                                                <div id="myCode" class="myCode">
                                                                     <!-- id to call codeBox code with JavaScript -->
                                                                     <p id="errorButtonCode" class="card-text accordion-body" type="text"></p>
                                                                 </div>
                                                                 </div>
                                                             <div class="card-footer accordion-header" id="flush-headingOne">
                                                                 <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
-                                                                    <button class="btn btn-link collapsed" data-lang="en"
+                                                                    <button class="showHideCode btn btn-link collapsed" data-lang="en"
                                                                     type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2" 
                                                                     aria-expanded="false" aria-controls="flush-collapseOne2">Show code
                                                                     </button>
                                                                 </div>
-                                                                <div id="copyBtn" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
-                                                                    title="Copy to clipboard" onclick="copyToClipboard(event)">content_copy
+                                                                <div id="copyBtn3" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId3')">content_copy
                                                                 </div>
                                                             </div>
                                                         </div>
