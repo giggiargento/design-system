@@ -1,39 +1,39 @@
-#codeBox{
+.codeBox{
     margin-top: 16px;
     margin-bottom: 40px;
 }
 
-#codeBox .card{
+.codeBox .card{
     box-shadow: 0px 0px 10px #EBF0FF;
     border-radius: 8px;
     border: none;
 }
 
-#codeBox .card-header{
+.codeBox .card-header{
     background-color: white;
     align-content: left;
     border-bottom: none;
 }
 
-#codeBox .card-img-top{
+.codeBox .card-img-top{
     position: relative;
     padding-top: 16px;
     padding-bottom: 16px;
     width: 40%;
 }
 
-#codeBox .primaryButton{
+.codeBox .primaryButton{
     display: flex;
 }
 
-#codeBox .card-body{
+.codeBox .card-body{
     background-color: #EBF0FF ;
     border-radius: 8px 8px 0 0;
     color: #696F8C;
     font-size: 14px;
 }
 
-#codeBox .card-footer{
+.codeBox .card-footer{
     border-top: none;
     padding: 0;
     background-color: #F3F6FF;
@@ -42,18 +42,18 @@
     justify-content: center;
 }
 
-#codeBox .btn{
+.codeBox .btn{
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
 }
 
-#codeBox .text-center{
+.codeBox .text-center{
     position: relative;
     justify-content: center;
 }
 
-#codeBox .text-end{
+.codeBox .text-end{
     color: var(--text-color);
     border: 0px solid transparent;
     background-color: transparent;
@@ -64,10 +64,10 @@
     margin-right: 12px;
 }
 
-#codeBox .copyBtn{
+.codeBox .copyBtn{
     font-size: 20px;
 }
 
-#codeBox .card-body{
+.codeBox .card-body{
     padding: 0;
 }

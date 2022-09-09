@@ -345,6 +345,13 @@ $(document).ready(function() {
         $('codeBox').unwrap();
         triggerLoaded($(this));
     })
+
+    // agrega id dinámicamente a cada code box
+    const codeBoxesAmount = $('.codeBox').length;
+    console.log(codeBoxesAmount)
+    for (var i = 0; i <= codeBoxesAmount; i++) {
+        $($('.codeBox')[i]).attr('id', `codeBox${i}`)
+    }
 })
 
 //Panelita components

@@ -23,18 +23,17 @@ function copyToClipboard(codeId) {
 //  document.getElementById('showHideCode').innerText='Hide code';
 //}
 
-const micodigo = document.querySelector(".myCode");
-const button = document.querySelector(".showHideCode");
+const button = document.querySelectorAll(".showHideCode");
 
-button.addEventListener("click", showCode)
+button.forEach(btn => btn.addEventListener("click", showCode))
 
-function showCode(){
-  if (micodigo.className == "closed") {
-    micodigo.className = "";
-    button.textContent = "Show code"
+function showCode() {
+  let btn = event.target
+  btn.classList.toggle('closed');
+  if (btn.classList.contains("closed")) {
+    btn.textContent = "Show code"
   } else {
-    micodigo.className = "closed";
-    button.textContent = "Hide code"
+    btn.textContent = "Hide code"
   }
 }
 
