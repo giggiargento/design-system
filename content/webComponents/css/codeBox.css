@@ -27,8 +27,8 @@
 }
 
 .codeBox .card-body{
-    background-color: #EBF0FF ;
-    border-radius: 8px 8px 0 0;
+    background-color: #EBF0FF !important;
+    border-radius: 8px 8px 0 0 !important;
     color: #696F8C;
     font-size: 14px;
 }

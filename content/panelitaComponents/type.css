@@ -33,10 +33,10 @@
   --h50-line-height: 16px;
 }
 
-body {
+/* body {
   font-family: var(--font-family);
   color: var(--font-color-main)!important;
-}
+}*/
 
 .h600,
 h1 {
