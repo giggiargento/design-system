@@ -7,6 +7,7 @@ $(document).ready(function() {
 //Top Nav
     $('#navLoader').load('../webComponents/topNav.html', function() {
         $('#topNav').unwrap();
+        activateTopNavLink();
         triggerLoaded($(this));
     })
 
@@ -19,26 +20,31 @@ $(document).ready(function() {
 //Side Nav
     $('#sideNavBrand').load('../webComponents/sideNavBrand.html', function() {
         $('sideNav').unwrap();
+        activateSideNavLink();
         triggerLoaded($(this));
     })
 
     $('#sideNavFoundations').load('../webComponents/sideNavFoundations.html', function() {
         $('sideNav').unwrap();
+        activateSideNavLink();
         triggerLoaded($(this));
     })
 
     $('#sideNavComponents').load('../webComponents/sideNavComponents.html', function() {
         $('sideNav').unwrap();
+        activateSideNavLink();
         triggerLoaded($(this));
     })
 
     $('#sideNavPatterns').load('../webComponents/sideNavPatterns.html', function() {
         $('sideNav').unwrap();
+        activateSideNavLink();
         triggerLoaded($(this));
     })
 
     $('#sideNavResources').load('../webComponents/sideNavResources.html', function() {
         $('sideNav').unwrap();
+        activateSideNavLink();
         triggerLoaded($(this));
     })
 

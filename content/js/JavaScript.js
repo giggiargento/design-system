@@ -28,8 +28,22 @@ function showCode() {
   }
 }
 
+// guardo esta lista de páginas de componentes para saber cuándo activar el link components en el top nav
+var componentPages = ['buttons', 'calendar', 'cards', 'checkbox', 'dropdowns', 'forms', 'navigation', 'notifications', 'pagination', 'radio', 'select', 'sidesheet', 'switch', 'table', 'tabs', 'tags', 'tooltip'];
+
+function activateTopNavLink() {
+  $('#topNav a.active').removeClass('active').removeAttr('aria-current');
+  if (componentPages.find(page => location.pathname.includes(page))) {
+      $('.nav-link.components').addClass('active')
+  }
+
+  else {
+    $('#topNav a[href="' + location.pathname + '"]').addClass('active').attr('aria-current', 'page'); 
+  }
+}
+
 //Nav links active
-//$(document).onclick(function() {
-//  $('a.active').removeClass('active').removeAttr('aria-current');
-//  $('a[href="' + location.pathname + '"]').closest('a').addClass('active').attr('aria-current', 'page'); 
-//});
+function activateSideNavLink() {
+  $('.sidenav a.active').removeClass('active').removeAttr('aria-current');
+  $('.sidenav a[href="' + location.pathname + '"]').addClass('active').attr('aria-current', 'page'); 
+}; 
