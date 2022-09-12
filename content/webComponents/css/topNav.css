@@ -9,7 +9,7 @@
   box-shadow: var(--nav-shadow); /*No se visualiza ????*/
 }
 
-#topNav .active {
+#topNav .navbar-nav .nav-item a.active {
   color: var(--default-blue);
 }
 

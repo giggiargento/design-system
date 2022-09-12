@@ -29,7 +29,13 @@ function showCode() {
 }
 
 //Nav links active
+
 //$(document).onclick(function() {
 //  $('a.active').removeClass('active').removeAttr('aria-current');
 //  $('a[href="' + location.pathname + '"]').closest('a').addClass('active').attr('aria-current', 'page'); 
 //});
+
+$( '#topNav .navbar-nav a' ).on( 'click', function () {
+	$( '#topNav .navbar-nav a' ).find( 'a.active' ).removeClass( 'active' );
+	$( this ).addClass( 'active' );
+});
