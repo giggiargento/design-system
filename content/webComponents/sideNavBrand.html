@@ -5,20 +5,14 @@
         <a class="nav-link active" href="/content/pages/mission.html" aria-current="page"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Mission">Mission</a>
 
-        <a class="nav-link active" href="/content/pages/personality.html" aria-current="page"
+        <a class="nav-link" href="/content/pages/personality.html"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Personality">Personality</a>
 
-        <a class="nav-link active" href="/content/pages/promise.html" aria-current="page"
+        <a class="nav-link" href="/content/pages/promise.html"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Promise">Promise</a>
 
-        <a class="nav-link active" href="/content/pages/values.html" aria-current="page"
+        <a class="nav-link" href="/content/pages/values.html"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Values">Values</a>
     </div>   
 </nav>
 
-<script>
-$(document).ready(function() {
-    $('a.active').removeClass('active').removeAttr('aria-current');
-    $('a[href="' + location.pathname + '"]').closest('a').addClass('active').attr('aria-current', 'page'); 
-  });
-</script>
