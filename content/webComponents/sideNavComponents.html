@@ -1,56 +1,64 @@
 <nav id="sideNav" class="nav flex-column nav-pills position-fixed">
     <div>
-        <a class="nav-link disabled titlePage" aria-current="page">Components</a>
-        <a class="nav-link" href="/content/pages/buttons.html"
+        <a class="nav-link disabled titlePage">Components</a>
+
+        <a class="nav-link active" href="/content/pages/buttons.html" aria-current="page"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Buttons">Buttons</a>
 
-        <a class="nav-link" href="#"
+        <a class="nav-link active" href="/content/pages/Calendar.html" aria-current="page"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Calendar">Calendar</a>
 
-        <a class="nav-link active" href="#"
+        <a class="nav-link active" href="/content/pages/Cards.html" aria-current="page"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Cards">Cards</a>
 
-        <a class="nav-link" href="#"
+        <a class="nav-link active" href="/content/pages/checkbox.html" aria-current="page"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Checkbox">Checkbox</a>
 
-        <a class="nav-link" href="#"
+        <a class="nav-link active" href="/content/pages/dropdowns.html" aria-current="page"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Dropdowns">Dropdowns</a>
 
-        <a class="nav-link" href="#"
+        <a class="nav-link active" href="/content/pages/forms.html" aria-current="page"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Forms">Forms</a>
 
-        <a class="nav-link" href="#"
+        <a class="nav-link active" href="/content/pages/navigation.html" aria-current="page"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Navigation">Navigation</a>
 
-        <a class="nav-link" href="#"
+        <a class="nav-link active" href="/content/pages/notifications.html" aria-current="page"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Notifications">Notifications</a>
 
-        <a class="nav-link" href="#"
+        <a class="nav-link active" href="/content/pages/pagination.html" aria-current="page"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Pagination">Pagination</a>
 
-        <a class="nav-link" href="#"
+        <a class="nav-link active" href="/content/pages/radio.html" aria-current="page"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Radio">Radio</a>
 
-        <a class="nav-link" href="#"
+        <a class="nav-link active" href="/content/pages/select.html" aria-current="page"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Select">Select</a>
 
-        <a class="nav-link" href="#"
+        <a class="nav-link active" href="/content/pages/sidesheet.html" aria-current="page"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Sidesheet">Sidesheet</a>
 
-        <a class="nav-link" href="#"
+        <a class="nav-link active" href="/content/pages/switch.html" aria-current="page"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Switch">Switch</a>
 
-        <a class="nav-link" href="#"
+        <a class="nav-link active" href="/content/pages/table.html" aria-current="page"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Table">Table</a>
 
-        <a class="nav-link" href="#"
+        <a class="nav-link active" href="/content/pages/tabs.html" aria-current="page"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Tabs">Tabs</a>
 
-        <a class="nav-link" href="#"
+        <a class="nav-link active" href="/content/pages/tags.html" aria-current="page"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Tags">Tags</a>
 
-        <a class="nav-link" href="#"
+        <a class="nav-link active" href="/content/pages/tooltip.html" aria-current="page"
         type="submit" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip">Tooltip</a>
 
     </div>   
 </nav>
+
+<script>
+    $(document).ready(function() {
+        $('a.active').removeClass('active').removeAttr('aria-current');
+        $('a[href="' + location.pathname + '"]').closest('a').addClass('active').attr('aria-current', 'page'); 
+      });
+</script>
