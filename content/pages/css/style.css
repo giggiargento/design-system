@@ -109,7 +109,7 @@ div.mainLayout {
 
 /*Establecemos alto y padding de la pagina*/
 main {
-    height: 1920px;
+    height: 100%;
     padding-top: 10px;
 }
 
@@ -316,10 +316,14 @@ div#imgSection{
     border-radius: 10px;
     margin-top: 16px;
     margin-bottom: 32px;
+    max-width: 100%;
 }
 
 #pageContent img{
+    max-height: 100%;
+    max-width: 80%;
     padding-right: 32px;
+    padding-left: 32px;
 }
 
 

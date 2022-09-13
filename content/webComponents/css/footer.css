@@ -6,6 +6,7 @@ div.footer {
     height: 40px;
     place-content: center;
     display: flex;
+    margin-top: 200px;
 }
 
 .footerText{
