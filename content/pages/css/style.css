@@ -480,7 +480,7 @@ div#imgSection{
     display: flex;
     justify-content: center;
     background-color: var(--color-n100);
-    width: 60px;
+    width: 68px;
     height: 24px;
     border-radius: 4px;
     margin-right: 8px;
@@ -496,26 +496,32 @@ div#imgSection{
 }
 
 #colorSquares{
-    width: 100%;
-    height: 80px;
-    margin-bottom: 32px;
+    height: 100%;
+    margin-top: 16px;
+}
+
+#colorSquares .col{
+    margin-bottom: 5%;
 }
 
 #colorSquares .colorExtendedPalette{
     display: flex;
-    height: 80px;
+    min-height: 80px;
+    height: auto;
+    width: 100%;
 }
 
 #colorSquares .colorSquare{
     width: 80px;
     height: 80px;
+    position: absolute;
     border-radius: 4px;
 }
 
 #colorSquares .colorInfo{
     display: grid;
     justify-content: left;
-    margin-left: 24px;
+    margin-left: 96px;
 }
 
 #colorSquares .card-text{
@@ -526,14 +532,14 @@ div#imgSection{
 #colorSquares .card-text-code{
     font-size: 14px;
     color: var(--text-color);
-    margin-bottom: 0px;
+    margin-bottom: 4px;
 }
 
 #colorSquares .backgroundHex{
     display: flex;
     justify-content: center;
     background-color: var(--color-n100);
-    width: 60px;
+    width: 68px;
     height: 24px;
     border-radius: 4px;
     margin-right: 8px;
@@ -546,6 +552,222 @@ div#imgSection{
 
 #colorSquares .colorSquare.n900{
     background-color: var(--color-n900);
+}
+
+#colorSquares .colorSquare.n800{
+    background-color: var(--color-n800);
+}
+
+#colorSquares .colorSquare.n700{
+    background-color: var(--color-n700);
+}
+
+#colorSquares .colorSquare.n600{
+    background-color: var(--color-n600);
+}
+
+#colorSquares .colorSquare.n500{
+    background-color: var(--color-n500);
+}
+
+#colorSquares .colorSquare.n400{
+    background-color: var(--color-n400);
+}
+
+#colorSquares .colorSquare.n300{
+    background-color: var(--color-n300);
+}
+
+#colorSquares .colorSquare.n200{
+    background-color: var(--color-n200);
+}
+
+#colorSquares .colorSquare.n100{
+    background-color: var(--color-n100);
+}
+
+#colorSquares .colorSquare.n75{
+    background-color: var(--color-n75);
+}
+
+#colorSquares .colorSquare.n50{
+    background-color: var(--color-n50);
+}
+
+#colorSquares .colorSquare.n0{
+    background-color: var(--color-n0);
+}
+
+#colorSquares .colorSquare.b600{
+    background-color: var(--color-b600);
+}
+
+#colorSquares .colorSquare.b500{
+    background-color: var(--color-b500);
+}
+
+#colorSquares .colorSquare.b400{
+    background-color: var(--color-b400);
+}
+
+#colorSquares .colorSquare.b300{
+    background-color: var(--color-b300);
+}
+
+#colorSquares .colorSquare.b200{
+    background-color: var(--color-b200);
+}
+
+#colorSquares .colorSquare.b100{
+    background-color: var(--color-b100);
+}
+
+#colorSquares .colorSquare.b50{
+    background-color: var(--color-b50);
+}
+
+#colorSquares .colorSquare.g600{
+    background-color: var(--color-g600);
+}
+
+#colorSquares .colorSquare.g500{
+    background-color: var(--color-g500);
+}
+
+#colorSquares .colorSquare.g400{
+    background-color: var(--color-g400);
+}
+
+#colorSquares .colorSquare.g300{
+    background-color: var(--color-g300);
+}
+
+#colorSquares .colorSquare.g200{
+    background-color: var(--color-g200);
+}
+
+#colorSquares .colorSquare.g100{
+    background-color: var(--color-g100);
+}
+
+#colorSquares .colorSquare.g50{
+    background-color: var(--color-g50);
+}
+
+#colorSquares .colorSquare.y600{
+    background-color: var(--color-y600);
+}
+
+#colorSquares .colorSquare.y500{
+    background-color: var(--color-y500);
+}
+
+#colorSquares .colorSquare.y400{
+    background-color: var(--color-y400);
+}
+
+#colorSquares .colorSquare.y300{
+    background-color: var(--color-y300);
+}
+
+#colorSquares .colorSquare.y200{
+    background-color: var(--color-y200);
+}
+
+#colorSquares .colorSquare.y100{
+    background-color: var(--color-y100);
+}
+
+#colorSquares .colorSquare.y50{
+    background-color: var(--color-y50);
+}
+
+#colorSquares .colorSquare.r600{
+    background-color: var(--color-r600);
+}
+
+#colorSquares .colorSquare.r500{
+    background-color: var(--color-r500);
+}
+
+#colorSquares .colorSquare.r400{
+    background-color: var(--color-r400);
+}
+
+#colorSquares .colorSquare.r300{
+    background-color: var(--color-r300);
+}
+
+#colorSquares .colorSquare.r200{
+    background-color: var(--color-r200);
+}
+
+#colorSquares .colorSquare.r100{
+    background-color: var(--color-r100);
+}
+
+#colorSquares .colorSquare.r50{
+    background-color: var(--color-r50);
+}
+
+#colorSquares .colorSquare.t600{
+    background-color: var(--color-t600);
+}
+
+#colorSquares .colorSquare.t500{
+    background-color: var(--color-t500);
+}
+
+#colorSquares .colorSquare.t600{
+    background-color: var(--color-t600);
+}
+
+#colorSquares .colorSquare.t400{
+    background-color: var(--color-t400);
+}
+
+#colorSquares .colorSquare.t300{
+    background-color: var(--color-t300);
+}
+
+#colorSquares .colorSquare.t200{
+    background-color: var(--color-t200);
+}
+
+#colorSquares .colorSquare.t100{
+    background-color: var(--color-t100);
+}
+
+#colorSquares .colorSquare.t50{
+    background-color: var(--color-t50);
+}
+
+#colorSquares .colorSquare.v600{
+    background-color: var(--color-v600);
+}
+
+#colorSquares .colorSquare.v500{
+    background-color: var(--color-v500);
+}
+
+#colorSquares .colorSquare.v400{
+    background-color: var(--color-v400);
+}
+
+#colorSquares .colorSquare.v300{
+    background-color: var(--color-v300);
+}
+
+#colorSquares .colorSquare.v200{
+    background-color: var(--color-v200);
+}
+
+#colorSquares .colorSquare.v100{
+    background-color: var(--color-v100);
+}
+
+#colorSquares .colorSquare.v50{
+    background-color: var(--color-v50);
 }
 
 /* end colors */
