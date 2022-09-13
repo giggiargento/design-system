@@ -363,10 +363,14 @@ div#imgSection{
 #pageContent .titleLine{
     display: flex;
     align-items: baseline;
+    width: 100%;
+}
+#pageContent .textTitle{
+    margin-right: 12px;
 }
 
 #pageContent .line{
-    margin-left: 12px;
+    align-self: flex-end;
     width: 100%;
     height: 2px;
     background-color: var(--text-color);
@@ -399,4 +403,149 @@ div#imgSection{
 /* end typography */
 
 /* Colors */
+/* Colors Cards */
+#colorCard{
+    width: 150px;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #EBF0FF;
+    margin: 32px;
+    padding: 0;
+}
+
+#colorCard .card-img-top{
+    height: 75px;
+    width: 100%;
+}
+
+#colorCard .card-img-top.blue{
+    background-color: var(--color-b400);
+}
+
+#colorCard .card-img-top.neutral{
+    background-color: var(--color-n800);
+}
+
+#colorCard .card-img-top.white{
+    background-color: var(--color-n0);
+}
+
+#colorCard .card-img-top.green{
+    background-color: var(--color-g400);
+}
+
+#colorCard .card-img-top.yellow{
+    background-color: var(--color-y400);
+}
+
+#colorCard .card-img-top.red{
+    background-color: var(--color-r400);
+}
+
+#colorCard .card-text.color{
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+    list-style: none;
+    margin-left: 8px;
+}
+
+#colorCard .card-body-text{
+    display: flex;
+    height: auto;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 2px;
+    margin-top: 6px;
+}
+
+#colorCard .card-body-code{
+    display: flex;
+    height: auto;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+#colorCard .card-text-code{
+    font-size: 14px;
+    color: var(--text-color);
+    text-decoration: none;
+    list-style: none;
+    margin-left: 8px;
+}
+
+#colorCard .backgroundHex{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-n100);
+    width: 60px;
+    height: 24px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+
+#colorCard .card-text-hex{
+    font-size: 14px;
+    color: var(--text-color);
+    text-decoration: none;
+    list-style: none;
+
+}
+
+#colorSquares{
+    width: 100%;
+    height: 80px;
+    margin-bottom: 32px;
+}
+
+#colorSquares .colorExtendedPalette{
+    display: flex;
+    height: 80px;
+}
+
+#colorSquares .colorSquare{
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+}
+
+#colorSquares .colorInfo{
+    display: grid;
+    justify-content: left;
+    margin-left: 24px;
+}
+
+#colorSquares .card-text{
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+#colorSquares .card-text-code{
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 0px;
+}
+
+#colorSquares .backgroundHex{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-n100);
+    width: 60px;
+    height: 24px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+#colorSquares .card-text-hex{
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+#colorSquares .colorSquare.n900{
+    background-color: var(--color-n900);
+}
+
 /* end colors */
