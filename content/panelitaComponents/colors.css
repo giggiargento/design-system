@@ -1,8 +1,5 @@
  :root,
 :before {
-  /* 30/9/2021 */
-  /* nomenclatura de colores: de 900 (m�s oscuro) a 50 (m�s claro) */
-  /* NEUTRALES (grises) */
   --color-n900: #101840;
   --color-n800: #474D66;
   --color-n700: #696F8C;
@@ -16,7 +13,6 @@
   --color-n50: #FAFBFF;
   --color-n0: #FFFFFF;
 
-  /* AZUL */
   --color-b600: #1F3D99;
   --color-b500: #2952CC;
   --color-b400: #3366FF;
@@ -25,7 +21,6 @@
   --color-b100: #EBF0FF;
   --color-b50: #F3F6FF;
 
-  /* VERDE */
   --color-g600: #317159;
   --color-g500: #429777;
   --color-g400: #52BD94;
@@ -34,7 +29,6 @@
   --color-g100: #EEF8F4;
   --color-g50: #F5FBF8;
 
-  /* AMARILLO */
   --color-y600: #FF8B00;
   --color-y500: #FF991F;
   --color-y400: #FFAB00;
@@ -43,7 +37,6 @@
   --color-y100: #FFF0B3;
   --color-y50: #FFFAE6;
 
-  /* ROJO */
   --color-r700: #7D2828;
   --color-r600: #BF2600;
   --color-r500: #DE350B;
@@ -53,7 +46,6 @@
   --color-r100: #FFBDAD;
   --color-r50: #FFEBE6;
 
-  /* TEAL (turquesa?) */
   --color-t600: #0F5156;
   --color-t500: #10899E;
   --color-t400: #25CBD6;
@@ -62,7 +54,6 @@
   --color-t100: #D3F5F7;
   --color-t50: #F2FCFD;
 
-  /* VIOLETA */
   --color-v600: #524988;
   --color-v500: #6E62B6;
   --color-v400: #897AE3;
@@ -70,7 +61,6 @@
   --color-v200: #D0CAF4;
   --color-v100: #E7E4F9;
   --color-v50: #F8F7FD;
-
 
   --color-bukeala-blue: var(--color-b400);
   --color-bukeala-neutral: var(--color-n800);
@@ -116,8 +106,7 @@
   --color-alert-red-bg: #FFEBE6;
   --color-alert-yellow-bg: #FFFAE6;
 
-  /* filtros para convertir el color de los �conos a otros colores cuando est�n como background-image (por ejemplo si quiero que el �cono sea azul en :hover)  */
-  --filter-white: brightness(0) invert(1);
+  /* --filter-white: brightness(0) invert(1);
   --filter-n700: brightness(0) saturate(100%) invert(43%) sepia(12%) saturate(819%) hue-rotate(192deg) brightness(96%) contrast(87%);
   --filter-b400: brightness(0) saturate(100%) invert(29%) sepia(75%) saturate(2515%) hue-rotate(219deg) brightness(102%) contrast(102%);
   --filter-b500: brightness(0) saturate(100%) invert(30%) sepia(32%) saturate(5219%) hue-rotate(219deg) brightness(81%) contrast(96%);
@@ -125,7 +114,5 @@
   --filter-r600: brightness(0) saturate(100%) invert(20%) sepia(51%) saturate(3651%) hue-rotate(3deg) brightness(101%) contrast(112%);
   --filter-r500: brightness(0) saturate(100%) invert(28%) sepia(75%) saturate(7090%) hue-rotate(13deg) brightness(99%) contrast(91%);
   --filter-y400: brightness(0) saturate(100%) invert(74%) sepia(60%) saturate(3441%) hue-rotate(359deg) brightness(103%) contrast(106%);
-  --filter-g400: brightness(0) saturate(100%) invert(71%) sepia(5%) saturate(4522%) hue-rotate(105deg) brightness(98%) contrast(70%);
-
-  --filter-celesturquesa: brightness(0) saturate(100%) invert(46%) sepia(50%) saturate(4634%) hue-rotate(168deg) brightness(94%) contrast(102%);
+  --filter-g400: brightness(0) saturate(100%) invert(71%) sepia(5%) saturate(4522%) hue-rotate(105deg) brightness(98%) contrast(70%); */
 }
