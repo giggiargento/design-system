@@ -93,6 +93,7 @@
 
 html {
     font-family: 'Open Sans';
+    width: 100%;
 
 }
 body#homeBody {
@@ -281,11 +282,11 @@ div#imgSection{
 #pageContent .pageNav{
     margin-bottom: 40px;
 }
+
 #pageContent .text{
     font-family: 'Open Sans';
     font-size: 14px;
     color: var(--subtext-color);
-
 }
 
 #pageContent .textLink{
@@ -305,6 +306,51 @@ div#imgSection{
 #pageContent .text li{
     margin-left: 12px;
 }
+
+/* Typography */
+
+#pageContent pre{
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+
+#pageContent .titleLine{
+    display: flex;
+    align-items: baseline;
+}
+
+#pageContent .line{
+    margin-left: 12px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color);
+}
+
+#pageContent .textTable{
+    display: flex;
+}
+
+#pageContent .left{
+    vertical-align: top;
+    margin-right: 10em;
+}
+
+#pageContent .right{
+    vertical-align: top;
+}
+
+
+#pageContent .typoSamples{
+    margin-top: 40px;
+}
+
+#pageContent .sample{
+    font-family: 'Open Sans';
+    color: var(--subtext-color);
+    margin-bottom: 24px;
+}
+
+/* end typography */
 
 #pageContent .imgContent{
     display: flex;
