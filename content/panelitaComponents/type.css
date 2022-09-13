@@ -33,10 +33,10 @@
   --h50-line-height: 16px;
 }
 
-/* body {
+body {
   font-family: var(--font-family);
-  color: var(--font-color-main)!important;
-}*/
+  color: var(--font-color-main);
+}
 
 .h600,
 h1 {
@@ -102,4 +102,9 @@ h1 {
 
 .bold {
   font-weight: 700;
+}
+
+.form-field > label {
+  font-size: var(--h100-size);
+  line-height: var(--h100-line-height);
 }
