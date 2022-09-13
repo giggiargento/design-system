@@ -7,6 +7,9 @@
 @import url('/content/webComponents/css/mainCards.css');
 @import url('/content/webComponents/css/codeBox.css');
 @import url('/content/webComponents/css/downloadCards.css');
+/* Panelita Components*/
+@import url('/content/panelitaComponents/type.css');
+@import url('/content/panelitaComponents/colors.css');
 
 
 /* DEP */
@@ -307,6 +310,49 @@ div#imgSection{
     margin-left: 12px;
 }
 
+#pageContent .imgContent{
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--white-blue);
+    padding: 16px;
+    background: white;
+    background-clip: content-box;
+    border-radius: 10px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    max-width: 100%;
+}
+
+#pageContent img{
+    max-height: 100%;
+    max-width: 80%;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+
+#pageContent .numberDotContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+#pageContent .imgExplanation{
+    display: grid;
+    gap: 16px;
+}
+
+#pageContent .numberDot{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: var(--structure-color);
+    border-radius: 100px;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
 /* Typography */
 
 #pageContent pre{
@@ -352,45 +398,9 @@ div#imgSection{
 
 /* end typography */
 
-#pageContent .imgContent{
-    display: flex;
-    justify-content: center;
-    border: 2px solid var(--white-blue);
-    padding: 16px;
-    background: white;
-    background-clip: content-box;
-    border-radius: 10px;
-    margin-top: 16px;
-    margin-bottom: 32px;
-    max-width: 100%;
-}
-
-#pageContent img{
-    max-height: 100%;
-    max-width: 80%;
-    padding-right: 32px;
-    padding-left: 32px;
-}
+/* Colors */
 
 
-#pageContent .numberDotContainer{
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-}
 
-#pageContent .imgExplanation{
-    display: grid;
-    gap: 16px;
-}
 
-#pageContent .numberDot{
-    display: flex;
-    justify-content: center;
-    color: white;
-    background-color: var(--structure-color);
-    border-radius: 100px;
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
-}
+/* end colors */
