@@ -8,7 +8,6 @@
 @import url('/content/webComponents/css/codeBox.css');
 @import url('/content/webComponents/css/downloadCards.css');
 /* Panelita Components*/
-@import url('/content/panelitaComponents/type.css');
 @import url('/content/panelitaComponents/colors.css');
 
 
@@ -95,7 +94,6 @@
 }
 
 html {
-    font-family: 'Open Sans';
     width: 100%;
 
 }
@@ -330,19 +328,18 @@ div#imgSection{
     padding-left: 32px;
 }
 
-
-#pageContent .numberDotContainer{
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-}
-
-#pageContent .imgExplanation{
+/* Number dots */
+.imgExplanation{
     display: grid;
     gap: 16px;
 }
 
-#pageContent .numberDot{
+.numberDotContainer{
+    display: flex;
+    align-items: baseline;
+}
+
+.numberDot{
     display: flex;
     justify-content: center;
     color: white;
