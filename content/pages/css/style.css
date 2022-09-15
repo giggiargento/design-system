@@ -7,6 +7,9 @@
 @import url('/content/webComponents/css/mainCards.css');
 @import url('/content/webComponents/css/codeBox.css');
 @import url('/content/webComponents/css/downloadCards.css');
+@import url('/content/webComponents/css/usageCards.css');
+/* Panelita Components*/
+@import url('/content/panelitaComponents/colors.css');
 
 
 /* DEP */
@@ -92,10 +95,9 @@
 }
 
 html {
-    font-family: 'Open Sans';
     width: 100%;
-
 }
+
 body#homeBody {
     width: 100%;
     background-image: url("/content/assets/homeBackground.svg");
@@ -111,6 +113,7 @@ div.mainLayout {
 /*Establecemos alto y padding de la pagina*/
 main {
     height: 100%;
+    min-height: 1080px;
     padding-top: 10px;
 }
 
@@ -122,6 +125,18 @@ a:link, a:visited, a:active {
 
 ul{
     list-style: none;
+}
+
+.outside{
+    list-style-type: disc;
+    list-style-position: outside;
+
+}
+
+/* Web buttons */
+#getStartedBtn{
+    height: 36px !important;
+    font-size: 14px !important;
 }
 
 /*------------------ Home ------------------*/
@@ -274,7 +289,7 @@ div#imgSection{
 #pageHeader .description{
     font-family: 'Open Sans';
     font-size: 16px;
-    color: var(--subtext-color);
+    color: var(--text-color);
     margin-top: 24px;
     margin-bottom: 40px;
 }
@@ -298,13 +313,55 @@ div#imgSection{
     font-family: 'Open Sans';
     font-size: 14px;
     font-weight: 600;
-    color: var(--subtext-color);
+    color: var(--text-color);
     margin-top: 40px;
     margin-bottom: 16px;
 }
 
 #pageContent .text li{
     margin-left: 12px;
+}
+
+#pageContent .imgContent{
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--white-blue);
+    padding: 16px;
+    background: white;
+    background-clip: content-box;
+    border-radius: 10px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    max-width: 100%;
+}
+
+#pageContent img{
+    max-height: 100%;
+    max-width: 80%;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+/* Number dots */
+.imgExplanation{
+    display: grid;
+    gap: 16px;
+}
+
+.numberDotContainer{
+    display: flex;
+    align-items: baseline;
+}
+
+.numberDot{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: var(--structure-color);
+    border-radius: 100px;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
 }
 
 /* Typography */
@@ -317,10 +374,14 @@ div#imgSection{
 #pageContent .titleLine{
     display: flex;
     align-items: baseline;
+    width: 100%;
+}
+#pageContent .textTitle{
+    margin-right: 12px;
 }
 
 #pageContent .line{
-    margin-left: 12px;
+    align-self: flex-end;
     width: 100%;
     height: 2px;
     background-color: var(--text-color);
@@ -352,45 +413,380 @@ div#imgSection{
 
 /* end typography */
 
-#pageContent .imgContent{
-    display: flex;
-    justify-content: center;
-    border: 2px solid var(--white-blue);
-    padding: 16px;
-    background: white;
-    background-clip: content-box;
+/* Colors */
+/* Colors Cards */
+#colorCard{
+    width: 150px;
+    border: none;
+    background-color: white;
     border-radius: 10px;
-    margin-top: 16px;
-    margin-bottom: 32px;
-    max-width: 100%;
+    box-shadow: 0px 0px 10px #EBF0FF;
+    margin: 32px;
+    padding: 0;
 }
 
-#pageContent img{
-    max-height: 100%;
-    max-width: 80%;
-    padding-right: 32px;
-    padding-left: 32px;
+#colorCard .card-img-top{
+    height: 75px;
+    width: 100%;
 }
 
+#colorCard .card-img-top.blue{
+    background-color: var(--color-b400);
+}
 
-#pageContent .numberDotContainer{
+#colorCard .card-img-top.neutral{
+    background-color: var(--color-n800);
+}
+
+#colorCard .card-img-top.white{
+    background-color: var(--color-n0);
+}
+
+#colorCard .card-img-top.green{
+    background-color: var(--color-g400);
+}
+
+#colorCard .card-img-top.yellow{
+    background-color: var(--color-y400);
+}
+
+#colorCard .card-img-top.red{
+    background-color: var(--color-r400);
+}
+
+#colorCard .card-text.color{
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+    list-style: none;
+    margin-left: 8px;
+}
+
+#colorCard .card-body-text{
     display: flex;
-    justify-content: flex-start;
+    height: auto;
     align-items: baseline;
+    justify-content: space-between;
+    padding: 2px;
+    margin-top: 6px;
 }
 
-#pageContent .imgExplanation{
-    display: grid;
-    gap: 16px;
+#colorCard .card-body-code{
+    display: flex;
+    height: auto;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 2px;
 }
 
-#pageContent .numberDot{
+#colorCard .card-text-code{
+    font-size: 14px;
+    color: var(--text-color);
+    text-decoration: none;
+    list-style: none;
+    margin-left: 8px;
+}
+
+#colorCard .backgroundHex{
     display: flex;
     justify-content: center;
-    color: white;
-    background-color: var(--structure-color);
-    border-radius: 100px;
-    width: 24px;
+    background-color: var(--color-n100);
+    width: 68px;
     height: 24px;
+    border-radius: 4px;
     margin-right: 8px;
+}
+
+
+#colorCard .card-text-hex{
+    font-size: 14px;
+    color: var(--text-color);
+    text-decoration: none;
+    list-style: none;
+
+}
+
+#colorSquares{
+    height: 100%;
+    margin-top: 16px;
+}
+
+#colorSquares .col{
+    margin-bottom: 5%;
+}
+
+#colorSquares .colorExtendedPalette{
+    display: flex;
+    min-height: 80px;
+    height: auto;
+    width: 100%;
+}
+
+#colorSquares .colorSquare{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-radius: 4px;
+}
+
+#colorSquares .colorInfo{
+    display: grid;
+    justify-content: left;
+    margin-left: 96px;
+}
+
+#colorSquares .card-text{
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+#colorSquares .card-text-code{
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 4px;
+}
+
+#colorSquares .backgroundHex{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-n100);
+    width: 68px;
+    height: 24px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+#colorSquares .card-text-hex{
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+#colorSquares .colorSquare.n900{
+    background-color: var(--color-n900);
+}
+
+#colorSquares .colorSquare.n800{
+    background-color: var(--color-n800);
+}
+
+#colorSquares .colorSquare.n700{
+    background-color: var(--color-n700);
+}
+
+#colorSquares .colorSquare.n600{
+    background-color: var(--color-n600);
+}
+
+#colorSquares .colorSquare.n500{
+    background-color: var(--color-n500);
+}
+
+#colorSquares .colorSquare.n400{
+    background-color: var(--color-n400);
+}
+
+#colorSquares .colorSquare.n300{
+    background-color: var(--color-n300);
+}
+
+#colorSquares .colorSquare.n200{
+    background-color: var(--color-n200);
+}
+
+#colorSquares .colorSquare.n100{
+    background-color: var(--color-n100);
+}
+
+#colorSquares .colorSquare.n75{
+    background-color: var(--color-n75);
+}
+
+#colorSquares .colorSquare.n50{
+    background-color: var(--color-n50);
+}
+
+#colorSquares .colorSquare.n0{
+    background-color: var(--color-n0);
+}
+
+#colorSquares .colorSquare.b600{
+    background-color: var(--color-b600);
+}
+
+#colorSquares .colorSquare.b500{
+    background-color: var(--color-b500);
+}
+
+#colorSquares .colorSquare.b400{
+    background-color: var(--color-b400);
+}
+
+#colorSquares .colorSquare.b300{
+    background-color: var(--color-b300);
+}
+
+#colorSquares .colorSquare.b200{
+    background-color: var(--color-b200);
+}
+
+#colorSquares .colorSquare.b100{
+    background-color: var(--color-b100);
+}
+
+#colorSquares .colorSquare.b50{
+    background-color: var(--color-b50);
+}
+
+#colorSquares .colorSquare.g600{
+    background-color: var(--color-g600);
+}
+
+#colorSquares .colorSquare.g500{
+    background-color: var(--color-g500);
+}
+
+#colorSquares .colorSquare.g400{
+    background-color: var(--color-g400);
+}
+
+#colorSquares .colorSquare.g300{
+    background-color: var(--color-g300);
+}
+
+#colorSquares .colorSquare.g200{
+    background-color: var(--color-g200);
+}
+
+#colorSquares .colorSquare.g100{
+    background-color: var(--color-g100);
+}
+
+#colorSquares .colorSquare.g50{
+    background-color: var(--color-g50);
+}
+
+#colorSquares .colorSquare.y600{
+    background-color: var(--color-y600);
+}
+
+#colorSquares .colorSquare.y500{
+    background-color: var(--color-y500);
+}
+
+#colorSquares .colorSquare.y400{
+    background-color: var(--color-y400);
+}
+
+#colorSquares .colorSquare.y300{
+    background-color: var(--color-y300);
+}
+
+#colorSquares .colorSquare.y200{
+    background-color: var(--color-y200);
+}
+
+#colorSquares .colorSquare.y100{
+    background-color: var(--color-y100);
+}
+
+#colorSquares .colorSquare.y50{
+    background-color: var(--color-y50);
+}
+
+#colorSquares .colorSquare.r600{
+    background-color: var(--color-r600);
+}
+
+#colorSquares .colorSquare.r500{
+    background-color: var(--color-r500);
+}
+
+#colorSquares .colorSquare.r400{
+    background-color: var(--color-r400);
+}
+
+#colorSquares .colorSquare.r300{
+    background-color: var(--color-r300);
+}
+
+#colorSquares .colorSquare.r200{
+    background-color: var(--color-r200);
+}
+
+#colorSquares .colorSquare.r100{
+    background-color: var(--color-r100);
+}
+
+#colorSquares .colorSquare.r50{
+    background-color: var(--color-r50);
+}
+
+#colorSquares .colorSquare.t600{
+    background-color: var(--color-t600);
+}
+
+#colorSquares .colorSquare.t500{
+    background-color: var(--color-t500);
+}
+
+#colorSquares .colorSquare.t600{
+    background-color: var(--color-t600);
+}
+
+#colorSquares .colorSquare.t400{
+    background-color: var(--color-t400);
+}
+
+#colorSquares .colorSquare.t300{
+    background-color: var(--color-t300);
+}
+
+#colorSquares .colorSquare.t200{
+    background-color: var(--color-t200);
+}
+
+#colorSquares .colorSquare.t100{
+    background-color: var(--color-t100);
+}
+
+#colorSquares .colorSquare.t50{
+    background-color: var(--color-t50);
+}
+
+#colorSquares .colorSquare.v600{
+    background-color: var(--color-v600);
+}
+
+#colorSquares .colorSquare.v500{
+    background-color: var(--color-v500);
+}
+
+#colorSquares .colorSquare.v400{
+    background-color: var(--color-v400);
+}
+
+#colorSquares .colorSquare.v300{
+    background-color: var(--color-v300);
+}
+
+#colorSquares .colorSquare.v200{
+    background-color: var(--color-v200);
+}
+
+#colorSquares .colorSquare.v100{
+    background-color: var(--color-v100);
+}
+
+#colorSquares .colorSquare.v50{
+    background-color: var(--color-v50);
+}
+
+/* end colors */
+
+
+/* Components */
+
+/* Buttons */
+.pbtn{
+    margin-right: 12px;
 }
