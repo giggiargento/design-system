@@ -34,9 +34,9 @@ var brandPages = ['mission', 'personality', 'promise', 'values'];
 //Foundations
 var foundationsPages = ['grid', 'icons', 'typography', 'colors', 'illustrations'];
 //Components
-var componentsPages = ['buttons', 'calendar', 'cards', 'checkbox', 'dropdowns', 'forms', 'navigation', 'notifications', 'pagination', 'radio', 'select', 'sidesheet', 'switch', 'table', 'tabs', 'tags', 'tooltip'];
+var componentsPages = ['buttons', 'calendar', 'cards', 'checkbox', 'dropdowns', 'componentsForms', 'navigation', 'notifications', 'pagination', 'radio', 'select', 'sidesheet', 'switch', 'table', 'tabs', 'tags', 'tooltip'];
 //Patterns
-var patternsPages = ['emptyStates', 'forms', 'messages'];
+var patternsPages = ['emptyStates', 'patternsForms', 'messages'];
 //Resources
 var resourcesPages = ['introduction', 'download', 'versions'];
 
