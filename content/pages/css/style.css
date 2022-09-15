@@ -769,3 +769,10 @@ div#imgSection{
 }
 
 /* end colors */
+
+
+/* Components */
+
+.pbtn{
+    margin-right: 12px;
+}
