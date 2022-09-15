@@ -7,6 +7,7 @@
 @import url('/content/webComponents/css/mainCards.css');
 @import url('/content/webComponents/css/codeBox.css');
 @import url('/content/webComponents/css/downloadCards.css');
+@import url('/content/webComponents/css/usageCards.css');
 /* Panelita Components*/
 @import url('/content/panelitaComponents/colors.css');
 
@@ -124,6 +125,12 @@ a:link, a:visited, a:active {
 
 ul{
     list-style: none;
+}
+
+.outside{
+    list-style-type: disc;
+    list-style-position: outside;
+
 }
 
 /* Web buttons */
@@ -282,7 +289,7 @@ div#imgSection{
 #pageHeader .description{
     font-family: 'Open Sans';
     font-size: 16px;
-    color: var(--subtext-color);
+    color: var(--text-color);
     margin-top: 24px;
     margin-bottom: 40px;
 }
@@ -306,7 +313,7 @@ div#imgSection{
     font-family: 'Open Sans';
     font-size: 14px;
     font-weight: 600;
-    color: var(--subtext-color);
+    color: var(--text-color);
     margin-top: 40px;
     margin-bottom: 16px;
 }
