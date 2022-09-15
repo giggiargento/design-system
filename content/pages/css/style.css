@@ -95,8 +95,8 @@
 
 html {
     width: 100%;
-
 }
+
 body#homeBody {
     width: 100%;
     background-image: url("/content/assets/homeBackground.svg");
@@ -112,6 +112,7 @@ div.mainLayout {
 /*Establecemos alto y padding de la pagina*/
 main {
     height: 100%;
+    min-height: 1080px;
     padding-top: 10px;
 }
 
