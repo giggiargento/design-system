@@ -383,6 +383,12 @@ $(document).ready(function() {
         triggerLoaded($(this));
     })
 
+    //Radio
+    $('#radioLoader').load('../panelitaComponents/radio.html', function() {
+        $('radio').unwrap();
+        triggerLoaded($(this));
+    })
+
 
 
 var loaderTotal

@@ -804,3 +804,11 @@ div#imgSection{
     flex-direction: column;
     gap: 12px;
 }
+
+/* Radio */
+#radioLoader{
+    line-height: 1.15;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
