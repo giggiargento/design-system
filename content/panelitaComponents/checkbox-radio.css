@@ -28,6 +28,10 @@
   --checkbox-check-color-disabled: var(--color-n500);
 }
 
+body {
+  font-family: 'Open Sans';
+}
+
 input[type=radio],
 input[type=checkbox] {
   -webkit-appearance: none;

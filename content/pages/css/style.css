@@ -10,6 +10,7 @@
 @import url('/content/webComponents/css/usageCards.css');
 /* Panelita Components*/
 @import url('/content/panelitaComponents/colors.css');
+@import url('/content/panelitaComponents/checkbox-radio.css');
 
 
 /* DEP */
@@ -89,13 +90,18 @@
 /*------------------ Paragraph styles ------------------*/
 :root{
     --page-font:'Open Sans';
-    --page-size: 14px;
+    --page-size: 16px;
     --page-title-weight: 600;
     --page-links-color: var(--default-blue); 
 }
 
 html {
     width: 100%;
+}
+
+body{
+    font-family: 'Open Sans' !important;
+    font-size: 14px !important;
 }
 
 body#homeBody {
@@ -789,4 +795,12 @@ div#imgSection{
 /* Buttons */
 .pbtn{
     margin-right: 12px;
+}
+
+/* Checkbox */
+#checkboxLoader{
+    line-height: 1.15;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
