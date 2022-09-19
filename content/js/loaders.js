@@ -377,6 +377,17 @@ $(document).ready(function() {
         triggerLoaded($(this));
     })
 
+    //Checkbox
+    $('#checkboxLoader').load('../panelitaComponents/checkbox.html', function() {
+        $('checkbox').unwrap();
+        triggerLoaded($(this));
+    })
+
+    //Radio
+    $('#radioLoader').load('../panelitaComponents/radio.html', function() {
+        $('radio').unwrap();
+        triggerLoaded($(this));
+    })
 
 
 

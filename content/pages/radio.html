@@ -5,8 +5,222 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
+        <!-- Boostrap css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">     
     
+</head>
+    <body>
+        <div id="navLoader" class="loader"></div>
+        <div class="container">
+            <div class="row mainLayout">
+                <!--Side Nav-->
+                <div id="sideNavComponents" class="loader col-2 d-none d-lg-block">
+                </div>
+                <main id="mainContent" class="col-12 col-lg-10">
+                    <div class="commonBody">
+                        <header id="pageHeader" class="row pageHeader">
+                            <div id="titlePage" class="col-12 col-lg-12">
+                                <h1 id="title" class="title">Radio</h1>
+                                <h2 id="description" class="description" data-lang="en">
+                                    Radio inputs force users to choose a single option. Selecting one will deselect another.
+                                </h2>
+                        </header>
+
+                        <!-- Common body -->
+                        <section id="pageContent" class="row pageContent">
+                            <div id="pageText" class="col-12 col-lg-12">
+                            
+                            <!-- Nav -->
+                            <ul id="pageNav" class="pageNav nav nav-tabs" role="tablist">
+                                <li class="nav-item" data-bs-toggle="tooltip" type="submit" data-bs-placement="bottom" title="Code">
+                                  <a class="nav-link active" type="button" aria-current="page" data-bs-target="#radioCodeTab" data-bs-toggle="tab" role="tab" data-lang="en">Code</a>
+                                </li>
+                                <li class="nav-item" data-bs-toggle="tooltip" type="submit" data-bs-placement="bottom" title="Usage" >
+                                  <a class="nav-link" type="button" data-bs-target="#radioUsageTab" data-bs-toggle="tab" role="tab" data-lang="en">Usage</a>
+                                </li>
+                              </ul>
+                            
+                            <!-- Tabs content -->
+                              <div class="tab-content" id="myTabContent">
+                                    <!--Code-->
+                                    <div class="tab-pane fade show active" id="radioCodeTab">
+                                    <!-- Component section -->
+                                        <!-- Text with link-->
+                                         <h6 class="text" data-lang="en">Use radio when there are five or fewer options to display simultaneously.
+                                            Use a <a class="textLink" href="/content/pages/dropdowns.html">select</a> instead when the user needs to choose from a much longer list of familiar and/or quantitative options.
+                                        </h6>
+
+                                        <!-- Title -->
+                                         <h6 class="textTitle" data-lang="en">States
+                                        </h6>
+                                        <!-- Text -->
+                                         <h6 class="text" data-lang="en">Radio supports different states: unselected, selected, focused, and disabled.
+                                        </h6>
+                                        <!-- Code Box -->
+                                        <div class="codeBox row row-cols-12">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-header">
+                                                        <!-- Here we will add panelitaComponents -->
+                                                        <div id="radioLoader" class="primaryButton card-img-top" alt="..."></div>
+                                                    </div>
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample1">
+                                                        <div class="accordion-item">
+                                                            <div id="flush-collapseOne1" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample1">
+                                                                <div id="myCode" class="myCode">
+                                                                    <!-- id to call codeBox code with JavaScript -->
+                                                                    <pre id="codeId1" class="card-text accordion-body" type="text"><code>&ltdiv class="form-field">
+  &ltinput type="radio">
+  &ltlabel>Radio default&lt/label>
+&lt/div>
+
+&ltdiv class="form-field">
+  &ltinput type="radio" disabled>
+  &ltlabel>Radio disabled&lt/label>
+&lt/div>
+
+&ltdiv class="form-field">
+  &ltinput type="radio" checked>
+  &ltlabel>Radio checked&lt/label>
+&lt/div>
+
+&ltdiv class="form-field">
+  &ltinput type="radio" checked disabled>
+  &ltlabel>Radio checked disabled&lt/label>
+&lt/div></code></pre>
+                                                                </div>
+                                                                </div>
+                                                            <div class="card-footer accordion-header" id="flush-headingOne">
+                                                                <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
+                                                                    
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
+                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" 
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne1" onclick="">Show code
+                                                                    </button>
+
+                                                                </div>
+                                                                <div id="copyBtn1" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId1')">content_copy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!--Usage-->
+                                    <div class="tab-pane fade" id="radioUsageTab">
+                                        <!-- Usage section -->
+
+                                        <!-- Title -->
+                                         <h6 class="textTitle" data-lang="en">General guidelines
+                                        </h6>
+
+                                        <!-- List -->
+                                        <ul class="text outside" data-lang="en">
+                                            <li>Use one field per line.
+                                            </li>
+                                            <br>
+                                            <li>A label should clearly and concisely describe the purpose of the field with no more than a few words.
+                                            </li>
+                                        </ul>
+                                        
+                                        <!-- Title -->
+                                        <h6 class="textTitle" data-lang="en">Structure
+                                        </h6>
+
+                                        <!-- Img -->
+                                        <div id="imgContent" class="imgContent">
+                                            <img src="/content/assets/components/radioUsage.svg">
+                                        </div>
+
+                                        <!--Usage Dots-->
+                                        <div class="imgExplanation">
+                                            <div class="numberDotContainer">
+                                                <div class="numberDot">1</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Radio:</b> Indicates the status of the button.
+                                                </h6>
+                                            </div>
+                                            <div class="numberDotContainer">
+                                                <div class="numberDot">2</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Label:</b> Describe the option.
+                                                </h6>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <!-- Usage Cards -->
+                                    <div id="usageCards" class="container col-12">
+                                        <div class="usageCards row">
+                                            <div class="usageCard card col-sm">
+                                                <div class="card-header" data-lang="en"><img src="/content/assets/doIcon.svg">
+                                                DO
+                                                </div>
+                                                    <div class="card-body">
+                                                        <ul class="text outside" data-lang="en">
+                                                            <li>Ensure the radio buttons are stacked vertically with five or fewer options. If more than five options are presented, consider using the Select or Combobox components.
+                                                            </li>
+                                                            <li>Treat each option as a new sentence. Use sentence case.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            </div>
+                                            <div class="usageCard card col-sm">
+                                                <div class="card-header" data-lang="en"><img src="/content/assets/doNotIcon.svg">
+                                                DON'T
+                                                </div>
+                                                    <div class="card-body">
+                                                        <ul class="text outside" data-lang="en">
+                                                            <li>Don't align radio buttons horizontally as it is more difficult to scan.
+                                                            </li>
+                                                            <li>The colon after the label stops the eye from scanning.
+                                                            </li>
+                                                            <li>Full stops not needed after each option.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end usage cards -->
+
+                                    </div>
+                                    <!-- end usage -->
+
+                                </div>
+                              <!-- end tabs content -->
+                              </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer id="footerLoader" class="loader footerLoader"></footer>
     </body>
+      
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Boostrap js-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- archivo que carga archivo JavaScript principal -->
+        <script src="/content/js/JavaScript.js"></script>
+      
+        <!-- Inicializa tooltips -->
+        <script src="/content/js/tooltips.js"></script>
+
+        <!-- archivo que carga el top nav y el footer -->
+        <script src="/content/js/loaders.js"></script>
+    
 </html>
