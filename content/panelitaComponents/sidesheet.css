@@ -1,0 +1,85 @@
+.side-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  max-width: var(--sidepanel-max-width, 420px);
+  width: var(--sidepanel-width, 420px);
+  display: flex;
+  flex-direction: column;
+  background: var(--color-n75);
+  padding: 16px 24px 50px 24px;
+  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+  transform: translateX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.side-panel.hide {
+  display: flex!important;
+  transform: translateX(calc(100% + 46px));
+}
+
+.side-panel .top {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.side-panel .top .material-icons {
+  width: 16px;
+  flex-grow: 0;
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.side-panel h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.side-panel .top .btn-container {
+  width: 24px;
+  height: 24px;
+  font-size: 22px;
+  margin-left: auto;
+  margin-right: 8px;
+}
+
+.side-panel .scroll-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  gap: 16px;
+}
+
+.side-panel .data-row {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-size: 14px;
+}
+
+.side-panel .data-row .label {
+  font-weight: 600;
+}
+
+.side-panel .data-row .data {
+  margin: 0;
+  overflow: hidden;
+}
+
+.side-panel .form-field *:not(label):not(p) {
+  font-size: 14px!important;
+}
+
+.side-panel .form-field label {
+  color: #555;
+} 
+
+.side-panel .btn-container {
+  margin: 0;
+}
