@@ -1,0 +1,193 @@
+/* TABLAS */
+/* usan html de tablas: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table 
+y la library dataTables: https://datatables.net/ */
+.table-container {
+  overflow-x: scroll;
+  flex-grow: 1;
+  margin-top: 36px;
+}
+
+/* encabezado siempre visible */
+table thead.fixed th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* columna siempre visible (WIP) */
+/* table td:last-child {
+  position: sticky;
+  right: 0;
+} */
+
+/* overrides datatables */
+table.dataTable {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: var(--color-n800);
+  text-align: left;
+  /* overflow: hidden; */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-bottom: none!important;
+}
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+  border: none;
+}
+
+.dataTables_wrapper .dataTables_scroll {
+  width: 100%;
+}
+
+table.dataTable,
+table.dataTable tbody th {
+  background-color: var(--color-n75);
+}
+
+table.dataTable tbody tr,
+table.dataTable tbody tr td {
+  background-color: var(--color-n0);
+}
+
+table.dataTable tbody tr.selected td,
+table.dataTable tbody tr:hover td {
+  background-color: var(--color-b50);
+}
+
+th {
+  padding: 16px 10px!important;
+}
+
+/* encabezado de columnas */
+th .cell-content {
+  color: var(--color-n800);
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+  padding: 10px;
+  font-weight: 400;
+}
+
+table.dataTable thead th,
+table.dataTable thead td,
+table.dataTable tbody th,
+table.dataTable tbody td {
+  border-bottom: 1px solid var(--color-n300);
+}
+
+table.dataTable tbody th,
+table.dataTable tbody td {
+  padding: 0 12px;
+}
+
+table.dataTable tbody td .cell-content {
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.calendar-request-table table.dataTable tbody td .cell-content {
+  max-width: 180px;
+}
+
+table.dataTable tbody td .cell-content span {
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+table.dataTable .btn-container {
+  margin: 0;
+}
+
+/* flechitas sort */
+table.dataTable thead .sorting {
+  background-image: none;
+}
+
+table.dataTable thead .cell-content {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding-right: 20px!important;
+}
+
+table.dataTable thead .sorting .cell-content {
+  background-image: url(/bukeala-static/scripts/backoffice/datatables/images/sort_both.png);
+}
+
+table.dataTable thead .sorting_asc {
+  background-image: none;
+}
+
+table.dataTable thead .sorting_asc .cell-content {
+  background-image: url(/bukeala-static/scripts/backoffice/datatables/images/sort_asc.png);
+}
+
+table.dataTable thead .sorting_desc {
+  background-image: none;
+}
+
+table.dataTable thead .sorting_desc .cell-content {
+  background-image: url(/bukeala-static/scripts/backoffice/datatables/images/sort_desc.png);
+}
+
+/* row menu */
+.row-menu {
+  position: fixed;
+  /* setear por js */
+  /* top: 24px; */
+  right: 36px;
+  z-index: 999;
+  width: 208px;
+  background: var(--color-n0);
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(16, 24, 64, 0.16);
+}
+
+.row-menu .menu-title {
+  padding: 16px 16px 8px 16px;
+}
+
+.row-menu .menu-title {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.row-menu .menu-link {
+  height: 40px;
+  padding: 8px 16px;
+  background-position: center left 12px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.row-menu .menu-link:hover {
+  background-color: var(--color-b100);
+  color: var(--color-b400);
+}
+
+.row-menu .menu-link:hover .icon-container {
+  filter: var(--filter-b400);
+}
+
+.row-menu .menu-link.delete,
+.row-menu .menu-link.menu-link-delete {
+  color: var(--color-r500);
+}
+
+.row-menu .menu-link.delete .icon-container,
+.row-menu .menu-link.menu-link-delete .icon-container {
+  filter: var(--filter-r500);
+}
+
+.row-menu .menu-link .icon-container {
+  margin-right: 8px;
+}

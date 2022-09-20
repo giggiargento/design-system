@@ -1,0 +1,94 @@
+:root {
+  --aside-width: 272px;
+}
+
+aside {
+  position: fixed;
+  top: var(--nav-height);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: var(--aside-width);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+  padding: 64px 32px;
+  z-index: 1;
+}
+
+aside .menu-link {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-grey-dark2);
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out,
+    color .3s ease-in-out;
+}
+
+aside .menu-link .icon-container {
+  border-radius: var(--border-radius);
+  height: 100%;
+  justify-content: center;
+  transition: background-color .3s ease-in-out;
+}
+
+aside .menu-link .icon-container + span {
+  margin-left: 1em;
+}
+
+aside .menu-link img {
+  transition: filter 0s 0s ease;
+  transition-delay: .1s;
+}
+
+aside .menu-link:hover {
+  background-color: var(--color-main-light);
+  color: var(--color-main-accent);
+}
+
+aside .menu-link:hover img {
+  filter: var(--filter-accent);
+}
+
+aside .menu-link.active,
+aside .menu-link.active:hover,
+aside .menu-link.active:hover .icon-container {
+  background-color: var(--color-main-accent);
+  color: white;
+}
+
+aside .menu-link.active img,
+aside .menu-link.active:hover img {
+  filter: var(--filter-whiten);
+}
+
+aside .menu-link span {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1025px) {
+  :root {
+    --aside-width: 88px;
+  }
+
+  aside {
+    padding: 64px 24px;
+  }
+
+  aside .menu-link {
+    width: 40px;
+    justify-content: center;
+  }
+
+  aside .menu-link .label {
+    display: none;
+  }
+}

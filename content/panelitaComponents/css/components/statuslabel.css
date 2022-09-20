@@ -1,0 +1,86 @@
+@import url(/bukeala-static/styles/panelita/colors.css);
+/* status label para rows y cards de agenda, solicitudes, etc */
+/* <span class="status-label [estado]">*/
+
+.status-label {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100px!important; */
+  width: auto;
+  height: 27px;
+  flex-shrink: 0;
+  padding: 4px 10px;
+  background-color: var(--label-bg-color);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  /* si no se especifica el color del texto, defaultea a n0 */
+  color: var(--label-text-color, var(--color-n0));
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* agenda publicada */
+.status-label.calendar-published {
+  --label-bg-color: var(--color-n100);
+  --label-text-color: var(--color-n600);
+}
+
+/* solicitud aprobada */
+.status-label.request-approved,
+/* cita asistida */
+.status-label.pending {
+  --label-bg-color: var(--color-g200);
+  --label-text-color: var(--color-g500);
+}
+
+/* solicitud rechazada */
+.status-label.request-denied,
+/* solicitud de eliminación */
+.status-label.request-elimination,
+/* cita pendiente de datos (faltan datos) */
+.status-label.pending-data {
+  --label-bg-color: var(--color-r50);
+  --label-text-color: var(--color-r500);
+}
+
+/* solicitud eliminada */
+.status-label.request-deleted {
+  --label-bg-color: var(--color-r500);
+  --label-text-color: var(--color-r50);
+}
+
+/* solicitud pendiente */
+.status-label.request-pending,
+/* cita admitida */
+.status-label.admitted {
+  --label-bg-color: var(--color-y50);
+  --label-text-color: var(--color-y500);
+}
+
+/* bloqueo completo */
+.status-label.partial-block {
+  --label-bg-color: var(--color-v200);
+  --label-text-color: var(--color-v600);
+}
+
+/* bloqueo parcial */
+.status-label.full-block {
+  --label-bg-color: var(--color-t200);
+  --label-text-color: var(--color-t600);
+}
+
+/* solicitud de modificación */
+.status-label.request-modify {
+  --label-bg-color: var(--color-b200);
+  --label-text-color: var(--color-b500);
+}
+
+/* solicitud de creación*/
+.status-label.request-creation {
+  --label-bg-color: var(--color-g200);
+  --label-text-color: var(--color-g500);
+}

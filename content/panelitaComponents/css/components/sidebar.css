@@ -1,0 +1,243 @@
+:root {
+  --sidebar-full-width: 286px;
+  --sidebar-collapsed-width: 96px;
+  --sidebar-empty-width: 50px;
+
+  --sidebar-width: var(--sidebar-full-width);
+}
+
+.sidebar {
+  position: absolute;
+  top: var(--top-nav-height);
+  bottom: 0;
+  z-index: 10;
+}
+
+#sidebar {
+  left: 0;
+  width: var(--sidebar-width);
+  height: calc(100vh - var(--top-nav-height));
+  border-right: 1px solid var(--color-n200);
+  position: fixed;
+  background: var(--color-n75);
+  padding: 32px 16px 32px 24px;
+  color: var(--color-text-main);
+  transition: width .3s ease-in-out;
+  z-index: 2;
+  user-select: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#sidebar.config-sidebar {
+  padding-top: 20px;
+}
+
+#sidebar.sidebar-scroll {
+  overflow-y: scroll;
+}
+
+#sidebar.sidebar-loading {
+	width: 100vw!important;
+  z-index: 99;
+  overflow: hidden;
+}
+
+#sidebar.sidebar-loading > * {
+	display: none;
+}
+
+#sidebar.sidebar-loading::after {
+	background-image: url(/bukeala-static/images/panelita/loading-grey.svg)!important;
+	content: '';
+	position: absolute;
+	top: 45%;
+	left: 46%;
+	width: 100px;
+	height: 100px;
+	z-index: 9999;
+}
+
+#sidebar.sidebar-loading ~ main {
+	overflow: hidden;
+}
+
+#sidebar.sidebar-init {
+  width: var(--sidebar-full-width);
+  overflow: hidden;
+}
+
+#sidebar.sidebar-init .sidebar-wrapper {
+  opacity: 0;
+}
+
+#sidebar .sidebar-wrapper {
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
+#sidebar,
+#sidebar ~ * {
+  --sidebar-width: var(--sidebar-full-width);
+}
+
+#sidebar.sidebar-collapsed {
+  width: 96px;
+  padding: 32px;
+  overflow: hidden;
+}
+
+.sidebar-wrapper,
+.sidebar-content,
+.sidebar-section,
+.section-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-wrapper > * + *,
+.sidebar-content > * + *,
+.sidebar-section > * + *,
+.section-links > * + *,
+.sidebar .flex-v > * + * {
+  margin-top: 24px;
+}
+
+.sidebar-title {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-title p {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.sidebar-title button + p {
+  margin-left: 16px;
+}
+
+.sidebar-section .title {
+  position: relative;
+  height: 20px;
+  --icon-size: 24px;
+  font-weight: 400;
+}
+
+.sidebar-section.collapsible .title {
+  cursor: pointer;
+}
+
+.sidebar-section .title .icon-container,
+.sidebar-section .title span {
+  pointer-events: none;
+}
+
+.sidebar-section.collapsible .title span::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  background-image: url(/bukeala-static/images/icons/panelita/chevron-down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px;
+  transform: rotate(0);
+  transition: transform .3s ease-in-out;
+}
+
+
+.sidebar-section.collapsible.collapsed .title span::after {
+  transform: rotate(-90deg);
+}
+
+.sidebar-section.collapsible .section-links {
+  padding: 8px 0;
+  margin-bottom: -8px;
+  margin-top: 16px;
+}
+
+.sidebar-section.collapsible.collapsed .section-links {
+  display: none;
+  overflow: hidden;
+}
+
+.sidebar-content {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.sidebar-link {
+  position: relative;
+  padding-left: 32px;
+  font-weight: 300;
+}
+
+#sidebar .slide-btn {
+  height: 24px;
+  width: 24px;
+  --icon-size: 24px;
+  cursor: pointer;
+  transform: rotate(0);
+  transition: transform .3s ease-in-out;
+}
+
+#sidebar .slide-btn.rotated {
+  transform: rotate(180deg);
+}
+
+#sidebar a {
+  color: var(--color-text-main);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#sidebar a .icon-container {
+  margin-right: 16px;
+}
+
+#sidebar a.active {
+  color: var(--color-b400);
+  font-weight: 600;
+}
+
+#sidebar a.active .icon-container {
+  filter: brightness(0) saturate(100%) invert(31%) sepia(15%) saturate(3748%) hue-rotate(183deg) brightness(87%) contrast(81%);
+}
+
+#sidebar .sidebar-section .title:hover::before,
+#sidebar a.icon-link.active::before,
+#sidebar a.sidebar-link.active::before,
+#sidebar a:hover::before {
+  left: -10px;
+  content: '';
+  width: 258px;
+  position: absolute;
+  height: 32px;
+  background: var(--color-b100);
+  flex-shrink: 0;
+  z-index: -1;
+  border-radius: 3px;
+}
+
+#sidebar a.sidebar-link:hover::before,
+#sidebar a.sidebar-link:active::before {
+  top: -6px;
+  width: 210px!important;
+  left: 0px!important;
+}
+
+#sidebar.sidebar-collapsed a.active::before,
+#sidebar.sidebar-collapsed a:hover::before,
+#sidebar.sidebar-collapsed .title:hover::before {
+  width: 44px!important;
+}
+
+#sidebar a.sidebar-link.active::before {
+  width: 210px;
+  height: 32px;
+  content: '';
+  left: 0;
+  top: -7px;
+}

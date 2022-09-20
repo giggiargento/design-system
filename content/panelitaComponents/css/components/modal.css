@@ -1,0 +1,109 @@
+.modal {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.modal.open {
+  opacity: 1;
+}
+
+/* background blur */
+.modal::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, .75);
+  z-index: 1;
+}
+
+.modal .modal-window {
+  position: relative;
+  width: 560px;
+  background: #F6F6F6;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%), 0px 2px 0px rgb(0 0 0 / 4%);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 72px 32px;
+  transform: translateY(100vh);
+  transition: transform .6s ease-in-out;
+  z-index: 2;
+}
+
+.modal.open .modal-window {
+  transform: translateY(0);
+}
+
+.modal .modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal .modal-content-area.success,
+.modal .modal-content-area.error,
+.modal .modal-content-area.warning {
+  background-repeat: no-repeat;
+  background-position: top 24px center;
+  padding-top: 186px;
+}
+
+.modal .modal-content-area.success {
+  background-image: url('/bukeala-static/images/panelita/success.svg');
+}
+
+.modal .modal-content-area.error {
+  background-image: url('/bukeala-static/images/panelita/error.svg');
+}
+
+.modal .modal-content-area.warning {
+  background-image: url('/bukeala-static/images/panelita/warning.svg');
+}
+
+.modal button.close-x {
+  border: none;
+  position: absolute;
+  top: 28px;
+  right: 32px;
+  width: 16px;
+  height: 16px;
+  background-image: url(/bukeala-static/images/icons/panelita/close-blue.svg);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  cursor: pointer;
+}
+
+.modal .modal-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+  color: #333333;
+}
+
+.modal .modal-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #6B7588;
+  margin-top: 18px;
+}
+
+.modal .btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 48px 0 0;
+}
+
+.modal .btn {
+  width: 256px;
+}

@@ -1,0 +1,20 @@
+main,
+.body-content {
+  padding: 36px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  margin-right: auto;
+}
+
+.header .btn-container {
+  margin-top: 0;
+  margin-bottom: 0;
+}

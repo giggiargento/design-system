@@ -1,0 +1,49 @@
+/* 
+<ul class="tabs">
+	<li id="tab-1" class="active"><span>Tab 1</span></li>
+  <li id="tab-2"><span>Tab 2</span></li>
+	<li id="tab-3"><span>Tab 3</span></li>
+</ul>
+*/
+
+.tabs {
+	height: 41px;
+  display: flex;
+  align-items: center;
+	padding-left: 24px;
+	border-bottom: 1px solid var(--color-n300);
+	white-space: nowrap;
+  background: var(--color-n0);
+}
+
+.tabs li {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.tabs li + li {
+	margin-left: 24px;
+}
+
+.tabs a span {
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--color-n700);
+}
+
+.tabs li a:hover span, 
+.tabs li.active a span {
+	color: var(--color-b400);
+}
+
+.tabs li.active::after {
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: var(--color-b400);
+	position: absolute;
+	bottom: -1px;
+	right: 0;
+}

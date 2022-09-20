@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/bukeala-static/fonts/custom/fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(/bukeala-static/fonts/custom/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+       url(/bukeala-static/fonts/custom/fonts/MaterialIcons-Regular.woff) format('woff'),
+       url(/bukeala-static/fonts/custom/fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.tag {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 27px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  padding: 4px 8px;
+  background-color: var(--label-bg-color, var(--color-n600));
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--label-text-color, var(--color-n0));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+}
+
+.icon-container {
+  display: inline-block;
+}
+
+.icon-container::after {
+  font-family: 'Material Icons';
+  color: currentColor;
+  font-size: 16px;
+}
+
+.tag:not(.removable-tag):not(.icon-tag) .icon-container {
+  display: none;
+}
+
+.tag.tag-light {
+  --label-bg-color: var(--color-n200);
+  --label-text-color: var(--color-n600);
+}
+
+.tag.tag-dark-blue {
+  --label-bg-color: var(--color-b600);
+  --label-text-color: var(--color-b200);
+}
+
+.tag.tag-dark-yellow {
+  --label-bg-color: var(--color-y600);
+  --label-text-color: var(--color-y50);
+}
+
+.tag.tag-dark-green {
+  --label-bg-color: var(--color-g600);
+  --label-text-color: var(--color-g200);
+}
+
+.tag.tag-dark-red {
+  --label-bg-color: var(--color-r500);
+  --label-text-color: var(--color-r50);
+}
+
+.tag.tag-dark-teal {
+  --label-bg-color: var(--color-t600);
+  --label-text-color: var(--color-t200);
+}
+
+.tag.tag-dark-violet {
+  --label-bg-color: var(--color-v600);
+  --label-text-color: var(--color-v200);
+}
+
+.tag.tag-light-blue {
+  --label-bg-color: var(--color-b200);
+  --label-text-color: var(--color-b500);
+}
+
+.tag.tag-light-yellow,
+.tag.tag-reminder {
+  --label-bg-color: var(--color-y50);
+  --label-text-color: var(--color-y500);
+}
+
+.tag.tag-light-green,
+.tag.tag-confirmation {
+  --label-bg-color: var(--color-g200);
+  --label-text-color: var(--color-g500);
+}
+
+.tag.tag-light-red,
+.tag.tag-cancelation {
+  --label-bg-color: var(--color-r50);
+  --label-text-color: var(--color-r500);
+}
+
+.tag.tag-light-teal {
+  --label-bg-color: var(--color-t200);
+  --label-text-color: var(--color-t600);
+}
+
+.tag.tag-light-violet,
+.tag.tag-unattended {
+  --label-bg-color: var(--color-v200);
+  --label-text-color: var(--color-v600);
+}
+
+.tag.icon-tag .icon-container {
+  margin-right: 4px;
+}
+
+.tag.icon-tag .icon-container::after {
+  content: attr(data-icon);
+}
+
+.tag.removable-tag .icon-container {
+  order: 1;
+  margin-right: 0;
+  margin-left: 3px;
+  cursor: pointer;
+}
+
+.tag.removable-tag .icon-container::after {
+  content: 'close';
+}

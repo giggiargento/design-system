@@ -1,0 +1,24 @@
+.pill {
+  display: flex;
+  position: relative;
+  background: var(--color-accent, var(--color-b400));
+  color: var(--color-white);
+  border-radius: var(--border-radius, 1em);
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.pill .close {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  background: url(/bukeala-static/images/custom/hospitalbritanico/icons/close-icon.svg);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  filter: var(--filter-whiten);
+  cursor: pointer;
+}

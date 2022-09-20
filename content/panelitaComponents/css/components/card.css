@@ -1,0 +1,25 @@
+.card {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-n300);
+  padding: 8px;
+  background-color: var(--color-n0);
+  font-size: 14px;
+  display: flex;
+}
+
+.card.selection,
+.card.selectable {
+  cursor: pointer;
+}
+
+.card.selection.selected,
+.card.selectable.selected {
+  background-color: var(--color-accent);
+  color: var(--color-n0);
+}
+
+.card p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

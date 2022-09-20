@@ -1,0 +1,681 @@
+:root {
+  --card-border-radius: 6px;
+  --card-box-shadow: 0 4px 4px rgb(199 201 217 / 15%);
+
+  --color-status-pending-data: var(--color-error-med);
+  --color-status-pending: var(--color-success-dark);
+  --color-status-admitted: var(--color-warning-dark);
+  --color-status-ended: var(--color-info-light);
+  --color-status-canceled: var(--color-grey-dark2);
+  --color-status-not-assisted: var(--color-grey-light3);
+}
+
+/* BOOKING CARD CHICA resumida, para t�tem */
+.booking-card-lite {
+  width: 403px;
+  height: 216px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.booking-card-lite .top {
+  padding: 22px 16px;
+  background: var(--color-main-accent);
+  color: var(--color-white);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.booking-card-lite .bottom {
+  padding: 16px;
+  background: white;
+  color: var(--color-grey-dark1);
+}
+
+.booking-card-lite .bottom .name {
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 44px;
+  padding-left: 56px;
+}
+
+.booking-card-lite .bottom .name.lab {
+  background-image: url(/bukeala-static/images/icons/panelita/tube.svg);
+}
+
+.booking-card-lite .bottom .name .area {
+  font-weight: 600;
+}
+
+.booking-card-lite .bottom .name .component {
+  font-size: 14px;
+}
+
+.booking-card-lite .bottom hr {
+  border: none;
+  border-top: 1px solid var(--color-grey-light2);
+  margin: 16px 0;
+}
+
+.booking-card-lite .bottom .duration {
+  background-image: url(/bukeala-static/images/icons/panelita/query_builder.svg);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center left;
+  padding-left: 32px;
+}
+
+/* BOOKING CARD GRANDE con m�s detalles, para mi agenda */
+.booking-card {
+  min-height: unset;
+  margin: 24px 0;
+  background: white;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-box-shadow);
+  align-items: stretch!important;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-grey-dark1);
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.booking-card .right {
+  border-top-right-radius: var(--card-border-radius);
+  border-bottom-right-radius: var(--card-border-radius);
+  padding: 24px 40px 16px 24px;
+}
+
+.booking-card .left {
+  width: 180px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-color: var(--color-main-accent);
+  border: 1px solid transparent;
+  border-top-left-radius: var(--card-border-radius);
+  border-bottom-left-radius: var(--card-border-radius);
+  padding: 16px;
+}
+
+.booking-card .left .status {
+  text-transform: uppercase;
+  font-size: 12px;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 4px 16px;
+  margin-bottom: 14px;
+}
+
+.booking-card .left p {
+  line-height: 1.2;
+}
+
+.booking-card .left .date {
+  font-size: 24px;
+}
+
+.booking-card .left .time {
+  font-size: 34px;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  margin-top: -4px;
+  margin-bottom: 8px;
+}
+
+.booking-card .left .plan {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.booking-card button.mobile-actions-btn {
+  display: none;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 13px;
+  right: 16px;
+  background-color: transparent;
+  border: 0;
+}
+
+.booking-card .left button.show-actions {
+  display: none;
+  background-image: url(/bukeala-static/images/icons/panelita/more_vert.svg);
+  filter: var(--filter-whiten);
+}
+
+.booking-card .actions button.hide-actions {
+  display: none;
+  background-image: url(/bukeala-static/images/icons/panelita/close.svg);
+}
+
+.booking-card .right {
+  width: 100%;
+}
+
+.booking-card .right .top,
+.booking-card .right .bottom {
+  width: 100%;
+}
+
+.booking-card .right .top {
+  align-items: flex-start;
+  border-bottom: 1px solid var(--color-grey-light2);
+  padding-bottom: 24px;
+  margin-bottom: 16px;
+}
+
+.booking-card .right .icon {
+  margin-right: 8px;
+}
+
+.booking-card .right .icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background-image: url(/bukeala-static/images/custom/hospitalbritanico/avatar-blue.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.booking-card .right .icon img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.booking-card .right .name {
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: flex;
+}
+
+.booking-card .right .area {
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: left center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.booking-card .right .videocall-link-container {
+  margin-left: auto;
+  margin-right: 32px;
+  background-color: var(--color-main-accent);
+  border-radius: 50%;
+  transform: translateY(-5px);
+}
+
+.booking-card .right .videocall-link-container:hover {
+  background-color: var(--color-main-light);
+}
+
+.booking-card .right .videocall-link-container:hover a {
+  filter: var(--filter-accent);
+}
+
+.booking-card .right .videocall-link-container.disabled {
+  background-color: var(--color-grey-dark4);
+  pointer-events: none;
+}
+
+.booking-card .right a.videocall-btn {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  background-image: url(/bukeala-static/images/icons/panelita/videocam.svg);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+  filter: var(--filter-whiten);
+}
+
+.booking-card .right .bottom {
+  display: flex;
+  flex-direction: column;
+  /* gap: 8px; */
+  font-size: 14px;
+}
+
+.booking-card .right .bottom > * + * {
+  margin-top: 8px;
+}
+
+.booking-card .right .bottom a {
+  text-decoration: none;
+}
+
+.booking-card .right .bottom .line {
+  display: flex;
+  align-items: flex-start;
+}
+
+.booking-card .right .bottom .line .icon-container {
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-color: transparent;
+  margin: 3px 8px 0 0;
+}
+
+.booking-card .right .bottom .line.preparation-link {
+  cursor: pointer;
+  user-select: none;
+}
+
+.booking-card .right .bottom .line.presential .icon-container {
+  background-image: url(/bukeala-static/images/icons/panelita/domain.svg);
+}
+
+.booking-card .right .bottom .line.virtual .icon-container {
+  background-image: url(/bukeala-static/images/icons/panelita/videocam.svg);
+}
+
+.booking-card .right .bottom .line.map-link .icon-container {
+  background-image: url(/bukeala-static/images/icons/panelita/place_black.svg);
+}
+
+.booking-card .right .bottom .line.room-supplementary-data .icon-container {
+  background-image: url(/bukeala-static/images/icons/panelita/place_black.svg);
+}
+
+.booking-card .right .bottom .line.duration .icon-container {
+  background-image: url(/bukeala-static/images/icons/panelita/clock.svg);
+}
+
+.booking-card .right .bottom .line.multiple-sessions-number .icon-container {
+  background-image: url(/bukeala-static/images/icons/panelita/date_range.svg);
+}
+
+.booking-card .right .bottom .line.preparation-link .icon-container {
+  background-image: url(/bukeala-static/images/icons/panelita/visibility.svg);
+}
+
+.booking-card .right .bottom .line.preparation-link.active .icon-container {
+  background-image: url(/bukeala-static/images/icons/panelita/visibility_off_black.svg);
+}
+
+.booking-card .actions {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  justify-content: center;
+  padding: 16px 12px;
+  border-left: 1px solid var(--color-grey-light2);
+  border-top-right-radius: var(--card-border-radius);
+  border-bottom-right-radius: var(--card-border-radius);
+  background: white;
+  transform: translateX(168px);
+  transition: transform .3s ease-in-out;
+}
+
+.booking-card .actions:hover {
+  transform: translateX(0);
+}
+
+.booking-card .actions .action {
+  width: 100%;
+  padding: 4px 6px;
+  border-radius: var(--card-border-radius);
+  cursor: pointer;
+}
+
+.booking-card .actions .action:hover {
+  background-color: var(--color-main-light);
+}
+
+.booking-card .actions .action + .action {
+  margin-top: 8px;
+}
+
+.booking-card .actions .action .icon-container {
+  height: 16px;
+  display: flex;
+}
+
+.booking-card .actions .action .action-label {
+  font-size: 14px;
+  white-space: nowrap;
+  margin-left: 16px;
+  color: var(--color-main-dark);
+}
+
+.booking-card .actions .action .icon-container {
+  width: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  margin-right: 0;
+}
+
+.action[data-action="assign-new"] .icon-container {
+  background-image: url(/bukeala-static/images/icons/panelita/query_builder.svg);
+}
+
+.action[data-action="cancel"] .icon-container {
+  background-image: url(/bukeala-static/images/icons/panelita/cancel.svg);
+}
+
+.action[data-action="confirm"] .icon-container {
+  background-image: url(/bukeala-static/images/icons/panelita/check.svg);
+}
+
+.action[data-action="copy"] .icon-container {
+  background-image: url(/bukeala-static/images/icons/panelita/library_books.svg);
+}
+
+.action[data-action="pay"] .icon-container {
+  background-image: url(/bukeala-static/images/icons/panelita/attach_money.svg);
+}
+
+.action[data-action="reassign"] .icon-container {
+  background-image: url(/bukeala-static/images/icons/panelita/history.svg);
+}
+
+.action[data-action="resend"] .icon-container {
+  background-image: url(/bukeala-static/images/icons/panelita/fast_forward.svg);
+}
+
+.action[data-action="view-notification"] .icon-container {
+  background-image: url(/bukeala-static/images/icons/panelita/mail_outline.svg);
+}
+
+/* estados de cards */
+
+.booking-card.pending-data .left {
+  background: var(--color-status-pending-data);
+}
+
+.booking-card.pending .left {
+  background: var(--color-status-pending);
+}
+
+.booking-card.admitted .left {
+  background: var(--color-status-admitted);
+}
+
+.booking-card.ended .left {
+  background: var(--color-status-ended);
+}
+
+.booking-card.canceled .left {
+  background: var(--color-status-canceled);
+}
+
+.booking-card.not-assisted .left {
+  background: var(--color-status-not-assisted);
+  color: var(--color-grey-dark3);
+}
+
+.booking-card.not-assisted .left .status {
+  border-color:var(--color-grey-dark3);
+}
+
+.booking-card.not-assisted .left button.show-actions {
+  background-image: url(/bukeala-static/images/icons/panelita/chevron-down.svg);
+}
+
+.booking-card.ended .right,
+.booking-card.ended .actions .action,
+.booking-card.canceled .right,
+.booking-card.canceled .actions .action,
+.booking-card.not-assisted .right,
+.booking-card.not-assisted .actions .action {
+  filter: grayscale(1) opacity(0.7);
+}
+
+.booking-card-container {
+  position: relative;
+  /* espacio para box-shadow */
+  /* padding: 0 8px; */
+}
+
+/* sub-cards (preparaci�n, cancelar cita, reenviar notificaci�n, etc) */
+.booking-card ~ .sub-card {
+  display: none;
+  padding: 16px 48px 16px 24px;
+  list-style-position: inside;
+  font-size: 14px;
+  height: auto;
+  width: 100%;
+  /* max-height: 0; */
+  margin: 0!important;
+  /* position: absolute; */
+  top: 0;
+  z-index: 0;
+}
+
+.booking-card ~ .sub-card.visible {
+  display: block;
+  margin-top: 8px!important;
+  height: auto;
+}
+
+.booking-card ~ .sub-card.preparation-card {
+  font-size: 14px;
+}
+
+.booking-card ~ .sub-card .card-content {
+  width: 100%;
+}
+
+.booking-card ~ .sub-card > .close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.booking-card ~ .sub-card .header {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-grey-light1);
+}
+
+.booking-card ~ .sub-card .header p {
+  color: var(--color-grey-dark1);
+  font-weight: 600;
+}
+
+.booking-card ~ .sub-card .alert {
+  margin: 16px 0;
+}
+
+.booking-card ~ .sub-card .form {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 8px; */
+}
+
+.booking-card ~ .sub-card .form > * + * {
+  margin-top: 8px;
+}
+
+.booking-card ~ .sub-card .form-field {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 220px minmax(200px, 500px);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "label input"
+    ". error-msg";
+  justify-content: center;
+}
+
+.booking-card ~ .sub-card .form-field.checkbox-field {
+  margin-left: 24px;
+  padding-top: 24px;
+}
+
+.booking-card ~ .sub-card .form-field > label {
+  /* width: 220px; */
+  flex-shrink: 0;
+  font-size: 14px;
+  white-space: pre-line;
+}
+
+.booking-card ~ .sub-card .form-field.tall label {
+  padding-top: 14px;
+}
+
+.booking-card ~ .sub-card input[type=checkbox] {
+  --checkbox-size: 16px;
+  justify-self: end;
+}
+
+.booking-card ~ .sub-card .form-field.checkbox-field > label {
+  text-align: left;
+}
+
+.booking-card ~ .sub-card .btn-container {
+  margin-top: 32px;
+  justify-content: flex-end;
+}
+
+.booking-card ~ .sub-card .form-field.error .error-msg {
+  display: inline-block;
+  position: relative;
+  /* override forms.css, para refactorear */
+  left: unset!important;
+  grid-column-start: 2;
+}
+
+.booking-card ~ .sub-card .form-field + .error-msg {
+  left: 300px;
+}
+
+/* preparacion */
+.preparation-text {
+  color: var(--color-grey-dark2);
+}
+
+.preparation-header {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.preparation-text p + .preparation-header {
+  margin-top: 1em;
+}
+
+.bookings-list .booking-card-container {
+  width: 100%;
+}
+
+/* VERSION MOBILE */
+/* armar media queries */
+.booking-card-container.small .booking-card {
+  flex-direction: column;
+}
+
+.booking-card-container.small .booking-card .left {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border-bottom-left-radius: 0;
+  padding: 12px;
+  line-height: initial;
+}
+
+.booking-card-container.small .booking-card .left .weekday,
+.booking-card-container.small .booking-card .left p.date,
+.booking-card-container.small .booking-card .left p.time {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.booking-card .left .time {
+  margin-bottom: 0;
+}
+
+.booking-card-container.small .booking-card .left p.time::before {
+  content: ' - ';
+}
+
+.booking-card-container.small .booking-card .left .status {
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+.booking-card-container.small .booking-card .left .plan {
+  margin-top: 0;
+}
+
+.booking-card-container.small .booking-card button.mobile-actions-btn,
+.booking-card-container.small .booking-card .left button.show-actions,
+.booking-card-container.small .booking-card .actions button.hide-actions {
+  display: block;
+}
+
+.booking-card-container.small.no-actions .booking-card button.mobile-actions-btn,
+.booking-card-container.small.no-actions .booking-card .left button.show-actions,
+.booking-card-container.small.no-actions .booking-card .actions button.hide-actions {
+  display: none;
+}
+
+.booking-card-container.small .booking-card .right {
+  padding: 16px 10px;
+}
+
+.booking-card-container.small .booking-card .right .top,
+.booking-card-container.small .booking-card .right .bottom {
+  padding-left: 8px;
+}
+
+.booking-card-container.small .booking-card .right .top {
+  padding-bottom: 16px;
+  margin-bottom: 8px;
+}
+
+.booking-card-container.small .booking-card .right .name {
+  margin-bottom: 2px;
+  line-height: 18px;
+}
+
+.booking-card-container.small .booking-card .actions {
+  width: 100%;
+  transform: translateX(0) translateY(-100%) !important;
+}
+
+.booking-card-container.small .booking-card .actions.visible {
+  transform: translateY(0) !important;
+}
+
+.booking-card-container.small .booking-card .actions .action .action-label {
+  font-size: 16px;
+}
+
+.booking-card-container.small .booking-card+.layover .line,
+.booking-card-container.small .booking-card-container+.layover .line {
+  height: 280px !important;
+  top: -130px;
+}
+
+.booking-card-container.small .sub-card .form * {
+  flex-shrink: 1;
+}
+
+.booking-card-container.small .sub-card .form-field {
+  margin: 0;
+  grid-template-columns: 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "label"
+    "input"
+    "error-msg"
+}
+
+.booking-card-container.small .sub-card .form-field label {
+  text-align: left;
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+}

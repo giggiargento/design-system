@@ -1,0 +1,88 @@
+/*custom file input*/
+/*
+<div class="file-input-container">
+  <input type="file" class="file-input" id="fileinput">
+  <label class="file-input-box" for="fileinput">
+    <div class="filename-container">
+      <span class="filename"></span>
+    </div>
+    <button class="btn btn-secondary btn-sm">Adjuntar</button>
+  </label>	
+</div>
+*/
+
+.file-input-container input[type=file] {
+  display: none;
+}
+
+.file-input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.file-input-container .btn {
+  display: flex;
+  margin-left: -3px;
+  font-size: 12px;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.file-input-container.disabled {
+  opacity: .8;
+  pointer-events: none;
+}
+
+.file-input-container .filename-container {
+  height: var(--input-height);
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 0;
+  border-radius: var(--input-border-radius);
+  border: 1px solid var(--input-border-color);
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-left: -3px;
+  background-color: var(--color-n0);
+  padding: var(--input-padding);
+  font-family: var(--font-family);
+  font-size: var(--input-font-size);
+  color: var(--color-n700);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-input-container .filename-container.full {
+  width: fit-content;
+}
+
+.file-input-container .filename {
+  white-space: nowrap;
+}
+
+.file-input-container label.file-input-box {
+  display: flex;
+  margin: 0!important;
+}
+
+.file-input-container label.error {
+  bottom: 24px;
+  left: 10px;
+}
+
+.file-input-container .file-input.error + .file-input-box .filename-container {
+  border-color: var(--color-error)!important;
+}
+
+.file-input-container.error .filename-container,
+.file-input-container.error .btn {
+  border-color: var(--color-error)!important;
+}
+
+.file-input-container.error .btn {
+  color: var(--color-error);
+}

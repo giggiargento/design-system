@@ -1,0 +1,122 @@
+@import url(/bukeala-static/styles/panelita/colors.css);
+/* badge para listas en configuraciones, ej config > especialidades > recursos */
+/* reemplaza a los btn-group-radio btns */
+
+/* status label para rows y cards de agenda, solicitudes, etc */
+/* <span class="status-label [estado]"></span>*/
+
+.status-label,
+.badge,
+.btn-group-radio > .btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 24px;
+  flex-shrink: 0;
+  padding: 4px 10px!important;
+  background-color: var(--label-bg-color);
+  border-radius: 8px!important;
+  font-size: 14px;
+  font-weight: 700;
+  /* si no se especifica el color del texto, defaultea a n700 */
+  color: var(--label-text-color, var(--color-n700));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-group-radio > .btn,
+.badge-selectable {
+  --label-bg-color: var(--color-n100);
+  color: var(--color-n600);
+  transition: padding .25s ease-in-out;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn-group-radio > .btn {
+  margin: 0 8px 16px 0;
+}
+
+.btn-group-radio > .btn.active,
+.badge-selectable.selected {
+  padding-left: 24px!important;
+  --label-bg-color: var(--color-b200);
+  color: var(--color-b500);
+}
+
+.btn-group-radio > .btn::before,
+.badge-selectable::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  background-image: url(/bukeala-static/images/icons/panelita/check.svg);
+  background-size: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: var(--filter-b500);
+  transition: width .25s ease-in-out;
+}
+
+.btn-group-radio > .btn:not(.active)::before,
+.badge-selectable:not(.selected)::before {
+  width: 0;
+  transition: none;
+}
+
+.status-label {
+  text-transform: uppercase;
+}
+
+/* status labels */
+/* solicitud aprobada */
+.status-label.request-approved,
+/* cita asistida */
+.status-label.pending {
+  --label-bg-color: var(--color-g200);
+  --label-text-color: var(--color-g500);
+}
+
+/* solicitud rechazada */
+.status-label.request-denied,
+/* cita pendiente de datos (faltan datos) */
+.status-label.pending-data {
+  --label-bg-color: var(--color-r50);
+  --label-text-color: var(--color-r500);
+}
+
+/* solicitud pendiente */
+.status-label.request-pending,
+/* cita admitida */
+.status-label.admitted {
+  --label-bg-color: var(--color-y50);
+  --label-text-color: var(--color-y500);
+}
+
+/* bloqueo completo */
+.status-label.full-block {
+  --label-bg-color: var(--color-v200);
+  --label-text-color: var(--color-v600);
+}
+
+/* bloqueo parcial */
+.status-label.partial-block {
+  --label-bg-color: var(--color-t200);
+  --label-text-color: var(--color-t600);
+}
+
+/* solicitud de modificación */
+.status-label.request-modify {
+  --label-bg-color: var(--color-b200);
+  --label-text-color: var(--color-b500);
+}
+
+/* solicitud de creación*/
+.status-label.request-creation {
+  --label-bg-color: var(--color-g200);
+  --label-text-color: var(--color-g500);
+}

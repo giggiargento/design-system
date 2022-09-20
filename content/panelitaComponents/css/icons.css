@@ -1,0 +1,395 @@
+:root {
+  --icon-color: var(--color-n800);
+  --icon-size: 16px;
+}
+
+[class*="icon-"] {
+  background-size: var(--icon-size);
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.msg[class*="icon-"] {
+  padding-left: 24px;
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  flex-shrink: 0;
+  padding-left: 0;
+}
+
+.icon-add,
+button.icon-add::before {
+  background-image: url(/bukeala-static/images/icons/panelita/add.svg);
+}
+
+.icon-add-circle {
+  background-image: url(/bukeala-static/images/icons/panelita/add_circle_outline.svg);
+}
+
+.icon-appoint {
+  background-image: url(/bukeala-static/images/icons/panelita/appoint.svg);
+  background-size: 24px;
+}
+
+.icon-arrow-down {
+  background-image: url(/bukeala-static/images/icons/panelita/arrow_downward.svg);
+}
+
+.icon-arrow-left {
+  background-image: url(/bukeala-static/images/icons/panelita/arrow_back.svg);
+}
+
+.icon-arrow-right {
+  background-image: url(/bukeala-static/images/icons/panelita/arrow_forward.svg);
+}
+
+.icon-arrow-up {
+  background-image: url(/bukeala-static/images/icons/panelita/arrow_upward.svg);
+}
+
+.icon-assign {
+  background-image: url(/bukeala-static/images/icons/panelita/person_add_alt_1.svg);
+}
+
+.icon-attachment {
+  background-image: url(/bukeala-static/images/icons/panelita/attachment.svg);
+}
+
+.icon-area {
+  background-image: url(/bukeala-static/images/icons/panelita/badge_black.svg);
+}
+
+.icon-block {
+  background-image: url(/bukeala-static/images/icons/panelita/do_disturb_alt.svg);
+}
+
+.icon-booking {
+  background-image: url(/bukeala-static/images/icons/panelita/date_range.svg);
+}
+
+.icon-branch {
+  background-image: url(/bukeala-static/images/icons/panelita/clinic.svg);
+}
+
+.icon-calendar {
+  background-image: url(/bukeala-static/images/icons/panelita/event_note.svg);
+}
+
+.icon-calendar-days {
+  background-image: url(/bukeala-static/images/icons/panelita/calendar-month-outline.svg);
+}
+
+.icon-calendar-refresh {
+  background-image: url(/bukeala-static/images/icons/panelita/calendar-refresh.svg);
+}
+
+.icon-cancel {
+  background-image: url(/bukeala-static/images/icons/panelita/cancel.svg);
+}
+
+.icon-chart {
+  background-image: url(/bukeala-static/images/icons/panelita/pie_chart_outline_black.svg);
+}
+
+.icon-check {
+  background-image: url(/bukeala-static/images/icons/panelita/check.svg);
+}
+
+.icon-check-all {
+  background-image: url(/bukeala-static/images/icons/panelita/done_all.svg);
+}
+
+.icon-chevron-down {
+  background-image: url(/bukeala-static/images/icons/panelita/expand_more.svg);
+}
+
+.icon-chevron-left {
+  background-image: url(/bukeala-static/images/icons/panelita/chevron-left.svg);
+}
+
+.icon-chevron-right {
+  background-image: url(/bukeala-static/images/icons/panelita/chevron-right.svg);
+}
+
+.icon-chevron-up {
+  background-image: url(/bukeala-static/images/icons/panelita/expand_less.svg);
+}
+
+.icon-child {
+  background-image: url(/bukeala-static/images/icons/panelita/child_care.svg);
+}
+
+.icon-city,
+.icon-place {
+  background-image: url(/bukeala-static/images/icons/panelita/place_black.svg);
+}
+
+.icon-clock {
+  background-image: url(/bukeala-static/images/icons/panelita/clock.svg);
+}
+
+.icon-close {
+  background-image: url(/bukeala-static/images/icons/panelita/close.svg);
+}
+
+.icon-columns {
+  background-image: url(/bukeala-static/images/icons/panelita/view_week.svg);
+}
+
+.icon-comment {
+  background-image: url(/bukeala-static/images/icons/panelita/announcement.svg);
+}
+
+.icon-company {
+  background-image: url(/bukeala-static/images/icons/panelita/apartment.svg);
+}
+
+.icon-component {
+  background-image: url(/bukeala-static/images/icons/panelita/science.svg);
+}
+
+.icon-customer {
+  background-image: url(/bukeala-static/images/icons/panelita/person_outline.svg);
+}
+
+.icon-delete {
+  background-image: url(/bukeala-static/images/icons/panelita/delete.svg);
+}
+
+.icon-date {
+  background-image: url(/bukeala-static/images/icons/panelita/calendar.svg);
+}
+
+.icon-doctor {
+  background-image: url(/bukeala-static/images/icons/panelita/doctor.svg);
+}
+
+.icon-domain {
+  background-image: url(/bukeala-static/images/icons/panelita/domain.svg);
+}
+
+.icon-download {
+  background-image: url(/bukeala-static/images/icons/panelita/download.svg);
+}
+
+.icon-edit {
+  background-image: url(/bukeala-static/images/icons/panelita/create.svg);
+}
+
+.icon-elderly {
+  background-image: url(/bukeala-static/images/icons/panelita/elderly.svg);
+}
+
+.icon-error {
+  background-image: url(/bukeala-static/images/icons/panelita/error_outline_black.svg);
+}
+
+.icon-event {
+  background-image: url(/bukeala-static/images/icons/panelita/event.svg);
+}
+
+.icon-exam {
+  background-image: url(/bukeala-static/images/icons/panelita/biotech_black.svg);
+}
+
+.icon-favorite {
+  background-image: url(/bukeala-static/images/icons/panelita/favorite.svg);
+}
+
+.icon-favorite-off {
+  background-image: url(/bukeala-static/images/icons/panelita/favorite_border.svg);
+}
+
+.icon-filter {
+  background-image: url(/bukeala-static/images/icons/panelita/filter_alt.svg);
+}
+
+.icon-filter-off {
+  background-image: url(/bukeala-static/images/icons/panelita/filter_alt_off.svg);
+}
+
+.icon-handicapped {
+  background-image: url(/bukeala-static/images/icons/panelita/accessible.svg);
+}
+
+.icon-help {
+  background-image: url(/bukeala-static/images/icons/panelita/help_outline.svg);
+}
+
+.icon-history {
+  background-image: url(/bukeala-static/images/icons/panelita/history.svg);
+}
+
+.icon-holiday {
+  background-image: url(/bukeala-static/images/icons/panelita/celebration_black.svg);
+}
+
+.icon-info {
+  background-image: url(/bukeala-static/images/icons/panelita/info.svg);
+}
+
+.icon-log-activity,
+.icon-visibility {
+  background-image: url(/bukeala-static/images/icons/panelita/visibility.svg);
+}
+
+.icon-logout {
+  background-image: url(/bukeala-static/images/icons/panelita/logout.svg);
+}
+
+.icon-marks {
+  background-image: url(/bukeala-static/images/icons/panelita/create.svg);
+}
+
+.icon-mass-assign {
+  background-image: url(/bukeala-static/images/icons/panelita/group_add_black.svg);
+}
+
+.icon-mass-cancel {
+  background-image: url(/bukeala-static/images/icons/panelita/event_busy.svg);
+}
+
+.icon-mass-change {
+  background-image: url(/bukeala-static/images/icons/panelita/change_circle_black.svg);
+}
+
+.icon-mass-notify {
+  background-image: url(/bukeala-static/images/icons/panelita/forward_to_inbox.svg);
+}
+
+.icon-menu-dots {
+  background-image: url(/bukeala-static/images/icons/panelita/menu-dots.svg);
+  background-size: 24px;
+}
+
+.icon-more {
+  background-image: url(/bukeala-static/images/icons/panelita/add.svg);
+}
+
+.icon-multiple-components {
+  background-image: url(/bukeala-static/images/icons/panelita/fact_check.svg);
+}
+
+.icon-new-booking {
+  background-image: url(/bukeala-static/images/icons/panelita/calendar_today_black.svg);
+}
+
+.icon-notification {
+  background-image: url(/bukeala-static/images/icons/panelita/mail_outline.svg);
+}
+
+.icon-opportunity {
+  background-image: url(/bukeala-static/images/icons/panelita/star_border.svg);
+}
+
+.icon-parameters {
+  background-image: url(/bukeala-static/images/icons/panelita/settings.svg);
+}
+
+.icon-partner {
+  background-image: url(/bukeala-static/images/icons/panelita/groups.svg);
+}
+
+.icon-pause {
+  background-image: url(/bukeala-static/images/icons/panelita/pause.svg);
+}
+
+.icon-person {
+  background-image: url(/bukeala-static/images/icons/panelita/account_circle.svg);
+}
+
+.icon-plan {
+  background-image: url(/bukeala-static/images/icons/panelita/library_books.svg);
+}
+
+.icon-pregnant {
+  background-image: url(/bukeala-static/images/icons/panelita/pregnant_woman.svg);
+}
+
+.icon-province {
+  background-image: url(/bukeala-static/images/icons/panelita/location_city_black.svg);
+}
+
+.icon-parameter {
+  background-image: url(/bukeala-static/images/icons/panelita/settings.svg);
+}
+
+.icon-queue {
+  background-image: url(/bukeala-static/images/icons/panelita/pending_actions_black.svg);
+}
+
+.icon-reason {
+  background-image: url(/bukeala-static/images/icons/panelita/fact_check.svg);
+}
+
+.icon-reassign {
+  background-image: url(/bukeala-static/images/icons/panelita/cached.svg);
+}
+
+.icon-room {
+  background-image: url(/bukeala-static/images/icons/panelita/meeting_room.svg);
+}
+
+.icon-search {
+  background-image: url(/bukeala-static/images/icons/panelita/search.svg);
+}
+
+.icon-send {
+  background-image: url(/bukeala-static/images/icons/panelita/send.svg);
+}
+
+.icon-settings {
+  background-image: url(/bukeala-static/images/icons/panelita/settings.svg);
+}
+
+.icon-sms {
+  background-image: url(/bukeala-static/images/icons/panelita/mark_email_read.svg);
+}
+
+.icon-success {
+  background-image: url(/bukeala-static/images/icons/panelita/check_circle_outline.svg);
+}
+
+.icon-switch-account {
+  background-image: url(/bukeala-static/images/icons/panelita/switch_account.svg);
+}
+
+.icon-token {
+  background-image: url(/bukeala-static/images/icons/panelita/vpn_key_black.svg);
+}
+
+.icon-trash {
+  background-image: url(/bukeala-static/images/icons/panelita/delete.svg);
+}
+
+.icon-type {
+  background-image: url(/bukeala-static/images/icons/panelita/category.svg);
+}
+
+.icon-users {
+  background-image: url(/bukeala-static/images/icons/panelita/people_alt.svg);
+}
+
+.icon-user-settings {
+  background-image: url(/bukeala-static/images/icons/panelita/account-cog-outline.svg);
+}
+
+.icon-vaccine {
+  background-image: url(/bukeala-static/images/icons/panelita/vaccines_black.svg);
+}
+
+.icon-warning {
+  background-image: url(/bukeala-static/images/icons/panelita/report_problem.svg);
+}
+
+.icon-wizard-restart {
+  background-image: url(/bukeala-static/images/icons/panelita/wizard-restart.svg);
+}
