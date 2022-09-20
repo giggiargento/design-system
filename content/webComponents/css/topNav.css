@@ -15,12 +15,15 @@
 
 #topNav a.nav-link{
   margin-right: 20px;
+  font-size: 14px;
 }
 
 /*Search*/
 #topNav form {
     background-color: var(--lightest-blue);
     border-radius: 0.3em;
+    display: flex;
+    flex-direction: initial;
 }
 
 #topNav .form-control:focus {
@@ -57,4 +60,9 @@
 
 .navbar-toggler:focus{
   box-shadow: none !important;
+}
+
+/* Fix with Panelita topnav */
+.navbar::after{
+  content: none !important;
 }

@@ -9,8 +9,7 @@
 @import url('/content/webComponents/css/downloadCards.css');
 @import url('/content/webComponents/css/usageCards.css');
 /* Panelita Components*/
-@import url('/content/panelitaComponents/colors.css');
-@import url('/content/panelitaComponents/checkbox-radio.css');
+@import url('/content/panelitaComponents/css/panelita.css');
 
 
 /* DEP */
@@ -163,6 +162,7 @@ ul{
 
 #homeHeader .description{
     font-family: 'Open Sans';
+    font-weight: 400;
     font-size: 18px;
     color: var(--subtext-color);
     margin-top: 40px;
@@ -212,6 +212,7 @@ ul{
 
 #sectionHeader .description{
     font-family: 'Open Sans';
+    font-weight: 400;
     font-size: 16px;
     color: var(--subtext-color);
     margin-top: 40px;
@@ -222,6 +223,8 @@ ul{
 #sectionHeader form {
     background-color: var(--lightest-blue);
     border-radius: 0.3em;
+    display: flex;
+    flex-direction: initial;
 }
 
 #sectionHeader .form-control:focus {
