@@ -96,8 +96,8 @@
                                                 <div class="card h-100">
                                                     <div class="card-header">
                                                         <!-- Here we will add panelitaComponents -->
-                                                        <div class="primaryButton card-img-top" alt="...">
-
+                                                        <div class="card-img-top" alt="...">
+                                                            <button class="pbtn btn-secondary">Show Save Alert</button>
                                                         </div>
                                                     </div>
                                                     <div class="accordion accordion-flush" id="accordionFlushExample1">
@@ -105,25 +105,9 @@
                                                             <div id="flush-collapseOne1" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample1">
                                                                 <div id="myCode" class="myCode">
                                                                     <!-- id to call codeBox code with JavaScript -->
-                                                                    <pre id="codeId1" class="card-text accordion-body" type="text"><code>&ltbutton class="pbtn btn-primary"&gtLabel&lt/button&gt
+                                                                    <pre id="codeId1" class="card-text accordion-body" type="text"><code>
 
-&ltbutton class="pbtn btn-primary"&gt
-  &ltspan class="material-icons"&gtarrow_forward&lt/span&gtLabel
-&lt/button&gt
-
-&ltbutton class="pbtn btn-primary btn-icon"&gt
-  &ltspan class="material-icons"&gtmore_horiz&lt/span&gt
-&lt/button&gt
-
-&ltbutton class="pbtn btn-primary btn-disabled"&gtLabel&lt/button&gt
-
-&ltbutton class="pbtn btn-primary btn-disabled"&gt
-  &ltspan class="material-icons"&gtarrow_forward&lt/span&gtLabel
-&lt/button&gt
-
-&ltbutton class="pbtn btn-primary btn-icon btn-disabled"&gt
-  &ltspan class="material-icons"&gtmore_horiz&lt/span&gt
-&lt/button&gt</code></pre>
+</code></pre>
                                                                 </div>
                                                                 </div>
                                                             <div class="card-footer accordion-header" id="flush-headingOne">
@@ -145,53 +129,32 @@
                                             </div>
                                         </div>
 
-                                        <!-- Title -->
-                                         <h6 class="textTitle" data-lang="en">Secondary button
-                                        </h6>
-                                        <!-- Text -->
-                                         <h6 class="text" data-lang="en">For secondary actions on each page. Secondary buttons can only be used in conjunction with a primary button. As part of a pair, the function of the secondary button is to perform the negative action of the set, such as "Cancel" or "Back".
-                                        </h6>
-
                                         <!-- Code Box -->
                                         <div class="codeBox row row-cols-12">
                                             <div class="col">
                                                 <div class="card h-100">
                                                     <div class="card-header">
                                                         <!-- Here we will add panelitaComponents -->
-                                                        <div id="secondaryButtonLoader" class="primaryButton card-img-top" alt="..."></div>
+                                                        <div class="card-img-top" alt="...">
+                                                            <button class="pbtn btn-secondary">Show Delete Alert</button>
+                                                        </div>
                                                     </div>
                                                     <div class="accordion accordion-flush" id="accordionFlushExample2">
                                                         <div class="accordion-item">
                                                             <div id="flush-collapseOne2" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample2">
                                                                 <div id="myCode" class="myCode">
                                                                     <!-- id to call codeBox code with JavaScript -->
-                                                                    <pre id="codeId2" class="card-text accordion-body" type="text"><code>&ltbutton class="pbtn btn-secondary"&gtLabel&lt/button&gt
+                                                                    <pre id="codeId2" class="card-text accordion-body" type="text"><code>
 
-&ltbutton class="pbtn btn-secondary"&gt
-    &ltspan class="material-icons"&gtarrow_forward&lt/span&gtLabel
-&lt/button&gt
-
-&ltbutton class="pbtn btn-secondary btn-icon"&gt
-    &ltspan class="material-icons"&gtmore_horiz&lt/span&gt
-&lt/button&gt
-
-&ltbutton class="pbtn btn-secondary btn-disabled"&gtLabel&lt/button&gt
-
-&ltbutton class="pbtn btn-secondary btn-disabled"&gt
-    &ltspan class="material-icons"&gtarrow_forward&lt/span&gtLabel
-&lt/button&gt
-
-&ltbutton class="pbtn btn-secondary btn-icon btn-disabled"&gt
-    &ltspan class="material-icons"&gtmore_horiz&lt/span&gt
-&lt/button></code></pre>
+</code></pre>
                                                                 </div>
                                                                 </div>
                                                             <div class="card-footer accordion-header" id="flush-headingOne">
                                                                 <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
-
+                                                                    
                                                                     <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
                                                                     type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2" 
-                                                                    aria-expanded="false" aria-controls="flush-collapseOne2">Show code
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne2" onclick="">Show code
                                                                     </button>
 
                                                                 </div>
@@ -206,10 +169,20 @@
                                         </div>
 
                                         <!-- Title -->
-                                         <h6 class="textTitle" data-lang="en">Error button
+                                         <h6 class="textTitle" data-lang="en">Toast
                                         </h6>
                                         <!-- Text -->
-                                         <h6 class="text" data-lang="en">For actions that could have destructive effects on user data (for example, deletion).
+                                         <h6 class="text" data-lang="en">There is a type of notifications called toast, this component is a non-disruptive message that appears at the top of the interface to provide quick feedback on the result of an action.
+                                            <br>
+                                            <br>
+                                            A toast provides simple feedback about an operation in a small popup. It only fills the amount of space required for the message and the current activity remains visible and interactive. Toasts automatically disappear after a timeout.
+                                        </h6>
+
+                                        <!-- Title -->
+                                         <h6 class="textTitle" data-lang="en">Success
+                                        </h6>
+                                        <!-- Text -->
+                                         <h6 class="text" data-lang="en">Success messages let people know they have completed an action. For these messages, it's best to confirm the outcome and let people continue. If they have just created something, give them an option to view it.
                                         </h6>
                                        
                                         <!-- Code Box -->
@@ -218,40 +191,26 @@
                                                 <div class="card h-100">
                                                     <div class="card-header">
                                                         <!-- Here we will add panelitaComponents -->
-                                                        <div id="errorButtonLoader" class="primaryButton card-img-top" alt="..."></div>
+                                                        <div class="card-img-top" alt="...">
+                                                            <button class="pbtn btn-secondary">Show Success Toast</button>
+                                                        </div>
                                                     </div>
                                                     <div class="accordion accordion-flush" id="accordionFlushExample3">
                                                         <div class="accordion-item">
                                                             <div id="flush-collapseOne3" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample3">
                                                                 <div id="myCode" class="myCode">
                                                                     <!-- id to call codeBox code with JavaScript -->
-                                                                    <pre id="codeId3" class="card-text accordion-body" type="text"><code>&ltbutton class="pbtn btn-red"&gtLabel&lt/button&gt
+                                                                    <pre id="codeId3" class="card-text accordion-body" type="text"><code>
 
-&ltbutton class="pbtn btn-red"&gt
-    &ltspan class="material-icons"&gtarrow_forward&lt/span&gtLabel
-&lt/button&gt
-
-&ltbutton class="pbtn btn-red btn-icon"&gt
-    &ltspan class="material-icons"&gtmore_horiz&lt/span&gt
-&lt/button&gt
-
-&ltbutton class="pbtn btn-red btn-disabled"&gtLabel&lt/button&gt
-
-&ltbutton class="pbtn btn-red btn-disabled"&gt
-    &ltspan class="material-icons"&gtarrow_forward&lt/span&gtLabel
-&lt/button&gt
-
-&ltbutton class="pbtn btn-red btn-icon btn-disabled"&gt
-    &ltspan class="material-icons"&gtmore_horiz&lt/span&gt
-&lt/button></code></pre>
+</code></pre>
                                                                 </div>
                                                                 </div>
                                                             <div class="card-footer accordion-header" id="flush-headingOne">
                                                                 <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
-
+                                                                    
                                                                     <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
                                                                     type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne3" 
-                                                                    aria-expanded="false" aria-controls="flush-collapseOne3">Show code
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne3" onclick="">Show code
                                                                     </button>
 
                                                                 </div>
@@ -264,28 +223,302 @@
                                                 </div>
                                             </div>
                                         </div>
+                                       
+                                        <!-- Code Box -->
+                                        <div class="codeBox row row-cols-12">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-header">
+                                                        <!-- Here we will add panelitaComponents -->
+                                                        <div class="card-img-top" alt="...">
+                                                            <button class="pbtn btn-secondary">Show Success Descriptive Toast</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample4">
+                                                        <div class="accordion-item">
+                                                            <div id="flush-collapseOne4" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample4">
+                                                                <div id="myCode" class="myCode">
+                                                                    <!-- id to call codeBox code with JavaScript -->
+                                                                    <pre id="codeId4" class="card-text accordion-body" type="text"><code>
+
+</code></pre>
+                                                                </div>
+                                                                </div>
+                                                            <div class="card-footer accordion-header" id="flush-headingOne">
+                                                                <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
+                                                                    
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
+                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne4" 
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne4" onclick="">Show code
+                                                                    </button>
+
+                                                                </div>
+                                                                <div id="copyBtn4" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId4')">content_copy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
                                         <!-- Title -->
-                                         <h6 class="textTitle" data-lang="en">Buttons with icon
+                                         <h6 class="textTitle" data-lang="en">Information
                                         </h6>
                                         <!-- Text -->
-                                         <h6 class="text" data-lang="en">Buttons support an icon before or after the label. Avoid using both icons on a button at the same time.
-                                            In the case of using icon and unlabeled buttons, make sure the icon is explicit about the action it is displaying.
+                                         <h6 class="text" data-lang="en">Information messages alert the user to additional information without requiring an action. Inform the user about something that might help or impact them. Then, let them get back to work. Info messages are also used for loading states.
                                         </h6>
+                                       
+                                        <!-- Code Box -->
+                                        <div class="codeBox row row-cols-12">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-header">
+                                                        <!-- Here we will add panelitaComponents -->
+                                                        <div class="card-img-top" alt="...">
+                                                            <button class="pbtn btn-secondary">Show Info Toast</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample5">
+                                                        <div class="accordion-item">
+                                                            <div id="flush-collapseOne5" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample5">
+                                                                <div id="myCode" class="myCode">
+                                                                    <!-- id to call codeBox code with JavaScript -->
+                                                                    <pre id="codeId5" class="card-text accordion-body" type="text"><code>
+
+</code></pre>
+                                                                </div>
+                                                                </div>
+                                                            <div class="card-footer accordion-header" id="flush-headingOne">
+                                                                <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
+                                                                    
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
+                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne5" 
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne5" onclick="">Show code
+                                                                    </button>
+
+                                                                </div>
+                                                                <div id="copyBtn5" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId5')">content_copy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                        <!-- Code Box -->
+                                        <div class="codeBox row row-cols-12">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-header">
+                                                        <!-- Here we will add panelitaComponents -->
+                                                        <div class="card-img-top" alt="...">
+                                                            <button class="pbtn btn-secondary">Show Info Descriptive Toast</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample6">
+                                                        <div class="accordion-item">
+                                                            <div id="flush-collapseOne6" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample6">
+                                                                <div id="myCode" class="myCode">
+                                                                    <!-- id to call codeBox code with JavaScript -->
+                                                                    <pre id="codeId6" class="card-text accordion-body" type="text"><code>
+
+</code></pre>
+                                                                </div>
+                                                                </div>
+                                                            <div class="card-footer accordion-header" id="flush-headingOne">
+                                                                <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
+                                                                    
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
+                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne6" 
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne6" onclick="">Show code
+                                                                    </button>
+
+                                                                </div>
+                                                                <div id="copyBtn6" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId6')">content_copy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
                                         <!-- Title -->
-                                         <h6 class="textTitle" data-lang="en">Icons buttons
+                                         <h6 class="textTitle" data-lang="en">Warning
                                         </h6>
                                         <!-- Text -->
-                                         <h6 class="text" data-lang="en">Panelita also supports icon-only buttons for a lighter-weight toolbar-like treatment.
+                                         <h6 class="text" data-lang="en">Warning messages appear before we request the user to take action. This is usually in anticipation of a significant change. Have empathy for the user. Inform, but don't alarm. If the warning comes before an action, clearly communicate what will happen if they proceed, and provide an alternative where possible.
                                         </h6>
+                                       
+                                        <!-- Code Box -->
+                                        <div class="codeBox row row-cols-12">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-header">
+                                                        <!-- Here we will add panelitaComponents -->
+                                                        <div class="card-img-top" alt="...">
+                                                            <button class="pbtn btn-secondary">Show Warning Toast</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample7">
+                                                        <div class="accordion-item">
+                                                            <div id="flush-collapseOne7" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample7">
+                                                                <div id="myCode" class="myCode">
+                                                                    <!-- id to call codeBox code with JavaScript -->
+                                                                    <pre id="codeId7" class="card-text accordion-body" type="text"><code>
+
+</code></pre>
+                                                                </div>
+                                                                </div>
+                                                            <div class="card-footer accordion-header" id="flush-headingOne">
+                                                                <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
+                                                                    
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
+                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne7" 
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne7" onclick="">Show code
+                                                                    </button>
+
+                                                                </div>
+                                                                <div id="copyBtn7" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId7')">content_copy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                        <!-- Code Box -->
+                                        <div class="codeBox row row-cols-12">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-header">
+                                                        <!-- Here we will add panelitaComponents -->
+                                                        <div class="card-img-top" alt="...">
+                                                            <button class="pbtn btn-secondary">Show Warning Descriptive Toast</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample8">
+                                                        <div class="accordion-item">
+                                                            <div id="flush-collapseOne8" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample8">
+                                                                <div id="myCode" class="myCode">
+                                                                    <!-- id to call codeBox code with JavaScript -->
+                                                                    <pre id="codeId8" class="card-text accordion-body" type="text"><code>
+
+</code></pre>
+                                                                </div>
+                                                                </div>
+                                                            <div class="card-footer accordion-header" id="flush-headingOne">
+                                                                <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
+                                                                    
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
+                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne8" 
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne8" onclick="">Show code
+                                                                    </button>
+
+                                                                </div>
+                                                                <div id="copyBtn8" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId8')">content_copy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
                                         <!-- Title -->
-                                         <h6 class="textTitle" data-lang="en">Disabled state buttons
+                                         <h6 class="textTitle" data-lang="en">Error
                                         </h6>
                                         <!-- Text -->
-                                         <h6 class="text" data-lang="en">Buttons support disabled states to indicate that a user can not take an action on a particular situation.
+                                         <h6 class="text" data-lang="en">Error messages let the user know that something has gone wrong after they've tried to do something or if there are connectivity issues. Explain the problem and provide the user with a next step or an alternative. Keep the message simple and direct, and avoid confusing the user with technical details.
                                         </h6>
+                                       
+                                        <!-- Code Box -->
+                                        <div class="codeBox row row-cols-12">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-header">
+                                                        <!-- Here we will add panelitaComponents -->
+                                                        <div class="card-img-top" alt="...">
+                                                            <button class="pbtn btn-secondary">Show Error Toast</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample9">
+                                                        <div class="accordion-item">
+                                                            <div id="flush-collapseOne9" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample9">
+                                                                <div id="myCode" class="myCode">
+                                                                    <!-- id to call codeBox code with JavaScript -->
+                                                                    <pre id="codeId9" class="card-text accordion-body" type="text"><code>
+
+</code></pre>
+                                                                </div>
+                                                                </div>
+                                                            <div class="card-footer accordion-header" id="flush-headingOne">
+                                                                <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
+                                                                    
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
+                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne9" 
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne9" onclick="">Show code
+                                                                    </button>
+
+                                                                </div>
+                                                                <div id="copyBtn9" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId9')">content_copy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                        <!-- Code Box -->
+                                        <div class="codeBox row row-cols-12">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-header">
+                                                        <!-- Here we will add panelitaComponents -->
+                                                        <div class="card-img-top" alt="...">
+                                                            <button class="pbtn btn-secondary">Show Error Descriptive Toast</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample10">
+                                                        <div class="accordion-item">
+                                                            <div id="flush-collapseOne10" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample10">
+                                                                <div id="myCode" class="myCode">
+                                                                    <!-- id to call codeBox code with JavaScript -->
+                                                                    <pre id="codeId10" class="card-text accordion-body" type="text"><code>
+
+</code></pre>
+                                                                </div>
+                                                                </div>
+                                                            <div class="card-footer accordion-header" id="flush-headingOne">
+                                                                <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
+                                                                    
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
+                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne10" 
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne10" onclick="">Show code
+                                                                    </button>
+
+                                                                </div>
+                                                                <div id="copyBtn10" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId10')">content_copy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
                                         <!-- end component section -->
                                 </div>
                                     <!-- end code -->
@@ -293,21 +526,29 @@
 
                                     <!--Usage-->
                                     <div class="tab-pane fade" id="buttonUsageTab">
-                                        <!-- Usage section -->
-                                         <h6 class="text" data-lang="en">
-                                            A button's text label is the most important element of a button, as it communicates the action that will be performed when the user interacts with it. In a contained button, the text is always center-aligned.
-                                            <br>
-                                            <br>
-                                            If a text label is not used, there must be an icon to indicate what the button does.
-                                        </h6>
 
-                                        <!-- Title -->
-                                         <h6 class="textTitle" data-lang="en">Button with content
-                                        </h6>
+                                    <!-- Title -->
+                                     <h6 class="textTitle" data-lang="en">Content guidelines
+                                    </h6>
+
+                                    <!-- List -->
+                                    <ul class="text outside" data-lang="en">
+                                        <li>The icon and its color must reinforce the intention of the message (information, warning, error, success)
+                                        </li>
+                                        <br>
+                                        <li>They are displayed at the top right of the screen.
+                                        </li>
+                                        <br>
+                                        <li>Buttons should be aligned to the right.
+                                        </li>
+                                        <br>
+                                        <li>The title and description must be short, clear and concise.
+                                        </li>
+                                    </ul>
                                         
                                         <!-- Img -->
                                         <div id="imgContent" class="imgContent">
-                                            <img src="/content/assets/components/buttonUsage.svg">
+                                            <img src="/content/assets/components/alertUsage.svg">
                                         </div>
 
                                         <!--Usage Dots-->
@@ -315,30 +556,70 @@
                                             <div class="numberDotContainer">
                                                 <div class="numberDot">1</div>
                                                  <h6 class="text" data-lang="en">
-                                                    <b>Left Icon:</b> Shown optionally, it reinforces the understanding of the action.
+                                                    <b>Icon:</b> Reinforces the intention of the message.
                                                 </h6>
                                             </div>
                                             <div class="numberDotContainer">
                                                 <div class="numberDot">2</div>
                                                  <h6 class="text" data-lang="en">
-                                                    <b>Label:</b> Describes the main action. It works best when it's short.
+                                                    <b>Title:</b> Provides a quick general description of the flag.
                                                 </h6>
                                             </div>
                                             <div class="numberDotContainer">
                                                 <div class="numberDot">3</div>
                                                  <h6 class="text" data-lang="en">
-                                                    <b>Right Icon:</b> Shown optionally, it reinforces the understanding of the action.
+                                                    <b>Description:</b> Provides additional details and practical steps for the user to take.
+                                                </h6>
+                                            </div>
+                                            <div class="numberDotContainer">
+                                                <div class="numberDot">4</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Secondary Button:</b> Shows the least relevant action.
+                                                </h6>
+                                            </div>
+                                            <div class="numberDotContainer">
+                                                <div class="numberDot">5</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Primary Button:</b> Displays the primary action.
                                                 </h6>
                                             </div>
                                         </div>
 
+                                    <!-- Title -->
+                                    <h6 class="textTitle" data-lang="en">Content guidelines: Toast
+                                    </h6>
+
+                                    <!-- List -->
+                                    <ul class="text outside" data-lang="en">
+                                        <li>Messages should be clear and concise.
+                                        </li>
+                                        <br>
+                                        <li>The title must have between 3 and 5 words.
+                                        </li>
+                                        <br>
+                                        <li>Do not exceed 60 characters in the description.
+                                        </li>
+                                    </ul>
+
                                         <!-- Title -->
-                                         <h6 class="textTitle" data-lang="en">Icon button
+                                         <h6 class="textTitle" data-lang="en">Behavior
                                         </h6>
+
+                                    <!-- List -->
+                                    <ul class="text outside" data-lang="en">
+                                        <li>They slide in and out, usually at the top right of the page.
+                                        </li>
+                                        <br>
+                                        <li>The toast disappears after five seconds, but can also be discarded by the user.
+                                        </li>
+                                        <br>
+                                        <li>Multiple toast are stacked vertically and the most recent appears at the top of the list.
+                                        </li>
+                                    </ul>
 
                                         <!-- Img -->
                                         <div id="imgContent" class="imgContent">
-                                            <img src="/content/assets/components/iconButtonUsage.svg">
+                                            <img src="/content/assets/components/toastUsage.svg">
                                         </div>
 
                                         <!--Usage Dots-->
@@ -346,29 +627,118 @@
                                             <div class="numberDotContainer">
                                                 <div id="numberDot" class="numberDot">1</div>
                                                  <h6 class="text" data-lang="en">
-                                                    <b>Container:</b> Optional 32px.
+                                                    <b>Icon:</b> Informs users the type of notification at a glance.
                                                 </h6>
                                             </div>
                                             <div class="numberDotContainer">
                                                 <div id="numberDot" class="numberDot">2</div>
                                                  <h6 class="text" data-lang="en">
-                                                    <b>Icon:</b> 16px.
+                                                    <b>Title:</b> Provides a quick overview of the notification.
+                                                </h6>
+                                            </div>
+                                            <div class="numberDotContainer">
+                                                <div id="numberDot" class="numberDot">3</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Message:</b> Can be optional. Provides additional details and actionable steps for the user to take.
                                                 </h6>
                                             </div>
                                         </div>
 
                                         <!-- Title -->
-                                         <h6 class="textTitle" data-lang="en">Action button
+                                         <h6 class="textTitle" data-lang="en">States
                                         </h6>
 
-                                        <!-- Text with link -->
-                                         <h6 class="text">Specific icon button without container used in <a class="textLink" href="/content/pages/table.html">Tables</a> for row controls, for example: delete, edit, comments, etc.
+                                        <!-- Success State -->
+                                        <!-- Title -->
+                                         <h6 class="textTitle" data-lang="en">Success:
+                                        </h6>
+
+                                        <!-- Text -->
+                                        <h6 class="text" data-lang="en">Use to confirm that a user instruction was processed successfully.
                                         </h6>
 
                                         <!-- Img -->
                                         <div id="imgContent" class="imgContent">
-                                            <img src="/content/assets/components/actionButtonUsage.svg">
+                                            <img src="/content/assets/components/successUsage.svg">
                                         </div>
+
+                                        <!-- Information State -->
+                                        <!-- Title -->
+                                         <h6 class="textTitle" data-lang="en">Information:
+                                        </h6>
+
+                                        <!-- Text -->
+                                        <h6 class="text" data-lang="en">Use to guide a user's attention to relevant details, but they should stay focused and related to the topic on the screen.
+                                        </h6>
+
+                                        <!-- Img -->
+                                        <div id="imgContent" class="imgContent">
+                                            <img src="/content/assets/components/informationUsage.svg">
+                                        </div>
+
+                                        <!-- Warning State -->
+                                        <!-- Title -->
+                                         <h6 class="textTitle" data-lang="en">Warning:
+                                        </h6>
+
+                                        <!-- Text -->
+                                        <h6 class="text" data-lang="en">Use warning alerts when users need to be informed about a potentially unfavorable situation that requires eventual action on their part. If the problem requires immediate attention, use a critical alert.
+                                        </h6>
+
+                                        <!-- Img -->
+                                        <div id="imgContent" class="imgContent">
+                                            <img src="/content/assets/components/warningUsage.svg">
+                                        </div>
+
+                                        <!-- Error State -->
+                                        <!-- Title -->
+                                         <h6 class="textTitle" data-lang="en">Error:
+                                        </h6>
+
+                                        <!-- Text -->
+                                        <h6 class="text" data-lang="en">Use critical alerts when something is preventing users from continuing or when an issue needs to be resolved immediately. The alert should offer a solution to the problem.
+                                        </h6>
+
+                                        <!-- Img -->
+                                        <div id="imgContent" class="imgContent">
+                                            <img src="/content/assets/components/errorUsage.svg">
+                                        </div>
+
+                                        
+                                    <!-- Usage Cards -->
+                                    <div id="usageCards" class="container col-12">
+                                        <div class="usageCards row">
+                                            <div class="usageCard card col-sm">
+                                                <div class="card-header" data-lang="en"><img src="/content/assets/doIcon.svg">
+                                                DO
+                                                </div>
+                                                    <div class="card-body">
+                                                        <ul class="text outside" data-lang="en">
+                                                            <li>When an action is required before continuing.
+                                                            </li>
+                                                            <li>For success messages.
+                                                            </li>
+                                                            <li>Only for non-critical errors that are relevant at the moment and can be explained in 3 words.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            </div>
+                                            <div class="usageCard card col-sm">
+                                                <div class="card-header" data-lang="en"><img src="/content/assets/doNotIcon.svg">
+                                                DON'T
+                                                </div>
+                                                    <div class="card-body">
+                                                        <ul class="text outside" data-lang="en">
+                                                            <li>Don't use a toast if the message must remain on the screen.
+                                                            </li>
+                                                            <li>Don't use a toast when you want to include an action.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end usage cards -->
 
                                     </div>
                                     <!-- end usage -->
