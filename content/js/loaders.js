@@ -391,7 +391,6 @@ $(document).ready(function() {
 
     //Select
     $('#selectLoader').load('../panelitaComponents/select.html', function() {
-        $('select').unwrap();
         triggerLoaded($(this));
         
         $('select').chosen();

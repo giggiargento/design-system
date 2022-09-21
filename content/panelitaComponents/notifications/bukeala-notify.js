@@ -23,7 +23,7 @@
 		
 		var btn1 = getNotifyBtn(settings.action1);
 		var btn2 = getNotifyBtn(settings.action2);
-		var notifyType = btn1 == '' && btn2 == '' ? 'toast' : 'with-actions';
+		var notifyType = btn1 == '' && btn2 == '' ? 'ptoast' : 'with-actions';
 
 		var template = `<div data-notify="container" class="${notifyType} ${settings.icon}" role="alert">`
 			+ ' <div data-notify="content">'

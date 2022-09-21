@@ -14,21 +14,21 @@
   transition: all .3s ease-in-out!important;
 }
 
-[data-notify=container].toast.error-icon,
-[data-notify=container].toast.delete-icon {
+[data-notify=container].ptoast.error-icon,
+[data-notify=container].ptoast.delete-icon {
   --notify-bg-color: var(--color-r50);
 }
 
-[data-notify=container].toast.save-icon,
-[data-notify=container].toast.info-icon {
+[data-notify=container].ptoast.save-icon,
+[data-notify=container].ptoast.info-icon {
   --notify-bg-color: var(--color-b50);
 }
 
-[data-notify=container].toast.warning-icon {
+[data-notify=container].ptoast.warning-icon {
   --notify-bg-color: var(--color-y50);
 }
 
-[data-notify=container].toast.success-icon {
+[data-notify=container].ptoast.success-icon {
   --notify-bg-color: var(--color-g50);
 }
 
@@ -85,21 +85,21 @@
   color: var(--notify-text-color)
 }
 
-.toast.error-icon [data-notify=title],
-.toast.delete-icon  [data-notify=title] {
+.ptoast.error-icon [data-notify=title],
+.ptoast.delete-icon  [data-notify=title] {
   --notify-text-color: var(--color-r600);
 }
 
-.toast.save-icon [data-notify=title],
-.toast.info-icon [data-notify=title] {
+.ptoast.save-icon [data-notify=title],
+.ptoast.info-icon [data-notify=title] {
   --notify-text-color: var(--color-b600);
 }
 
-.toast.warning-icon  [data-notify=title] {
+.ptoast.warning-icon  [data-notify=title] {
   --notify-text-color: var(--color-y600);
 }
 
-.toast.success-icon  [data-notify=title] {
+.ptoast.success-icon  [data-notify=title] {
   --notify-text-color: var(--color-g600);
 }
 
@@ -136,6 +136,7 @@
   display: flex;
   align-items: center;
   user-select: none;
+  text-decoration: none;
 }
 
 [data-notify=container] .actions .action + .action {
@@ -171,7 +172,7 @@
 
 [data-notify=icon]::before {
   position: absolute;
-  top: 1px;
+  top: -5px;
   font-family: 'Material Icons';
   font-size: 24px;
   color: var(--notify-icon-color);

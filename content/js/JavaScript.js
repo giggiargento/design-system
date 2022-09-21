@@ -14,9 +14,7 @@ function copyToClipboard(codeId) {
 
 
 //codeBox
-const button = document.querySelectorAll(".showHideCode");
-
-button.forEach(btn => btn.addEventListener("click", showCode))
+document.querySelectorAll(".showHideCode").forEach(btn => btn.addEventListener("click", showCode))
 
 function showCode() {
   let btn = event.target
@@ -74,7 +72,7 @@ function successToast(){
   $.bukealaNotify({
     icon: 'success-icon',
     title: 'Success message.',
-    delay: 0
+    delay: 3000
   });
 }
 
@@ -83,7 +81,7 @@ function successDescriptiveToast(){
     icon: 'success-icon',
     title: 'Success message.',
     message: 'This message appears as a successful message for the action you did.',
-    delay: 0
+    delay: 3000
   });
 }
 
@@ -91,7 +89,7 @@ function infoToast(){
   $.bukealaNotify({
     icon: 'info-icon',
     title: 'Info message.',
-    delay: 0
+    delay: 3000
   });
 }
 
@@ -100,7 +98,7 @@ function infoDescriptiveToast(){
     icon: 'info-icon',
     title: 'Info message.',
     message: 'This message provides information about what you need to do or indicates something you need to know about.',
-    delay: 0
+    delay: 3000
   });
 }
 
@@ -109,7 +107,7 @@ function warningToast(){
     icon: 'warning-icon',
     title: 'Warning message.',
     message: '',
-    delay: 0
+    delay: 3000
   });
 }
 
@@ -118,7 +116,7 @@ function warningDescriptiveToast(){
     icon: 'warning-icon',
     title: 'Warning message.',
     message: 'This is a warning message toast. Provides information about something you are going to do or change.',
-    delay: 0
+    delay: 3000
   });
 }
 
@@ -126,7 +124,7 @@ function errorToast(){
   $.bukealaNotify({
     icon: 'error-icon',
     title: 'Error message.',
-    delay: 0
+    delay: 3000
   });
 }
 
@@ -145,8 +143,8 @@ function saveAlert(){
     title: 'Are you sure to exit before save?',
     message: 'This message provides a question before you take action about something that later you are going to do.',
     delay: 0,
-    action1: { onclick: "", name: 'Save'},
-    action2: { onclick: "", name: 'Cancel'},
+    action1: { onclick: "", name: 'Save', closeOnClick: true},
+    action2: { onclick: "", name: 'Cancel', closeOnClick: true},
   });
 }
 
@@ -156,7 +154,7 @@ function deleteAlert(){
     title: 'Are you sure you want to delete this?',
     message: 'This message provides a question before you take action about something that later you won’t be able to undo.',
     delay: 0,
-    action1: {onclick: "", name: 'Delete'},
-    action2: {onclick: "", name: 'Cancel'},
+    action1: {onclick: "", name: 'Delete', closeOnClick: true},
+    action2: {onclick: "", name: 'Cancel', closeOnClick: true},
   });
 }
