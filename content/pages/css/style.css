@@ -332,6 +332,17 @@ div#imgSection{
     color: var(--default-blue);
 }
 
+#pageContent .textImportant{
+    background-color: var(--white-blue);
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-radius: 8px;
+}
+
 #pageContent .textTitle{
     font-family: 'Open Sans';
     font-size: 14px;
