@@ -318,12 +318,18 @@ div#imgSection{
     font-family: 'Open Sans';
     font-size: 14px;
     text-decoration: underline;
+    color: var(--default-blue);
+}
+
+#pageContent .textLink:hover{
+    color: var(--dark-blue);
 }
 
 #pageContent .textHighlighted{
     font-family: 'Open Sans';
     font-size: 14px;
     text-decoration: none;
+    color: var(--default-blue);
 }
 
 #pageContent .textTitle{
