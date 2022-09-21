@@ -8,8 +8,10 @@
 @import url('/content/webComponents/css/codeBox.css');
 @import url('/content/webComponents/css/downloadCards.css');
 @import url('/content/webComponents/css/usageCards.css');
+
 /* Panelita Components*/
 @import url('/content/panelitaComponents/css/panelita.css');
+@import url('/content/panelitaComponents/chosen/chosen.css');
 
 
 /* DEP */
@@ -840,3 +842,9 @@ div#imgSection{
     flex-direction: column;
     gap: 12px;
 }
+
+/* Select */
+.card-header.selectCard{
+    padding: 16px;
+}
+
