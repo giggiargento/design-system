@@ -7,6 +7,7 @@
 #topNav { 
   background-color: white;
   box-shadow: var(--nav-shadow); /*No se visualiza ????*/
+  border-bottom: none;
 }
 
 #topNav .navbar-nav .nav-item a.active {
