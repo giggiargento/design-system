@@ -844,6 +844,6 @@ div#imgSection{
 }
 
 /* Select */
-.card-header.selectCard{
-    padding: 16px;
+#selectLoader label{
+    font-size: 16px;
 }
