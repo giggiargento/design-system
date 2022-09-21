@@ -158,3 +158,10 @@ function deleteAlert(){
     action2: {onclick: "", name: 'Cancel', closeOnClick: true},
   });
 }
+
+// Sidesheet onclick
+function formSidesheet(){
+}
+
+function onlyContentSidesheet(){
+}
