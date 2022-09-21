@@ -82,10 +82,10 @@ function getNotifyBtn(action) {
 	var html = '';
 	if(action != '') {
 		if(!action.closeOnClick) {
-			html = '<a id="' + action.id + '" class="action" onclick="' + action.onclick + '">' + action.name + '</a>';
+			html = '<a id="' + action.id + '" class="action pbtn btn-primary" onclick="' + action.onclick + '">' + action.name + '</a>';
 		}
 		else if(action.closeOnClick === true) {
-			html = '<a id="' + action.id + '" class="action" onclick="' + action.onclick + '" data-notify="dismiss">'+ action.name + '</a>';
+			html = '<a id="' + action.id + '" class="action pbtn btn-secondary" onclick="' + action.onclick + '" data-notify="dismiss">'+ action.name + '</a>';
 		}
 	}
 	return html;
