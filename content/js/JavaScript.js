@@ -68,3 +68,95 @@ function activateSideNavLink() {
   $('.sidenav a.active').removeClass('active').removeAttr('aria-current');
   $('.sidenav a[href="' + location.pathname + '"]').addClass('active').attr('aria-current', 'page'); 
 }; 
+
+// Notifications onclick
+function successToast(){
+  $.bukealaNotify({
+    icon: 'success-icon',
+    title: 'Success message.',
+    delay: 0
+  });
+}
+
+function successDescriptiveToast(){
+  $.bukealaNotify({
+    icon: 'success-icon',
+    title: 'Success message.',
+    message: 'This message appears as a successful message for the action you did.',
+    delay: 0
+  });
+}
+
+function infoToast(){
+  $.bukealaNotify({
+    icon: 'info-icon',
+    title: 'Info message.',
+    delay: 0
+  });
+}
+
+function infoDescriptiveToast(){
+  $.bukealaNotify({
+    icon: 'info-icon',
+    title: 'Info message.',
+    message: 'This message provides information about what you need to do or indicates something you need to know about.',
+    delay: 0
+  });
+}
+
+function warningToast(){
+  $.bukealaNotify({
+    icon: 'warning-icon',
+    title: 'Warning message.',
+    message: '',
+    delay: 0
+  });
+}
+
+function warningDescriptiveToast(){
+  $.bukealaNotify({
+    icon: 'warning-icon',
+    title: 'Warning message.',
+    message: 'This is a warning message toast. Provides information about something you are going to do or change.',
+    delay: 0
+  });
+}
+
+function errorToast(){
+  $.bukealaNotify({
+    icon: 'error-icon',
+    title: 'Error message.',
+    delay: 0
+  });
+}
+
+function errorDescriptiveToast(){
+  $.bukealaNotify({
+    icon: 'error-icon',
+    title: 'Error message.',
+    message: 'An error message toast provides users know that something has gone wrong after they\'ve tried to do something.',
+    delay: 0
+  });
+}
+
+function saveAlert(){
+  $.bukealaNotify({
+    icon: 'save-icon',
+    title: 'Are you sure to exit before save?',
+    message: 'This message provides a question before you take action about something that later you are going to do.',
+    delay: 0,
+    action1: { onclick: "", name: 'Save'},
+    action2: { onclick: "", name: 'Cancel'},
+  });
+}
+
+function deleteAlert(){
+  $.bukealaNotify({
+    icon: 'delete-icon',
+    title: 'Are you sure you want to delete this?',
+    message: 'This message provides a question before you take action about something that later you won’t be able to undo.',
+    delay: 0,
+    action1: {onclick: "", name: 'Delete'},
+    action2: {onclick: "", name: 'Cancel'},
+  });
+}
