@@ -1,16 +1,21 @@
 .codeBox{
     padding-top: 12px;
 }
+
 .codeBox .card{
-    box-shadow: 0px 0px 10px #EBF0FF;
-    border-radius: 8px;
-    border: none;
+    border-radius: 9px;
+    border-color: #EBF0FF;
+}
+
+.codeBox .card:hover{
+    box-shadow: 0px 0px 6px #EBF0FF;
 }
 
 .codeBox .card-header{
     background-color: white;
     align-content: left;
     border-bottom: none;
+    border-radius: 8px !important;
 }
 
 .codeBox .card-img-top{
@@ -34,6 +39,7 @@
 .codeBox .card-footer{
     border-top: none;
     padding: 0;
+    border-radius: 0 0 8px 8px !important;
     background-color: #F3F6FF;
     display: flex;
     align-items: center;
@@ -64,8 +70,25 @@
 
 .codeBox .copyBtn{
     font-size: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 .codeBox .card-body{
     padding: 0;
+}
+
+.accordion-flush .accordion-item{
+    color: none !important;
+    background-color: none !important;
+    border-radius: 8px !important;
+}
+
+/* Resources */
+.codeBox .card-body-resources{
+    background-color: #EBF0FF !important;
+    border-radius: 8px 8px 0 0 !important;
+    color: #696F8C;
+    font-size: 14px;
+    padding: 16px;
 }

@@ -310,12 +310,20 @@ div#imgSection{
 #pageContent .text{
     font-family: 'Open Sans';
     font-size: 14px;
+    font-weight: 400;
     color: var(--subtext-color);
 }
 
 #pageContent .textLink{
     font-family: 'Open Sans';
     font-size: 14px;
+    text-decoration: underline;
+}
+
+#pageContent .textHighlighted{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    text-decoration: none;
 }
 
 #pageContent .textTitle{
