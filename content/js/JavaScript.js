@@ -133,7 +133,7 @@ function errorDescriptiveToast(){
     icon: 'error-icon',
     title: 'Error message.',
     message: 'An error message toast provides users know that something has gone wrong after they\'ve tried to do something.',
-    delay: 0
+    delay: 3000
   });
 }
 

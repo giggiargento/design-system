@@ -862,3 +862,8 @@ div#imgSection{
 .form-field.vertical.auto-height.mtauto input[type=checkbox]:checked::after {
     position: static;
 }
+
+/* Notifications */
+[data-notify=container] .actions{
+    gap: 0 !important;
+}

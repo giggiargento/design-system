@@ -82,8 +82,8 @@
     title: 'Are you sure to exit before save?',
     message: 'This message provides a question before you take action about something that later you are going to do.',
     delay: 0,
-    action1: { onclick: "", name: 'Save'},
-    action2: { onclick: "", name: 'Cancel'},
+    action1: { onclick: "", name: 'Save', closeOnClick: false},
+    action2: { onclick: "", name: 'Cancel', closeOnClick: true},
   });
 
   $.bukealaNotify({
@@ -91,9 +91,16 @@
     title: 'Are you sure you want to delete this?',
     message: 'This message provides a question before you take action about something that later you won’t be able to undo.',
     delay: 0,
-    action1: {onclick: "", name: 'Delete'},
-    action2: {onclick: "", name: 'Cancel'},
+    action1: {onclick: "", name: 'Delete', closeOnClick: false},
+    action2: {onclick: "", name: 'Cancel', closeOnClick: true},
   });
+
 </script>
 </body>
+        <!-- Boostrap js-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+        <!-- Dependencias Js Notifications -->
+        <script src="/content/panelitaComponents/notifications/bootstrap-notify.min.js"></script>
+        <script src="/content/panelitaComponents/notifications/bukeala-notify.js"></script>
 </html>
