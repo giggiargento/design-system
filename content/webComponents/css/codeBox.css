@@ -52,6 +52,10 @@
     text-decoration: none;
 }
 
+.codeBox .btn-link{
+    color: var(--default-blue);
+}
+
 .codeBox .text-center{
     position: relative;
     justify-content: center;
