@@ -124,7 +124,7 @@
   flex-direction: row-reverse;
   justify-content: flex-start;
   margin: 16px 0 0 0;
-  /*gap: 16px;*/
+  gap: 16px;
 }
 
 [data-notify=container] .actions .action {
@@ -160,6 +160,12 @@
   position: relative!important;
   right: unset!important;
   top: unset!important;
+}
+
+[data-notify=container] .actions .action.btn-red {
+  border-color: var(--color-r500);
+  background-color: var(--color-r500);
+  color: var(--color-n0);
 }
 
 /** íconos **/

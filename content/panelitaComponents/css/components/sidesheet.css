@@ -1,6 +1,6 @@
 .side-panel {
   position: fixed;
-  top: 0;
+  top: var(--top-nav-height);
   right: 0;
   height: 100%;
   max-width: var(--sidepanel-max-width, 420px);
@@ -45,6 +45,7 @@
   font-size: 22px;
   margin-left: auto;
   margin-right: 8px;
+  display: flex;
 }
 
 .side-panel .scroll-container {

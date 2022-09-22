@@ -143,7 +143,7 @@ function saveAlert(){
     title: 'Are you sure to exit before save?',
     message: 'This message provides a question before you take action about something that later you are going to do.',
     delay: 0,
-    action1: { onclick: "", name: 'Save', closeOnClick: true},
+    action1: { onclick: "", name: 'Save', closeOnClick: false},
     action2: { onclick: "", name: 'Cancel', closeOnClick: true},
   });
 }
@@ -154,14 +154,16 @@ function deleteAlert(){
     title: 'Are you sure you want to delete this?',
     message: 'This message provides a question before you take action about something that later you won’t be able to undo.',
     delay: 0,
-    action1: {onclick: "", name: 'Delete', closeOnClick: true},
+    action1: {onclick: "", name: 'Delete', closeOnClick: false},
     action2: {onclick: "", name: 'Cancel', closeOnClick: true},
   });
 }
 
 // Sidesheet onclick
 function formSidesheet(){
+  $('#sideSheetFormExample').removeClass('hide');
 }
 
 function onlyContentSidesheet(){
+  $('#sideSheetContentExample').removeClass('hide');
 }

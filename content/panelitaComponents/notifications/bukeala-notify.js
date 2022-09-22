@@ -81,12 +81,20 @@
 function getNotifyBtn(action) {
 	var html = '';
 	if(action != '') {
-		if(!action.closeOnClick) {
+		if(!action.closeOnClick && !isDeleteBtn(action)) {
 			html = '<a id="' + action.id + '" class="action pbtn btn-primary" onclick="' + action.onclick + '">' + action.name + '</a>';
+		}
+		else if(!action.closeOnClick && isDeleteBtn(action)) {
+			html = '<a id="' + action.id + '" class="action pbtn btn-red" onclick="' + action.onclick + '">' + action.name + '</a>';
 		}
 		else if(action.closeOnClick === true) {
 			html = '<a id="' + action.id + '" class="action pbtn btn-secondary" onclick="' + action.onclick + '" data-notify="dismiss">'+ action.name + '</a>';
 		}
 	}
+	
 	return html;
+}
+
+function isDeleteBtn(btn) {
+	return btn.name.toLowerCase().includes('delete');
 }

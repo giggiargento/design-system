@@ -71,7 +71,7 @@
                                                             <div id="flush-collapseOne1" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample1">
                                                                 <div id="myCode" class="myCode">
                                                                     <!-- id to call codeBox code with JavaScript -->
-                                                                    <pre id="codeId1" class="card-text accordion-body" type="text"><code>&ltdiv class="side-panel edit-calendar edit">
+                                                                    <pre id="codeId1" class="card-text accordion-body" type="text"><code>&ltdiv class="side-panel edit" id="sideSheetFormExample">
     &ltdiv class="top">
       &ltspan class="material-icons">edit&lt/span>
       &lth3>Edit schedule&lt/h3>
@@ -171,7 +171,7 @@
                                                             <div id="flush-collapseOne2" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample2">
                                                                 <div id="myCode" class="myCode">
                                                                     <!-- id to call codeBox code with JavaScript -->
-                                                                    <pre id="codeId2" class="card-text accordion-body" type="text"><code>&ltdiv class="side-panel calendar-comment comment">
+                                                                    <pre id="codeId2" class="card-text accordion-body" type="text"><code>&ltdiv class="side-panel comment" id="sideSheetContentExample">
     &ltdiv class="top">
       &ltspan class="material-icons">feedback_outline&lt/span>
       &lth3>Comments&lt/h3>
@@ -311,6 +311,87 @@
                     </div>
                 </main>
             </div>
+        </div>
+        <div class="side-panel edit hide" id="sideSheetFormExample">
+          <div class="top">
+            <span class="material-icons">edit</span>
+            <h3>Edit schedule</h3>
+            <div class="btn-container">
+              <button class="btn btn-icon icon-24 close material-icons">close</button>
+            </div>
+          </div>
+          <div class="scroll-container gap8">
+            <div class="data-row">
+              <span class="label">Type of request:</span>
+              <span class="data">Modification</span>
+            </div>
+            <div class="data-row">
+              <span class="label">Days:</span>
+              <span class="data">MTWTFSS</span>
+            </div>
+            <div class="data-row">
+              <span class="label">Time:</span>
+              <span class="data">10.00 - 18.00</span>
+            </div>
+            <div class="data-row">
+              <span class="label">Validity:</span>
+              <span class="data">01/06/2021 - 01/07/2021</span>
+            </div>
+            <div class="data-row">
+              <span class="label">Consulting room:</span>
+              <span class="data">Consulting room 101</span>
+            </div>
+            <div class="data-row">
+              <span class="label">Duration:</span>
+              <span class="data">20 minutes</span>
+            </div>
+            <div class="data-row">
+              <span class="label">Interval:</span>
+              <span class="data">10 minutes</span>
+            </div>
+            <div class="data-row">
+              <span class="label">Anticipation:</span>
+              <span class="data">1 hour</span>
+            </div>
+            <div class="data-row">
+              <span class="label">Modality:</span>
+              <span class="data">Face-to-face</span>
+            </div>
+            <div class="form-field vertical auto-height mtauto">
+              <p class="h300 mb16">Advanced</p>
+              <div class="flex-h gap24 mt8 flex-wrap">
+                <div class="flex-h">
+                  <input type="checkbox" id="global">
+                  <label for="global">Global</label>
+                </div>
+                <div class="flex-h">
+                  <input type="checkbox" id="web">
+                  <label for="web">Web</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="side-panel comment hide" id="sideSheetContentExample">
+          <div class="top">
+            <span class="material-icons">feedback_outline</span>
+            <h3>Comments</h3>
+            <div class="btn-container">
+              <button class="btn btn-icon icon-24 close material-icons">close</button>
+            </div>
+          </div>
+          <div class="scroll-container">
+            <div class="comment">
+              <div><span class="bold">Name:</span> <span>John Doe</span></div>
+              <p class="comment-text">A short description with summary details to inform user without exit from the current screen.</p>
+              <hr class="mt16"/>
+            </div>
+            <div class="comment">
+              <div><span class="bold">Name:</span> <span>John Doe</span></div>
+              <p class="comment-text">A short description with summary details to inform user without exit from the current screen.</p>
+              <hr class="mt16"/>
+            </div>
+          </div>
         </div>
         <!-- Footer -->
         <footer id="footerLoader" class="loader footerLoader"></footer>
