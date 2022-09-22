@@ -850,7 +850,15 @@ div#imgSection{
     font-size: 16px;
 }
 
-/* Side sheet */
+/* Sidesheet */
+.side-panel{
+    top: var(--top-nav-height) !important;
+}
+
 .side-panel h3 {
     margin: 0;
+}
+
+.form-field.vertical.auto-height.mtauto input[type=checkbox]:checked::after {
+    position: static;
 }

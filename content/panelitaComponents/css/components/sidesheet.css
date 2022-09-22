@@ -1,6 +1,6 @@
 .side-panel {
   position: fixed;
-  top: var(--top-nav-height);
+  top: 0;
   right: 0;
   height: 100%;
   max-width: var(--sidepanel-max-width, 420px);
