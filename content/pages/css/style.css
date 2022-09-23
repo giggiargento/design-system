@@ -852,10 +852,6 @@ div#imgSection{
 }
 
 /* Sidesheet */
-.side-panel{
-    top: var(--top-nav-height) !important;
-}
-
 .side-panel h3 {
     margin: 0;
 }
