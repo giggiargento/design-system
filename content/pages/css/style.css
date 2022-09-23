@@ -450,7 +450,7 @@ div#imgSection{
 }
 
 pre{
-    overflow: visible;
+    overflow: visible !important;
 }
 
 /* end typography */
