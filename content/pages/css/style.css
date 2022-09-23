@@ -449,6 +449,10 @@ div#imgSection{
     margin-bottom: 24px;
 }
 
+pre{
+    overflow: visible;
+}
+
 /* end typography */
 
 /* Colors */
