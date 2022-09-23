@@ -1,8 +1,10 @@
 .side-panel {
   position: fixed;
-  top: var(--top-nav-height);
+  /* top: var(--top-nav-height); */
+  top: 0;
   right: 0;
-  height: calc(100vh - var(--top-nav-height));
+  /* height: calc(100vh - var(--top-nav-height)); */
+  height: 100%;
   max-width: var(--sidepanel-max-width, 420px);
   width: var(--sidepanel-width, 420px);
   display: flex;
