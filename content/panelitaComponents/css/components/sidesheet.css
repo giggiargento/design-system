@@ -1,8 +1,8 @@
 .side-panel {
   position: fixed;
-  top: 0;
+  top: var(--top-nav-height);
   right: 0;
-  height: 100%;
+  height: calc(100vh - var(--top-nav-height));
   max-width: var(--sidepanel-max-width, 420px);
   width: var(--sidepanel-width, 420px);
   display: flex;
@@ -46,6 +46,12 @@
   margin-left: auto;
   margin-right: 8px;
   display: flex;
+}
+
+.side-panel .top .btn {
+  height: 100%;
+  width: 100%;
+  padding: 0
 }
 
 .side-panel .scroll-container {

@@ -161,9 +161,11 @@ function deleteAlert(){
 
 // Sidesheet onclick
 function formSidesheet(){
+  $('.side-panel').addClass('hide');
   $('#sideSheetFormExample').removeClass('hide');
 }
 
 function onlyContentSidesheet(){
+  $('.side-panel').addClass('hide');
   $('#sideSheetContentExample').removeClass('hide');
 }
