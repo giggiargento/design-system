@@ -5,16 +5,10 @@
 
 /*Se activa unicamente al hacer scroll desde jquery*/
 #topNav { 
-  background-color: white;
   box-shadow: var(--nav-shadow); /*No se visualiza ????*/
   border-bottom: none;
   overflow: visible;
   z-index: 97;
-}
-
-#topNav .container{
-  background-color: white;
-  padding-bottom: 24px;
 }
 
 #topNav .navbar-nav .nav-item a.active {
@@ -122,3 +116,4 @@
 max-width: 24px;
 max-height: 24px;
 }
+

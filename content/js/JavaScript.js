@@ -170,7 +170,7 @@ function onlyContentSidesheet(){
   $('#sideSheetContentExample').removeClass('hide');
 }
 
-// Dropdowns in topNav
+// Dropdowns hover in topNav
 $(document).ready(function(){
   $('ul.nav li.dropdown').hover(function() {
     $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
@@ -178,3 +178,20 @@ $(document).ready(function(){
     $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
   });  
 });
+
+// Top Nav transparent when scroll
+var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 1) {
+          nav.classList.add('bg-white');
+        } else {
+          nav.classList.remove('bg-white');
+        }
+});
+
+function navbarTogglerBg(){
+  window.addEventListener('click', function () {
+    nav.classList.add('bg-white');
+});
+}
