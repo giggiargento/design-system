@@ -70,33 +70,55 @@
   box-shadow: none !important;
 }
 
-/* Fix with Panelita topnav */
-/* .navbar::after{
-  content: none !important;
-} */
-
+/* Dropdowns */
 .dropdown-toggle::after{
   content: none !important;
 }
 
 .dropdown-menu{
   border: none !important;
-  background-color: var(--white-blue) !important;
-  /* box-shadow: 0px 0px 10px #F3F6FF !important; */
+  background-color: white !important;
+  box-shadow: 0px 0px 20px #EEEEEE !important;
+  padding: 16px !important;
  }
 
  .dropdown-item{
   font-size: 14px !important;
   color: var(--text-color) !important;
+  padding: 12px !important;
  }
 
  .dropdown-item:hover{
   color: var(--default-blue) !important;
-  background-color: var(--white-blue) !important;
+  background-color: white !important;
+ }
+
+ .dropdown-item:focus{
+  color: var(--default-blue) !important;
+  background-color: white !important;
  }
 
  .dropdown-item.active{
   color: var(--default-blue) !important;
-  background-color: var(--white-blue) !important;
+  background-color: white !important;
  }
 
+.dropdownItemContainer{
+  display: flex;
+}
+
+.drowpdownImg{
+  background-color: var(--white-blue);
+  border-radius: 8px;
+  display: flex;
+  min-width: 32px;
+  height: 32px;
+  padding: 4px;
+  margin-top: 6px;
+  justify-content: center;
+}
+
+#navbarSupportedContent img{
+max-width: 24px;
+max-height: 24px;
+}

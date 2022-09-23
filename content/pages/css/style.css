@@ -449,6 +449,7 @@ div#imgSection{
     margin-bottom: 24px;
 }
 
+/* Fix for some displays */
 pre{
     overflow: visible !important;
 }
