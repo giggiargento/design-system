@@ -8,7 +8,13 @@
   background-color: white;
   box-shadow: var(--nav-shadow); /*No se visualiza ????*/
   border-bottom: none;
+  overflow: visible;
   z-index: 97;
+}
+
+#topNav .container{
+  background-color: white;
+  padding-bottom: 24px;
 }
 
 #topNav .navbar-nav .nav-item a.active {
@@ -65,6 +71,32 @@
 }
 
 /* Fix with Panelita topnav */
-.navbar::after{
+/* .navbar::after{
+  content: none !important;
+} */
+
+.dropdown-toggle::after{
   content: none !important;
 }
+
+.dropdown-menu{
+  border: none !important;
+  background-color: var(--white-blue) !important;
+  /* box-shadow: 0px 0px 10px #F3F6FF !important; */
+ }
+
+ .dropdown-item{
+  font-size: 14px !important;
+  color: var(--text-color) !important;
+ }
+
+ .dropdown-item:hover{
+  color: var(--default-blue) !important;
+  background-color: var(--white-blue) !important;
+ }
+
+ .dropdown-item.active{
+  color: var(--default-blue) !important;
+  background-color: var(--white-blue) !important;
+ }
+

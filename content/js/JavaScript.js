@@ -36,7 +36,7 @@ var componentsPages = ['buttons', 'calendar', 'cards', 'checkbox', 'dropdowns', 
 //Patterns
 var patternsPages = ['emptyStates', 'patternsForms', 'messages'];
 //Resources
-var resourcesPages = ['introduction', 'download', 'versions'];
+var resourcesPages = ['introduction', 'download'];
 
 function activateTopNavLink() {
   $('#topNav a.active').removeClass('active').removeAttr('aria-current');
@@ -169,3 +169,12 @@ function onlyContentSidesheet(){
   $('.side-panel').addClass('hide');
   $('#sideSheetContentExample').removeClass('hide');
 }
+
+// Dropdowns in topNav
+$(document).ready(function(){
+  $('ul.nav li.dropdown').hover(function() {
+    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+  }, function() {
+    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+  });  
+});
