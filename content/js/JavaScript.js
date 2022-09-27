@@ -197,7 +197,7 @@ var nav = document.querySelector('nav');
         }
 });
 
-// Disable scroll when click toggle menu button in topNav
+// Disable scroll when click toggle menu button in topNav --------------------------
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
 function preventDefault(e) {
@@ -234,3 +234,4 @@ function navbarTogglerBg(){
   window.addEventListener('keydown', preventDefaultForScrollKeys, false);
 });
 }
+// end disable scroll when click toggle menu button in topNav --------------------------
