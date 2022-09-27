@@ -222,6 +222,7 @@ try {
 var wheelOpt = supportsPassive ? { passive: false } : false;
 var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
 
+// ************************ AL ABRIR MENU COLLAPSADO EL FONDO SE PONE BLANCO Y SE INHABILITA EL SCROLL ************************
 // On click events
 function navbarTogglerBg(){
   // Background white
@@ -235,3 +236,5 @@ function navbarTogglerBg(){
 });
 }
 // end disable scroll when click toggle menu button in topNav --------------------------
+
+// ************************ NECESITAMOS QUE AL CERRAR EL MENU COLLAPSADO EL FONDO VUELVA AL ESTADO ORIGINAL Y SE HABILITE EL SCROLL NUEVAMENTE ************************
