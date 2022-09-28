@@ -16,6 +16,10 @@
   color: var(--default-blue);
 }
 
+#topNav .navbar-nav .nav-item a:hover {
+  color: var(--default-blue);
+}
+
 #topNav a.nav-link{
   margin-right: 20px;
   font-size: 14px;
