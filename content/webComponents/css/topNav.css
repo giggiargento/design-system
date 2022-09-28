@@ -9,6 +9,7 @@
   border-bottom: none;
   overflow: visible;
   z-index: 97;
+  transition: background-color .3s ease-in-out;
 }
 
 #topNav .navbar-nav .nav-item a.active {
