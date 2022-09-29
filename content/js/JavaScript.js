@@ -170,7 +170,13 @@ function onlyContentSidesheet(){
   $('#sideSheetContentExample').removeClass('hide');
 }
 
+// Selects
+function searchSelect(){
+$('select.search').chosen()
+$('select.no-search').chosen({disable_search: true});
+}
 
+// Top Nav
 $(document).ready(function(){
   // Dropdowns hover in topNav
   $('ul.nav li.dropdown').hover(function() {
@@ -238,3 +244,4 @@ function navbarTogglerBg(){
 // end disable scroll when click toggle menu button in topNav --------------------------
 
 // ************************ NECESITAMOS QUE AL CERRAR EL MENU COLLAPSADO EL FONDO VUELVA AL ESTADO ORIGINAL Y SE HABILITE EL SCROLL NUEVAMENTE ************************
+

@@ -876,6 +876,10 @@ pre{
     font-size: 16px;
 }
 
+#selectLoaderNoSearch label{
+    font-size: 16px;
+}
+
 /* Sidesheet */
 .side-panel h3 {
     margin: 0;

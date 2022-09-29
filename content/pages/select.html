@@ -56,7 +56,7 @@
 
 
                                         <!-- Title -->
-                                        <h6 class="textTitle" data-lang="en">Single Select
+                                        <h6 class="textTitle" data-lang="en">Select
                                         </h6>
 
                                         <!-- Text with link-->
@@ -67,8 +67,19 @@
                                         <div class="textImportant">
                                             <h6 class="text">To use <a class="textHighlighted">Chosen</a> you must include  <a class="textHighlighted">chosen.jquery.min.js</a> in your page
                                                 and initialize it using <a class="textHighlighted">$('select').chosen()</a>.
+                                                <br>
+                                                <br>
+                                                A variable of the select is the possibility of using it without an internal search. You can initialize it using <a class="textHighlighted">$('select.no-search').chosen({disable_search: true})</a>
+                                                replacing <a class="textHighlighted">'search'</a> class with <a class="textHighlighted">'no-search'</a>.
+                                                <br>
+                                                <br>
+                                                To discover more variables or ways to set up your select check out <a class="textLink" href="https://harvesthq.github.io/chosen/" target="_blank">Chosen</a> page.
                                             </h6>
                                         </div>
+
+                                        <!-- Title -->
+                                        <h6 class="textTitle" data-lang="en">Select with search
+                                        </h6>
 
                                         <!-- Code Box -->
                                         <div class="codeBox row row-cols-12">
@@ -84,14 +95,17 @@
                                                             <div id="flush-collapseOne1" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample1">
                                                                 <div id="myCode" class="myCode">
                                                                     <!-- id to call codeBox code with JavaScript -->
-                                                                    <pre id="codeId1" class="card-text accordion-body" type="text"><code>&ltselect name="" id="" data-placeholder="Select an option">
-    &ltoption value="">&lt/option>
-    &ltoption value="">Option&lt/option>
-    &ltoption value="">Option&lt/option>
-    &ltoption value="">Option&lt/option>
-    &ltoption value="">Option&lt/option>
-    &ltoption value="">Option&lt/option>
-&lt/select></code></pre>
+                                                                    <pre id="codeId1" class="card-text accordion-body" type="text"><code>&ltdiv class="form-field vertical">
+    &ltlabel>Label&lt/label>
+    &ltselect class="search" name="" id="" data-placeholder="Select an option">
+        &ltoption value="">&lt/option>
+        &ltoption value="">Option&lt/option>
+        &ltoption value="">Option&lt/option>
+        &ltoption value="">Option&lt/option>
+        &ltoption value="">Option&lt/option>
+        &ltoption value="">Option&lt/option>
+    &lt/select>
+&lt/div></code></pre>
                                                                 </div>
                                                                 </div>
                                                             <div class="card-footer accordion-header" id="flush-headingOne">
@@ -112,6 +126,58 @@
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <!-- Title -->
+                                        <h6 class="textTitle" data-lang="en">Select without search
+                                        </h6>
+
+                                        <!-- Code Box -->
+                                        <div class="codeBox row row-cols-12">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-header selectCard">
+                                                        <!-- Here we will add panelitaComponents -->
+                                                        <div id="selectLoaderNoSearch" class="card-img-top" alt="...">
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample2">
+                                                        <div class="accordion-item">
+                                                            <div id="flush-collapseOne2" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample2">
+                                                                <div id="myCode" class="myCode">
+                                                                    <!-- id to call codeBox code with JavaScript -->
+                                                                    <pre id="codeId2" class="card-text accordion-body" type="text"><code>&ltdiv class="form-field vertical">
+    &ltlabel>Label&lt/label>
+    &ltselect class="no-search" name="" id="" data-placeholder="Select an option">
+        &ltoption value="">&lt/option>
+        &ltoption value="">Option&lt/option>
+        &ltoption value="">Option&lt/option>
+        &ltoption value="">Option&lt/option>
+        &ltoption value="">Option&lt/option>
+        &ltoption value="">Option&lt/option>
+    &lt/select>
+&lt/div></code></pre>
+                                                                </div>
+                                                                </div>
+                                                            <div class="card-footer accordion-header" id="flush-headingOne">
+                                                                <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
+                                                                                                                                        
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
+                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2" 
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne2" onclick="">Show code
+                                                                    </button>
+
+                                                                </div>
+                                                                <div id="copyBtn2" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId2')">content_copy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
                                     </div>
                                     
                                     <!--Usage-->

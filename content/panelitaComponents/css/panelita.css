@@ -20,3 +20,9 @@ body {
 hr {
   border-top: 1px solid var(--color-n50);
 }
+
+/* Select */
+.chzn-container .chzn-results li.highlighted {
+  background-color: var(--color-b50) !important;
+}
+

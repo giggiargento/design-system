@@ -407,6 +407,12 @@ $(document).ready(function() {
         $('select').chosen();
     })
 
+    $('#selectLoaderNoSearch').load('../panelitaComponents/selectNoSearch.html', function() {
+        triggerLoaded($(this));
+        
+        $('select').chosen();
+    })
+
 
 
 var loaderTotal
