@@ -394,6 +394,13 @@ div#imgSection{
     padding-left: 32px;
 }
 
+#pageContent .personalityBadge img{
+    padding: 0;
+    margin-top: 24px;
+    width: 150px;
+    height: 168px;
+}
+
 /* Number dots */
 .imgExplanation{
     display: grid;
