@@ -331,13 +331,24 @@ $(document).ready(function() {
     })
 
 //Main Cards
-    $('#mainCardsLoader1').load('../webComponents/mainCards.html', function() {
+    $('#mainCardMission').load('../webComponents/mainCards.html', function() {
         $('mainCards').unwrap();
-        triggerLoaded($(this));
+        const h5 = $(this).find('#cardTitle');
+        h5.text("Mission");
+        const p = $(this).find('#cardText');
+        p.text("Bukeala is based on Panelita visual design language principles and helps designers and developers maintain brand consistency across projects and design assets.");
+        const a = $(this).find('#cardLink');
+        a.attr('href', '/content/pages/mission.html');
     }) 
-    $('#mainCardsLoader2').load('../webComponents/mainCards.html', function() {
+
+    $('#mainCardPromise').load('../webComponents/mainCards.html', function() {
         $('mainCards').unwrap();
-        triggerLoaded($(this));
+        const h5 = $(this).find('#cardTitle');
+        h5.text("Promise");
+        const p = $(this).find('#cardText');
+        p.text("We are here to help create effective, aesthetically appealing and meaningful products that can help others teams build a unique system.");
+        const a = $(this).find('#cardLink');
+        a.attr('href', '/content/pages/promise.html');
     }) 
 
 //Download Cards
