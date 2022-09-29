@@ -272,9 +272,7 @@ input.date,
 input[type=time],
 textarea,
 .chzn-choices,
-select,
-.form-box .row label#existingCode,
-.form-box .row label#existingAvicenaCode {
+select {
   height: var(--input-height);
   width: 100%;
   border-radius: var(--input-border-radius);
@@ -286,14 +284,6 @@ select,
   font-size: var(--input-font-size);
   color: var(--color-text-main);
   text-overflow: ellipsis;
-}
-
-#currentPassword {
-  width: 80%!important;
-}
-
-input[type=text].date.full-width {
-  width: 100%!important;
 }
 
 textarea {
@@ -433,9 +423,7 @@ input[disabled][type=number],
 input[disabled][type=date],
 input[disabled].date,
 input[disabled][type=time],
-textarea[disabled],
-.form-box .row label#existingCode,
-.form-box .row label#existingAvicenaCode {
+textarea[disabled] {
   background-color: var(--color-disabled-bg);
   border-color: var(--color-disabled-border);
   color: var(--color-disabled-text);
@@ -548,54 +536,14 @@ textarea:invalid,
   margin-right: 4px;
 }
 
-.form-field.small {
-  width: auto;
-}
-
-.form-field.vertical.small {
-  margin-top: 0;
-}
-
-.form-field.vertical.small label {
-  font-size: 14px;
-  margin-bottom: 4px;
-}
-
-.form-field.small input[type="text"],
-.form-field.small textarea,
-.form-field.small .chzn-container,
-.form-field.small .chzn-container .chzn-single {
-  height: 32px;
-  padding: 8px 32px 8px 16px;
-}
-
-.form-field.small .chzn-container-single .chzn-single span {
-  height: 32px;
-  line-height: 32px;
-}
-
-.form-field.small .chzn-container .chzn-single {
-  font-size: 12px;
-}
-
-.form-field.small .chzn-container .chzn-drop {
-  padding-top: 8px;
-  top: 28px!important;
-}
-
-.form-field.small .chzn-container .chzn-results li {
-  font-size: 12px;
-  padding: 4px 4px 4px 16px!important;
-}
-
-.form-field.small .chzn-container-single .chzn-search input {
-  font-size: 12px;
-  padding: 4px 32px 4px 8px;
-  height: 24px;
-}
-
 .form-field.horizontal.error {
   flex-wrap: wrap;
+}
+
+.form-field .form-field-description {
+  font-size: 12px;
+  color: var(--color-n700);
+  margin-bottom: 8px;
 }
 
 .input-number-container {

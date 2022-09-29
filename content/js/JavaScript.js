@@ -170,12 +170,7 @@ function onlyContentSidesheet(){
   $('#sideSheetContentExample').removeClass('hide');
 }
 
-// Selects
-function searchSelect(){
-$('select.search').chosen()
-$('select.no-search').chosen({disable_search: true});
-}
-
+var nav = document.getElementById('topNav')
 // Top Nav
 $(document).ready(function(){
   // Dropdowns hover in topNav
@@ -193,7 +188,6 @@ $(document).ready(function(){
 });
 
 // Top Nav transparent when scroll
-var nav = document.querySelector('nav');
 
       window.addEventListener('scroll', function () {
         if (window.pageYOffset > 1) {
@@ -201,6 +195,13 @@ var nav = document.querySelector('nav');
         } else {
           nav.classList.remove('bg-white');
         }
+
+  // Selects
+  if ($('select').length > 0) {
+    $('select.search').chosen()
+    $('select.no-search').chosen({disable_search: true});
+  }
+
 });
 
 // Disable scroll when click toggle menu button in topNav --------------------------
@@ -230,16 +231,14 @@ var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewh
 
 // ************************ AL ABRIR MENU COLLAPSADO EL FONDO SE PONE BLANCO Y SE INHABILITA EL SCROLL ************************
 // On click events
-function navbarTogglerBg(){
+function navbarTogglerBg() {
   // Background white
-  window.addEventListener('click', function () {
-    nav.classList.add('bg-white');
+  nav.classList.add('bg-white');
   // Disable scroll
-  window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
-  window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-  window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
-  window.addEventListener('keydown', preventDefaultForScrollKeys, false);
-});
+  // window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+  // window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+  // window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+  // window.addEventListener('keydown', preventDefaultForScrollKeys, false);
 }
 // end disable scroll when click toggle menu button in topNav --------------------------
 
