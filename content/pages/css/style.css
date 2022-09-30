@@ -8,6 +8,7 @@
 @import url('/content/webComponents/css/codeBox.css');
 @import url('/content/webComponents/css/downloadCards.css');
 @import url('/content/webComponents/css/usageCards.css');
+@import url('/content/webComponents/css/mainCards.css');
 
 /* Panelita Components*/
 @import url('/content/panelitaComponents/css/panelita.css');
@@ -155,6 +156,10 @@ main {
 /*Elimina subrayados de links en general, en excepciones utilizar !important*/
 a:link, a:visited, a:active {
     text-decoration:none;
+}
+
+a:hover{
+    color: var(--dark-blue) !important;
 }
 
 ul{

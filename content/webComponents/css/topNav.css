@@ -17,7 +17,7 @@
 }
 
 #topNav .navbar-nav .nav-item a:hover {
-  color: var(--default-blue);
+  color: var(--default-blue) !important;
 }
 
 #topNav a.nav-link{
