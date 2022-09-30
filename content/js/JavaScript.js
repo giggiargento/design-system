@@ -12,20 +12,6 @@ function copyToClipboard(codeId) {
   )})
 }
 
-
-//codeBox
-document.querySelectorAll(".showHideCode").forEach(btn => btn.addEventListener("click", showCode))
-
-function showCode() {
-  let btn = event.target
-  btn.classList.toggle('closed');
-  if (btn.classList.contains("closed")) {
-    btn.textContent = "Show code"
-  } else {
-    btn.textContent = "Hide code"
-  }
-}
-
 // guardo lista de las secciones de cada para saber cuando activar el link en el top nav
 //Brand
 var brandPages = ['mission', 'personality', 'promise', 'values'];
@@ -185,6 +171,19 @@ $(document).ready(function(){
   } else {
     nav.classList.remove('bg-white');
   }
+
+  //codeBox
+  document.querySelectorAll(".showHideCode").forEach(btn => btn.addEventListener("click", showCode))
+
+  function showCode() {
+    let btn = event.target
+    btn.classList.toggle('closed');
+    if (btn.classList.contains("closed")) {
+      btn.textContent = "Show code"
+    } else {
+      btn.textContent = "Hide code"
+    }
+  }
 });
 
 // Top Nav transparent when scroll
@@ -199,7 +198,7 @@ $(document).ready(function(){
   // Selects
   if ($('select').length > 0) {
     $('select.search').chosen()
-    $('select.no-search').chosen({disable_search: true});
+    $('select.no-search').chosen({disable_search_threshold: 0});
   }
 
 });
