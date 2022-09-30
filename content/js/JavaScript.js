@@ -185,23 +185,17 @@ $(document).ready(function(){
   } else {
     nav.classList.remove('bg-white');
   }
+
 });
 
 // Top Nav transparent when scroll
 
-      window.addEventListener('scroll', function () {
-        if (window.pageYOffset > 1) {
-          nav.classList.add('bg-white');
-        } else {
-          nav.classList.remove('bg-white');
-        }
-
-  // Selects
-  if ($('select').length > 0) {
-    $('select.search').chosen()
-    $('select.no-search').chosen({disable_search: true});
-  }
-
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 1) {
+      nav.classList.add('bg-white');
+    } else {
+      nav.classList.remove('bg-white');
+    }
 });
 
 // Disable scroll when click toggle menu button in topNav --------------------------
