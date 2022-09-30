@@ -229,19 +229,16 @@ $(document).ready(function(){
 // var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
 
 // ************************ AL ABRIR MENU COLLAPSADO EL FONDO SE PONE BLANCO Y SE INHABILITA EL SCROLL ************************
-// On click events
 function navbarTogglerBg() {
   let btn = $(event.target).closest('.navbar-toggler')
   if (!btn.hasClass('collapsed')) {
-    console.log('collapsed')
-    // Background transparent
+    // Background white
     $('#topNav').addClass('bg-white')
-    // Enable scroll
+    // Disable scroll
     $('body').addClass('noscroll')
   }
 
   else {
-    console.log('not collapsed')
     // Background transparent
     $('#topNav').removeClass('bg-white')
     // Enable scroll
