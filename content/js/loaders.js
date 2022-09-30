@@ -401,7 +401,7 @@ $(document).ready(function() {
     })
 
     //Select
-    $('#selectLoader').load('../panelitaComponents/select.html', function() {
+    $('#selectLoaderSearch').load('../panelitaComponents/selectSearch.html', function() {
         triggerLoaded($(this));
         
         $('select').chosen();
