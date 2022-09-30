@@ -87,7 +87,7 @@
   width: 12px;
   height: 12px;
   font-size: 1px;
-  background: url('/content/panelitaComponents/chosen/icons/close.svg') center no-repeat;
+  background: url('/content/panelitaComponents/icons/close.svg') center no-repeat;
   background-color: transparent;
   background-size: 12px;
 }
@@ -104,7 +104,7 @@
 }
 
 .chzn-container-single .chzn-single div b {
-  background-image: url('/content/panelitaComponents/chosen/icons/chevron-down.svg');
+  background-image: url('/content/panelitaComponents/icons/chevron-down.svg');
   background-repeat: no-repeat;
   background-position: right 2px center;
   background-size: 16px;
@@ -130,7 +130,7 @@
   width: 100%;
   margin: 0;
   outline: 0;
-  background-image: url('/content/panelitaComponents/chosen/icons/search.svg');
+  background-image: url('/content/panelitaComponents/icons/search.svg');
   background-repeat: no-repeat;
   background-size: 16px;
   background-position: right 6px center;
@@ -233,7 +233,7 @@
   top: 6px;
   width: 12px;
   height: 12px;
-  background: url('/content/panelitaComponents/chosen/icons/close.svg') 0 0 no-repeat;
+  background: url('/content/panelitaComponents/icons/close.svg') 0 0 no-repeat;
   background-size: 12px;
 }
 
@@ -335,7 +335,7 @@
   border-left: none;
 }
 .chzn-container-active .chzn-single-with-drop div b {
-  background-image: url('/content/panelitaComponents/chosen/icons/chevron-up.svg');
+  background-image: url('/content/panelitaComponents/icons/chevron-up.svg');
 }
 .chzn-container-active .chzn-choices {
   border: 1px solid var(--input-border-color);

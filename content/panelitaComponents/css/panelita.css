@@ -4,6 +4,7 @@
 @import url(utility.css);
 @import url(variables.css);
 @import url(./components/button.css);
+@import url(./components/fileinput.css);
 @import url(./components/forms.css);
 @import url(./components/chosen-styled.css);
 @import url(./components/notification.css);
