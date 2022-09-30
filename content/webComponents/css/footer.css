@@ -1,12 +1,8 @@
 footer {
-    background-color: var(--default-blue);
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 46px;
     display: flex;
+    background-color: var(--default-blue);
+    width: 100%;
     place-content: center;
-    justify-content: center;
     margin-top: 200px;
     z-index: 98;
 }
