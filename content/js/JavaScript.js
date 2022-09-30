@@ -204,42 +204,48 @@ $(document).ready(function(){
 });
 
 // Disable scroll when click toggle menu button in topNav --------------------------
-var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+// var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
-function preventDefault(e) {
-  e.preventDefault();
-}
+// function preventDefault(e) {
+//   e.preventDefault();
+// }
 
-function preventDefaultForScrollKeys(e) {
-  if (keys[e.keyCode]) {
-    preventDefault(e);
-    return false;
-  }
-}
+// function preventDefaultForScrollKeys(e) {
+//   if (keys[e.keyCode]) {
+//     preventDefault(e);
+//     return false;
+//   }
+// }
 
 // modern Chrome requires { passive: false } when adding event
-var supportsPassive = false;
-try {
-  window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
-    get: function () { supportsPassive = true; } 
-  }));
-} catch(e) {}
+// var supportsPassive = false;
+// try {
+//   window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+//     get: function () { supportsPassive = true; } 
+//   }));
+// } catch(e) {}
 
-var wheelOpt = supportsPassive ? { passive: false } : false;
-var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+// var wheelOpt = supportsPassive ? { passive: false } : false;
+// var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
 
 // ************************ AL ABRIR MENU COLLAPSADO EL FONDO SE PONE BLANCO Y SE INHABILITA EL SCROLL ************************
 // On click events
 function navbarTogglerBg() {
-  // Background white
-  nav.classList.add('bg-white');
-  // Disable scroll
-  // window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
-  // window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-  // window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
-  // window.addEventListener('keydown', preventDefaultForScrollKeys, false);
-}
-// end disable scroll when click toggle menu button in topNav --------------------------
+  let btn = $(event.target).closest('.navbar-toggler')
+  if (!btn.hasClass('collapsed')) {
+    console.log('collapsed')
+    // Background transparent
+    $('#topNav').addClass('bg-white')
+    // Enable scroll
+    $('body').addClass('noscroll')
+  }
 
-// ************************ NECESITAMOS QUE AL CERRAR EL MENU COLLAPSADO EL FONDO VUELVA AL ESTADO ORIGINAL Y SE HABILITE EL SCROLL NUEVAMENTE ************************
+  else {
+    console.log('not collapsed')
+    // Background transparent
+    $('#topNav').removeClass('bg-white')
+    // Enable scroll
+    $('body').removeClass('noscroll')
+  }
+}
 
