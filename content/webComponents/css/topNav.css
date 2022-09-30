@@ -84,7 +84,7 @@
  .dropdown-item{
   font-size: 14px !important;
   color: var(--text-color) !important;
-  padding: 12px !important;
+  padding: 8px !important;
  }
 
  .dropdown-item:hover{
