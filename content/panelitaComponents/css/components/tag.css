@@ -1,20 +1,8 @@
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(/bukeala-static/fonts/custom/fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local('Material Icons'),
-       local('MaterialIcons-Regular'),
-       url(/bukeala-static/fonts/custom/fonts/MaterialIcons-Regular.woff2) format('woff2'),
-       url(/bukeala-static/fonts/custom/fonts/MaterialIcons-Regular.woff) format('woff'),
-       url(/bukeala-static/fonts/custom/fonts/MaterialIcons-Regular.ttf) format('truetype');
-}
-
 .tag {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: auto;
+  width: fit-content;
   height: 27px;
   flex-shrink: 0;
   flex-grow: 0;
@@ -27,26 +15,33 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  text-transform: uppercase;
 }
 
 .icon-container {
   display: inline-block;
 }
 
-.icon-container::after {
+.icon-container::after,
+.icon-container.material-icons {
   font-family: 'Material Icons';
   color: currentColor;
   font-size: 16px;
+  display: block;
+  margin-top: 2px;
 }
 
 .tag:not(.removable-tag):not(.icon-tag) .icon-container {
   display: none;
 }
 
-.tag.tag-light {
+.tag.tag-light-neutral {
   --label-bg-color: var(--color-n200);
   --label-text-color: var(--color-n600);
+}
+
+.tag.tag-dark-neutral {
+  --label-bg-color: var(--color-n600);
+  --label-text-color: var(--color-n0);
 }
 
 .tag.tag-dark-blue {
@@ -84,20 +79,17 @@
   --label-text-color: var(--color-b500);
 }
 
-.tag.tag-light-yellow,
-.tag.tag-reminder {
+.tag.tag-light-yellow {
   --label-bg-color: var(--color-y50);
   --label-text-color: var(--color-y500);
 }
 
-.tag.tag-light-green,
-.tag.tag-confirmation {
+.tag.tag-light-green {
   --label-bg-color: var(--color-g200);
   --label-text-color: var(--color-g500);
 }
 
-.tag.tag-light-red,
-.tag.tag-cancelation {
+.tag.tag-light-red {
   --label-bg-color: var(--color-r50);
   --label-text-color: var(--color-r500);
 }
@@ -107,8 +99,7 @@
   --label-text-color: var(--color-t600);
 }
 
-.tag.tag-light-violet,
-.tag.tag-unattended {
+.tag.tag-light-violet {
   --label-bg-color: var(--color-v200);
   --label-text-color: var(--color-v600);
 }
