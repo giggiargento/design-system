@@ -135,6 +135,7 @@ body#homeBody {
 
 }
 
+/* Keep footer at bottom of the page */
 div#bodyContent {
     flex: 1;
 }
@@ -147,7 +148,6 @@ div.mainLayout {
     padding-top: 100px;
 }
 
-/*Establecemos alto y padding de la pagina*/
 main {
     height: 100%;
     padding-top: 10px;
