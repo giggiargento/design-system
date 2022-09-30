@@ -333,6 +333,7 @@ $(document).ready(function() {
 //Main Cards
     $('#mainCardMission').load('../webComponents/mainCards.html', function() {
         $('mainCards').unwrap();
+        triggerLoaded($(this));
         const h5 = $(this).find('#cardTitle');
         h5.text("Mission");
         const p = $(this).find('#cardText');
@@ -343,6 +344,7 @@ $(document).ready(function() {
 
     $('#mainCardPromise').load('../webComponents/mainCards.html', function() {
         $('mainCards').unwrap();
+        triggerLoaded($(this));
         const h5 = $(this).find('#cardTitle');
         h5.text("Promise");
         const p = $(this).find('#cardText');

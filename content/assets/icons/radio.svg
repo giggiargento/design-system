@@ -3,7 +3,7 @@
 <circle cx="6" cy="6" r="3" fill="white"/>
 <circle cx="6" cy="21" r="6" fill="#3366FF"/>
 <circle cx="6" cy="36" r="6" fill="#3366FF"/>
-<rect x="16" y="2" width="51" height="9" rx="2" fill="#3366FF"/>
-<rect x="16" y="16" width="51" height="9" rx="2" fill="#3366FF"/>
-<rect x="16" y="31" width="51" height="9" rx="2" fill="#3366FF"/>
+<rect x="16" y="2" width="51" height="9" rx="2" fill="#9DB5FF"/>
+<rect x="16" y="16" width="51" height="9" rx="2" fill="#9DB5FF"/>
+<rect x="16" y="31" width="51" height="9" rx="2" fill="#9DB5FF"/>
 </svg>

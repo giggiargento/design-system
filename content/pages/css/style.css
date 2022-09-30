@@ -8,6 +8,7 @@
 @import url('/content/webComponents/css/codeBox.css');
 @import url('/content/webComponents/css/downloadCards.css');
 @import url('/content/webComponents/css/usageCards.css');
+@import url('/content/webComponents/css/mainCards.css');
 
 /* Panelita Components*/
 @import url('/content/panelitaComponents/css/panelita.css');
@@ -97,11 +98,15 @@
     --page-links-color: var(--default-blue); 
 }
 
-html {
+html{
     width: 100%;
+    height: 100%;
 }
  
 body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     font-family: 'Open Sans' !important;
     font-size: 14px !important;
     /* Fade animation when load page */
@@ -126,6 +131,13 @@ body#homeBody {
     background-repeat: repeat-y;
     background-position: center top;
     overflow-x: hidden;
+    height: 100%;
+
+}
+
+/* Keep footer at bottom of the page */
+div#bodyContent {
+    flex: 1;
 }
 
 .noscroll {
@@ -136,17 +148,18 @@ div.mainLayout {
     padding-top: 100px;
 }
 
-/*Establecemos alto y padding de la pagina*/
 main {
     height: 100%;
-    min-height: 1080px;
     padding-top: 10px;
 }
-
 
 /*Elimina subrayados de links en general, en excepciones utilizar !important*/
 a:link, a:visited, a:active {
     text-decoration:none;
+}
+
+a:hover{
+    color: var(--dark-blue) !important;
 }
 
 ul{
