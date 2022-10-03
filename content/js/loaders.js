@@ -192,6 +192,16 @@ $(document).ready(function() {
         triggerLoaded($(this));
     })
 
+    $('#sectionBtnInputs').load('../webComponents/sectionBtn.html', function() {
+        $('sectionBtn').unwrap();
+        const p = $(this).find('p.card-text');
+        p.text("Inputs");
+        const img = $(this).find('img.card-img-top');
+        img.attr('src', '/content/assets/icons/inputs.svg');
+        img.attr('alt', 'Inputs');
+        triggerLoaded($(this));
+    })
+
     $('#sectionBtnNavigation').load('../webComponents/sectionBtn.html', function() {
         $('sectionBtn').unwrap();
         const p = $(this).find('p.card-text');
