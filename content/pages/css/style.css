@@ -158,7 +158,7 @@ a:link, a:visited, a:active {
     text-decoration:none;
 }
 
-a:hover{
+a.textLink:hover{
     color: var(--dark-blue) !important;
 }
 
@@ -893,10 +893,6 @@ pre{
     font-size: 16px;
 }
 
-#selectLoaderNoSearch label{
-    font-size: 16px;
-}
-
 /* Sidesheet */
 .side-panel h3 {
     margin: 0;
@@ -909,4 +905,17 @@ pre{
 /* Notifications */
 [data-notify=container] .actions{
     gap: 0 !important;
+}
+
+/* Inputs */
+p.error-msg{
+    margin-bottom: 0;
+}
+
+.form-field.error .error-msg {
+    align-items: center;
+}
+
+::placeholder{
+    font-size: 14px;
 }

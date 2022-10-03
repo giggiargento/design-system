@@ -155,6 +155,7 @@ form,
 }
 
 .form-field.vertical > label:not(.file-input) {
+  font-size: 16px;
   max-width: 100%;
   text-align: left;
   margin-bottom: 8px;
@@ -285,7 +286,7 @@ select {
 textarea {
   min-height: 120px;
   height: 6em;
-  width: 338px;
+  width: 100%;
   resize: none;
   box-sizing: border-box;
 }
@@ -293,7 +294,7 @@ textarea {
 input[type=text].search,
 input[type=search].search {
   background-image: url('/content/panelitaComponents/icons/search.svg');
-  background-position: center left 16px;
+  background-position: center left 8px;
   background-size: 16px;
   padding-left: 32px;
 }
@@ -326,8 +327,12 @@ select:hover {
 
 input:focus,
 textarea:focus,
-button:focus {
+button:focus{
   outline: none;
+}
+
+input:disabled{
+  box-shadow: none !important;
 }
 
 input[type=text]:focus,
@@ -442,6 +447,7 @@ textarea:invalid,
 
 .form-field .error-msg::before {
   content: 'error_outline';
+  font-weight: 600; /* Optional */
   font-size: 16px;
   font-family: 'Material Icons';
   margin-right: 4px;
@@ -490,7 +496,7 @@ textarea:invalid,
 }
 
 .form-field .form-field-description {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--color-n700);
   margin-bottom: 8px;
 }

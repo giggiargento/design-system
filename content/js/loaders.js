@@ -400,17 +400,20 @@ $(document).ready(function() {
         triggerLoaded($(this));
     })
 
+
     //Checkbox
     $('#checkboxLoader').load('../panelitaComponents/checkbox.html', function() {
         $('checkbox').unwrap();
         triggerLoaded($(this));
     })
 
+    
     //Radio
     $('#radioLoader').load('../panelitaComponents/radio.html', function() {
         $('radio').unwrap();
         triggerLoaded($(this));
     })
+
 
     //Select
     $('#selectLoaderSearch').load('../panelitaComponents/selectSearch.html', function() {
@@ -425,6 +428,90 @@ $(document).ready(function() {
         $('select').chosen();
     })
 
+
+    //Inputs
+    $('#inputGeneralLoader').load('../panelitaComponents/inputGeneral.html', function() {
+        $('inputs').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#inputGeneralDisabledLoader').load('../panelitaComponents/inputGeneralDisabled.html', function() {
+        $('inputs').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#inputGeneralErrorLoader').load('../panelitaComponents/inputGeneralError.html', function() {
+        $('inputs').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#inputLabelLoader').load('../panelitaComponents/inputLabel.html', function() {
+        $('inputs').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#inputFieldLoader').load('../panelitaComponents/inputField.html', function() {
+        $('inputs').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#inputFieldDisabledLoader').load('../panelitaComponents/inputFieldDisabled.html', function() {
+        $('inputs').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#inputFieldErrorLoader').load('../panelitaComponents/inputFieldError.html', function() {
+        $('inputs').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#inputFieldLabelLoader').load('../panelitaComponents/inputFieldLabel.html', function() {
+        $('inputs').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#inputFieldLabelDisabledLoader').load('../panelitaComponents/inputFieldLabelDisabled.html', function() {
+        $('inputs').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#inputFieldLabelErrorLoader').load('../panelitaComponents/inputFieldLabelError.html', function() {
+        $('inputs').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#inputSearchLoader').load('../panelitaComponents/inputSearch.html', function() {
+        $('inputs').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#inputSearchDisabledLoader').load('../panelitaComponents/inputSearchDisabled.html', function() {
+        $('inputs').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#inputSearchErrorLoader').load('../panelitaComponents/inputSearchError.html', function() {
+        $('inputs').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#inputSelectFileLoader').load('../panelitaComponents/inputSelectFile.html', function() {
+        $('inputs').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#inputSelectFileDisabledLoader').load('../panelitaComponents/inputSelectFileDisabled.html', function() {
+        $('inputs').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#inputSelectFileErrorLoader').load('../panelitaComponents/inputSelectFileError.html', function() {
+        $('inputs').unwrap();
+        triggerLoaded($(this));
+    })
+
+
+// end panelita components
 
 
 var loaderTotal
