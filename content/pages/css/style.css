@@ -882,12 +882,14 @@ pre{
 #checkboxLoader{
     line-height: 1.15;
     display: grid;
+    gap: 12px;
 }
 
 /* Radio */
 #radioLoader{
     line-height: 1.15;
     display: grid;
+    gap: 12px;
 }
 
 /* Select */
