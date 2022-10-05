@@ -26,6 +26,14 @@
   background: var(--color-b400);
 }
 
+.checkbox-switch input[type=checkbox]:checked:disabled {
+  background: var(--color-n100);
+}
+
+.checkbox-switch input[type=checkbox]:disabled {
+  background: var(--color-n100);
+}
+
 .checkbox-switch input[type=checkbox]:checked:hover {
   background: var(--color-b500);
 }
@@ -59,5 +67,5 @@
 }
 
 .checkbox-switch input[type=checkbox][disabled]::after {
-  background: var(--color-n100);
+  background: var(--color-n400);
 }

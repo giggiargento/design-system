@@ -533,6 +533,12 @@ $(document).ready(function() {
         triggerLoaded($(this));
     })
 
+    // Switch
+    $('#switchLoader').load('../panelitaComponents/switch.html', function() {
+        $('switch').unwrap();
+        triggerLoaded($(this));
+    })
+
 // end panelita components
 
 

@@ -897,6 +897,13 @@ pre{
     gap: 12px;
 }
 
+/* Switch */
+#switchLoader{
+    line-height: 1.15;
+    display: grid;
+    gap: 12px;
+}
+
 /* Select */
 #selectLoader label{
     font-size: 16px;
@@ -905,11 +912,6 @@ pre{
 /* Sidesheet */
 .side-panel h3 {
     margin: 0;
-}
-
-.form-field input[type=checkbox]:checked::after {
-    left: 0 !important;
-    position: relative;
 }
 
 /* Notifications */
