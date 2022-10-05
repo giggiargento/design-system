@@ -510,6 +510,11 @@ $(document).ready(function() {
         triggerLoaded($(this));
     })
 
+    // Form
+    $('#formLoader').load('../panelitaComponents/forms.html', function() {
+        $('forms').unwrap();
+        triggerLoaded($(this));
+    })
 
 // end panelita components
 

@@ -5,20 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./css/panelita.css">
+  <link rel="stylesheet" type="text/css" href="/content/panelitaComponents/css/panelita.css">
   <title>Document</title>
 </head>
 <body>
-  <!-- text input -->
-  <input type="text" placeholder="Placeholder">
 
-  <!-- text input disabled -->
-  <input type="text" placeholder="Placeholder" disabled>
+  <!-- Text -->
+  <div class="title" id="title">
+    <h1>Title</h1>
+  </div>
 
-  <!-- input con error -->
-  <div class="form-field vertical error">
-    <input type="text" placeholder="Placeholder">
-    <p class="error-msg">Error message.</p>
+  <!-- Add here date pickers -->
+
+  <!-- Checkboxes -->
+  <div class="form-field">
+    <input type="checkbox">
+    <label>Label</label>
+    <input type="checkbox">
+    <label>Label</label>
   </div>
 
   <!-- input con label -->
@@ -27,17 +31,12 @@
     <input type="text" placeholder="Placeholder">
   </div>
 
-  <!-- textarea -->
-  <textarea placeholder="Placeholder"></textarea>
-
-  <!-- textarea disabled -->
-  <textarea placeholder="Placeholder" disabled></textarea>
-
-  <!-- textarea con error -->
-  <div class="form-field vertical error">
-    <textarea placeholder="Placeholder"></textarea>
-    <p class="error-msg">Error message.</p>
+  <!-- input con label -->
+  <div class="form-field vertical">
+    <label>Label</label>
+    <input type="text" placeholder="Placeholder">
   </div>
+
 
   <!-- textarea con descripción -->
   <div class="form-field vertical">
@@ -46,58 +45,10 @@
     <textarea placeholder="Placeholder"></textarea>
   </div>
 
-  <!-- textarea disabled con descripción -->
+  <!-- file input -->
   <div class="form-field vertical">
     <label>Label</label>
-    <p class="form-field-description">Description</p>
-    <textarea placeholder="Placeholder" disabled></textarea>
-  </div>
-
-  <!-- textarea con descripcion y error -->
-  <div class="form-field vertical error">
-    <label>Label</label>
-    <p class="form-field-description">Description</p>
-    <textarea placeholder="Placeholder"></textarea>
-    <p class="error-msg">Error message.</p>
-  </div>
-
-  <!-- search -->
-  <input type="text" class="search">
-
-  <!-- search disabled -->
-  <input type="text" class="search" disabled>
-
-  <!-- search with error -->
-  <div class="form-field vertical error">
-    <input type="text" class="search">
-    <p class="error-msg">Error message.</p>
-  </div>
-
-  <!-- file input -->
-  <div class="file-input-container">
-    <input type="file" class="file-input" id="fileinput1">
-    <label class="file-input-box" for="fileinput1">
-      <div class="filename-container">
-        <span class="filename"></span>
-      </div>
-      <button class="pbtn btn-secondary btn-sm">Select file</button>
-    </label>	
-  </div>
-
-  <!-- file input disabled -->
-  <div class="file-input-container disabled">
-    <input type="file" class="file-input" id="fileinput1">
-    <label class="file-input-box" for="fileinput1">
-      <div class="filename-container">
-        <span class="filename"></span>
-      </div>
-      <button class="pbtn btn-secondary btn-sm">Select file</button>
-    </label>	
-  </div>
-  
-  <!-- file input with error -->
-  <div class="form-field vertical error">
-    <div class="file-input-container error">
+    <div class="file-input-container">
       <input type="file" class="file-input" id="fileinput1">
       <label class="file-input-box" for="fileinput1">
         <div class="filename-container">
@@ -106,7 +57,11 @@
         <button class="pbtn btn-secondary btn-sm">Select file</button>
       </label>	
     </div>
-    <p class="error-msg">Error message.</p>
+  </div>
+
+  <div class="form-field horizontal">
+    <button class="pbtn btn-secondary">Cancel</button>
+    <button class="pbtn btn-primary">Save</button>
   </div>
 </body>
 </html>

@@ -62,6 +62,10 @@ form,
   gap: 32px;
 }
 
+.title{
+  margin-bottom: 32px;
+}
+
 .form-field {
   width: 100%;
   font-size: 16px;
@@ -69,6 +73,7 @@ form,
   align-items: center;
   flex-wrap: nowrap;
   position: relative;
+  margin-bottom: 24px;
 }
 
 .form-field.vertical {

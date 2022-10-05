@@ -313,6 +313,12 @@ div#imgSection{
     color: var(--text-color);
 }
 
+#pageNav .nav-link.disabled{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: var(--light-grey);
+}
+
 #pageNav .nav-link:hover{
     color: var(--default-blue);
     border-color: var(--default-blue);
@@ -363,6 +369,11 @@ div#imgSection{
 #pageContent .textHighlighted{
     font-family: 'Open Sans';
     font-size: 14px;
+    text-decoration: none;
+    color: var(--default-blue);
+}
+
+#pageContent .codeHighlighted{
     text-decoration: none;
     color: var(--default-blue);
 }
@@ -867,25 +878,16 @@ pre{
 
 /* Components */
 
-/* Buttons */
-.pbtn{
-    margin-right: 12px;
-}
-
 /* Checkbox */
 #checkboxLoader{
     line-height: 1.15;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    display: grid;
 }
 
 /* Radio */
 #radioLoader{
     line-height: 1.15;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    display: grid;
 }
 
 /* Select */
@@ -898,8 +900,9 @@ pre{
     margin: 0;
 }
 
-.form-field.vertical.auto-height.mtauto input[type=checkbox]:checked::after {
-    position: static;
+.form-field input[type=checkbox]:checked::after {
+    left: 0 !important;
+    position: relative;
 }
 
 /* Notifications */
@@ -918,4 +921,9 @@ p.error-msg{
 
 ::placeholder{
     font-size: 14px;
+}
+
+/* Forms */
+#formsLoader{
+line-height: 1.15;
 }
