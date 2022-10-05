@@ -878,6 +878,11 @@ pre{
 
 /* Components */
 
+.row-cols-auto{
+    display: grid;
+    grid-gap: 12px 0px;
+}
+
 /* Checkbox */
 #checkboxLoader{
     line-height: 1.15;
@@ -926,6 +931,16 @@ p.error-msg{
 }
 
 /* Forms */
-#formsLoader{
-line-height: 1.15;
+#formLoader{
+    line-height: 1.15;
+    max-width: 60%;
+}
+
+/* Tags */
+.tagContainer{
+    display: flex;
+}
+
+.tag{
+    margin-right: 8px;
 }

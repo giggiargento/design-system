@@ -564,3 +564,8 @@ input[type="number"]:focus~button {
 .input-number-container button.down:after {
   content: 'keyboard_arrow_down';
 }
+
+/* Select File btn align */
+.pbtn.btn-secondary.btn-sm{
+  margin-right: 0 !important;
+}

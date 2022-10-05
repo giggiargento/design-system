@@ -516,6 +516,23 @@ $(document).ready(function() {
         triggerLoaded($(this));
     })
 
+
+    // Tags
+    $('#tagsLoader').load('../panelitaComponents/tag.html', function() {
+        $('tags').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#tagRemovableLoader').load('../panelitaComponents/tagRemovable.html', function() {
+        $('tags').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#tagIconLoader').load('../panelitaComponents/tagIcon.html', function() {
+        $('tags').unwrap();
+        triggerLoaded($(this));
+    })
+
 // end panelita components
 
 
