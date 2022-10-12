@@ -633,12 +633,12 @@
                                                                 <div id="myCode" class="myCode">
                                                                     <!-- id to call codeBox code with JavaScript -->
                                                                     <pre id="codeId14" class="card-text accordion-body" type="text"><code>&ltdiv class="file-input-container">
-    &ltinput type="file" class="file-input" id="fileinput1">
+    &ltinput type="file" class="file-input" id="fileinput1" onchange="uploadFile(this)">
     &ltlabel class="file-input-box" for="fileinput1">
         &ltdiv class="filename-container">
             &ltspan class="filename">&lt/span>
         &lt/div>
-        &ltbutton class="pbtn btn-secondary btn-sm">Select file&lt/button>
+        &ltdiv class="pbtn btn-secondary btn-sm">Select file&lt/div>
     &lt/label>	
 &lt/div></code></pre>
                                                                 </div>
@@ -680,12 +680,12 @@
                                                                 <div id="myCode" class="myCode">
                                                                     <!-- id to call codeBox code with JavaScript -->
                                                                     <pre id="codeId15" class="card-text accordion-body" type="text"><code>&ltdiv class="file-input-container disabled">
-    &ltinput type="file" class="file-input" id="fileinput1">
+    &ltinput type="file" class="file-input" id="fileinput1" onchange="uploadFile(this)">
     &ltlabel class="file-input-box" for="fileinput1">
         &ltdiv class="filename-container">
             &ltspan class="filename">&lt/span>
         &lt/div>
-        &ltbutton class="pbtn btn-secondary btn-sm">Select file&lt/button>
+        &ltdiv class="pbtn btn-secondary btn-sm">Select file&lt/div>
     &lt/label>	
 &lt/div></code></pre>
                                                                 </div>
@@ -728,12 +728,12 @@
                                                                     <!-- id to call codeBox code with JavaScript -->
                                                                     <pre id="codeId16" class="card-text accordion-body" type="text"><code>&ltdiv class="form-field vertical error">
     &ltdiv class="file-input-container error">
-        &ltinput type="file" class="file-input" id="fileinput1">
+        &ltinput type="file" class="file-input" id="fileinput1" onchange="uploadFile(this)">
         &ltlabel class="file-input-box" for="fileinput1">
             &ltdiv class="filename-container">
                 &ltspan class="filename">&lt/span>
             &lt/div>
-            &ltbutton class="pbtn btn-secondary btn-sm">Select file&lt/button>
+            &ltdiv class="pbtn btn-secondary btn-sm">Select file&lt/div>
         &lt/label>	
     &lt/div>
     &ltp class="error-msg">Error message.&lt/p>
@@ -877,5 +877,8 @@
 
         <!-- archivo que carga el top nav y el footer -->
         <script src="/content/js/loaders.js"></script>
+
+        <!-- file input -->
+        <script src="/content/panelitaComponents/fileinput.js"></script>
     
 </html>
