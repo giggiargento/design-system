@@ -32,6 +32,7 @@ input.time:focus {
 
 .ui-timepicker-viewport {
   padding-right: 0!important;
+  padding-left: 0!important;
 }
 
 .ui-timepicker li.ui-menu-item {

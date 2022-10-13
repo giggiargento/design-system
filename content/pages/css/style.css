@@ -140,6 +140,11 @@ div#bodyContent {
     flex: 1;
 }
 
+/* espacio extra para elementos desplegables (ej timepicker) */
+#pageContent {
+    padding-bottom: 24px;
+}
+
 .noscroll {
     overflow: hidden;
 }

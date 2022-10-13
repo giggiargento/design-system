@@ -194,14 +194,13 @@ $(document).ready(function(){
     } else {
       nav.classList.remove('bg-white');
     }
-
-  // Selects
-  if ($('select').length > 0) {
-    $('select.search').chosen()
-    $('select.no-search').chosen({disable_search_threshold: 0});
-  }
-
 });
+
+// Selects
+if ($('select').length > 0) {
+  $('select.search').chosen()
+  $('select.no-search').chosen({disable_search_threshold: 0});
+}
 
 // Disable scroll when click toggle menu button in topNav --------------------------
 // var keys = {37: 1, 38: 1, 39: 1, 40: 1};
