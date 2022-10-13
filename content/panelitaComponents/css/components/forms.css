@@ -579,3 +579,10 @@ input[type="number"]:focus~button {
 .pbtn.btn-secondary.btn-sm{
   margin-right: 0 !important;
 }
+
+/* Select Multiple align*/
+.search-choice{
+  margin-top: 6px !important;
+  margin-right: 6px !important;
+  margin-left: 2px !important;
+}

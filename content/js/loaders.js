@@ -428,6 +428,12 @@ $(document).ready(function() {
         $('select').chosen();
     })
 
+    $('#selectLoaderMultiple').load('../panelitaComponents/selectMultiple.html', function() {
+        triggerLoaded($(this));
+        
+        $('select').chosen();
+    })
+
 
     //Inputs
     $('#inputGeneralLoader').load('../panelitaComponents/inputGeneral.html', function() {
