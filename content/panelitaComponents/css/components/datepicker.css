@@ -1,9 +1,14 @@
+input.date {
+  width: 160px;
+}
+
 .ui-datepicker {
   width: 319px;
   margin-top: 8px;
   border: 1px solid var(--color-n300);
   border-radius: 3px;
   padding: 16px;
+  background: var(--color-n0);
   font-family: 'Open Sans';
 }
 

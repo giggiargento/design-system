@@ -322,6 +322,10 @@ input[type="text"].date:focus-within {
   url('/content/panelitaComponents/icons/chevron_up.svg');
 }
 
+.form-field.double input {
+  width: 160px!important;
+}
+
 input[type=text]:hover,
 input[type=username]:hover,
 input[type=password]:hover,

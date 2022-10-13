@@ -55,19 +55,9 @@
   box-shadow: none;
 }
 
-.chzn-container-multi .chzn-choices {
-  margin: 0;
-  padding: 0 0 0 4px;
-  cursor: text;
-  overflow: hidden;
-  height: 1%;
-  position: relative;
-}
-
 .chzn-container-single .chzn-default {
 	color: var(--input-color);
 }
-
 
 .chzn-container-single .chzn-single span {
   width: 100%;
@@ -156,26 +146,35 @@
 }
 
 /* @group Multi Chosen */
+.chzn-container-multi {
+  border-radius: var(--input-border-radius);
+}
+
 .chzn-container-multi .chzn-choices {
   display: block;
   height: 1%;
   margin: 0;
-  padding: 0;
+  padding: 0 16px 0 4px;
   cursor: text;
   position: relative;
   border-color: var(--input-border-color)!important;
-  background: var(--input-bg-color);
-  /* color: var(--input-text-color);
-  font-family: var(--input-font-family)!important; */
+  background-color: var(--input-bg-color);
+  background-image: url(/content/panelitaComponents/icons/chevron_down.svg);
+  background-repeat: no-repeat;
+  background-position: top 6px right 10px;
+  background-size: 16px;
   max-height: 110px;
   overflow-y: auto;
+}
+
+.chzn-container-multi.chzn-container-active .chzn-choices {
+  background-image: url(/content/panelitaComponents/icons/chevron_up.svg);
 }
 
 .chzn-container-multi .chzn-choices .search-field {
   white-space: nowrap;
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 .chzn-container-multi .chzn-choices .search-field input {
   height: calc(var(--input-height) - 2px);
@@ -202,14 +201,18 @@
 .chzn-container-multi .chzn-choices .search-choice {
   position: relative;
   margin: 2px;
-  padding: 0 20px 0 4px;
+  padding: 0 24px 0 4px;
   background-color: var(--color-n100);
   border: none;
   border-radius: var(--input-border-radius);
   color: var(--color-text-main);
   font-size: var(--input-font-size);
-  font-weight: 600;
+  font-weight: 400;
   line-height: 18px;
+}
+
+.chzn-container-multi .chzn-choices .search-choice span {
+  font-size: 12px;
 }
 
 .chzn-container-multi .chzn-choices .search-choice + .search-choice {
@@ -228,8 +231,9 @@
 
 .chzn-container-multi .chzn-choices .search-choice .search-choice-close::after {
   position: absolute;
-  top: -3px;
-  width: 100%;
+  top: 1px;
+  right: 4px;
+  width: 12px;
   height: 100%;
   font-family: 'Material Icons'!important;
   content: 'close';
@@ -317,7 +321,8 @@
 /* @end */
 
 /* @group Active  */
-.chzn-container-active .chzn-single {
+.chzn-container-active .chzn-single,
+.chzn-container-multi.chzn-container-active {
 	border-color: var(--input-focus-border-color);
 	box-shadow: var(--input-focus-box-shadow);
   box-sizing: border-box!important;

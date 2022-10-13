@@ -4,34 +4,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/panelita.css">
   <title>Document</title>
 </head>
 <body>
-  <!-- requiere jquery 3.6 y jquery-ui 1.12 -->
-  <!-- se inicializa con: $('input.date').datepicker(); y acepta opciones, documentadas en: https://api.jqueryui.com/datepicker -->
+  <!-- requiere jquery 3.6 y jquery timepicker 1.3.5 -->
+  <!-- se inicializa con: $('input.time').timepicker(); y acepta opciones, documentadas en: https://timepicker.co/options/ -->
   <div class="form-field vertical">
-    <label>Select a date</label>
-    <input type="text" class="date" placeholder="Date">
+    <label>Select a time</label>
+    <input type="text" class="time" placeholder="00:00">
   </div>
 
   <div class="form-field vertical double">
-    <label>Select the date</label>
+    <label>Select a time</label>
     <div class="flex-h gap8">
       <div class="flex-v">
         <p class="form-field-description">From</p>
-        <input type="text" class="date" placeholder="00/00/00">
+        <input type="text" class="time" placeholder="00:00">
       </div>
       <div class="flex-v">
         <p class="form-field-description">To</p>
-        <input type="text" class="date" placeholder="00/00/00">
+        <input type="text" class="time" placeholder="00:00">
       </div>
     </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="datepicker.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('input.time').timepicker();
+    });
+  </script>
 </body>
 </html>
