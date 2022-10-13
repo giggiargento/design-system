@@ -68,7 +68,7 @@
                                         <!-- Text important -->
                                         <div class="textImportant">
                                             <h6 class="text">To use <a class="textHighlighted">Chosen</a> you must include  <a class="textHighlighted">chosen.jquery.min.js</a> in your page
-                                                and initialize it using <a class="textHighlighted">$('select').chosen()</a>.
+                                                and initialize it using <a class="textHighlighted">$('select').chosen()</a>
                                                 <br>
                                                 <br>
                                                 A variable of the select is the possibility of using it without an internal search. You can initialize it using <a class="textHighlighted">$('select.no-search').chosen({disable_search: true})</a>
@@ -229,6 +229,209 @@
                                             </div>
                                         </div>
 
+                                        <!-- Title -->
+                                        <h6 class="textTitle" data-lang="en">Datepickers
+                                        </h6>
+
+                                        <!-- Text with link-->
+                                         <h6 class="text" data-lang="en">Datepickers are also considered Selects components and in most cases are used in <a class="textLink" href="/content/pages/form.html">Forms</a>.
+                                            <br>
+                                            <br>
+                                            We use as a base <a class="textLink" href="https://air-datepicker.com/" target="_blank">Air Datepicker</a> and <a class="textLink" href="https://timepicker.co/" target="_blank">Timepicker</a> 
+                                            changing it’s style with the characteristics of our design system.
+                                        </h6>
+
+                                        <!-- Text important -->
+                                        <div class="textImportant">
+                                            <h6 class="text"><a class="textHighlighted">Air Datepicker</a> requires jquery 3.6 and jquery-ui 1.12. <br><br> You must initialize it using <a class="textHighlighted">$('input.date').datepicker()</a> and
+                                                it also accepts options documented <a class="textLink" href="https://api.jqueryui.com/datepicker" target="_blank">here</a>.
+                                            </h6>
+                                        </div>
+
+                                        
+                                        <!-- Code Box -->
+                                        <div class="codeBox row row-cols-12">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-header selectCard">
+                                                        <!-- Here we will add panelitaComponents -->
+                                                        <div id="datePicker" class="loader card-img-top" alt="...">
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample4">
+                                                        <div class="accordion-item">
+                                                            <div id="flush-collapseOne4" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample4">
+                                                                <div id="myCode" class="myCode">
+                                                                    <!-- id to call codeBox code with JavaScript -->
+                                                                    <pre id="codeId4" class="card-text accordion-body" type="text"><code>&ltdiv class="form-field vertical">
+    &ltlabel>Select a date&lt/label>
+    &ltinput type="text" class="date" placeholder="Date">
+&lt/div></code></pre>
+                                                                </div>
+                                                                </div>
+                                                            <div class="card-footer accordion-header" id="flush-headingOne">
+                                                                <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
+                                                                                                                                        
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
+                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne4" 
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne4" onclick="">Show code
+                                                                    </button>
+
+                                                                </div>
+                                                                <div id="copyBtn4" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId4')">content_copy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <!-- Code Box -->
+                                        <div class="codeBox row row-cols-12">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-header selectCard">
+                                                        <!-- Here we will add panelitaComponents -->
+                                                        <div id="dateToDatePicker" class="loader card-img-top" alt="...">
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample5">
+                                                        <div class="accordion-item">
+                                                            <div id="flush-collapseOne5" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample5">
+                                                                <div id="myCode" class="myCode">
+                                                                    <!-- id to call codeBox code with JavaScript -->
+                                                                    <pre id="codeId5" class="card-text accordion-body" type="text"><code>&ltdiv class="form-field vertical double">
+    &ltlabel>Select the date&lt/label>
+    &ltdiv class="flex-h gap8">
+        &ltdiv class="flex-v">
+            &ltp class="form-field-description">From&lt/p>
+            &ltinput type="text" class="date" placeholder="00/00/00">
+        &lt/div>
+        &ltdiv class="flex-v">
+            &ltp class="form-field-description">To&lt/p>
+            &ltinput type="text" class="date" placeholder="00/00/00">
+        &lt/div>
+    &lt/div>
+&lt/div></code></pre>
+                                                                </div>
+                                                                </div>
+                                                            <div class="card-footer accordion-header" id="flush-headingOne">
+                                                                <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
+                                                                                                                                        
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
+                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne5" 
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne5" onclick="">Show code
+                                                                    </button>
+
+                                                                </div>
+                                                                <div id="copyBtn5" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId5')">content_copy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Text important -->
+                                        <div class="textImportant">
+                                            <h6 class="text"><a class="textHighlighted"><a class="textHighlighted">Timepicker</a> requires jquery 3.6 and jquery timepicker 1.3.5. <br><br>You must initialize it using <a class="textHighlighted">$('input.time').timepicker()</a> and
+                                            it also accepts options documented <a class="textLink" href="https://timepicker.co/options/" target="_blank">here</a>.
+                                            </h6>
+                                        </div>
+
+                                        <!-- Code Box -->
+                                        <div class="codeBox row row-cols-12">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-header selectCard">
+                                                        <!-- Here we will add panelitaComponents -->
+                                                        <div id="timePicker" class="loader card-img-top" alt="...">
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample6">
+                                                        <div class="accordion-item">
+                                                            <div id="flush-collapseOne6" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample6">
+                                                                <div id="myCode" class="myCode">
+                                                                    <!-- id to call codeBox code with JavaScript -->
+                                                                    <pre id="codeId6" class="card-text accordion-body" type="text"><code>&ltdiv class="form-field vertical">
+    &ltlabel>Select a date&lt/label>
+    &ltinput type="text" class="date" placeholder="Date">
+&lt/div></code></pre>
+                                                                </div>
+                                                                </div>
+                                                            <div class="card-footer accordion-header" id="flush-headingOne">
+                                                                <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
+                                                                                                                                        
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
+                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne6" 
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne6" onclick="">Show code
+                                                                    </button>
+
+                                                                </div>
+                                                                <div id="copyBtn6" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId6')">content_copy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <!-- Code Box -->
+                                        <div class="codeBox row row-cols-12">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-header selectCard">
+                                                        <!-- Here we will add panelitaComponents -->
+                                                        <div id="timeToTimePicker" class="loader card-img-top" alt="...">
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample7">
+                                                        <div class="accordion-item">
+                                                            <div id="flush-collapseOne7" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample7">
+                                                                <div id="myCode" class="myCode">
+                                                                    <!-- id to call codeBox code with JavaScript -->
+                                                                    <pre id="codeId7" class="card-text accordion-body" type="text"><code>&ltdiv class="form-field vertical double">
+    &ltlabel>Select the date&lt/label>
+    &ltdiv class="flex-h gap8">
+        &ltdiv class="flex-v">
+            &ltp class="form-field-description">From&lt/p>
+            &ltinput type="text" class="date" placeholder="00/00/00">
+        &lt/div>
+        &ltdiv class="flex-v">
+            &ltp class="form-field-description">To&lt/p>
+            &ltinput type="text" class="date" placeholder="00/00/00">
+        &lt/div>
+    &lt/div>
+&lt/div></code></pre>
+                                                                </div>
+                                                                </div>
+                                                            <div class="card-footer accordion-header" id="flush-headingOne">
+                                                                <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
+                                                                                                                                        
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
+                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne7" 
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne7" onclick="">Show code
+                                                                    </button>
+
+                                                                </div>
+                                                                <div id="copyBtn7" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId7')">content_copy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                     <!--end code-->
 
@@ -352,4 +555,10 @@
 
         <!-- Select Js -->
         <script src="/content/panelitaComponents/chosen/chosen.jquery.min.js"></script>
+
+        <!-- Datepicker -->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <!-- Timepickers -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
 </html>

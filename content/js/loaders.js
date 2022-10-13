@@ -434,6 +434,33 @@ $(document).ready(function() {
         $('select').chosen();
     })
 
+    // Timepicker
+    $('#timePicker').load('../panelitaComponents/timepicker.html', function() {
+        triggerLoaded($(this));
+
+        $('input.time').timepicker();
+    })
+
+    $('#timeToTimePicker').load('../panelitaComponents/timeToTimePicker.html', function() {
+        triggerLoaded($(this));
+
+        $('input.time').timepicker();
+    })
+
+    // Datepicker
+    $('#datePicker').load('../panelitaComponents/datePicker.html', function() {
+        triggerLoaded($(this));
+
+        $('input.date').datepicker();
+    })
+
+    $('#dateToDatePicker').load('../panelitaComponents/dateToDatePicker.html', function() {
+        triggerLoaded($(this));
+
+        $('input.date').datepicker();
+    })
+    
+
 
     //Inputs
     $('#inputGeneralLoader').load('../panelitaComponents/inputGeneral.html', function() {
