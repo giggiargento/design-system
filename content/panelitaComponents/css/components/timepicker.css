@@ -16,7 +16,6 @@ input.time:focus {
 
 .ui-timepicker-container {
   position: absolute;
-  background: var(--color-n0);
 }
 
 .ui-timepicker.ui-widget-content {
@@ -28,6 +27,7 @@ input.time:focus {
 	border-radius: var(--input-border-radius)!important;
   overflow-y: auto;
   overflow-x: hidden;
+  background: var(--color-n0);
 }
 
 .ui-timepicker-viewport {
