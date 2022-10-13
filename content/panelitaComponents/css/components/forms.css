@@ -305,15 +305,21 @@ input[type=search].search {
   padding-left: 32px;
 }
 
-input[type="text"].date,
-input[type="text"].datepicker-input {
-  width: 158px!important;
+input[type="text"].date {
+  width: 250px;
   flex-grow: 0;
 	padding: 0 24px 0 36px;
-  background-image: url('/content/panelitaComponents/icons/date_range.svg');
+  background-image: url('/content/panelitaComponents/icons/date_range.svg'),
+    url('/content/panelitaComponents/icons/chevron_down.svg');
   background-size: 16px;
-  background-position: center left 8px;
+  background-position: center left 12px,
+    center right 12px;
   cursor: pointer;
+}
+
+input[type="text"].date:focus-within {
+  background-image: url('/content/panelitaComponents/icons/date_range.svg'),
+  url('/content/panelitaComponents/icons/chevron_up.svg');
 }
 
 input[type=text]:hover,
