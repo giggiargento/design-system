@@ -461,7 +461,6 @@ $(document).ready(function() {
     })
     
 
-
     //Inputs
     $('#inputGeneralLoader').load('../panelitaComponents/inputGeneral.html', function() {
         $('inputs').unwrap();
@@ -547,6 +546,9 @@ $(document).ready(function() {
     $('#formLoader').load('../panelitaComponents/forms.html', function() {
         $('forms').unwrap();
         triggerLoaded($(this));
+
+        $('input.date').datepicker();
+        $('input.time').timepicker();
     })
 
 
