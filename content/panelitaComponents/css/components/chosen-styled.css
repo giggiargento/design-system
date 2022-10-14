@@ -4,7 +4,7 @@
   zoom: 1;
   padding:0!important;
   vertical-align:middle;
-  width: 338px!important;
+  /* width: 338px!important; */
 }
 
 .chzn-container:not([style~="width:"]) {
@@ -203,6 +203,8 @@
   margin: 2px;
   padding: 0 24px 0 4px;
   background-color: var(--color-n100);
+  background-image: none !important;
+  box-shadow: none !important;
   border: none;
   border-radius: var(--input-border-radius);
   color: var(--color-text-main);
