@@ -974,3 +974,8 @@ p.error-msg{
 ul.ui-timepicker-viewport {
     padding-right: 0px !important;
 }
+
+/* This fix calendar table boostrap overight */
+table{
+    border-collapse: inherit !important;
+}
