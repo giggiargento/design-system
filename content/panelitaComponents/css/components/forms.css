@@ -306,7 +306,7 @@ input[type=search].search {
 }
 
 input[type="text"].date {
-  width: 250px;
+  width: 100%;
   flex-grow: 0;
 	padding: 0 24px 0 36px;
   background-image: url('/content/panelitaComponents/icons/date_range.svg'),
@@ -322,9 +322,9 @@ input[type="text"].date:focus-within {
   url('/content/panelitaComponents/icons/chevron_up.svg');
 }
 
-.form-field.double input {
+/* .form-field.double input {
   width: 160px!important;
-}
+} */
 
 input[type=text]:hover,
 input[type=username]:hover,
