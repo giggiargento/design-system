@@ -918,7 +918,7 @@ pre{
 
 .loader.selects{
     max-width: 40%;
-    min-width: 200px;
+    min-width: 320px;
 }
 
 /* Sidesheet */
@@ -934,7 +934,7 @@ pre{
 /* Inputs */
 .loader.inputs{
     max-width: 40%;
-    min-width: 200px;
+    min-width: 320px;
 }
 
 p.error-msg{
