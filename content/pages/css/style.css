@@ -979,3 +979,13 @@ ul.ui-timepicker-viewport {
 table{
     border-collapse: inherit !important;
 }
+
+/* Tooltip */
+.pbtn.btn-secondary.tooltip{
+    display: flex !important;
+    font-family: 'Open Sans' !important;
+    margin: 0px 12px 0px 0px !important;
+    opacity: 100 !important;
+    font-size: 12px !important;
+    padding: 8px 16px !important;
+}

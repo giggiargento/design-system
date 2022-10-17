@@ -5,8 +5,244 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
+
+        <!-- Tooltip css -->
+        <link rel="stylesheet" href="/content/panelitaComponents/tooltipster/css/tooltipster.bundle.min.css">
+        <link rel="stylesheet" href="/content/panelitaComponents/tooltipster/css/tooltipster-panelita.css">
+
+        <!-- Boostrap css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">     
     
+</head>
+    <body>
+        <div id="navLoader" class="loader"></div>
+        <div id="bodyContent" class="container">
+            <div class="row mainLayout">
+                <!--Side Nav-->
+                <div id="sideNavComponents" class="loader col-2 d-none d-lg-block">
+                </div>
+                <main id="mainContent" class="col-12 col-lg-10">
+                    <div class="commonBody">
+                        <header id="pageHeader" class="row pageHeader">
+                            <div id="titlePage" class="col-12 col-lg-12">
+                                <h1 id="title" class="title">Tooltip</h1>
+                                <h2 id="description" class="description" data-lang="en">
+                                    A tooltip is a floating, non-actionable label used to explain a user interface element or feature.
+                                </h2>
+                        </header>
+
+                        <!-- Common body -->
+                        <section id="pageContent" class="row pageContent">
+                            <div id="pageText" class="col-12 col-lg-12">
+                            
+                            <!-- Nav -->
+                            <ul id="pageNav" class="pageNav nav nav-tabs" role="tablist">
+                                <li class="nav-item" data-bs-toggle="tooltip" type="submit" data-bs-placement="bottom" title="Code">
+                                  <a class="nav-link active" type="button" aria-current="page" data-bs-target="#sidesheetCodeTab" data-bs-toggle="tab" role="tab" data-lang="en">Code</a>
+                                </li>
+                                <li class="nav-item" data-bs-toggle="tooltip" type="submit" data-bs-placement="bottom" title="Usage" >
+                                  <a class="nav-link" type="button" data-bs-target="#sidesheetUsageTab" data-bs-toggle="tab" role="tab" data-lang="en">Usage</a>
+                                </li>
+                              </ul>
+                            
+                            <!-- Tabs content -->
+                              <div class="tab-content" id="myTabContent">
+                                    <!--Code-->
+                                    <div class="tab-pane fade show active" id="sidesheetCodeTab">
+                                    <!-- Component section -->
+
+                                        <!-- Text -->
+                                        <h6 class="text" data-lang="en">This is a non-actionable float tag used to explain a user interface element or feature.
+                                        </h6>
+                                        
+                                        <!-- Text with link-->
+                                        <h6 class="text" data-lang="en">We use as a base <a class="textLink" href="https://www.heteroclito.fr/modules/tooltipster/" target="_blank">Tooltipster</a> changing its style with the characteristics of our design system.
+                                        </h6>
+                                        <br>
+
+                                        <!-- Text -->
+                                        <h6 class="text" data-lang="en">Place the following <a class="textHighlighted">&ltscript>&lt/script></a>
+                                            near the end of your html, right before the closing <a class="textHighlighted">&ltbody></a> tag, to enable them.
+                                        </h6>
+
+                                        <!-- Code Box -->
+                                        <div class="codeBox row row-cols-12">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-body-resources">
+                                                        <div id="myCode" class="myCode">
+                                                            <!-- id to call codeBox code with JavaScript -->
+                                                            <pre id="codeId3" class="card-text" type="text"><code>$('.tooltip').tooltipster({
+    theme: 'tooltipster-panelita',
+    position: 'right'
+});</code></pre>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <div class="text-center">
+                                                        </div>
+                                                        <div id="copyBtn3" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                            title="Copy to clipboard" onclick="copyToClipboard('codeId3')">content_copy
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <!-- Text important -->
+                                        <div class="textImportant">
+                                            <h6 class="text"><a class="textHighlighted">Tooltipster</a> requires <a class="textHighlighted">jquery 3.6</a> in your page.
+                                            </h6>
+                                        </div>
+
+                                        <!-- Title -->
+                                        <h6 class="textTitle" data-lang="en">Short tooltip
+                                        </h6>
+
+                                        <!-- Code Box -->
+                                        <div class="codeBox row row-cols-12">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-header">
+                                                        <!-- Here we will add panelitaComponents -->
+                                                        <div class="card-img-top" alt="...">
+                                                            <button class="pbtn btn-secondary tooltip" title="I'm a short tooltip">Hover to show short tooltip</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample1">
+                                                        <div class="accordion-item">
+                                                            <div id="flush-collapseOne1" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample1">
+                                                                <div id="myCode" class="myCode">
+                                                                    <!-- id to call codeBox code with JavaScript -->
+                                                                    <pre id="codeId1" class="card-text accordion-body" type="text"><code>&ltspan class="tooltip" title="I'm a short tooltip">Hover to show short tooltip&lt/span>
+</code></pre>
+                                                                </div>
+                                                                </div>
+                                                            <div class="card-footer accordion-header" id="flush-headingOne">
+                                                                <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
+                                                                    
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
+                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" 
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne1" onclick="">Show code
+                                                                    </button>
+
+                                                                </div>
+                                                                <div id="copyBtn1" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId1')">content_copy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Title -->
+                                        <h6 class="textTitle" data-lang="en">Long tooltip
+                                        </h6>
+
+                                        <!-- Code Box -->
+                                        <div class="codeBox row row-cols-12">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-header">
+                                                        <!-- Here we will add panelitaComponents -->
+                                                        <div class="card-img-top" alt="...">
+                                                            <button class="pbtn btn-secondary tooltip" title="I'm a long, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, long tooltip">Hover to show long tooltip</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample2">
+                                                        <div class="accordion-item">
+                                                            <div id="flush-collapseOne2" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample2">
+                                                                <div id="myCode" class="myCode">
+                                                                    <!-- id to call codeBox code with JavaScript -->
+                                                                    <pre id="codeId2" class="card-text accordion-body" type="text"><code>&ltspan class="tooltip" title="I'm a long, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very,
+long tooltip">Hover to show long tooltip&lt/span></code></pre>
+                                                                </div>
+                                                                </div>
+                                                            <div class="card-footer accordion-header" id="flush-headingOne">
+                                                                <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
+                                                                    
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
+                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2" 
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne2" onclick="">Show code
+                                                                    </button>
+
+                                                                </div>
+                                                                <div id="copyBtn2" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId2')">content_copy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <!--Usage-->
+                                    <div class="tab-pane fade" id="sidesheetUsageTab">
+                                        <!-- Usage section -->
+
+                                        <!-- Title -->
+                                         <h6 class="textTitle" data-lang="en">General guidelines
+                                        </h6>
+
+                                        <!-- List -->
+                                        <ul class="text outside" data-lang="en">
+                                            <li>Tooltips should not be longer than 110 characters. That comes to four full lines for an effective message.
+                                            </li>
+                                            <br>
+                                            <li>Be direct, simply tell the user exactly what they need to know. 
+                                            </li>
+                                        </ul>
+                                        
+
+                                    </div>
+                                    <!-- end usage -->
+
+                                </div>
+                              <!-- end tabs content -->
+                              </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footerLoader" class="loader footerLoader"></footer>
     </body>
-</html>
+      
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Boostrap js-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- archivo que carga archivo JavaScript principal -->
+        <script src="/content/js/JavaScript.js"></script>
+      
+        <!-- Inicializa tooltips -->
+        <script src="/content/js/tooltips.js"></script>
+
+        <!-- archivo que carga el top nav y el footer -->
+        <script src="/content/js/loaders.js"></script>   
+
+        <!-- Tooltip -->
+        <script src="/content/panelitaComponents/tooltipster/js/tooltipster.bundle.min.js"></script>
+        <script>
+            $('.tooltip').tooltipster({
+              theme: 'tooltipster-panelita',
+              position: 'right'
+            });
+          </script>
+
+        </html>
