@@ -1,53 +1,78 @@
-.dropdown {
+.dropdown-menu {
   display: none;
   position: fixed;
-  /* setear por js */
-  /* top: 24px; */
-  right: 36px;
   z-index: 999;
   width: 208px;
+  padding: 0 0 8px 0;
   background: var(--color-n0);
   border-radius: 4px;
+  color: var(--color-n800);
   box-shadow: 0px 4px 8px rgba(16, 24, 64, 0.16);
 }
 
-.dropdown .menu-title {
+.dropdown-menu.visible {
+  display: block;
+}
+
+.dropdown-menu .menu-section + .menu-section {
+  border-top: 1px solid var(--color-n300);
+}
+
+.dropdown-menu .menu-title {
   padding: 16px 16px 8px 16px;
 }
 
-.dropdown .menu-title {
+.dropdown-menu .menu-title {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 300;
 }
 
-.dropdown .menu-link {
+.dropdown-menu .menu-link {
   height: 40px;
   padding: 8px 16px;
+  background-color: transparent;
   background-position: center left 12px;
   font-size: 14px;
   cursor: pointer;
   display: flex;
   align-items: center;
+  position: relative;
+  transition: background-color .3s ease;
 }
 
-.dropdown .menu-link:hover {
+.dropdown-menu .menu-link:hover {
   background-color: var(--color-b100);
   color: var(--color-b400);
 }
 
-.dropdown .menu-link:hover .icon-container {
-  filter: var(--filter-b400);
+.dropdown-menu .menu-link:hover::before {
+  content: '';
+  width: 2px;
+  height: 100%;
+  background: currentColor;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0 2px 2px 0;
 }
 
-.dropdown .menu-link.delete {
-  color: var(--color-r500);
-}
-
-.dropdown .menu-link.delete .icon-container {
-  filter: var(--filter-r500);
-}
-
-.dropdown .menu-link .icon-container {
+.dropdown-menu .menu-link .icon-container {
+  display: flex;
   margin-right: 8px;
+}
+
+.dropdown-menu .menu-link .icon-container i {
+  font-size: 18px;
+  color: var(--color-n600);
+  transition: color .3s ease;
+}
+
+.dropdown-menu .menu-link:hover .icon-container i {
+  color: var(--color-b400);
+}
+
+.dropdown-menu .menu-link.red,
+.dropdown-menu .menu-link.red .icon-container i {
+  color: var(--color-r500);
 }
