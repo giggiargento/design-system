@@ -22,7 +22,7 @@
                             <div id="titlePage" class="col-12 col-lg-12">
                                 <h1 id="title" class="title">Dropdowns</h1>
                                 <h2 id="description" class="description" data-lang="en">
-                                    A dropdown menu displays a list of actions or options to a user. 
+                                    A dropdown menu displays a list of actions for a user to make a decision. 
                                 </h2>
                         </header>
 
@@ -46,12 +46,13 @@
                                     <div class="tab-pane fade show active" id="dropdownsCodeTab">
                                     <!-- Component section -->
 
-                                        <!-- Title -->
-                                        <h6 class="textTitle" data-lang="en">Primary Cards
-                                        </h6>
 
                                         <!-- Text with link-->
-                                         <h6 class="text" data-lang="en">Dropdowns are used for a list of actions like an options menu of <a class="textLink" href="/content/pages/cards.html">Cards</a> and <a class="textLink" href="/content/pages/table.html">Table</a> rows which are usually accompanied by <a class="textLink" href="/content/pages/icons.html">Icons</a>.
+                                        <h6 class="text" data-lang="en">Dropdowns are used for a list of actions like an options menu of <a class="textLink" href="/content/pages/cards.html">Cards</a> and <a class="textLink" href="/content/pages/table.html">Table</a> rows which are usually accompanied by <a class="textLink" href="/content/pages/icons.html">Icons</a>.
+                                        </h6>
+                                        <br>
+                                        <!-- Text-->
+                                         <h6 class="text" data-lang="en">When there are more than a few options to choose from, you can wrap them in a Dropdown. By hovering or clicking on the trigger, a dropdown menu will appear, which allows you to choose an option and execute the relevant action.
                                         </h6>
 
                                         <!-- Code Box -->
@@ -138,13 +139,13 @@
 
                                         <!-- List -->
                                         <ul class="text outside" data-lang="en">
-                                            <li>Has higher visual prominence and invites interactivity with its drop shadow.
+                                            <li>Navigate in a menu of options to perform an action.
                                             </li>
                                             <br>
-                                            <li>Provides a brief summary of content or a task.
+                                            <li>Respond to a question or prompt from a set of possible answers.
                                             </li>
                                             <br>
-                                            <li>Cards are used to organise information related to a single topic. Cards can contain multiple elements, such as images, links, actions, text and more.
+                                            <li>Keep the interface uncluttered.
                                             </li>
                                         </ul>
 
@@ -155,7 +156,7 @@
 
                                         <!-- Img -->
                                         <div id="imgContent" class="imgContent">
-                                            <img src="/content/assets/components/cardUsage.svg">
+                                            <img src="/content/assets/components/dropdownUsage.svg">
                                         </div>
 
                                         <!--Usage Dots-->
@@ -163,34 +164,59 @@
                                             <div class="numberDotContainer">
                                                 <div class="numberDot">1</div>
                                                  <h6 class="text" data-lang="en">
-                                                    <b>Status:</b> Informs users the status of the card.
+                                                    <b>Title:</b> It is optional. Informs users about the options theme.
                                                 </h6>
                                             </div>
                                             <div class="numberDotContainer">
                                                 <div class="numberDot">2</div>
                                                  <h6 class="text" data-lang="en">
-                                                    <b>Color Status:</b> Indicates the status of the card for an easy read.
+                                                    <b>Navigation:</b> Each option has a hover and active color to guide the user.
                                                 </h6>
                                             </div>
                                             <div class="numberDotContainer">
                                                 <div class="numberDot">3</div>
                                                  <h6 class="text" data-lang="en">
-                                                    <b>Subject:</b> Allows the user identify the subject of the card.
+                                                    <b>Icon:</b> It is optional. Each option can be reinforced with a specific icon.
                                                 </h6>
                                             </div>
                                             <div class="numberDotContainer">
                                                 <div class="numberDot">4</div>
                                                  <h6 class="text" data-lang="en">
-                                                    <b>Information:</b> Indicates detail information about the card.
-                                                </h6>
-                                            </div>
-                                            <div class="numberDotContainer">
-                                                <div class="numberDot">4</div>
-                                                 <h6 class="text" data-lang="en">
-                                                    <b>Slide Buttons:</b> Tools buttons to administrate different options on the cards.
+                                                    <b>Accent Color:</b> As in any call to action, reinforcement colors are implemented.
                                                 </h6>
                                             </div>
                                         </div>
+
+                                    <!-- Usage Cards -->
+                                    <div id="usageCards" class="container col-12">
+                                        <div class="usageCards row">
+                                            <div class="usageCard card col-sm">
+                                                <div class="card-header" data-lang="en"><img src="/content/assets/doIcon.svg">
+                                                DO
+                                                </div>
+                                                    <div class="card-body">
+                                                        <ul class="text outside" data-lang="en">
+                                                            <li>Use this component when there are too many options to display as buttons.
+                                                            </li>
+                                                            <li>When you need to offer a call to action without affecting the rest of the information in a page or component.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            </div>
+                                            <div class="usageCard card col-sm">
+                                                <div class="card-header" data-lang="en"><img src="/content/assets/doNotIcon.svg">
+                                                DON'T
+                                                </div>
+                                                    <div class="card-body">
+                                                        <ul class="text outside" data-lang="en">
+                                                            <li>If a user is selecting a single text option from a group of options within a form, consider using a select component, radio group, or checkboxes instead. 
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end usage cards -->
 
 
                                     </div>
