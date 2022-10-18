@@ -5,8 +5,358 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
+
+        <!-- Boostrap css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">     
     
+</head>
+    <body>
+        <div id="navLoader" class="loader"></div>
+        <div id="bodyContent" class="container">
+            <div class="row mainLayout">
+                <!--Side Nav-->
+                <div id="sideNavComponents" class="loader col-2 d-none d-lg-block">
+                </div>
+                <main id="mainContent" class="col-12 col-lg-10">
+                    <div class="commonBody">
+                        <header id="pageHeader" class="row pageHeader">
+                            <div id="titlePage" class="col-12 col-lg-12">
+                                <h1 id="title" class="title">Navigation</h1>
+                                <h2 id="description" class="description" data-lang="en">
+                                    There are two navigations, a main one that is located in the header of the platform and a secondary navigation that is located on the left side like a sidebar.
+                                </h2>
+                        </header>
+
+                        <!-- Common body -->
+                        <section id="pageContent" class="row pageContent">
+                            <div id="pageText" class="col-12 col-lg-12">
+                            
+                            <!-- Nav -->
+                            <ul id="pageNav" class="pageNav nav nav-tabs" role="tablist">
+                                <li class="nav-item" data-bs-toggle="tooltip" type="submit" data-bs-placement="bottom" title="Code">
+                                  <a class="nav-link active" type="button" aria-current="page" data-bs-target="#navigationCodeTab" data-bs-toggle="tab" role="tab" data-lang="en">Code</a>
+                                </li>
+                                <li class="nav-item" data-bs-toggle="tooltip" type="submit" data-bs-placement="bottom" title="Usage" >
+                                  <a class="nav-link" type="button" data-bs-target="#navigationUsageTab" data-bs-toggle="tab" role="tab" data-lang="en">Usage</a>
+                                </li>
+                              </ul>
+                            
+                            <!-- Tabs content -->
+                              <div class="tab-content" id="myTabContent">
+                                    <!--Code-->
+                                    <div class="tab-pane fade show active" id="navigationCodeTab">
+                                    <!-- Component section -->
+
+                                        <!-- Text -->
+                                        <h6 class="text" data-lang="en">This component allows the user to navigate within an application between its different pages and subsections.
+                                        </h6>
+
+                                        <!-- Title -->
+                                        <h6 class="textTitle" data-lang="en">Header
+                                        </h6>
+
+                                        <!-- Code Box -->
+                                        <div class="codeBox row row-cols-12">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-header">
+                                                        <!-- Here we will add panelitaComponents -->
+                                                        <div id="" class="loader primaryButton card-img-top" alt="..."></div>
+                                                    </div>
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample1">
+                                                        <div class="accordion-item">
+                                                            <div id="flush-collapseOne1" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample1">
+                                                                <div id="myCode" class="myCode">
+                                                                    <!-- id to call codeBox code with JavaScript -->
+                                                                    <pre id="codeId1" class="card-text accordion-body" type="text"><code>&ltdiv class="side-panel edit" id="sideSheetFormExample">
+    &ltdiv class="top">
+      &ltspan class="material-icons">edit&lt/span>
+      &lth3>Edit schedule&lt/h3>
+      &ltdiv class="btn-container">
+        &ltbutton class="btn btn-icon icon-24 close material-icons">close&lt/button>
+      &lt/div>
+    &lt/div>
+    &ltdiv class="scroll-container gap8">
+      &ltdiv class="data-row">
+        &ltspan class="label">Type of request:&lt/span>
+        &ltspan class="data">Modification&lt/span>
+      &lt/div>
+      &ltdiv class="data-row">
+        &ltspan class="label">Days:&lt/span>
+        &ltspan class="data">MTWTFSS&lt/span>
+      &lt/div>
+      &ltdiv class="data-row">
+        &ltspan class="label">Time:&lt/span>
+        &ltspan class="data">10.00 - 18.00&lt/span>
+      &lt/div>
+      &ltdiv class="data-row">
+        &ltspan class="label">Validity:&lt/span>
+        &ltspan class="data">01/06/2021 - 01/07/2021&lt/span>
+      &lt/div>
+      &ltdiv class="data-row">
+        &ltspan class="label">Consulting room:&lt/span>
+        &ltspan class="data">Consulting room 101&lt/span>
+      &lt/div>
+      &ltdiv class="data-row">
+        &ltspan class="label">Duration:&lt/span>
+        &ltspan class="data">20 minutes&lt/span>
+      &lt/div>
+      &ltdiv class="data-row">
+        &ltspan class="label">Interval:&lt/span>
+        &ltspan class="data">10 minutes&lt/span>
+      &lt/div>
+      &ltdiv class="data-row">
+        &ltspan class="label">Anticipation:&lt/span>
+        &ltspan class="data">1 hour&lt/span>
+      &lt/div>
+      &ltdiv class="data-row">
+        &ltspan class="label">Modality:&lt/span>
+        &ltspan class="data">Face-to-face&lt/span>
+      &lt/div>
+      &ltdiv class="form-field vertical auto-height mtauto">
+        &ltp class="h300 mb16">Advanced&lt/p>
+        &ltdiv class="flex-h gap24 mt8 flex-wrap">
+          &ltdiv class="flex-h">
+            &ltinput type="checkbox" id="global">
+            &ltlabel for="global">Global&lt/label>
+          &lt/div>
+          &ltdiv class="flex-h">
+            &ltinput type="checkbox" id="web">
+            &ltlabel for="web">Web&lt/label>
+          &lt/div>
+        &lt/div>
+      &lt/div>
+    &lt/div>
+  &lt/div></code></pre>
+                                                                </div>
+                                                                </div>
+                                                            <div class="card-footer accordion-header" id="flush-headingOne">
+                                                                <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
+                                                                    
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
+                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" 
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne1" onclick="">Show code
+                                                                    </button>
+
+                                                                </div>
+                                                                <div id="copyBtn1" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId1')">content_copy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Title -->
+                                        <h6 class="textTitle" data-lang="en">Sidebar
+                                        </h6>
+
+                                        <!-- Code Box -->
+                                        <div class="codeBox row row-cols-12">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-header">
+                                                        <!-- Here we will add panelitaComponents -->
+                                                        <div id="" class="loader primaryButton card-img-top" alt="..."></div>
+                                                    </div>
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample2">
+                                                        <div class="accordion-item">
+                                                            <div id="flush-collapseOne2" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample2">
+                                                                <div id="myCode" class="myCode">
+                                                                    <!-- id to call codeBox code with JavaScript -->
+                                                                    <pre id="codeId2" class="card-text accordion-body" type="text"><code>&ltdiv class="side-panel comment" id="sideSheetContentExample">
+    &ltdiv class="top">
+      &ltspan class="material-icons">feedback_outline&lt/span>
+      &lth3>Comments&lt/h3>
+      &ltdiv class="btn-container">
+        &ltbutton class="btn btn-icon icon-24 close material-icons">close&lt/button>
+      &lt/div>
+    &lt/div>
+    &ltdiv class="scroll-container">
+      &ltdiv class="comment">
+        &ltdiv>&ltspan class="bold">Name:&lt/span> &ltspan>John Doe&lt/span>&lt/div>
+        &ltp class="comment-text">A short description with summary details to inform user without exit from the current screen.&lt/p>
+        &lthr class="mt16"/>
+      &lt/div>
+      &ltdiv class="comment">
+        &ltdiv>&ltspan class="bold">Name:&lt/span> &ltspan>John Doe&lt/span>&lt/div>
+        &ltp class="comment-text">A short description with summary details to inform user without exit from the current screen.&lt/p>
+        &lthr class="mt16"/>
+      &lt/div>
+    &lt/div>
+  &lt/div></code></pre>
+                                                                </div>
+                                                                </div>
+                                                            <div class="card-footer accordion-header" id="flush-headingOne">
+                                                                <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
+                                                                    
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
+                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2" 
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne2" onclick="">Show code
+                                                                    </button>
+
+                                                                </div>
+                                                                <div id="copyBtn2" class="text-end copyBtn material-icons" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId2')">content_copy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <!--Usage-->
+                                    <div class="tab-pane fade" id="navigationUsageTab">
+                                        <!-- Usage section -->
+
+                                        <!-- Title -->
+                                         <h6 class="textTitle" data-lang="en">Header
+                                        </h6>
+
+                                        <!-- Text -->
+                                        <h6 class="text" data-lang="en">A list of navigation links and buttons that users find in the header of every page.
+                                        </h6>
+                                        
+                                        <!-- Title -->
+                                        <h6 class="textTitle" data-lang="en">Structure
+                                        </h6>
+
+                                        <!-- Img -->
+                                        <div id="imgContent" class="imgContent">
+                                            <img src="/content/assets/components/headerUsage.svg">
+                                        </div>
+
+
+                                        <!--Usage Dots-->
+                                        <div class="imgExplanation">
+                                            <div class="numberDotContainer">
+                                                <div class="numberDot">1</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Section:</b> Show the different sections of the application.
+                                                </h6>
+                                            </div>
+                                            <div class="numberDotContainer">
+                                                <div class="numberDot">2</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Primary Button:</b> Link to booking site.
+                                                </h6>
+                                            </div>
+                                            <div class="numberDotContainer">
+                                                <div class="numberDot">3</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Secondary Button:</b> Indicates the headquarters/establishment that is being managed. Link to the venue selector.
+                                            </div>
+                                            <div class="numberDotContainer">
+                                                <div class="numberDot">4</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Icon Buttons:</b> Indicate different actions such as switching users, viewing the profile and exiting the application.
+                                            </div>
+                                        </div>
+
+                                        <!-- Title -->
+                                        <h6 class="textTitle" data-lang="en">Sidebar
+                                        </h6>
+
+                                        <!-- Text -->
+                                        <h6 class="text" data-lang="en">The sidebar component is used to display the secondary navigation in the side of the application's page. This one includes a list of links that users use to move between sections and subsections of the app.
+                                        </h6>
+
+                                        <!-- Title -->
+                                        <h6 class="textTitle" data-lang="en">General guidelines
+                                        </h6>
+                                        <!-- Text -->
+                                        <h6 class="text" data-lang="en">Group navigation items into sections based on related categories.
+                                        </h6>
+
+                                        <!-- List -->
+                                        <ul class="text outside" data-lang="en">
+                                            <li>Use a title to clarify in which general section of the application the user is located.
+                                            </li>
+                                            <br>
+                                            <li>Use a section title to clarify the category of a section.
+                                            </li>
+                                            <br>
+                                            <li>Use a main icon for the actions of the elements.
+                                            </li>
+                                            <br>
+                                            <li>It can collapse. Only the icons of the main categories remain visible.
+                                            </li>
+                                        </ul>
+                                        
+                                        <!-- Title -->
+                                        <h6 class="textTitle" data-lang="en">Structure
+                                        </h6>
+
+                                        <!-- Img -->
+                                        <div id="imgContent" class="imgContent">
+                                            <img src="/content/assets/components/sideBarUsage.svg">
+                                        </div>
+
+                                        <!--Usage Dots-->
+                                        <div class="imgExplanation">
+                                            <div class="numberDotContainer">
+                                                <div class="numberDot">1</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Title:</b> Indicates the main section of the application.
+                                                </h6>
+                                            </div>
+                                            <div class="numberDotContainer">
+                                                <div class="numberDot">2</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Icon and Label:</b> Indicates category.
+                                                </h6>
+                                            </div>
+                                            <div class="numberDotContainer">
+                                                <div class="numberDot">3</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Icon:</b> Indicates that it can be deployed.
+                                            </div>
+                                            <div class="numberDotContainer">
+                                                <div class="numberDot">4</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Labels:</b> Indicate subcategories.
+                                        </div>
+
+
+                                    </div>
+                                    <!-- end usage -->
+
+                                </div>
+                              <!-- end tabs content -->
+                              </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footerLoader" class="loader footerLoader"></footer>
     </body>
-</html>
+      
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Boostrap js-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- archivo que carga archivo JavaScript principal -->
+        <script src="/content/js/JavaScript.js"></script>
+      
+        <!-- Inicializa tooltips -->
+        <script src="/content/js/tooltips.js"></script>
+
+        <!-- archivo que carga el top nav y el footer -->
+        <script src="/content/js/loaders.js"></script>   
+
+        </html>
