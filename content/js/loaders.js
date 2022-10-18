@@ -551,6 +551,11 @@ $(document).ready(function() {
         $('input.time').timepicker();
     })
 
+    // Dropdowns
+    $('#dropdownMenuLoader').load('../panelitaComponents/dropdown.html', function() {
+        $('dropdown').unwrap();
+        triggerLoaded($(this));
+    })
 
     // Tags
     $('#tagsLoader').load('../panelitaComponents/tag.html', function() {
