@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/content/panelitaComponents/css/panelita.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- card 1 -->
+  <div class="booking-card-container">
+    <div class="booking-card flex-h">
+      <div class="left flex-v">
+        <p class="status">Confirmado</p>
+        <div class="full-date">
+          <p class="weekday">Lunes</p>
+          <p class="date">15/03/21</p>
+          <p class="time">03:40 PM</p>
+        </div>
+        <p class="plan">Plan OSDE 210</p>
+        <button class="mobile-actions-btn show-actions" onclick="toggleActionsMobile(this)"></button>
+      </div>
+      <div class="right flex-v">
+        <div class="top flex-h">
+          <div class="avatar">
+            <div class="icon">
+              <i class="material-icons">person_outline</i>
+            </div>
+          </div>
+          <div class="booking flex-v">
+            <p class="name">Dr. Pinedo Zafarra Jorge Luis</p>
+            <div class="flex-h area">
+              <label class="fav-checkbox">
+                <input type="checkbox">
+                <div class="icon">
+                  <i class="material-icons on">favorite</i>
+                  <i class="material-icons off">favorite_outline</i>
+                </div>
+             </label>
+             <span>Kinesiología</span>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="line">
+            <div class="icon-container">
+              <i class="material-icons">videocam</i>
+            </div>
+            <p>Teleconsulta</p>
+          </div>
+          <div class="line">
+            <div class="icon-container">
+              <i class="material-icons">schedule</i>
+            </div>
+            <p>20 minutos</p>
+          </div>
+          <div class="line preparation-link" onclick="togglePreparation(this)">
+            <div class="icon-container">
+              <i class="material-icons">visibility</i>
+            </div>
+            <p class="off">Ver preparación</p>
+            <p class="on">Ocultar preparación</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sub-card booking-card preparation-card">
+      <div class="card-content">
+        <div class="preparation-text">
+          <p class="preparation-header">Preparación general</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis a voluptas tempora laborum mollitia deserunt unde nam nihil dolores fugiat esse sint exercitationem commodi, libero sequi, veniam neque, ipsam consequuntur?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis a voluptas tempora laborum mollitia deserunt unde nam nihil dolores fugiat esse sint exercitationem commodi, libero sequi, veniam neque, ipsam consequuntur?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis a voluptas tempora laborum mollitia deserunt unde nam nihil dolores fugiat esse sint exercitationem commodi, libero sequi, veniam neque, ipsam consequuntur?</p>
+          <p class="preparation-header">Preparación para procedimiento</p>
+          <ul>
+            <li>Preparación 1</li>
+            <li>Preparación 2</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- card 2 -->
+  <div class="card selectable" onclick="$(this).toggleClass('selected')">
+    <div class="card-header">
+      <p class="h500 time">3:40 PM</p>
+      <p class="h300 overdue">0 min</p>
+    </div>
+    <p class="h300 component">Skins conditions</p>
+    <p class="h300 area">Dr. Parker Andrea</p>
+    <p class="h100 customer">Urbina Arango, Conny Liliana / C52020634</p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="bookingcard.js"></script>
+</body>
+</html>

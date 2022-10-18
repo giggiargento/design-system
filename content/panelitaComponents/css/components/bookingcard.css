@@ -10,63 +10,10 @@
   --color-status-not-assisted: var(--color-grey-light3);
 }
 
-/* BOOKING CARD CHICA resumida, para t�tem */
-.booking-card-lite {
-  width: 403px;
-  height: 216px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
+.booking-card-container {
+  max-width: 800px;
 }
 
-.booking-card-lite .top {
-  padding: 22px 16px;
-  background: var(--color-main-accent);
-  color: var(--color-white);
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.booking-card-lite .bottom {
-  padding: 16px;
-  background: white;
-  color: var(--color-grey-dark1);
-}
-
-.booking-card-lite .bottom .name {
-  background-repeat: no-repeat;
-  background-position: center left;
-  background-size: 44px;
-  padding-left: 56px;
-}
-
-.booking-card-lite .bottom .name.lab {
-  background-image: url(/bukeala-static/images/icons/panelita/tube.svg);
-}
-
-.booking-card-lite .bottom .name .area {
-  font-weight: 600;
-}
-
-.booking-card-lite .bottom .name .component {
-  font-size: 14px;
-}
-
-.booking-card-lite .bottom hr {
-  border: none;
-  border-top: 1px solid var(--color-grey-light2);
-  margin: 16px 0;
-}
-
-.booking-card-lite .bottom .duration {
-  background-image: url(/bukeala-static/images/icons/panelita/query_builder.svg);
-  background-repeat: no-repeat;
-  background-size: 24px;
-  background-position: center left;
-  padding-left: 32px;
-}
-
-/* BOOKING CARD GRANDE con m�s detalles, para mi agenda */
 .booking-card {
   min-height: unset;
   margin: 24px 0;
@@ -90,12 +37,14 @@
 
 .booking-card .left {
   width: 180px;
+  flex-shrink: 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
-  background-color: var(--color-main-accent);
+  font-weight: 400;
+  background-color: var(--color-b400);
   border: 1px solid transparent;
   border-top-left-radius: var(--card-border-radius);
   border-bottom-left-radius: var(--card-border-radius);
@@ -109,6 +58,12 @@
   border-radius: 4px;
   padding: 4px 16px;
   margin-bottom: 14px;
+}
+
+.booking-card .left .full-date {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .booking-card .left p {
@@ -170,21 +125,33 @@
   margin-bottom: 16px;
 }
 
-.booking-card .right .icon {
+.booking-card .right .avatar {
   margin-right: 8px;
 }
 
-.booking-card .right .icon {
+.booking-card .right .avatar {
   width: 32px;
   height: 32px;
   flex-shrink: 0;
   overflow: hidden;
-  background-image: url(/bukeala-static/images/custom/hospitalbritanico/avatar-blue.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+  margin-top: 4px;
 }
 
-.booking-card .right .icon img {
+.booking-card .right .avatar .icon {
+  width: 100%;
+  height: 100%;
+  background-color: #D8EDFE;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+}
+
+.booking-card .right .avatar .icon i {
+  font-size: 18px;
+  color: var(--color-b400);
+}
+
+.booking-card .right .avatar img {
   border-radius: 50%;
   max-width: 100%;
   height: 100%;
@@ -206,7 +173,30 @@
   font-weight: 400;
 }
 
-.booking-card .right .videocall-link-container {
+.booking-card .right .area .fav-checkbox input[type=checkbox] {
+  display: none;
+}
+
+.booking-card .right .area .fav-checkbox .icon {
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.booking-card .right .area .fav-checkbox .icon i {
+  font-size: 18px;
+}
+
+.booking-card .right .area .fav-checkbox input[type=checkbox]:checked + .icon .on,
+.booking-card .right .area .fav-checkbox input[type=checkbox]:not(:checked) + .icon .off {
+  display: block;
+}
+
+.booking-card .right .area .fav-checkbox input[type=checkbox]:checked + .icon .off,
+.booking-card .right .area .fav-checkbox input[type=checkbox]:not(:checked) + .icon .on {
+  display: none;
+}
+
+/* .booking-card .right .videocall-link-container {
   margin-left: auto;
   margin-right: 32px;
   background-color: var(--color-main-accent);
@@ -236,12 +226,11 @@
   background-size: 24px;
   background-position: center;
   filter: var(--filter-whiten);
-}
+} */
 
 .booking-card .right .bottom {
   display: flex;
   flex-direction: column;
-  /* gap: 8px; */
   font-size: 14px;
 }
 
@@ -261,15 +250,22 @@
 .booking-card .right .bottom .line .icon-container {
   width: 16px;
   height: 16px;
-  background-repeat: no-repeat;
-  background-size: 16px;
-  background-color: transparent;
-  margin: 3px 8px 0 0;
+  margin-right: 8px;
+}
+
+.line .icon-container i {
+  font-size: 18px;
+  color: var(--color-b400);
 }
 
 .booking-card .right .bottom .line.preparation-link {
   cursor: pointer;
   user-select: none;
+}
+
+.booking-card .right .bottom .line.preparation-link.active .off,
+.booking-card .right .bottom .line.preparation-link:not(.active) .on {
+  display: none;
 }
 
 .booking-card .right .bottom .line.presential .icon-container {
@@ -389,8 +385,6 @@
   background-image: url(/bukeala-static/images/icons/panelita/mail_outline.svg);
 }
 
-/* estados de cards */
-
 .booking-card.pending-data .left {
   background: var(--color-status-pending-data);
 }
@@ -435,11 +429,8 @@
 
 .booking-card-container {
   position: relative;
-  /* espacio para box-shadow */
-  /* padding: 0 8px; */
 }
 
-/* sub-cards (preparaci�n, cancelar cita, reenviar notificaci�n, etc) */
 .booking-card ~ .sub-card {
   display: none;
   padding: 16px 48px 16px 24px;
@@ -447,9 +438,7 @@
   font-size: 14px;
   height: auto;
   width: 100%;
-  /* max-height: 0; */
   margin: 0!important;
-  /* position: absolute; */
   top: 0;
   z-index: 0;
 }
@@ -484,7 +473,7 @@
   font-weight: 600;
 }
 
-.booking-card ~ .sub-card .alert {
+/* .booking-card ~ .sub-card .alert {
   margin: 16px 0;
 }
 
@@ -516,7 +505,6 @@
 }
 
 .booking-card ~ .sub-card .form-field > label {
-  /* width: 220px; */
   flex-shrink: 0;
   font-size: 14px;
   white-space: pre-line;
@@ -543,16 +531,14 @@
 .booking-card ~ .sub-card .form-field.error .error-msg {
   display: inline-block;
   position: relative;
-  /* override forms.css, para refactorear */
   left: unset!important;
   grid-column-start: 2;
 }
 
 .booking-card ~ .sub-card .form-field + .error-msg {
   left: 300px;
-}
+} */
 
-/* preparacion */
 .preparation-text {
   color: var(--color-grey-dark2);
 }
@@ -570,112 +556,117 @@
   width: 100%;
 }
 
-/* VERSION MOBILE */
-/* armar media queries */
-.booking-card-container.small .booking-card {
-  flex-direction: column;
-}
+@media screen and (max-width: 700px) {
+  .booking-card-container .booking-card {
+    flex-direction: column;
+  }
+  
+  .booking-card-container .booking-card .left {
+    display: block;
+    width: 100%;
+    text-align: left;
+    border-bottom-left-radius: 0;
+    padding: 12px;
+    line-height: initial;
+  }
 
-.booking-card-container.small .booking-card .left {
-  display: block;
-  width: 100%;
-  text-align: left;
-  border-bottom-left-radius: 0;
-  padding: 12px;
-  line-height: initial;
-}
-
-.booking-card-container.small .booking-card .left .weekday,
-.booking-card-container.small .booking-card .left p.date,
-.booking-card-container.small .booking-card .left p.time {
-  display: inline-block;
-  font-size: 16px;
-}
-
-.booking-card .left .time {
-  margin-bottom: 0;
-}
-
-.booking-card-container.small .booking-card .left p.time::before {
-  content: ' - ';
-}
-
-.booking-card-container.small .booking-card .left .status {
-  width: fit-content;
-  margin-bottom: 12px;
-}
-
-.booking-card-container.small .booking-card .left .plan {
-  margin-top: 0;
-}
-
-.booking-card-container.small .booking-card button.mobile-actions-btn,
-.booking-card-container.small .booking-card .left button.show-actions,
-.booking-card-container.small .booking-card .actions button.hide-actions {
-  display: block;
-}
-
-.booking-card-container.small.no-actions .booking-card button.mobile-actions-btn,
-.booking-card-container.small.no-actions .booking-card .left button.show-actions,
-.booking-card-container.small.no-actions .booking-card .actions button.hide-actions {
-  display: none;
-}
-
-.booking-card-container.small .booking-card .right {
-  padding: 16px 10px;
-}
-
-.booking-card-container.small .booking-card .right .top,
-.booking-card-container.small .booking-card .right .bottom {
-  padding-left: 8px;
-}
-
-.booking-card-container.small .booking-card .right .top {
-  padding-bottom: 16px;
-  margin-bottom: 8px;
-}
-
-.booking-card-container.small .booking-card .right .name {
-  margin-bottom: 2px;
-  line-height: 18px;
-}
-
-.booking-card-container.small .booking-card .actions {
-  width: 100%;
-  transform: translateX(0) translateY(-100%) !important;
-}
-
-.booking-card-container.small .booking-card .actions.visible {
-  transform: translateY(0) !important;
-}
-
-.booking-card-container.small .booking-card .actions .action .action-label {
-  font-size: 16px;
-}
-
-.booking-card-container.small .booking-card+.layover .line,
-.booking-card-container.small .booking-card-container+.layover .line {
-  height: 280px !important;
-  top: -130px;
-}
-
-.booking-card-container.small .sub-card .form * {
-  flex-shrink: 1;
-}
-
-.booking-card-container.small .sub-card .form-field {
-  margin: 0;
-  grid-template-columns: 2fr;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-    "label"
-    "input"
-    "error-msg"
-}
-
-.booking-card-container.small .sub-card .form-field label {
-  text-align: left;
-  max-width: 100%;
-  width: 100%;
-  margin-bottom: 10px;
+  .booking-card-container .booking-card .left .full-date {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .booking-card-container .booking-card .left .weekday,
+  .booking-card-container .booking-card .left p.date,
+  .booking-card-container .booking-card .left p.time {
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+  .booking-card .left .time {
+    margin: 1px 0 0 0;
+  }
+  
+  .booking-card-container .booking-card .left p.time::before {
+    content: ' - ';
+  }
+  
+  .booking-card-container .booking-card .left .status {
+    width: fit-content;
+    margin-bottom: 12px;
+  }
+  
+  .booking-card-container .booking-card .left .plan {
+    margin-top: 0;
+  }
+  
+  /* .booking-card-container .booking-card button.mobile-actions-btn,
+  .booking-card-container .booking-card .left button.show-actions,
+  .booking-card-container .booking-card .actions button.hide-actions {
+    display: block;
+  }
+  
+  .booking-card-container.no-actions .booking-card button.mobile-actions-btn,
+  .booking-card-container.no-actions .booking-card .left button.show-actions,
+  .booking-card-container.no-actions .booking-card .actions button.hide-actions {
+    display: none;
+  } */
+  
+  .booking-card-container .booking-card .right {
+    padding: 16px 10px;
+  }
+  
+  .booking-card-container .booking-card .right .top,
+  .booking-card-container .booking-card .right .bottom {
+    padding-left: 8px;
+  }
+  
+  .booking-card-container .booking-card .right .top {
+    padding-bottom: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .booking-card-container .booking-card .right .name {
+    margin-bottom: 2px;
+    line-height: 18px;
+  }
+  
+  /* .booking-card-container .booking-card .actions {
+    width: 100%;
+    transform: translateX(0) translateY(-100%) !important;
+  }
+  
+  .booking-card-container .booking-card .actions.visible {
+    transform: translateY(0) !important;
+  }
+  
+  .booking-card-container .booking-card .actions .action .action-label {
+    font-size: 16px;
+  }
+  
+  .booking-card-container .booking-card+.layover .line,
+  .booking-card-container .booking-card-container+.layover .line {
+    height: 280px !important;
+    top: -130px;
+  }
+  
+  .booking-card-container .sub-card .form * {
+    flex-shrink: 1;
+  }
+  
+  .booking-card-container .sub-card .form-field {
+    margin: 0;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "label"
+      "input"
+      "error-msg"
+  }
+  
+  .booking-card-container .sub-card .form-field label {
+    text-align: left;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+  } */
 }

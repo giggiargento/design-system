@@ -1,25 +1,48 @@
-.card {
+.card.selectable {
+  width: 500px;
   border-radius: var(--border-radius);
   border: 1px solid var(--color-n300);
   padding: 8px;
   background-color: var(--color-n0);
   font-size: 14px;
+  color: var(--color-n800);
   display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.card.selection,
 .card.selectable {
+  --border-radius: 4px;
+  position: relative;
   cursor: pointer;
+  padding: 12px 16px;
 }
 
-.card.selection.selected,
 .card.selectable.selected {
-  background-color: var(--color-accent);
-  color: var(--color-n0);
+  background-color: var(--color-n50);
+  border-color: var(--color-b400);
 }
 
-.card p {
+.card.selectable p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.card.selectable .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card.selectable .time {
+  color: var(--color-b400);
+  display: flex;
+  align-items: center;
+}
+
+.card.selectable .time::before {
+  content: 'schedule';
+  font-family: 'Material Icons';
+  margin-right: 4px;
 }
