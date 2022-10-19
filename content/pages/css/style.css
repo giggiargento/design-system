@@ -994,7 +994,17 @@ table{
 /* Navigation Header */
 .pnavbar{
     position: relative !important;
+    z-index: 90 !important;
 }
 .btn.btn-icon.material-icons{
     padding: 0px !important;
+}
+
+#header .nav-links{
+    margin-bottom: 0px !important;
+    padding-left: 0px !important;
+}
+
+#header .menu-right{
+    margin-bottom: 0px !important;
 }
