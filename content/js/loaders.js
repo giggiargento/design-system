@@ -585,6 +585,14 @@ $(document).ready(function() {
         triggerLoaded($(this));
     })
 
+    // Calendar
+    $('#calendarLoader').load('../panelitaComponents/calendar.html', function() {
+        $('calendar').unwrap();
+        triggerLoaded($(this));
+        
+        $('input.date').datepicker();
+    })
+
 // end panelita components
 
 

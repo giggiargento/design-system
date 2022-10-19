@@ -1008,3 +1008,8 @@ table{
 #header .menu-right{
     margin-bottom: 0px !important;
 }
+
+/* Calendar */
+#loader .ui-datepicker {
+    position: relative !important;
+}
