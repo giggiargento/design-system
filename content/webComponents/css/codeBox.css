@@ -55,6 +55,14 @@
     color: var(--default-blue);
 }
 
+.codeBox .btn-link:hover{
+    color: var(--dark-blue) !important;
+}
+
+.codeBox .btn-link:active{
+    color: var(--dark-blue) !important;
+}
+
 .codeBox .text-center{
     position: relative;
     justify-content: center;

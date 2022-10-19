@@ -579,6 +579,12 @@ $(document).ready(function() {
         triggerLoaded($(this));
     })
 
+    // Navigation
+    $('#navigationHeaderLoader').load('../panelitaComponents/navigation-header.html', function() {
+        $('navigation').unwrap();
+        triggerLoaded($(this));
+    })
+
 // end panelita components
 
 

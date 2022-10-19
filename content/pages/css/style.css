@@ -990,3 +990,11 @@ table{
     font-size: 12px !important;
     padding: 8px 16px !important;
 }
+
+/* Navigation Header */
+.pnavbar{
+    position: relative !important;
+}
+.btn.btn-icon.material-icons{
+    padding: 0px !important;
+}

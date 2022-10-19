@@ -2,7 +2,7 @@
 	--top-nav-height: 72px;
 }
 
-nav {
+/* nav {
   height: var(--nav-height);
   width: 100%;
   flex-shrink: 0;
@@ -12,7 +12,7 @@ nav {
   align-items: center;
   background-color: var(--color-white);
   overflow: hidden;
-}
+} */
 
 nav #nav-content {
   width: 100%;
@@ -87,8 +87,12 @@ nav .nav-btns {
 	gap: 16px;
 }
 
+nav .pbtn{
+	margin: 0px !important;
+}
+
 .pnavbar .btn-icon {
-	font-size: 20px;
+	font-size: 24px;
 	white-space: nowrap;
 	color: var(--color-n800);
 	background-color: transparent;
