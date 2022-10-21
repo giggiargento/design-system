@@ -1,0 +1,91 @@
+.secondary-card {
+  width: 276px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  border-left: 5px solid var(--border-color, var(--color-n300));
+  background-color: var(--color-n0);
+  box-shadow: 0px 0px 2px rgb(0 0 0 / 15%);
+  padding: 8px 0 0;
+  font-size: 12px;
+  color: var(--color-n700);
+  cursor: pointer;
+  position: relative;
+}
+
+.secondary-card.selected {
+  background-color: var(--color-b50);
+}
+
+.secondary-card > div {
+  padding: 0 8px;
+  margin-bottom: 8px;
+}
+
+.secondary-card .icon-container i {
+  font-size: 16px;
+  color: var(--color-n700);
+  vertical-align: bottom;
+}
+
+.secondary-card .icon-container:empty {
+  display: none;
+}
+
+.secondary-card .weekdays .day:not(.active) {
+  color: var(--color-n400);
+}
+
+.secondary-card .day.active,
+.secondary-card .option.active {
+  color: var(--color-b400);
+}
+
+.secondary-card .weekdays {
+  display: flex;
+}
+
+.secondary-card .days {
+  margin-left: 4px;
+}
+
+.secondary-card .days,
+.secondary-card .options {
+  display: flex;
+  gap: 8px;
+}
+
+.secondary-card .options {
+  margin-bottom: 0;
+  border-top: 1px solid var(--color-n300);
+  padding: 4px 8px;
+}
+
+.secondary-card .option:not(.active) {
+  color: var(--color-n400);
+  text-decoration: line-through;
+}
+
+.secondary-card .checkbox-container {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--color-n400);
+  background-color: var(--color-n0);
+}
+
+.secondary-card.selected .checkbox-container {
+  background-color: var(--color-b400);
+  color: var(--color-n0);
+  border-color: transparent;
+}
+
+.secondary-card.selected .checkbox-container::after {
+  content: 'check';
+  font-family: 'Material Icons';
+  margin-left: 1px;
+}
