@@ -100,13 +100,27 @@
 
 .booking-card .left button.show-actions {
   display: none;
-  background-image: url(/bukeala-static/images/icons/panelita/more_vert.svg);
-  filter: var(--filter-whiten);
+}
+
+.booking-card .left button.show-actions::after,
+.booking-card .actions button.hide-actions::after {
+  font-size: 18px;
+}
+
+.booking-card .left button.show-actions::after {
+  content: 'more_horiz';
+  font-family: 'Material Icons';
+  color: var(--color-n0);
 }
 
 .booking-card .actions button.hide-actions {
   display: none;
-  background-image: url(/bukeala-static/images/icons/panelita/close.svg);
+}
+
+.booking-card .actions button.hide-actions::after {
+  content: 'close';
+  font-family: 'Material Icons';
+  color: var(--color-b400);
 }
 
 .booking-card .right {
@@ -196,46 +210,11 @@
   display: none;
 }
 
-/* .booking-card .right .videocall-link-container {
-  margin-left: auto;
-  margin-right: 32px;
-  background-color: var(--color-main-accent);
-  border-radius: 50%;
-  transform: translateY(-5px);
-}
-
-.booking-card .right .videocall-link-container:hover {
-  background-color: var(--color-main-light);
-}
-
-.booking-card .right .videocall-link-container:hover a {
-  filter: var(--filter-accent);
-}
-
-.booking-card .right .videocall-link-container.disabled {
-  background-color: var(--color-grey-dark4);
-  pointer-events: none;
-}
-
-.booking-card .right a.videocall-btn {
-  display: flex;
-  width: 32px;
-  height: 32px;
-  background-image: url(/bukeala-static/images/icons/panelita/videocam.svg);
-  background-repeat: no-repeat;
-  background-size: 24px;
-  background-position: center;
-  filter: var(--filter-whiten);
-} */
-
 .booking-card .right .bottom {
   display: flex;
   flex-direction: column;
   font-size: 14px;
-}
-
-.booking-card .right .bottom > * + * {
-  margin-top: 8px;
+  gap: 8px;
 }
 
 .booking-card .right .bottom a {
@@ -268,38 +247,6 @@
   display: none;
 }
 
-.booking-card .right .bottom .line.presential .icon-container {
-  background-image: url(/bukeala-static/images/icons/panelita/domain.svg);
-}
-
-.booking-card .right .bottom .line.virtual .icon-container {
-  background-image: url(/bukeala-static/images/icons/panelita/videocam.svg);
-}
-
-.booking-card .right .bottom .line.map-link .icon-container {
-  background-image: url(/bukeala-static/images/icons/panelita/place_black.svg);
-}
-
-.booking-card .right .bottom .line.room-supplementary-data .icon-container {
-  background-image: url(/bukeala-static/images/icons/panelita/place_black.svg);
-}
-
-.booking-card .right .bottom .line.duration .icon-container {
-  background-image: url(/bukeala-static/images/icons/panelita/clock.svg);
-}
-
-.booking-card .right .bottom .line.multiple-sessions-number .icon-container {
-  background-image: url(/bukeala-static/images/icons/panelita/date_range.svg);
-}
-
-.booking-card .right .bottom .line.preparation-link .icon-container {
-  background-image: url(/bukeala-static/images/icons/panelita/visibility.svg);
-}
-
-.booking-card .right .bottom .line.preparation-link.active .icon-container {
-  background-image: url(/bukeala-static/images/icons/panelita/visibility_off_black.svg);
-}
-
 .booking-card .actions {
   height: 100%;
   position: absolute;
@@ -310,7 +257,10 @@
   border-top-right-radius: var(--card-border-radius);
   border-bottom-right-radius: var(--card-border-radius);
   background: white;
-  transform: translateX(168px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transform: translateX(158px);
   transition: transform .3s ease-in-out;
 }
 
@@ -329,13 +279,14 @@
   background-color: var(--color-main-light);
 }
 
-.booking-card .actions .action + .action {
-  margin-top: 8px;
-}
-
 .booking-card .actions .action .icon-container {
   height: 16px;
   display: flex;
+}
+
+.booking-card .actions .action i {
+  font-size: 16px;
+  vertical-align: bottom;
 }
 
 .booking-card .actions .action .action-label {
@@ -351,38 +302,6 @@
   background-size: contain;
   background-color: transparent;
   margin-right: 0;
-}
-
-.action[data-action="assign-new"] .icon-container {
-  background-image: url(/bukeala-static/images/icons/panelita/query_builder.svg);
-}
-
-.action[data-action="cancel"] .icon-container {
-  background-image: url(/bukeala-static/images/icons/panelita/cancel.svg);
-}
-
-.action[data-action="confirm"] .icon-container {
-  background-image: url(/bukeala-static/images/icons/panelita/check.svg);
-}
-
-.action[data-action="copy"] .icon-container {
-  background-image: url(/bukeala-static/images/icons/panelita/library_books.svg);
-}
-
-.action[data-action="pay"] .icon-container {
-  background-image: url(/bukeala-static/images/icons/panelita/attach_money.svg);
-}
-
-.action[data-action="reassign"] .icon-container {
-  background-image: url(/bukeala-static/images/icons/panelita/history.svg);
-}
-
-.action[data-action="resend"] .icon-container {
-  background-image: url(/bukeala-static/images/icons/panelita/fast_forward.svg);
-}
-
-.action[data-action="view-notification"] .icon-container {
-  background-image: url(/bukeala-static/images/icons/panelita/mail_outline.svg);
 }
 
 .booking-card.pending-data .left {
@@ -412,10 +331,6 @@
 
 .booking-card.not-assisted .left .status {
   border-color:var(--color-grey-dark3);
-}
-
-.booking-card.not-assisted .left button.show-actions {
-  background-image: url(/bukeala-static/images/icons/panelita/chevron-down.svg);
 }
 
 .booking-card.ended .right,
@@ -473,19 +388,11 @@
   font-weight: 600;
 }
 
-/* .booking-card ~ .sub-card .alert {
-  margin: 16px 0;
-}
-
 .booking-card ~ .sub-card .form {
   padding-top: 24px;
   display: flex;
   flex-direction: column;
-  /* gap: 8px; */
-}
-
-.booking-card ~ .sub-card .form > * + * {
-  margin-top: 8px;
+  gap: 8px;
 }
 
 .booking-card ~ .sub-card .form-field {
@@ -523,9 +430,14 @@
   text-align: left;
 }
 
+.booking-card ~ .sub-card .chzn-container {
+  width: 100%!important;
+}
+
 .booking-card ~ .sub-card .btn-container {
   margin-top: 32px;
   justify-content: flex-end;
+  gap: 8px;
 }
 
 .booking-card ~ .sub-card .form-field.error .error-msg {
@@ -599,17 +511,11 @@
     margin-top: 0;
   }
   
-  /* .booking-card-container .booking-card button.mobile-actions-btn,
+  .booking-card-container .booking-card button.mobile-actions-btn,
   .booking-card-container .booking-card .left button.show-actions,
   .booking-card-container .booking-card .actions button.hide-actions {
     display: block;
   }
-  
-  .booking-card-container.no-actions .booking-card button.mobile-actions-btn,
-  .booking-card-container.no-actions .booking-card .left button.show-actions,
-  .booking-card-container.no-actions .booking-card .actions button.hide-actions {
-    display: none;
-  } */
   
   .booking-card-container .booking-card .right {
     padding: 16px 10px;
@@ -629,8 +535,12 @@
     margin-bottom: 2px;
     line-height: 18px;
   }
+
+  .booking-card button.mobile-actions-btn {
+    display: block;
+  }
   
-  /* .booking-card-container .booking-card .actions {
+  .booking-card-container .booking-card .actions {
     width: 100%;
     transform: translateX(0) translateY(-100%) !important;
   }
@@ -664,9 +574,9 @@
   }
   
   .booking-card-container .sub-card .form-field label {
-    text-align: left;
+    text-align: left!important;
     max-width: 100%;
     width: 100%;
     margin-bottom: 10px;
-  } */
+  }
 }

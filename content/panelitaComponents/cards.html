@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="/content/panelitaComponents/css/panelita.css">
   <title>Document</title>
 </head>
+
 <body>
   <!-- card 1 -->
   <div class="booking-card-container">
@@ -38,8 +40,8 @@
                   <i class="material-icons on">favorite</i>
                   <i class="material-icons off">favorite_outline</i>
                 </div>
-             </label>
-             <span>Kinesiología</span>
+              </label>
+              <span>Kinesiología</span>
             </div>
           </div>
         </div>
@@ -65,14 +67,47 @@
           </div>
         </div>
       </div>
+      <div class="actions flex-v">
+        <button class="mobile-actions-btn hide-actions" onclick="toggleActionsMobile(this)"></button>
+        <div class="action flex-h" data-action="cancel" onclick="showSubcard(this)">
+          <div class="icon-container">
+            <i class="material-icons">highlight_off</i>
+          </div>
+          <span class="action-label">Cancelar cita</span>
+        </div>
+        <div class="action flex-h" data-action="confirm">
+          <div class="icon-container">
+            <i class="material-icons">check_circle_outline</i>
+          </div>
+          <span class="action-label">Confirmar cita</span>
+        </div>
+        <div class="action flex-h" data-action="reassign" onclick="showSubcard(this)">
+          <div class="icon-container">
+            <i class="material-icons">history</i>
+          </div>
+          <span class="action-label">Reasignar cita</span>
+        </div>
+        <div class="action flex-h" data-action="resend" onclick="showSubcard(this)">
+          <div class="icon-container">
+            <i class="material-icons">fast_forward</i>
+          </div>
+          <span class="action-label">Reenviar notificación</span>
+        </div>
+      </div>
     </div>
     <div class="sub-card booking-card preparation-card">
       <div class="card-content">
         <div class="preparation-text">
           <p class="preparation-header">Preparación general</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis a voluptas tempora laborum mollitia deserunt unde nam nihil dolores fugiat esse sint exercitationem commodi, libero sequi, veniam neque, ipsam consequuntur?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis a voluptas tempora laborum mollitia deserunt unde nam nihil dolores fugiat esse sint exercitationem commodi, libero sequi, veniam neque, ipsam consequuntur?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis a voluptas tempora laborum mollitia deserunt unde nam nihil dolores fugiat esse sint exercitationem commodi, libero sequi, veniam neque, ipsam consequuntur?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis a voluptas tempora laborum mollitia
+            deserunt unde nam nihil dolores fugiat esse sint exercitationem commodi, libero sequi, veniam neque, ipsam
+            consequuntur?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis a voluptas tempora laborum mollitia
+            deserunt unde nam nihil dolores fugiat esse sint exercitationem commodi, libero sequi, veniam neque, ipsam
+            consequuntur?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis a voluptas tempora laborum mollitia
+            deserunt unde nam nihil dolores fugiat esse sint exercitationem commodi, libero sequi, veniam neque, ipsam
+            consequuntur?</p>
           <p class="preparation-header">Preparación para procedimiento</p>
           <ul>
             <li>Preparación 1</li>
@@ -81,20 +116,145 @@
         </div>
       </div>
     </div>
+    <div class="sub-card booking-card cancel-card">
+      <div class="card-content">
+        <div class="header">
+          <p>Cancelar cita</p>
+        </div>
+        <div class="form">
+          <div class="form-field">
+            <label for="">Motivo</label>
+            <select name="" id="" data-placeholder="Selecciona un motivo">
+              <option value=""></option>
+              <option value="">Motivo 1</option>
+              <option value="">Motivo 2</option>
+              <option value="">Motivo 3</option>
+            </select>
+            <div class="error-msg">
+              Por favor complete este campo
+            </div>
+          </div>
+          <div class="form-field tall">
+            <label for="">Comentario</label>
+            <textarea placeholder="Ingresa un comentario"></textarea>
+          </div>
+          <div class="btn-container flex-h">
+            <button class="pbtn btn-secondary btn-sm" onclick="animateHideSubcard(this)">Volver</button>
+            <button class="pbtn btn-primary btn-sm">Cancelar cita</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sub-card booking-card reassign-card">
+      <div class="card-content">
+        <div class="header">
+          <p>Reasignar cita</p>
+        </div>
+        <div class="form">
+          <div class="form-field">
+            <label for="">Motivo</label>
+            <select name="" id="" data-placeholder="Selecciona un motivo">
+              <option value=""></option>
+              <option value="">Motivo 1</option>
+              <option value="">Motivo 2</option>
+              <option value="">Motivo 3</option>
+            </select>
+            <div class="error-msg">
+              Por favor complete este campo
+            </div>
+          </div>
+          <div class="form-field tall">
+            <label for="">Comentario</label>
+            <textarea placeholder="Ingresa un comentario"></textarea>
+          </div>
+          <div class="btn-container flex-h">
+            <button class="pbtn btn-secondary btn-sm" onclick="animateHideSubcard(this)">Volver</button>
+            <button class="pbtn btn-primary btn-sm">Reasignar cita</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sub-card booking-card resend-card">
+      <div class="card-content">
+        <div class="header">
+          <p>Reenviar notificación</p>
+        </div>
+        <div class="form">
+          <div class="form-field">
+            <label for="">Email del titular o acompañante</label>
+            <input type="text">
+            <div class="error-msg">
+
+              Por favor complete este campo
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="">Teléfono</label>
+            <input type="text">
+            <div class="error-msg">
+              Por favor complete este campo
+            </div>
+          </div>
+          <div class="form-field checkbox-field">
+            <input type="checkbox">
+            <label for="resendUpdateData">Actualizar los datos de contacto de la cita</label>
+          </div>
+          <div class="btn-container flex-h">
+            <button class="pbtn btn-secondary btn-sm" onclick="animateHideSubcard(this)">Volver</button>
+            <button class="pbtn btn-primary btn-sm">Reenviar notificación</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
   <!-- card 2 -->
-  <div class="card selectable" onclick="$(this).toggleClass('selected')">
-    <div class="card-header">
-      <p class="h500 time">3:40 PM</p>
-      <p class="h300 overdue">0 min</p>
+  <div class="card secondary-card" onclick="$(this).toggleClass('selected')">
+    <div class="header">
+      <div class="tag tag-light-blue">
+        <span>Vigente</span>
+      </div>
+      <div class="checkbox-container"></div>
     </div>
-    <p class="h300 component">Skins conditions</p>
-    <p class="h300 area">Dr. Parker Andrea</p>
-    <p class="h100 customer">Urbina Arango, Conny Liliana / C52020634</p>
+    <div class="card-row weekdays">
+      <div class="icon-container">
+        <i class="material-icons">calendar_month</i>
+      </div>
+      <div class="days">
+        <span class="day active">L</span>
+        <span class="day undefined">M</span>
+        <span class="day undefined">M</span>
+        <span class="day undefined">J</span>
+        <span class="day active">V</span>
+        <span class="day undefined">S</span>
+        <span class="day undefined">D</span>
+      </div>
+    </div>
+    <div class="card-row dates">
+      <div class="icon-container">
+        <i class="material-icons">event</i>
+      </div>
+      <span>04/02/22 - 30/12/22</span>
+    </div>
+    <div class="card-row times">
+      <div class="icon-container">
+        <i class="material-icons">schedule</i>
+      </div>
+      <span>07:00 - 11:30</span>
+    </div>
+    <div class="bottom options">
+      <span class="option active">Global</span>
+      <span class="option active">Web</span>
+      <span class="option undefined">Quejas</span>
+      <span class="option undefined">Premium</span>
+      <span class="option active">Presencial</span>
+    </div>
   </div>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/content/panelitaComponents/chosen/chosen.jquery.min.js"></script>
   <script src="bookingcard.js"></script>
 </body>
+
 </html>
