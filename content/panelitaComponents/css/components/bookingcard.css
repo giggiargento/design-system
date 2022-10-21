@@ -32,7 +32,7 @@
 .booking-card .right {
   border-top-right-radius: var(--card-border-radius);
   border-bottom-right-radius: var(--card-border-radius);
-  padding: 24px 40px 16px 24px;
+  padding: 24px 64px 16px 24px;
 }
 
 .booking-card .left {

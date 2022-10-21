@@ -16,34 +16,6 @@ function togglePreparation(link) {
   }
 }
 
-function showSubcard(btn) {
-  btn = $(btn);
-  let action = btn.attr('data-action');
-  let target = btn.closest('.booking-card-container').find(`.sub-card.${action}-card`);
-  if (!target.hasClass('visible')) {
-    $('.sub-card').not(target).removeClass('visible');
-    btn.closest('.booking-card-container').addClass('expanded');
-    target.addClass('visible');
-    animateShowSubcard(target);
-  };
-}
-
-function animateShowSubcard(card) {
-  card[0].scrollIntoView({behavior: 'smooth'});
-  if (card.find('select').length > 0) {
-    $('select').chosen()
-  };
-}
-
-function animateHideSubcard(btn) {
-  btn = $(btn);
-  let target = btn.closest('.sub-card');
-  btn.closest('.booking-card-container').removeClass('expanded');
-  if (target.hasClass('visible')) {
-    target.removeClass('visible');
-  }
-}
-
 function toggleActionsMobile(btn) {
   btn = $(btn);
   let target = btn.closest('.booking-card').find('.actions');

@@ -69,7 +69,7 @@
       </div>
       <div class="actions flex-v">
         <button class="mobile-actions-btn hide-actions" onclick="toggleActionsMobile(this)"></button>
-        <div class="action flex-h" data-action="cancel" onclick="showSubcard(this)">
+        <div class="action flex-h" data-action="cancel">
           <div class="icon-container">
             <i class="material-icons">highlight_off</i>
           </div>
@@ -81,13 +81,13 @@
           </div>
           <span class="action-label">Confirmar cita</span>
         </div>
-        <div class="action flex-h" data-action="reassign" onclick="showSubcard(this)">
+        <div class="action flex-h" data-action="reassign">
           <div class="icon-container">
             <i class="material-icons">history</i>
           </div>
           <span class="action-label">Reasignar cita</span>
         </div>
-        <div class="action flex-h" data-action="resend" onclick="showSubcard(this)">
+        <div class="action flex-h" data-action="resend">
           <div class="icon-container">
             <i class="material-icons">fast_forward</i>
           </div>
@@ -113,96 +113,6 @@
             <li>Preparación 1</li>
             <li>Preparación 2</li>
           </ul>
-        </div>
-      </div>
-    </div>
-    <div class="sub-card booking-card cancel-card">
-      <div class="card-content">
-        <div class="header">
-          <p>Cancelar cita</p>
-        </div>
-        <div class="form">
-          <div class="form-field">
-            <label for="">Motivo</label>
-            <select name="" id="" data-placeholder="Selecciona un motivo">
-              <option value=""></option>
-              <option value="">Motivo 1</option>
-              <option value="">Motivo 2</option>
-              <option value="">Motivo 3</option>
-            </select>
-            <div class="error-msg">
-              Por favor complete este campo
-            </div>
-          </div>
-          <div class="form-field tall">
-            <label for="">Comentario</label>
-            <textarea placeholder="Ingresa un comentario"></textarea>
-          </div>
-          <div class="btn-container flex-h">
-            <button class="pbtn btn-secondary btn-sm" onclick="animateHideSubcard(this)">Volver</button>
-            <button class="pbtn btn-primary btn-sm">Cancelar cita</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="sub-card booking-card reassign-card">
-      <div class="card-content">
-        <div class="header">
-          <p>Reasignar cita</p>
-        </div>
-        <div class="form">
-          <div class="form-field">
-            <label for="">Motivo</label>
-            <select name="" id="" data-placeholder="Selecciona un motivo">
-              <option value=""></option>
-              <option value="">Motivo 1</option>
-              <option value="">Motivo 2</option>
-              <option value="">Motivo 3</option>
-            </select>
-            <div class="error-msg">
-              Por favor complete este campo
-            </div>
-          </div>
-          <div class="form-field tall">
-            <label for="">Comentario</label>
-            <textarea placeholder="Ingresa un comentario"></textarea>
-          </div>
-          <div class="btn-container flex-h">
-            <button class="pbtn btn-secondary btn-sm" onclick="animateHideSubcard(this)">Volver</button>
-            <button class="pbtn btn-primary btn-sm">Reasignar cita</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="sub-card booking-card resend-card">
-      <div class="card-content">
-        <div class="header">
-          <p>Reenviar notificación</p>
-        </div>
-        <div class="form">
-          <div class="form-field">
-            <label for="">Email del titular o acompañante</label>
-            <input type="text">
-            <div class="error-msg">
-
-              Por favor complete este campo
-            </div>
-          </div>
-          <div class="form-field">
-            <label for="">Teléfono</label>
-            <input type="text">
-            <div class="error-msg">
-              Por favor complete este campo
-            </div>
-          </div>
-          <div class="form-field checkbox-field">
-            <input type="checkbox">
-            <label for="resendUpdateData">Actualizar los datos de contacto de la cita</label>
-          </div>
-          <div class="btn-container flex-h">
-            <button class="pbtn btn-secondary btn-sm" onclick="animateHideSubcard(this)">Volver</button>
-            <button class="pbtn btn-primary btn-sm">Reenviar notificación</button>
-          </div>
         </div>
       </div>
     </div>
