@@ -451,13 +451,13 @@ $(document).ready(function() {
     $('#datePicker').load('../panelitaComponents/datePicker.html', function() {
         triggerLoaded($(this));
 
-        $('input.date').datepicker();
+        $('input.date').datepicker({showOtherMonths: true});
     })
 
     $('#dateToDatePicker').load('../panelitaComponents/dateToDatePicker.html', function() {
         triggerLoaded($(this));
 
-        $('input.date').datepicker();
+        $('input.date').datepicker({showOtherMonths: true});
     })
     
 
@@ -547,7 +547,7 @@ $(document).ready(function() {
         $('forms').unwrap();
         triggerLoaded($(this));
 
-        $('input.date').datepicker();
+        $('input.date').datepicker({showOtherMonths: true});
         $('input.time').timepicker();
     })
 
@@ -590,7 +590,7 @@ $(document).ready(function() {
         $('calendar').unwrap();
         triggerLoaded($(this));
         
-        $('input.date').datepicker();
+        $('input.date').datepicker({showOtherMonths: true});
     })
 
 // end panelita components

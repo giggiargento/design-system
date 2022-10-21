@@ -1,1 +1,1 @@
-$('input.date').datepicker();
+$('input.date').datepicker({showOtherMonths: true});

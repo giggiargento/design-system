@@ -72,6 +72,7 @@ input.date {
   width: 41px;
   height: 16px;
   text-align: center;
+  padding-bottom: 8px;
 }
 
 .ui-datepicker th span {
@@ -88,8 +89,10 @@ input.date {
   text-align: center !important;
   border: 2px solid transparent !important;
   border-radius: 3px !important;
+  position: relative;
 }
 
+.ui-datepicker td span,
 .ui-datepicker td a {
   font-style: normal !important;
   font-weight: 400 !important;
@@ -99,22 +102,27 @@ input.date {
   text-decoration: none !important;
 }
 
-.ui-datepicker td:hover {
+.ui-datepicker .ui-state-disabled span {
+  color: var(--color-n400)!important;
+}
+
+.ui-datepicker td:hover,
+.ui-datepicker td.ui-datepicker-current-day {
   border-color: var(--color-b200) !important;
 }
 
 .ui-datepicker td.ui-datepicker-current-day a {
-  color: var(--color-b400);
-  font-weight: 700;
+  color: var(--color-b400)!important;
+  font-weight: 700!important;
   position: relative;
 }
 
-.ui-datepicker td.ui-datepicker-current-day a::after {
+.ui-datepicker td.ui-datepicker-current-day::after {
   content: '';
   height: 2px;
   width: 33px;
   position: absolute;
-  bottom: -2px;
-  left: -8px;
+  bottom: 1px;
+  left: 2px;
   background: var(--color-b400);
 }
