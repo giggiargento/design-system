@@ -65,28 +65,105 @@
                                                 <div class="card h-100">
                                                     <div class="card-header">
                                                         <!-- Here we will add panelitaComponents -->
-                                                        <div id="" class="loader card-img-top" alt="..."></div>
+                                                        <div id="cardLoader" class="loader card-img-top" alt="..."></div>
                                                     </div>
                                                     <div class="accordion accordion-flush" id="accordionFlushExample1">
                                                         <div class="accordion-item">
                                                             <div id="flush-collapseOne1" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample1">
                                                                 <div id="myCode" class="myCode">
                                                                     <!-- id to call codeBox code with JavaScript -->
-                                                                    <pre id="codeId1" class="card-text accordion-body" type="text"><code>&ltdiv class="pforms"
-    &ltdiv class="title">
-        &lth1>Title&lt/h1>
+                                                                    <pre id="codeId1" class="card-text accordion-body" type="text"><code>&ltdiv class="booking-card-container">
+    &ltdiv class="booking-card flex-h">
+        &ltdiv class="left flex-v">
+            &ltp class="status">STATUS&lt/p>
+            &ltdiv class="full-date">
+                &ltp class="weekday">Monday&lt/p>
+                &ltp class="date">00/00/00&lt/p>
+                &ltp class="time">00:00 PM&lt/p>
+            &lt/div>
+            &ltp class="plan">OPTIONAL LABEL&lt/p>
+            &ltbutton class="mobile-actions-btn show-actions" onclick="toggleActionsMobile(this)">&lt/button>
+        &lt/div>
+        &ltdiv class="right flex-v">
+            &ltdiv class="top flex-h">
+                &ltdiv class="avatar">
+                    &ltdiv class="icon">
+                        &lti class="material-icons">person_outline&lt/i>
+                    &lt/div>
+                &lt/div>
+                &ltdiv class="booking flex-v">
+                    &ltp class="name">Here you will add a subject title&lt/p>
+                    &ltdiv class="flex-h area">
+                        &ltlabel class="fav-checkbox">
+                            &ltinput type="checkbox">
+                            &ltdiv class="icon">
+                                &lti class="material-icons on">favorite&lt/i>
+                                &lti class="material-icons off">favorite_outline&lt/i>
+                            &lt/div>
+                        &lt/label>
+                        &ltspan>Add to favorite&lt/span>
+                    &lt/div>
+                &lt/div>
+            &lt/div>
+            &ltdiv class="bottom">
+                &ltdiv class="line">
+                    &ltdiv class="icon-container">
+                        &lti class="material-icons">videocam&lt/i>
+                    &lt/div>
+                    &ltp>Information&lt/p>
+                &lt/div>
+                &ltdiv class="line">
+                    &ltdiv class="icon-container">
+                        &lti class="material-icons">schedule&lt/i>
+                    &lt/div>
+                    &ltp>Time&lt/p>
+                &lt/div>
+                &ltdiv class="line preparation-link" onclick="togglePreparation(this)">
+                    &ltdiv class="icon-container">
+                        &lti class="material-icons">visibility&lt/i>
+                    &lt/div>
+                    &ltp class="off">See more&lt/p>
+                    &ltp class="on">Hide&lt/p>
+                &lt/div>
+            &lt/div>
+        &lt/div>
+        &ltdiv class="actions flex-v">
+            &ltbutton class="mobile-actions-btn hide-actions" onclick="toggleActionsMobile(this)">&lt/button>
+            &ltdiv class="action flex-h" data-action="cancel">
+                &ltdiv class="icon-container">
+                    &lti class="material-icons">highlight_off&lt/i>
+                &lt/div>
+                &ltspan class="action-label">Label&lt/span>
+            &lt/div>
+            &ltdiv class="action flex-h" data-action="confirm">
+                &ltdiv class="icon-container">
+                    &lti class="material-icons">check_circle_outline&lt/i>
+                &lt/div>
+                &ltspan class="action-label">Label&lt/span>
+            &lt/div>
+            &ltdiv class="action flex-h" data-action="reassign">
+                &ltdiv class="icon-container">
+                    &lti class="material-icons">history&lt/i>
+                &lt/div>
+                &ltspan class="action-label">Label&lt/span>
+            &lt/div>
+            &ltdiv class="action flex-h" data-action="resend">
+                &ltdiv class="icon-container">
+                    &lti class="material-icons">fast_forward&lt/i>
+                &lt/div>
+                &ltspan class="action-label">Label&lt/span>
+            &lt/div>
+        &lt/div>
     &lt/div>
-    &ltdiv class="form-field vertical">
-        <code class="codeHighlighted">Select or Inputs code here</code>
-    &lt/div>
-    &ltdiv class="form-field vertical double">
-        <code class="codeHighlighted">Double select code here</code>
-    &lt/div>
-    &ltdiv class="form-field">
-    <code class="codeHighlighted">Checkbox or Radio code here</code>
-    &lt/div>
-    &ltdiv class="form-field horizontal">
-        <code class="codeHighlighted">Buttons code here</code>
+    &ltdiv class="sub-card booking-card preparation-card">
+        &ltdiv class="pcard-content">
+            &ltdiv class="preparation-text">
+                &ltp class="preparation-header">Title here&lt/p>
+                &ltp>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis a voluptas tempora laborum mollitia
+                  deserunt unde nam nihil dolores fugiat esse sint exercitationem commodi, libero sequi, veniam neque, ipsam
+                  consequuntur...&lt/p>
+            &lt/div>
+        &lt/div>
     &lt/div>
 &lt/div></code></pre>
                                                                 </div>
@@ -124,28 +201,55 @@
                                                 <div class="card h-100">
                                                     <div class="card-header">
                                                         <!-- Here we will add panelitaComponents -->
-                                                        <div id="" class="loader card-img-top" alt="..."></div>
+                                                        <div id="cardSecondaryLoader" class="loader card-img-top" alt="..."></div>
                                                     </div>
                                                     <div class="accordion accordion-flush" id="accordionFlushExample2">
                                                         <div class="accordion-item">
                                                             <div id="flush-collapseOne2" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample2">
                                                                 <div id="myCode" class="myCode">
                                                                     <!-- id to call codeBox code with JavaScript -->
-                                                                    <pre id="codeId2" class="card-text accordion-body" type="text"><code>&ltdiv class="pforms"
-    &ltdiv class="title">
-        &lth1>Title&lt/h1>
+                                                                    <pre id="codeId2" class="card-text accordion-body" type="text"><code><code class="codeHighlighted">&lt!-- set card status color --></code>
+&ltdiv class="pcard secondary-card <code class="codeHighlighted">blue</code>" onclick="$(this).toggleClass('selected')">
+    &ltdiv class="header">
+        <code class="codeHighlighted">&lt!-- set tag color --></code>
+        &ltdiv class="tag <code class="codeHighlighted">tag-light-blue</code>">
+            &ltspan>Status&lt/span>
+        &lt/div>
+        &ltdiv class="checkbox-container">&lt/div>
     &lt/div>
-    &ltdiv class="form-field vertical">
-        <code class="codeHighlighted">Select or Inputs code here</code>
+    &ltdiv class="pcard-row weekdays">
+        &ltdiv class="icon-container">
+            &lti class="material-icons">calendar_month&lt/i>
+        &lt/div>
+        &ltdiv class="days">
+            &ltspan class="day active">MO&lt/span>
+            &ltspan class="day undefined">TU&lt/span>
+            &ltspan class="day undefined">WE&lt/span>
+            &ltspan class="day undefined">TH&lt/span>
+            &ltspan class="day active">FR&lt/span>
+            &ltspan class="day undefined">SA&lt/span>
+            &ltspan class="day undefined">SU&lt/span>
+        &lt/div>
     &lt/div>
-    &ltdiv class="form-field vertical double">
-        <code class="codeHighlighted">Double select code here</code>
+    &ltdiv class="pcard-row dates">
+        &ltdiv class="icon-container">
+            &lti class="material-icons">event&lt/i>
+        &lt/div>
+        &ltspan>00/00/00 - 00/00/00&lt/span>
     &lt/div>
-    &ltdiv class="form-field">
-    <code class="codeHighlighted">Checkbox or Radio code here</code>
+    &ltdiv class="pcard-row times">
+        &ltdiv class="icon-container">
+            &lti class="material-icons">schedule&lt/i>
+        &lt/div>
+        &ltspan>00:00 AM - 00:00 PM&lt/span>
     &lt/div>
-    &ltdiv class="form-field horizontal">
-        <code class="codeHighlighted">Buttons code here</code>
+    &ltdiv class="bottom options">
+        &ltspan class="option active">Label&lt/span>
+        &ltspan class="option active">Label&lt/span>
+        &ltspan class="option undefined">Label&lt/span>
+        &ltspan class="option undefined">Label&lt/span>
+        &ltspan class="option active">Label&lt/span>
+        &ltspan class="option active">Label&lt/span>
     &lt/div>
 &lt/div></code></pre>
                                                                 </div>
@@ -324,11 +428,8 @@
         <!-- Select Js -->
         <script src="/content/panelitaComponents/chosen/chosen.jquery.min.js"></script>
 
-        <!-- Datepicker -->
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-        <!-- Timepickers -->
-        <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+        <!-- Cards -->
+        <script src="/content/panelitaComponents/bookingcard.js"></script>
         
         <!-- archivo que carga el top nav y el footer -->
         <script src="/content/js/loaders.js"></script>

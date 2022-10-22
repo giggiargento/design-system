@@ -9,7 +9,7 @@
   padding: 4px 8px;
   background-color: var(--label-bg-color, var(--color-n600));
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--label-text-color, var(--color-n0));
   white-space: nowrap;

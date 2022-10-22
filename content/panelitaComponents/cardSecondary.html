@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/content/panelitaComponents/css/panelita.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Blue card -->
+  <div class="container">
+  <div class="row row-cols-auto">
+  <div class="pcard secondary-card blue" onclick="$(this).toggleClass('selected')">
+    <div class="header">
+      <div class="tag tag-light-blue">
+        <span>Status</span>
+      </div>
+      <div class="checkbox-container"></div>
+    </div>
+    <div class="pcard-row weekdays">
+      <div class="icon-container">
+        <i class="material-icons">calendar_month</i>
+      </div>
+      <div class="days">
+        <span class="day active">MO</span>
+        <span class="day undefined">TU</span>
+        <span class="day undefined">WE</span>
+        <span class="day undefined">TH</span>
+        <span class="day active">FR</span>
+        <span class="day undefined">SA</span>
+        <span class="day undefined">SU</span>
+      </div>
+    </div>
+    <div class="pcard-row dates">
+      <div class="icon-container">
+        <i class="material-icons">event</i>
+      </div>
+      <span>00/00/00 - 00/00/00</span>
+    </div>
+    <div class="pcard-row times">
+      <div class="icon-container">
+        <i class="material-icons">schedule</i>
+      </div>
+      <span>00:00 AM - 00:00 PM</span>
+    </div>
+    <div class="bottom options">
+      <span class="option active">Label</span>
+      <span class="option active">Label</span>
+      <span class="option undefined">Label</span>
+      <span class="option undefined">Label</span>
+      <span class="option active">Label</span>
+      <span class="option active">Label</span>
+    </div>
+  </div>
+
+ <!-- Green card -->
+  <div class="pcard secondary-card green" onclick="$(this).toggleClass('selected')">
+    <div class="header">
+      <div class="tag tag-light-green">
+        <span>Status</span>
+      </div>
+      <div class="checkbox-container"></div>
+    </div>
+    <div class="pcard-row weekdays">
+      <div class="icon-container">
+        <i class="material-icons">calendar_month</i>
+      </div>
+      <div class="days">
+        <span class="day active">MO</span>
+        <span class="day undefined">TU</span>
+        <span class="day undefined">WE</span>
+        <span class="day undefined">TH</span>
+        <span class="day active">FR</span>
+        <span class="day undefined">SA</span>
+        <span class="day undefined">SU</span>
+      </div>
+    </div>
+    <div class="pcard-row dates">
+      <div class="icon-container">
+        <i class="material-icons">event</i>
+      </div>
+      <span>00/00/00 - 00/00/00</span>
+    </div>
+    <div class="pcard-row times">
+      <div class="icon-container">
+        <i class="material-icons">schedule</i>
+      </div>
+      <span>00:00 AM - 00:00 PM</span>
+    </div>
+    <div class="bottom options">
+      <span class="option active">Label</span>
+      <span class="option active">Label</span>
+      <span class="option undefined">Label</span>
+      <span class="option undefined">Label</span>
+      <span class="option active">Label</span>
+      <span class="option active">Label</span>
+    </div>
+  </div>
+
+ <!-- Yellow card -->
+  <div class="pcard secondary-card yellow" onclick="$(this).toggleClass('selected')">
+    <div class="header">
+      <div class="tag tag-light-yellow">
+        <span>Status</span>
+      </div>
+      <div class="checkbox-container"></div>
+    </div>
+    <div class="pcard-row weekdays">
+      <div class="icon-container">
+        <i class="material-icons">calendar_month</i>
+      </div>
+      <div class="days">
+        <span class="day active">MO</span>
+        <span class="day undefined">TU</span>
+        <span class="day undefined">WE</span>
+        <span class="day undefined">TH</span>
+        <span class="day active">FR</span>
+        <span class="day undefined">SA</span>
+        <span class="day undefined">SU</span>
+      </div>
+    </div>
+    <div class="pcard-row dates">
+      <div class="icon-container">
+        <i class="material-icons">event</i>
+      </div>
+      <span>00/00/00 - 00/00/00</span>
+    </div>
+    <div class="pcard-row times">
+      <div class="icon-container">
+        <i class="material-icons">schedule</i>
+      </div>
+      <span>00:00 AM - 00:00 PM</span>
+    </div>
+    <div class="bottom options">
+      <span class="option active">Label</span>
+      <span class="option active">Label</span>
+      <span class="option undefined">Label</span>
+      <span class="option undefined">Label</span>
+      <span class="option active">Label</span>
+      <span class="option active">Label</span>
+    </div>
+  </div>
+</div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/content/panelitaComponents/chosen/chosen.jquery.min.js"></script>
+  <script src="bookingcard.js"></script>
+</body>
+
+</html>

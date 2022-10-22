@@ -15,13 +15,13 @@
   <div class="booking-card-container">
     <div class="booking-card flex-h">
       <div class="left flex-v">
-        <p class="status">Confirmado</p>
+        <p class="status">STATUS</p>
         <div class="full-date">
-          <p class="weekday">Lunes</p>
-          <p class="date">15/03/21</p>
-          <p class="time">03:40 PM</p>
+          <p class="weekday">Monday</p>
+          <p class="date">00/00/00</p>
+          <p class="time">00:00 PM</p>
         </div>
-        <p class="plan">Plan OSDE 210</p>
+        <p class="plan">OPTIONAL LABEL</p>
         <button class="mobile-actions-btn show-actions" onclick="toggleActionsMobile(this)"></button>
       </div>
       <div class="right flex-v">
@@ -32,7 +32,7 @@
             </div>
           </div>
           <div class="booking flex-v">
-            <p class="name">Dr. Pinedo Zafarra Jorge Luis</p>
+            <p class="name">Here you will add a subject title</p>
             <div class="flex-h area">
               <label class="fav-checkbox">
                 <input type="checkbox">
@@ -41,7 +41,7 @@
                   <i class="material-icons off">favorite_outline</i>
                 </div>
               </label>
-              <span>Kinesiología</span>
+              <span>Add to favorite</span>
             </div>
           </div>
         </div>
@@ -50,20 +50,20 @@
             <div class="icon-container">
               <i class="material-icons">videocam</i>
             </div>
-            <p>Teleconsulta</p>
+            <p>Information</p>
           </div>
           <div class="line">
             <div class="icon-container">
               <i class="material-icons">schedule</i>
             </div>
-            <p>20 minutos</p>
+            <p>Time</p>
           </div>
           <div class="line preparation-link" onclick="togglePreparation(this)">
             <div class="icon-container">
               <i class="material-icons">visibility</i>
             </div>
-            <p class="off">Ver preparación</p>
-            <p class="on">Ocultar preparación</p>
+            <p class="off">See more</p>
+            <p class="on">Hide</p>
           </div>
         </div>
       </div>
@@ -73,51 +73,40 @@
           <div class="icon-container">
             <i class="material-icons">highlight_off</i>
           </div>
-          <span class="action-label">Cancelar cita</span>
+          <span class="action-label">Label</span>
         </div>
         <div class="action flex-h" data-action="confirm">
           <div class="icon-container">
             <i class="material-icons">check_circle_outline</i>
           </div>
-          <span class="action-label">Confirmar cita</span>
+          <span class="action-label">Label</span>
         </div>
         <div class="action flex-h" data-action="reassign">
           <div class="icon-container">
             <i class="material-icons">history</i>
           </div>
-          <span class="action-label">Reasignar cita</span>
+          <span class="action-label">Label</span>
         </div>
         <div class="action flex-h" data-action="resend">
           <div class="icon-container">
             <i class="material-icons">fast_forward</i>
           </div>
-          <span class="action-label">Reenviar notificación</span>
+          <span class="action-label">Label</span>
         </div>
       </div>
     </div>
     <div class="sub-card booking-card preparation-card">
-      <div class="card-content">
+      <div class="pcard-content">
         <div class="preparation-text">
-          <p class="preparation-header">Preparación general</p>
+          <p class="preparation-header">Title here</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis a voluptas tempora laborum mollitia
             deserunt unde nam nihil dolores fugiat esse sint exercitationem commodi, libero sequi, veniam neque, ipsam
-            consequuntur?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis a voluptas tempora laborum mollitia
-            deserunt unde nam nihil dolores fugiat esse sint exercitationem commodi, libero sequi, veniam neque, ipsam
-            consequuntur?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis a voluptas tempora laborum mollitia
-            deserunt unde nam nihil dolores fugiat esse sint exercitationem commodi, libero sequi, veniam neque, ipsam
-            consequuntur?</p>
-          <p class="preparation-header">Preparación para procedimiento</p>
-          <ul>
-            <li>Preparación 1</li>
-            <li>Preparación 2</li>
-          </ul>
+            consequuntur...</p>
         </div>
       </div>
     </div>
-    <div class="sub-card booking-card cancel-card">
-      <div class="card-content">
+    <!-- <div class="sub-card booking-card cancel-card">
+      <div class="pcard-content">
         <div class="header">
           <p>Cancelar cita</p>
         </div>
@@ -146,7 +135,7 @@
       </div>
     </div>
     <div class="sub-card booking-card reassign-card">
-      <div class="card-content">
+      <div class="pcard-content">
         <div class="header">
           <p>Reasignar cita</p>
         </div>
@@ -175,7 +164,7 @@
       </div>
     </div>
     <div class="sub-card booking-card resend-card">
-      <div class="card-content">
+      <div class="pcard-content">
         <div class="header">
           <p>Reenviar notificación</p>
         </div>
@@ -205,52 +194,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
-
-  <!-- card 2 -->
-  <div class="card secondary-card" onclick="$(this).toggleClass('selected')">
-    <div class="header">
-      <div class="tag tag-light-blue">
-        <span>Vigente</span>
-      </div>
-      <div class="checkbox-container"></div>
-    </div>
-    <div class="card-row weekdays">
-      <div class="icon-container">
-        <i class="material-icons">calendar_month</i>
-      </div>
-      <div class="days">
-        <span class="day active">L</span>
-        <span class="day undefined">M</span>
-        <span class="day undefined">M</span>
-        <span class="day undefined">J</span>
-        <span class="day active">V</span>
-        <span class="day undefined">S</span>
-        <span class="day undefined">D</span>
-      </div>
-    </div>
-    <div class="card-row dates">
-      <div class="icon-container">
-        <i class="material-icons">event</i>
-      </div>
-      <span>04/02/22 - 30/12/22</span>
-    </div>
-    <div class="card-row times">
-      <div class="icon-container">
-        <i class="material-icons">schedule</i>
-      </div>
-      <span>07:00 - 11:30</span>
-    </div>
-    <div class="bottom options">
-      <span class="option active">Global</span>
-      <span class="option active">Web</span>
-      <span class="option undefined">Quejas</span>
-      <span class="option undefined">Premium</span>
-      <span class="option active">Presencial</span>
-    </div>
-  </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="/content/panelitaComponents/chosen/chosen.jquery.min.js"></script>

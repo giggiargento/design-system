@@ -593,6 +593,17 @@ $(document).ready(function() {
         $('input.date').datepicker({showOtherMonths: true});
     })
 
+    // Cards
+    $('#cardLoader').load('../panelitaComponents/cards.html', function() {
+        $('card').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#cardSecondaryLoader').load('../panelitaComponents/cardSecondary.html', function() {
+        $('card').unwrap();
+        triggerLoaded($(this));
+    })
+
 // end panelita components
 
 

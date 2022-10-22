@@ -475,7 +475,7 @@ div#imgSection{
     margin-right: 12px;
 }
 
-#pageContent .line{
+#pageContent .fontLine{
     align-self: flex-end;
     width: 100%;
     height: 2px;
@@ -486,7 +486,7 @@ div#imgSection{
     display: flex;
 }
 
-#pageContent .left{
+#pageContent .leftTable{
     vertical-align: top;
     margin-right: 10em;
 }
@@ -1012,4 +1012,40 @@ table{
 /* Calendar */
 #loader .ui-datepicker {
     position: relative !important;
+}
+
+/* Cards */
+#cardLoader{
+    margin: 0px !important;
+}
+
+#cardLoader .line p{
+    margin: 0px !important;
+}
+
+#cardLoader p.weekday{
+    margin-bottom: 0px !important;
+}
+
+#cardLoader p.date{
+    margin-bottom: 0px !important;
+}
+
+#cardLoader p.time{
+    margin-bottom: 0px !important;
+}
+
+#cardLoader p.plan{
+    margin-bottom: 0px !important;
+}
+
+.booking-card{
+    margin: 0px !important;
+}
+
+/* Secondary Card */
+#cardSecondaryLoader .row-cols-auto{
+    display: flex;
+    line-height: 1.20;
+    gap: 12px;
 }
