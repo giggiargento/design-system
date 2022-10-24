@@ -79,6 +79,8 @@
   background-color: white !important;
   box-shadow: 0px 0px 20px #EEEEEE !important;
   padding: 16px !important;
+  max-height: 420px;
+  max-width: 620px;
  }
 
  .dropdown-item{
@@ -122,3 +124,12 @@ max-width: 24px;
 max-height: 24px;
 }
 
+/* Components */
+.components-container{
+  display: flex;
+  gap: 24px;
+}
+
+.dropdown-menu-components{
+  padding-left: 0 !important;
+}
