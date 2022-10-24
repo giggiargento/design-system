@@ -1063,3 +1063,13 @@ table{
 #sidebarLoader a:hover{
     color: var(--text-color);
 }
+
+.sidebar a.active {
+    color: var(--color-b400) !important;
+    font-weight: 600 !important;
+  }
+
+#sidebarLoader .sidebar{
+    position: relative !important;
+    max-height: 660px !important;
+}
