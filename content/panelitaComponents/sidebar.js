@@ -1,14 +1,6 @@
 $(document).ready(function() {
   if ($('.sidebar').length > 0) {
 
-    // // inicializa sidebar sólo desplegando la sección del link activo (si es el caso)
-    // let activeSection = $('.sidebar-link.active').closest('.sidebar-section');
-    //   activeSection.removeClass('collapsed')
-    //   .find('.section-links').slideDown({
-    //     complete: checkScroll()
-    //   });
-    
-    // $('.sidebar-section.collapsible').not(activeSection).find('.section-links').slideUp();
     
     $(document).on('click', '.sidebar-section.collapsible .title', function() {
       var section = $(this).parent('.sidebar-section');
