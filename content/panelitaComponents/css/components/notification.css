@@ -139,10 +139,6 @@
   text-decoration: none;
 }
 
-[data-notify=container] .actions .action + .action {
-  margin-left: 16px;
-}
-
 [data-notify=container] .actions .action {
   border-color: var(--color-n400);
   color: var(--color-n700);

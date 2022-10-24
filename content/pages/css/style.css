@@ -936,11 +936,6 @@ pre{
     margin: 0;
 }
 
-/* Notifications */
-[data-notify=container] .actions{
-    gap: 0 !important;
-}
-
 /* Inputs */
 .loader.inputs{
     max-width: 40%;
