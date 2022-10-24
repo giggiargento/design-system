@@ -1,0 +1,35 @@
+.pagination,
+.pag-numbers {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.pag-ellipsis {
+  cursor: default;
+}
+
+.pag-btn {
+  width: 32px;
+  padding: 0;
+  font-weight: 300;
+  color: var(--color-n700);
+}
+
+.pag-btn-prev,
+.pag-btn-next {
+  color: var(--color-n600);
+}
+
+.pag-btn.active {
+  color: var(--color-b400);
+  background-color: var(--color-b100);
+}
+
+.pag-btn.disabled {
+  color: var(--color-n400);
+}
+
+.pag-btn .material-icons {
+  font-size: 14px;
+}

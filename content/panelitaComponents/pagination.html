@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/panelita.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- pagination -->
+  <div class="pagination auto-paginate" data-max="6">
+  </div>
+
+  <!-- pagination button -->
+  <button class="pbtn pag-btn pag-num-btn" data-page="1" title="Page 1">1</button>
+  <button class="pbtn pag-btn pag-num-btn active" data-page="1" title="Page 1">1</button>
+
+  <!-- pagination unknown max page -->
+  <button class="pbtn btn-icon pag-btn pag-btn-prev" title="Previous page">
+    <span class="icon-container material-icons">chevron_left</span>
+  </button>
+  <button class="pbtn btn-icon pag-btn pag-btn-next" title="Next page">
+    <span class="icon-container material-icons">chevron_right</span>
+  </button>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="pagination.js"></script>
+</body>
+</html>
