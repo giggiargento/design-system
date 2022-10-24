@@ -17,12 +17,12 @@
   text-overflow: ellipsis;
 }
 
-.icon-container {
+.tag .icon-container {
   display: inline-block;
 }
 
-.icon-container::after,
-.icon-container.material-icons {
+.tag .icon-container::after,
+.tag .icon-container.material-icons {
   font-family: 'Material Icons';
   color: currentColor;
   font-size: 16px;
