@@ -133,3 +133,29 @@ max-height: 24px;
 .dropdown-menu-components{
   padding-left: 0 !important;
 }
+
+
+/* Top Nav Search */
+#boxSearch{
+  position: fixed;
+  transform: translate(-50%);
+  overflow: hidden;
+  margin-top: 8px;
+  margin-left: 126px;
+  min-width: 256px;
+  display: none;
+}
+
+#boxSearch .dropdown-item.searchItem{
+  display: flex;
+  align-content: center;
+}
+
+#boxSearch .searchLabel{
+  margin-top: 6px;
+  color: var(--text-color);
+}
+
+#boxSearch .searchLabel:hover{
+  color: var(--default-blue);
+}

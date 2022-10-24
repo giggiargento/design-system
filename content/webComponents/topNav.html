@@ -76,17 +76,29 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="/content/pages/introduction.html">Introduction</a></li>
                             <li><a class="dropdown-item" href="/content/pages/download.html">Download</a></li>
-
                           </ul>
                     </li>
                 </ul>
             </div>
 
             <!--Search-->
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <span type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search" data-lang="en" class="material-icons">search</span>
-            </form>
+            <div class="barSearch">
+                <form class="d-flex" role="search">
+                    <input id="inputSearch" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <span type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search" data-lang="en" class="material-icons">search</span>
+                </form>
+
+                <!-- Search Box -->
+                <ul id="boxSearch" class="topNavBoxSearch dropdown-menu">
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="#">Brand</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="#">Foundations</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="#">Components</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="#">Patterns</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="#">Resources</a></li>
+                    <li class="dropdown-item searchItem not-found" style="display:none">Not Found</li>
+                </ul>
+            </div>
+
         </div>
     </div>
 </nav>
