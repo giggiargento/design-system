@@ -585,6 +585,11 @@ $(document).ready(function() {
         triggerLoaded($(this));
     })
 
+    $('#sidebarLoader').load('../panelitaComponents/navigation-sidebar.html', function() {
+        $('navigation').unwrap();
+        triggerLoaded($(this));
+    })
+
     // Calendar
     $('#calendarLoader').load('../panelitaComponents/calendar.html', function() {
         $('calendar').unwrap();

@@ -1049,3 +1049,8 @@ table{
     line-height: 1.20;
     gap: 12px;
 }
+
+/* Sidebar */
+#sidebarLoader a:hover{
+    color: var(--text-color);
+}
