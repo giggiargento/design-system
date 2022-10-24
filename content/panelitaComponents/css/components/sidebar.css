@@ -1,5 +1,5 @@
 :root {
-  --sidebar-full-width: 286px;
+  --sidebar-full-width: 260px;
   --sidebar-collapsed-width: 96px;
   --sidebar-empty-width: 50px;
 
@@ -17,10 +17,10 @@
   left: 0;
   width: var(--sidebar-width);
   height: calc(100vh - var(--top-nav-height));
-  border-right: 1px solid var(--color-n200);
+  box-shadow: 0px 0px 20px var(--color-n100);
   position: fixed;
-  background: var(--color-n75);
-  padding: 32px 16px 32px 24px;
+  background: var(--color-n0);
+  padding: 32px 16px 32px 32px;
   color: var(--color-text-main);
   transition: width .3s ease-in-out;
   z-index: 2;
@@ -90,9 +90,13 @@
 .sidebar-wrapper,
 .sidebar-content,
 .sidebar-section,
-.section-links {
+.section-links .section-links-list {
   display: flex;
   flex-direction: column;
+}
+
+.section-links-list{
+  gap: 24px;
 }
 
 .sidebar-wrapper > * + *,
@@ -125,6 +129,12 @@
 
 .sidebar-section.collapsible .title {
   cursor: pointer;
+}
+
+.section-title{
+  font-weight: 600;
+  margin-left: 12px;
+  margin-top: 2px;
 }
 
 .sidebar-section .title .icon-container,
@@ -165,6 +175,8 @@
 .sidebar-content {
   font-size: 14px;
   font-weight: 300;
+  gap: 24px;
+  margin-top: 40px;
 }
 
 .sidebar-link {
@@ -197,9 +209,12 @@
 }
 
 .sidebar .icon-link i {
-  font-size: 20px;
-  vertical-align: bottom;
-  margin-right: 8px;
+  font-size: 24px;
+}
+
+.icon-link.title{
+  display: flex;
+  justify-items: baseline;
 }
 
 .sidebar a.active {
@@ -213,25 +228,32 @@
 
 .sidebar .sidebar-section .title:hover::before,
 .sidebar a.icon-link.active::before,
-.sidebar a.sidebar-link.active::before,
 .sidebar a:hover::before {
   left: -10px;
-  top: -5px;
+  top: -8px;
   content: '';
-  width: 258px;
+  width: 210px;
   position: absolute;
-  height: 32px;
+  height: 40px;
   background: var(--color-b100);
   flex-shrink: 0;
   z-index: -1;
   border-radius: 3px;
 }
 
-.sidebar a.sidebar-link:hover::before,
-.sidebar a.sidebar-link:active::before {
+.sidebar .sidebar-link:hover::before,
+.sidebar .sidebar-link.active::before{
+  left: -10px;
   top: -6px;
-  width: 210px!important;
-  left: 0px!important;
+  left: 0px;
+  content: '';
+  width: 210px;
+  position: absolute;
+  height: 32px !important;
+  background: var(--color-b100);
+  flex-shrink: 0;
+  z-index: -1;
+  border-radius: 3px;
 }
 
 .sidebar.sidebar-collapsed a.active::before,
