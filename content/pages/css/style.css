@@ -1081,3 +1081,13 @@ table{
     position: relative !important;
     max-height: 660px !important;
 }
+
+/* Tabs */
+#tabStatesLoader ol, ul{
+    padding-left: 0 !important;
+}
+
+#tabsGroupLoader ol, ul{
+    padding-left: 0 !important;
+}
+

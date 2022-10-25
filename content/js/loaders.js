@@ -609,6 +609,17 @@ $(document).ready(function() {
         triggerLoaded($(this));
     })
 
+    // Tabs
+    $('#tabStatesLoader').load('../panelitaComponents/tabStates.html', function() {
+        $('tabs').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#tabsGroupLoader').load('../panelitaComponents/tabsGroup.html', function() {
+        $('tabs').unwrap();
+        triggerLoaded($(this));
+    })
+
 // end panelita components
 
 
