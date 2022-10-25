@@ -625,6 +625,27 @@ $(document).ready(function() {
         $('pagination').unwrap();
         triggerLoaded($(this));
     })
+    
+    // Table
+    $('#tablePageHeaderLoader').load('../panelitaComponents/tablePageHeader.html', function() {
+        $('table').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#tableNavigationLoader').load('../panelitaComponents/tableNavigation.html', function() {
+        $('table').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#tableLoader').load('../panelitaComponents/table.html', function() {
+        $('table').unwrap();
+        triggerLoaded($(this));
+    })
+
+    $('#fullTableLoader').load('../panelitaComponents/full-table.html', function() {
+        $('table').unwrap();
+        triggerLoaded($(this));
+    })
 
 // end panelita components
 
