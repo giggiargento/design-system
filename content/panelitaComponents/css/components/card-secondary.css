@@ -58,9 +58,9 @@
   display: flex;
 }
 
-.secondary-card .days {
+/* .secondary-card .days {
   margin-left: 4px;
-}
+} */
 
 .secondary-card .days,
 .secondary-card .options {
@@ -114,4 +114,9 @@
   color: white;
   font-weight: 700;
   margin-left: 8px;
+}
+
+.pcard-row{
+  display: flex;
+  gap: 4px;
 }
