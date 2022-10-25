@@ -7,7 +7,7 @@
 }
 
 .pag-ellipsis {
-  cursor: default;
+  cursor: default!important;
 }
 
 .pag-btn,
