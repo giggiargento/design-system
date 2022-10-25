@@ -71,6 +71,25 @@ button {
   --btn-text-color: var(--color-n800);
 }
 
+.pbtn.btn-secondary.btn-icon {
+  --btn-border-color: transparent;
+  --btn-bg-color: transparent;
+}
+
+.pbtn.btn-secondary.btn-icon:focus {
+  --btn-border-color: var(--color-b200);
+}
+
+.pbtn.btn-secondary.btn-icon:hover{
+  --btn-bg-color: var(--color-n100);
+  --btn-border-color: var(--color-n100);
+}
+
+.pbtn.btn-secondary.btn-icon:active{
+  --btn-bg-color: var(--color-n200);
+  --btn-border-color: var(--color-b200);
+}
+
 .pbtn.btn-secondary:hover {
   --btn-border-color: var(--color-n600);
 }
@@ -89,6 +108,12 @@ button {
   --btn-bg-color: var(--color-n0);
   --btn-text-color: var(--color-n500);
   --btn-border-color: var(--color-n300);
+}
+
+.pbtn.btn-secondary.btn-icon.btn-disabled{
+  --btn-bg-color: var(--color-n50);
+  --btn-text-color: var(--color-n500);
+  --btn-border-color: var(--color-n50);
 }
 
 .pbtn.btn-red {

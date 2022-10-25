@@ -61,7 +61,7 @@ table.dataTable tbody tr td {
 
 table.dataTable tbody tr.selected td,
 table.dataTable tbody tr:hover td {
-  background-color: var(--color-b100);
+  background-color: var(--color-b50);
 }
 
 table.dataTable th {
