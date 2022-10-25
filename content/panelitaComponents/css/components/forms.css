@@ -586,3 +586,8 @@ input[type="number"]:focus~button {
   margin-right: 6px !important;
   margin-left: 2px !important;
 }
+
+.btn-container{
+  display: flex;
+  gap: 12px;
+}

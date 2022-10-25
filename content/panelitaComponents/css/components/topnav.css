@@ -84,7 +84,7 @@ nav .nav-btns {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	gap: 16px;
+	gap: 12px;
 }
 
 nav .pbtn{

@@ -124,7 +124,7 @@
   flex-direction: row-reverse;
   justify-content: flex-start;
   margin: 16px 0 0 0;
-  gap: 16px;
+  gap: 12px;
 }
 
 [data-notify=container] .actions .action {

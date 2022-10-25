@@ -46,13 +46,3 @@
   font-family: 'Material Icons';
   margin-right: 4px;
 }
-
-.pill {
-  display: inline;
-  border-radius: 10px;
-  padding: 0 6px;
-  background-color: var(--color-b400);
-  color: white;
-  font-weight: 700;
-  margin-left: 8px;
-}

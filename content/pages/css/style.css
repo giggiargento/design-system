@@ -894,10 +894,23 @@ pre{
 
 
 /* Components */
-
 .row-cols-auto{
     display: grid;
     grid-gap: 12px 0px;
+}
+
+/* Buttons */
+#primaryButtonLoader .row-cols-auto{
+    display: flex;
+    gap: 12px;
+}
+#secondaryButtonLoader .row-cols-auto{
+    display: flex;
+    gap: 12px;
+}
+#errorButtonLoader .row-cols-auto{
+    display: flex;
+    gap: 12px;
 }
 
 /* Checkbox */
