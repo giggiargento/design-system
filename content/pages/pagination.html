@@ -48,7 +48,15 @@
                                     <!-- Component section -->
 
                                         <!-- Text -->
-                                        <h6 class="text" data-lang="en">Use a pagination to structure things like table listings, search results, and directories. We can find pagination at the bottom of the page and allows the user to easily move between each page.
+                                        <h6 class="text" data-lang="en">Use a pagination to structure things like table listings, search results, and directories.
+                                        </h6>
+
+                                        <!-- Title -->
+                                        <h6 class="textTitle" data-lang="en">General guidelines
+                                        </h6>
+
+                                        <!-- Text -->
+                                        <h6 class="text" data-lang="en">We can find pagination at the bottom of the page and allows the user to easily move between each page.
                                         </h6>
 
                                         <!-- Code Box -->
@@ -57,15 +65,17 @@
                                                 <div class="card h-100">
                                                     <div class="card-header">
                                                         <!-- Here we will add panelitaComponents -->
-                                                        <div id="" class="loader primaryButton card-img-top" alt="..."></div>
+                                                        <div id="" class="loader primaryButton card-img-top" alt="...">
+                                                            <!-- pagination -->
+                                                            <div class="pagination auto-paginate" data-max="6"></div>
+                                                        </div>
                                                     </div>
                                                     <div class="accordion accordion-flush" id="accordionFlushExample1">
                                                         <div class="accordion-item">
                                                             <div id="flush-collapseOne1" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample1">
                                                                 <div id="myCode" class="myCode">
                                                                     <!-- id to call codeBox code with JavaScript -->
-                                                                    <pre id="codeId1" class="card-text accordion-body" type="text"><code>
-</code></pre>
+                                                                    <pre id="codeId1" class="card-text accordion-body" type="text"><code>&ltdiv class="pagination auto-paginate" data-max="6">&lt/div></code></pre>
                                                                 </div>
                                                                 </div>
                                                             <div class="card-footer accordion-header" id="flush-headingOne">
@@ -154,6 +164,9 @@
       
         <!-- Inicializa tooltips -->
         <script src="/content/js/tooltips.js"></script>
+
+        <!-- Pagination -->
+        <script src="/content/panelitaComponents/pagination.js"></script>
 
         <!-- archivo que carga el top nav y el footer -->
         <script src="/content/js/loaders.js"></script>   

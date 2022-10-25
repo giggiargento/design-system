@@ -619,6 +619,12 @@ $(document).ready(function() {
         $('tabs').unwrap();
         triggerLoaded($(this));
     })
+    
+    // Pagination
+    $('#paginationLoader').load('../panelitaComponents/pagination.html', function() {
+        $('pagination').unwrap();
+        triggerLoaded($(this));
+    })
 
 // end panelita components
 
