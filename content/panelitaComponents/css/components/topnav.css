@@ -14,7 +14,7 @@
   overflow: hidden;
 } */
 
-nav{
+#header.pnavbar{
 	box-shadow: 0px 4px 8px var(--color-n100);
 }
 
