@@ -1,5 +1,6 @@
 .pagination,
-.pag-numbers {
+.pag-numbers,
+.dataTables_paginate {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -9,11 +10,18 @@
   cursor: default;
 }
 
-.pag-btn {
+.pag-btn,
+.paginate_button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 32px;
+  height: 32px;
   padding: 0;
+  font-size: 12px;
   font-weight: 300;
   color: var(--color-n700);
+  cursor: pointer;
 }
 
 .pag-btn-prev,
@@ -21,12 +29,41 @@
   color: var(--color-n600);
 }
 
-.pag-btn.active {
+.paginate_button.previous,
+.paginate_button.next {
+  content: '';
+  color: transparent;
+  position: relative;
+}
+
+.paginate_button.previous::after,
+.paginate_button.next::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Material Icons';
+  color: var(--color-n800);
+  display: grid;
+  place-items: center;
+}
+
+.paginate_button.previous::after {
+  content: 'chevron_left';
+}
+
+.paginate_button.next::after {
+  content: 'chevron_right';
+}
+
+.pag-btn.active,
+.paginate_button.current {
   color: var(--color-b400);
   background-color: var(--color-b100);
 }
 
-.pag-btn.disabled {
+.pag-btn.disabled
+.paginate_button.disabled {
   color: var(--color-n400);
 }
 

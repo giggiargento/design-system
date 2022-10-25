@@ -1,7 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  margin-bottom: 24px;
+}
+
+.header .tools {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .table-container {
-  overflow-x: scroll;
+  overflow-x: auto;
   flex-grow: 1;
-  margin-top: 36px;
+}
+
+.dataTables_wrapper {
+  font-size: 14px;
+  color: var(--color-n800);
 }
 
 table.dataTable thead.fixed th {
@@ -11,15 +29,16 @@ table.dataTable thead.fixed th {
 }
 
 table.dataTable {
+  width: 100%;
   margin: 0;
   padding: 0;
   font-size: 14px;
   color: var(--color-n800);
   text-align: left;
-  /* overflow: hidden; */
   white-space: nowrap;
   text-overflow: ellipsis;
   border-bottom: none!important;
+  border-collapse: collapse;
 }
 
 .dataTables_wrapper.no-footer .dataTables_scrollBody {
@@ -42,7 +61,7 @@ table.dataTable tbody tr td {
 
 table.dataTable tbody tr.selected td,
 table.dataTable tbody tr:hover td {
-  background-color: var(--color-b50);
+  background-color: var(--color-b100);
 }
 
 table.dataTable th {
@@ -79,6 +98,7 @@ table.dataTable tbody td .cell-content {
 
 table.dataTable tbody td .cell-content span {
   max-width: 100%;
+  font-size: 12px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -89,32 +109,31 @@ table.dataTable .btn-container {
 }
 
 table.dataTable thead .sorting {
-  background-image: none;
+  cursor: pointer;
 }
 
 table.dataTable thead .cell-content {
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-position: center right;
-  padding-right: 20px!important;
+  display: flex;
+  align-items: center;
 }
 
-table.dataTable thead .sorting .cell-content {
-  background-image: url(/bukeala-static/scripts/backoffice/datatables/images/sort_both.png);
+table.dataTable thead .sorting .cell-content::after {
+  font-family: 'Material Icons';
+  content: 'unfold_more';
+  margin-left: 6px;
 }
 
-table.dataTable thead .sorting_asc {
-  background-image: none;
+table.dataTable thead .sorting_asc .cell-content::after {
+  font-family: 'Material Icons';
+  content: 'expand_less'
 }
 
-table.dataTable thead .sorting_asc .cell-content {
-  background-image: url(/bukeala-static/scripts/backoffice/datatables/images/sort_asc.png);
+table.dataTable thead .sorting_desc .cell-content::after {
+  font-family: 'Material Icons';
+  content: 'expand_more'
 }
 
-table.dataTable thead .sorting_desc {
-  background-image: none;
-}
-
-table.dataTable thead .sorting_desc .cell-content {
-  background-image: url(/bukeala-static/scripts/backoffice/datatables/images/sort_desc.png);
+.dataTables_info {
+  font-size: 14px;
+  color: var(--color-n800);
 }
