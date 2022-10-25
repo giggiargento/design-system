@@ -72,7 +72,8 @@ button {
 }
 
 .pbtn.btn-secondary.btn-icon {
-  --btn-border-color: var(--color-n0);
+  --btn-border-color: transparent;
+  --btn-bg-color: transparent;
 }
 
 .pbtn.btn-secondary.btn-icon:focus {
@@ -85,7 +86,7 @@ button {
 }
 
 .pbtn.btn-secondary.btn-icon:active{
-  --btn-bg-color: var(--color-n100);
+  --btn-bg-color: var(--color-n200);
   --btn-border-color: var(--color-b200);
 }
 
