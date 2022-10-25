@@ -137,3 +137,9 @@ table.dataTable thead .sorting_desc .cell-content::after {
   font-size: 14px;
   color: var(--color-n800);
 }
+
+#tablePagination.pagination{
+  display: flex;
+  justify-content: end;
+  padding: 12px;
+}
