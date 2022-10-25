@@ -106,6 +106,10 @@ nav .pbtn{
 	color: var(--color-b400);
 }
 
+.pnavbar .pbtn .sm {
+	display: none;
+}
+
 @media (max-width: 1100px) {
 	.pnavbar li a {
 		font-size: 14px;
@@ -113,7 +117,16 @@ nav .pbtn{
 
 	.pnavbar .menu-right li,
 	.pnavbar .menu-right li button {
-		width: 24px;
+		width: 32px;
+	}
+
+	.pnavbar .pbtn .lg {
+		display: none;
+	}
+
+	.pnavbar .pbtn .sm {
+		display: flex;
+		margin: 0;
 	}
 
 	.pnavbar .menu-right li.shrink {
