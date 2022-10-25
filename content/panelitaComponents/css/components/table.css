@@ -9,7 +9,7 @@
 .header .tools {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
 }
 
 .table-container {
