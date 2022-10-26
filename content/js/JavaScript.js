@@ -254,7 +254,6 @@ inputSearch = document.getElementById("inputSearch");
 boxSearch = document.getElementById("boxSearch");
 
 // Function to show box search
-
 document.getElementById("inputSearch").addEventListener("keyup", internalSearch);
 function internalSearch(){
    
@@ -280,4 +279,3 @@ function internalSearch(){
   }
 
 }
-

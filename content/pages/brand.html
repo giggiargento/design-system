@@ -24,11 +24,25 @@
                                 <br>    
                                 <br>The combination of our mission and values, drives our promise to create together a new healthcare system.
                                 </h2>
-                                 <!--Search-->
-                                <form class="d-flex" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Search brand by name" aria-label="Search">
-                                    <span type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search" class="material-icons">search</span>
-                                </form>
+
+                                <!--Search-->
+                                <div class="barSearch">
+                                    <form class="d-flex" role="search">
+                                        <input id="inputSearch" class="form-control me-2" type="search" placeholder="Search brand by name" aria-label="Search" autocomplete="off">
+                                        <span type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search" class="material-icons">search</span>
+                                    </form>
+
+                                    <!-- Search Box -->
+                                    <ul id="boxSearch" class="sectionBoxSearch dropdown-menu">
+                                        <!-- Brand -->
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/brand.html">Brand</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/mission.html">Mission</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/promise.html">Promise</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/values.html">Values</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/personality.html">Personality</a></li>
+                                    </ul>
+                                </div>
+
                             </div>
                             <div id="imgSection" class="col-12 col-lg-6">
                                 <img src="/content/assets/brandHeader.svg">
