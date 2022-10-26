@@ -656,7 +656,6 @@ $(document).ready(function() {
     })
 
     $('#fullTableLoader').load('../panelitaComponents/full-table.html', function() {
-        
 
         $('#full-table').DataTable({
             orderCellsTop: true,
