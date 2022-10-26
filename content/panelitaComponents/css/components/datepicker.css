@@ -13,6 +13,11 @@ input.date {
   position: absolute;
 }
 
+/* .ui-datepicker-multi {
+  display: flex;
+  width: 640px!important;
+} */
+
 .date-inline.hasDatepicker ~ #ui-datepicker-div {
   display: none;
 }
@@ -57,6 +62,10 @@ input.date {
 
 .ui-datepicker-next::after {
   content: 'chevron_right';
+}
+
+.ui-datepicker-group .ui-datepicker-title {
+  margin: 0 auto;
 }
 
 .ui-datepicker-month,

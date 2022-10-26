@@ -451,7 +451,8 @@ $(document).ready(function() {
     $('#datePicker').load('../panelitaComponents/datePicker.html', function() {
         triggerLoaded($(this));
 
-        $('input.date').datepicker({showOtherMonths: true});
+        $('#datepicker-single').datepicker({showOtherMonths: true});
+        $('#datepicker-double').datepicker({numberOfMonths: [1, 2]});
     })
 
     $('#dateToDatePicker').load('../panelitaComponents/dateToDatePicker.html', function() {
