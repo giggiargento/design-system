@@ -10,7 +10,7 @@
   display: none!important;
 }
 
-.noscroll,
+/* .noscroll,
 .no-scroll {
   overflow: hidden!important;
 }
@@ -18,7 +18,7 @@
 .noscroll .container {
   height: 100%;
   overflow-y: auto;
-}
+} */
 
 /* container que ocupa exactamente el alto disponible, con un container scrolleable adentro */
 .scrollable-list-container {

@@ -935,6 +935,12 @@ pre{
     margin: 0;
 }
 
+#sideSheetFormExample input[type=checkbox]:checked::after{
+    position: relative !important;
+    top: 0px !important;
+    left: 0px !important;
+}
+
 /* Inputs */
 .loader.inputs{
     max-width: 40%;

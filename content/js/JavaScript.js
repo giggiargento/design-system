@@ -167,9 +167,9 @@ $(document).ready(function(){
   });
   // Keept white background topNav when refresh
   if (window.pageYOffset > 1) {
-    nav?.classList.add('bg-white');
+    nav.classList.add('bg-white');
   } else {
-    nav?.classList.remove('bg-white');
+    nav.classList.remove('bg-white');
   }
 
   //codeBox
@@ -187,12 +187,11 @@ $(document).ready(function(){
 });
 
 // Top Nav transparent when scroll
-
   window.addEventListener('scroll', function () {
     if (window.pageYOffset > 1) {
-      nav?.classList.add('bg-white');
+      nav.classList.add('bg-white');
     } else {
-      nav?.classList.remove('bg-white');
+      nav.classList.remove('bg-white');
     }
 });
 
@@ -202,30 +201,6 @@ if ($('select').length > 0) {
   $('select.no-search').chosen({disable_search_threshold: 0});
 }
 
-// Disable scroll when click toggle menu button in topNav --------------------------
-// var keys = {37: 1, 38: 1, 39: 1, 40: 1};
-
-// function preventDefault(e) {
-//   e.preventDefault();
-// }
-
-// function preventDefaultForScrollKeys(e) {
-//   if (keys[e.keyCode]) {
-//     preventDefault(e);
-//     return false;
-//   }
-// }
-
-// modern Chrome requires { passive: false } when adding event
-// var supportsPassive = false;
-// try {
-//   window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
-//     get: function () { supportsPassive = true; } 
-//   }));
-// } catch(e) {}
-
-// var wheelOpt = supportsPassive ? { passive: false } : false;
-// var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
 
 // ************************ AL ABRIR MENU COLLAPSADO EL FONDO SE PONE BLANCO Y SE INHABILITA EL SCROLL ************************
 function navbarTogglerBg() {
@@ -254,28 +229,28 @@ inputSearch = document.getElementById("inputSearch");
 boxSearch = document.getElementById("boxSearch");
 
 // Function to show box search
-// document.getElementById("inputSearch").addEventListener("keyup", internalSearch);
-// function internalSearch(){
+document.getElementById("inputSearch").addEventListener("keyup", internalSearch);
+function internalSearch(){
    
-//   filter = inputSearch.value.toUpperCase();
-//   li = boxSearch.getElementsByTagName("li");
+  filter = inputSearch.value.toUpperCase();
+  li = boxSearch.getElementsByTagName("li");
 
-//   // Navigating in element to filter with 'li'
-//   for (i = 0; i < li.length; i++){
-//     a = li[i].getElementsByTagName("a")[0];
-//     textValue = a.textContent || a.innerText;
+  // Navigating in element to filter with 'li'
+  for (i = 0; i < li.length; i++){
+    a = li[i].getElementsByTagName("a")[0];
+    textValue = a.textContent || a.innerText;
 
-//     if(textValue.toUpperCase().indexOf(filter) > -1){
-//       li[i].style.display = "";
-//       boxSearch.style.display = "block";
+    if(textValue.toUpperCase().indexOf(filter) > -1){
+      li[i].style.display = "";
+      boxSearch.style.display = "block";
 
-//       if(inputSearch.value == ""){
-//         boxSearch.style.display = "none";
-//       }
-//     }
-//     else{
-//       li[i].style.display = "none";
-//     }
-//   }
+      if(inputSearch.value == ""){
+        boxSearch.style.display = "none";
+      }
+    }
+    else{
+      li[i].style.display = "none";
+    }
+  }
 
-// }
+}
