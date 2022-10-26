@@ -645,14 +645,13 @@ $(document).ready(function() {
     })
 
     $('#tableLoader').load('../panelitaComponents/table.html', function() {
-        
+        triggerLoaded($(this));
         $('#table').DataTable({
           orderCellsTop: true,
           colReorder: false,
           dom: "<t>",
           autoWidth: true
         });
-        triggerLoaded($(this));
     })
 
     $('#fullTableLoader').load('../panelitaComponents/full-table.html', function() {

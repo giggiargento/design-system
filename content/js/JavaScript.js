@@ -167,9 +167,9 @@ $(document).ready(function(){
   });
   // Keept white background topNav when refresh
   if (window.pageYOffset > 1) {
-    nav.classList.add('bg-white');
+    nav?.classList.add('bg-white');
   } else {
-    nav.classList.remove('bg-white');
+    nav?.classList.remove('bg-white');
   }
 
   //codeBox
@@ -190,9 +190,9 @@ $(document).ready(function(){
 
   window.addEventListener('scroll', function () {
     if (window.pageYOffset > 1) {
-      nav.classList.add('bg-white');
+      nav?.classList.add('bg-white');
     } else {
-      nav.classList.remove('bg-white');
+      nav?.classList.remove('bg-white');
     }
 });
 
@@ -254,28 +254,28 @@ inputSearch = document.getElementById("inputSearch");
 boxSearch = document.getElementById("boxSearch");
 
 // Function to show box search
-document.getElementById("inputSearch").addEventListener("keyup", internalSearch);
-function internalSearch(){
+// document.getElementById("inputSearch").addEventListener("keyup", internalSearch);
+// function internalSearch(){
    
-  filter = inputSearch.value.toUpperCase();
-  li = boxSearch.getElementsByTagName("li");
+//   filter = inputSearch.value.toUpperCase();
+//   li = boxSearch.getElementsByTagName("li");
 
-  // Navigating in element to filter with 'li'
-  for (i = 0; i < li.length; i++){
-    a = li[i].getElementsByTagName("a")[0];
-    textValue = a.textContent || a.innerText;
+//   // Navigating in element to filter with 'li'
+//   for (i = 0; i < li.length; i++){
+//     a = li[i].getElementsByTagName("a")[0];
+//     textValue = a.textContent || a.innerText;
 
-    if(textValue.toUpperCase().indexOf(filter) > -1){
-      li[i].style.display = "";
-      boxSearch.style.display = "block";
+//     if(textValue.toUpperCase().indexOf(filter) > -1){
+//       li[i].style.display = "";
+//       boxSearch.style.display = "block";
 
-      if(inputSearch.value == ""){
-        boxSearch.style.display = "none";
-      }
-    }
-    else{
-      li[i].style.display = "none";
-    }
-  }
+//       if(inputSearch.value == ""){
+//         boxSearch.style.display = "none";
+//       }
+//     }
+//     else{
+//       li[i].style.display = "none";
+//     }
+//   }
 
-}
+// }

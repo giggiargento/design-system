@@ -5,10 +5,9 @@ $(document).ready(function() {
 });
 
 function initAutoPaginate() {
-  let currentPage, lastPage, pageInterval;
+  let currentPage, lastPage;
   currentPage = 1;
   lastPage = $('.auto-paginate.auto-paginate').attr('data-max');
-  pageInterval = $('.auto-paginate.auto-paginate').attr('data-interval');
 
   drawTemplate();
 
@@ -16,7 +15,7 @@ function initAutoPaginate() {
     let btn = $(this);
     btn.addClass('active');
     $('.pag-num-btn').not(btn).removeClass('active');
-    currentPage = btn.attr('data-page');
+    currentPage = parseInt(btn.attr('data-page'));
     $('.auto-paginate').trigger('pagechange')
   })
 
@@ -27,6 +26,7 @@ function initAutoPaginate() {
 
   function goToNextPage() {
     currentPage += 1;
+    console.log(currentPage)
     $('.auto-paginate').trigger('pagechange')
   }
 
