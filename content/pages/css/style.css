@@ -1081,3 +1081,10 @@ table{
 .tableHeader{
     overflow-x: auto;
 }
+
+@media screen and (max-width:1400px) {
+    
+    .dataTables_paginate {
+        justify-content: flex-start;
+      }
+}
