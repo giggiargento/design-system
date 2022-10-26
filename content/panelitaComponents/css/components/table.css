@@ -38,7 +38,7 @@ table.dataTable {
   white-space: nowrap;
   text-overflow: ellipsis;
   border-bottom: none!important;
-  border-collapse: collapse;
+  border-collapse: collapse!important;
 }
 
 .dataTables_wrapper.no-footer .dataTables_scrollBody {
@@ -136,6 +136,12 @@ table.dataTable thead .sorting_desc .cell-content::after {
 .dataTables_info {
   font-size: 14px;
   color: var(--color-n800);
+}
+
+.dataTables_paginate {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #tablePagination.pagination{

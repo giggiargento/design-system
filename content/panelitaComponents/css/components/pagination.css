@@ -22,6 +22,7 @@
   font-weight: 300;
   color: var(--color-n700);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .pag-btn-prev,

@@ -635,16 +635,36 @@ $(document).ready(function() {
 
     $('#tableNavigationLoader').load('../panelitaComponents/tableNavigation.html', function() {
         $('table').unwrap();
+        $('#table-header').DataTable({
+            orderCellsTop: true,
+            colReorder: false,
+            dom: "<t>",
+            autoWidth: true
+        });
         triggerLoaded($(this));
     })
 
     $('#tableLoader').load('../panelitaComponents/table.html', function() {
         $('table').unwrap();
+        $('#table').DataTable({
+          orderCellsTop: true,
+          colReorder: false,
+          dom: "<t>",
+          autoWidth: true
+        });
         triggerLoaded($(this));
     })
 
     $('#fullTableLoader').load('../panelitaComponents/full-table.html', function() {
         $('table').unwrap();
+
+        $('#full-table').DataTable({
+            orderCellsTop: true,
+            colReorder: false,
+            dom: "<t>p",
+            autoWidth: true,
+            pageLength: 2
+        });
         triggerLoaded($(this));
     })
 
