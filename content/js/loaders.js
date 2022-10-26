@@ -663,7 +663,7 @@ $(document).ready(function() {
             colReorder: false,
             dom: "<t>p",
             autoWidth: true,
-            pageLength: 2
+            pageLength: 4
         });
         triggerLoaded($(this));
     })
