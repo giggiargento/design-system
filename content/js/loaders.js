@@ -645,7 +645,7 @@ $(document).ready(function() {
     })
 
     $('#tableLoader').load('../panelitaComponents/table.html', function() {
-        $('table').unwrap();
+        
         $('#table').DataTable({
           orderCellsTop: true,
           colReorder: false,
@@ -656,7 +656,7 @@ $(document).ready(function() {
     })
 
     $('#fullTableLoader').load('../panelitaComponents/full-table.html', function() {
-        $('table').unwrap();
+        
 
         $('#full-table').DataTable({
             orderCellsTop: true,
