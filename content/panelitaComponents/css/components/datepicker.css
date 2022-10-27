@@ -13,12 +13,8 @@ input.date {
   position: absolute;
 }
 
-/* .ui-datepicker-multi {
-  display: flex;
-  width: 640px!important;
-} */
-
-.date-inline.hasDatepicker ~ #ui-datepicker-div {
+/* fix datepicker div showing on page load */
+.ui-datepicker:not([style]) {
   display: none;
 }
 
