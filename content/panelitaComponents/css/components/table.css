@@ -1,4 +1,4 @@
-.header {
+.tableHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,7 +6,7 @@
   margin-bottom: 24px;
 }
 
-.header .tools {
+.tableHeader .tools {
   display: flex;
   align-items: center;
   gap: 12px;
