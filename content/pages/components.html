@@ -26,11 +26,40 @@
                                     and has been specifically created to work together to create
                                     patterns and intuitive user experiences.
                                 </h2>
+
                                  <!--Search-->
-                                <form class="d-flex" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Search components by name" aria-label="Search">
-                                    <span type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search" data-lang="en" class="material-icons">search</span>
-                                </form>
+                                <div class="barSearch">
+                                    <form class="d-flex" role="search">
+                                        <input id="inputSearch" class="form-control me-2 siteSearchInput" type="search" placeholder="Search components by name" aria-label="Search" autocomplete="off">
+                                        <span type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search" data-lang="en" class="material-icons">search</span>
+                                    </form>
+
+                                    <!-- Search Box -->
+                                    <ul id="boxSearch" class="sectionBoxSearch dropdown-menu">
+                                        <!-- Components -->
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/components.html">Components</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/buttons.html">Buttons</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/calendar.html">Calendar</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/cards.html">Cards</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/checkbox.html">Checkbox</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/dropdowns.html">Dropdowns</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/form.html">Form</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/inputs.html">Input</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/navigation.html">Navigation</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/notifications.html">Notifications</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/pagination.html">Pagination</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/radio.html">Radio</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/select.html">Select</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/sidesheet.html">Sidesheet</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/switch.html">Switch</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/table.html">Table</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/tabs.html">Tabs</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/tags.html">Tags</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/tooltip.html">Tooltip</a></li>
+                                    </ul>
+                                </div>
+
+
                             </div>
                             <div id="imgSection" class="col-12 col-lg-6">
                                 <img src="/content/assets/componentsHeader.svg">

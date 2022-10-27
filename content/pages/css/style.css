@@ -259,7 +259,7 @@ ul{
     border-radius: 0.3em;
     display: flex;
     flex-direction: initial;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 #sectionHeader .form-control:focus {
@@ -286,10 +286,31 @@ ul{
     cursor: pointer;
 }
 
+/* Header Image */
 div#imgSection{
     display: flex;
-/*    background-color: #D8DAE5; */
     justify-content: center;
+}
+
+@media (max-width: 992px) {
+    div#imgSection{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 520px) {
+    div#imgSection img{
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 420px) {
+    div#imgSection img{
+        max-width: 300px;
+    }
 }
 
 #sectionBtnContainer{

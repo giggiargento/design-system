@@ -23,11 +23,24 @@
                                     Patterns are reusable combinations of components that solve common user problems.
                                     These best practice solutions help users achieve their goals and help ensure consistency across experiences.
                                 </h2>
-                                 <!--Search-->
-                                <form class="d-flex" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Search patterns by name" aria-label="Search">
-                                    <span type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search" class="material-icons" data-lang="en">search</span>
-                                </form>
+
+                                <!--Search-->
+                                <div class="barSearch">
+                                    <form class="d-flex" role="search">
+                                        <input id="inputSearch" class="form-control me-2 siteSearchInput" type="search" placeholder="Search brand by name" aria-label="Search" autocomplete="off">
+                                        <span type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search" class="material-icons">search</span>
+                                    </form>
+
+                                    <!-- Search Box -->
+                                    <ul id="boxSearch" class="sectionBoxSearch dropdown-menu">
+                                        <!-- Patterns -->
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/patterns.html">Patterns</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/emptyStates.html">Empty States</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/patternsForms.html">Forms</a></li>
+                                        <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-icons">search</span><a class="searchLabel" href="/content/pages/messages.html">Messages</a></li>
+                                    </ul>
+                                </div>
+
                             </div>
                             <div id="imgSection" class="col-12 col-lg-6">
                                 <img src="/content/assets/patternsHeader.svg">

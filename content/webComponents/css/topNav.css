@@ -134,7 +134,6 @@ max-height: 24px;
   padding-left: 0 !important;
 }
 
-
 /* Top Nav Search */
 #boxSearch{
   position: fixed;
@@ -164,8 +163,4 @@ max-height: 24px;
   #topNav {
     padding-bottom: 12px;
   }
-
-/* #topNav .container {
-    background-color: rgba(var(--bs-white-rgb),var(--bs-bg-opacity))!important;
-  }
-} */
+}
