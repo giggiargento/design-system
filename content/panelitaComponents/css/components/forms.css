@@ -232,7 +232,7 @@ input[type=checkbox]:checked::after {
   top: 1px;
   left: 1px;
   color: var(--checkbox-check-color-default);
-  font-family: 'Material Icons';
+  font-family: 'Material Symbols Outlined';
   font-size: 12px;
 }
 
@@ -465,7 +465,7 @@ textarea:invalid,
   content: 'error_outline';
   font-weight: 600; /* Optional */
   font-size: 16px;
-  font-family: 'Material Icons';
+  font-family: 'Material Symbols Outlined';
   margin-right: 4px;
 }
 
@@ -550,7 +550,7 @@ textarea:invalid,
   position: absolute;
   right: 4px;
   padding: 0;
-  font-family: 'Material Icons';
+  font-family: 'Material Symbols Outlined';
   font-size: 12px;
 }
 

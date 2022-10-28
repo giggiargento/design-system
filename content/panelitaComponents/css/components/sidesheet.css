@@ -34,7 +34,7 @@
   justify-content: flex-start;
 }
 
-.side-panel .top .material-icons {
+.side-panel .top .material-symbols-outlined {
   width: 16px;
   flex-grow: 0;
   margin-right: 8px;

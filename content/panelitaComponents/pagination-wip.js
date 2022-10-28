@@ -40,12 +40,12 @@ function initAutoPaginate() {
   function drawTemplate() {
     $('.auto-paginate').append(`
       <button class="pbtn btn-icon pag-btn pag-btn-prev" title="Previous page">
-        <span class="icon-container material-icons">chevron_left</span>
+        <span class="icon-container material-symbols-outlined">chevron_left</span>
       </button>
       <div class="pag-numbers">
       </div>
       <button class="pbtn btn-icon pag-btn pag-btn-next" title="Next page">
-        <span class="icon-container material-icons">chevron_right</span>
+        <span class="icon-container material-symbols-outlined">chevron_right</span>
       </button>
     `)
 

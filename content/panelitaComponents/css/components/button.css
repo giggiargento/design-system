@@ -143,11 +143,11 @@ button {
   --btn-border-color: var(--color-r100);
 }
 
-.pbtn .material-icons {
+.pbtn .material-symbols-outlined {
   font-size: 16px;
 }
 
-.pbtn:not(.btn-icon) .material-icons {
+.pbtn:not(.btn-icon) .material-symbols-outlined {
   margin-right: 8px;
 }
 

@@ -18,7 +18,7 @@
 /* DEP */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,300');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
-@import url('https://example.com/material-icons.woff');
+@import url('https://example.com/material-symbols-outlined.woff');
 
 @font-face {
     font-family: 'Open Sans';
@@ -29,8 +29,8 @@
     unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
   }
 
-.material-icons {
-  font-family: 'Material Icons';
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
   font-weight: normal;
   font-style: normal;
   font-size: 24px;  /* Preferred icon size */
@@ -1026,7 +1026,7 @@ table{
     position: relative !important;
     z-index: 90 !important;
 }
-.btn.btn-icon.material-icons{
+.btn.btn-icon.material-symbols-outlined{
     padding: 0px !important;
 }
 

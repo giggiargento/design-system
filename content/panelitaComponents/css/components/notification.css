@@ -175,7 +175,7 @@
 [data-notify=icon]::before {
   position: absolute;
   top: -5px;
-  font-family: 'Material Icons';
+  font-family: 'Material Symbols Outlined';
   font-size: 24px;
   color: var(--notify-icon-color);
 }
@@ -189,7 +189,7 @@
 }
 
 [data-notify=icon].info-icon::before {
-  content: 'info_outline';
+  content: 'info';
 }
 
 [data-notify=icon].save-icon::before {

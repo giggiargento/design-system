@@ -47,7 +47,7 @@ input.date {
 
 .ui-datepicker-prev::after,
 .ui-datepicker-next::after {
-  font-family: 'Material Icons';
+  font-family: 'Material Symbols Outlined';
   color: var(--color-n700);
   font-size: 22px;
 }

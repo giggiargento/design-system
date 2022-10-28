@@ -118,18 +118,18 @@ table.dataTable thead .cell-content {
 }
 
 table.dataTable thead .sorting .cell-content::after {
-  font-family: 'Material Icons';
+  font-family: 'Material Symbols Outlined';
   content: 'unfold_more';
   margin-left: 6px;
 }
 
 table.dataTable thead .sorting_asc .cell-content::after {
-  font-family: 'Material Icons';
+  font-family: 'Material Symbols Outlined';
   content: 'expand_less'
 }
 
 table.dataTable thead .sorting_desc .cell-content::after {
-  font-family: 'Material Icons';
+  font-family: 'Material Symbols Outlined';
   content: 'expand_more'
 }
 

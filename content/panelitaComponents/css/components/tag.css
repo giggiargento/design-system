@@ -22,8 +22,8 @@
 }
 
 .tag .icon-container::after,
-.tag .icon-container.material-icons {
-  font-family: 'Material Icons';
+.tag .icon-container.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
   color: currentColor;
   font-size: 16px;
   display: block;
