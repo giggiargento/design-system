@@ -33,10 +33,10 @@
                                 <!-- Nav -->
                                 <ul id="pageNav" class="pageNav nav nav-tabs">
                                     <li class="nav-item" data-bs-toggle="tooltip" type="submit" data-bs-placement="bottom" title="Code">
-                                      <a class="nav-link active" aria-current="page" href="#" data-bs-target="#buttonCodeTab" data-bs-toggle="tab" data-lang="en">Code</a>
+                                      <a class="nav-link active" aria-current="page" href="#" data-bs-target="#codeTab" data-bs-toggle="tab" data-lang="en">Code</a>
                                     </li>
                                     <li class="nav-item" data-bs-toggle="tooltip" type="submit" data-bs-placement="bottom" title="Assets">
-                                      <a class="nav-link disabled" href="#" data-bs-target="#buttonUsageTab" data-bs-toggle="tab" data-lang="en">Assets</a>
+                                      <a class="nav-link" href="#" data-bs-target="#assetsTab" data-bs-toggle="tab" data-lang="en">Assets</a>
                                     </li>
                                     <li class="nav-item" data-bs-toggle="tooltip" type="submit" data-bs-placement="bottom" title="Templates">
                                       <a class="nav-link disabled" href="#" data-bs-target="#buttonUsageTab" data-bs-toggle="tab" data-lang="en">Templates</a>
@@ -45,13 +45,13 @@
 
                                 <div class="tab-content" id="myTabContent">
                                     <!--Code-->
-                                    <div class="tab-pane fade show active" id="buttonCodeTab">
+                                    <div class="tab-pane fade show active" id="codeTab">
                                     <!--contenido de code-->
                                             <!-- Download Card -->
                                             <div id="downloadCard" class="downloadCard card">
                                                 <div class="downloadCardBody card-body justify-content-between">
                                                    <div class="downloadCardText">
-                                                       <h5 class="card-title" data-lang="en">Compiled CSS and JS</h5>
+                                                       <h5 class="card-title" data-lang="en">CSS</h5>
                                                        <p class="card-text" data-lang="en">Updated 20.11.2022</p>
                                                    </div>
                                                    <div class="downloadCardBtn">
@@ -61,6 +61,30 @@
                                                    </div>
                                                 </div>
                                             </div>
+                                            <!-- Download Card -->
+                                            <div id="downloadCard" class="downloadCard card">
+                                                <div class="downloadCardBody card-body justify-content-between">
+                                                   <div class="downloadCardText">
+                                                       <h5 class="card-title" data-lang="en">JS</h5>
+                                                       <p class="card-text" data-lang="en">Updated 20.11.2022</p>
+                                                   </div>
+                                                   <div class="downloadCardBtn">
+                                                       <button id="getStartedBtn" type="button" class="pbtn btn-primary"
+                                                       type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Github" data-lang="en">
+                                                       Github</button>
+                                                   </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Title -->
+                                            <h6 class="textTitle" data-lang="en">Components
+                                            </h6>
+
+                                            <!-- Text-->
+                                            <h6 class="text">If you are just looking to download the JavaScript file for a particular component check out the links below.
+                                            </h6>
+
+                                            <!-- Download Card -->
                                             <div id="downloadCard" class="downloadCard card">
                                                 <div class="downloadCardBody card-body justify-content-between">
                                                    <div class="downloadCardText">
@@ -74,11 +98,28 @@
                                                    </div>
                                                 </div>
                                             </div>
-
-
                                     </div>
-
                                 </div>
+                                    <!--Assets-->
+                                    <div class="tab-pane fade" id="assetsTab">
+                                    <!--contenido de Assets-->
+                                            <!-- Download Card -->
+                                            <div id="downloadCard" class="downloadCard card">
+                                                <div class="downloadCardBody card-body justify-content-between">
+                                                   <div class="downloadCardText">
+                                                       <h5 class="card-title" data-lang="en">Images</h5>
+                                                       <p class="card-text" data-lang="en">Updated 20.11.2022</p>
+                                                   </div>
+                                                   <div class="downloadCardBtn">
+                                                       <button id="getStartedBtn" type="button" class="pbtn btn-primary"
+                                                       type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Github" data-lang="en">
+                                                       Github</button>
+                                                   </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+
                         </section>
                     </div>
                 </main>
