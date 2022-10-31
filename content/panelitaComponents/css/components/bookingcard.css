@@ -20,7 +20,7 @@
   background: white;
   border-radius: var(--card-border-radius);
   box-shadow: var(--card-box-shadow);
-  align-items: stretch!important;
+  align-items: stretch !important;
   font-size: 16px;
   font-weight: 500;
   color: var(--color-grey-dark1);
@@ -186,7 +186,7 @@
   font-weight: 400;
 }
 
-.icon{
+.icon {
   color: var(--color-b400);
 }
 
@@ -204,13 +204,13 @@
   font-size: 18px;
 }
 
-.booking-card .right .area .fav-checkbox input[type=checkbox]:checked + .icon .on,
-.booking-card .right .area .fav-checkbox input[type=checkbox]:not(:checked) + .icon .off {
+.booking-card .right .area .fav-checkbox input[type=checkbox]:checked+.icon .on,
+.booking-card .right .area .fav-checkbox input[type=checkbox]:not(:checked)+.icon .off {
   display: block;
 }
 
-.booking-card .right .area .fav-checkbox input[type=checkbox]:checked + .icon .off,
-.booking-card .right .area .fav-checkbox input[type=checkbox]:not(:checked) + .icon .on {
+.booking-card .right .area .fav-checkbox input[type=checkbox]:checked+.icon .off,
+.booking-card .right .area .fav-checkbox input[type=checkbox]:not(:checked)+.icon .on {
   display: none;
 }
 
@@ -248,6 +248,15 @@
   color: var(--color-b400);
 }
 
+.booking-card .line.preparation-link i::after {
+  font-family: 'Material Symbols Outlined';
+  content: 'visibility'
+}
+
+.booking-card .line.preparation-link.active i::after {
+  content: 'visibility_off'
+}
+
 .booking-card .right .bottom .line.preparation-link.active .off,
 .booking-card .right .bottom .line.preparation-link:not(.active) .on {
   display: none;
@@ -277,6 +286,8 @@
 
 .booking-card .actions .action {
   width: 100%;
+  display: flex;
+  align-items: center;
   padding: 4px 6px;
   border-radius: var(--card-border-radius);
   cursor: pointer;
@@ -343,7 +354,7 @@
 }
 
 .booking-card.not-assisted .left .status {
-  border-color:var(--color-grey-dark3);
+  border-color: var(--color-grey-dark3);
 }
 
 .booking-card.ended .right,
@@ -359,56 +370,56 @@
   position: relative;
 }
 
-.booking-card ~ .sub-card {
+.booking-card~.sub-card {
   display: none;
   padding: 16px 48px 16px 24px;
   list-style-position: inside;
   font-size: 14px;
   height: auto;
   width: 100%;
-  margin: 0!important;
+  margin: 0 !important;
   top: 0;
   z-index: 0;
 }
 
-.booking-card ~ .sub-card.visible {
+.booking-card~.sub-card.visible {
   display: block;
-  margin-top: 8px!important;
+  margin-top: 8px !important;
   height: auto;
 }
 
-.booking-card ~ .sub-card.preparation-card {
+.booking-card~.sub-card.preparation-card {
   font-size: 14px;
 }
 
-.booking-card ~ .sub-card .pcard-content {
+.booking-card~.sub-card .pcard-content {
   width: 100%;
 }
 
-.booking-card ~ .sub-card > .close-btn {
+.booking-card~.sub-card>.close-btn {
   position: absolute;
   top: 16px;
   right: 16px;
 }
 
-.booking-card ~ .sub-card .header {
+.booking-card~.sub-card .header {
   padding-bottom: 8px;
   border-bottom: 1px solid var(--color-grey-light1);
 }
 
-.booking-card ~ .sub-card .header p {
+.booking-card~.sub-card .header p {
   color: var(--color-grey-dark1);
   font-weight: 600;
 }
 
-.booking-card ~ .sub-card .form {
+.booking-card~.sub-card .form {
   padding-top: 24px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.booking-card ~ .sub-card .form-field {
+.booking-card~.sub-card .form-field {
   width: 100%;
   display: grid;
   grid-template-columns: 220px minmax(200px, 500px);
@@ -419,52 +430,52 @@
   justify-content: center;
 }
 
-.booking-card ~ .sub-card .form-field.checkbox-field {
+.booking-card~.sub-card .form-field.checkbox-field {
   margin-left: 24px;
   padding-top: 24px;
 }
 
-.booking-card ~ .sub-card .form-field > label {
+.booking-card~.sub-card .form-field>label {
   flex-shrink: 0;
   font-size: 14px;
   white-space: pre-line;
 }
 
-.booking-card ~ .sub-card .form-field.tall label {
+.booking-card~.sub-card .form-field.tall label {
   padding-top: 14px;
 }
 
-.booking-card ~ .sub-card input[type=checkbox] {
+.booking-card~.sub-card input[type=checkbox] {
   --checkbox-size: 16px;
   justify-self: end;
 }
 
-.booking-card ~ .sub-card .form-field.checkbox-field > label {
+.booking-card~.sub-card .form-field.checkbox-field>label {
   text-align: left;
 }
 
-.booking-card ~ .sub-card .chzn-container {
-  width: 100%!important;
+.booking-card~.sub-card .chzn-container {
+  width: 100% !important;
 }
 
-.booking-card ~ .sub-card .btn-container {
+.booking-card~.sub-card .btn-container {
   margin-top: 32px;
   justify-content: flex-end;
   gap: 8px;
 }
 
-.booking-card ~ .sub-card .form-field.error .error-msg {
+.booking-card~.sub-card .form-field.error .error-msg {
   display: inline-block;
   position: relative;
-  left: unset!important;
+  left: unset !important;
   grid-column-start: 2;
 }
 
-.booking-card ~ .sub-card .form-field + .error-msg {
+.booking-card~.sub-card .form-field+.error-msg {
   left: 300px;
-} */
+}
 
-.preparation-text {
+*/ .preparation-text {
   color: var(--color-grey-dark2);
 }
 
@@ -473,7 +484,7 @@
   margin-bottom: 4px;
 }
 
-.preparation-text p + .preparation-header {
+.preparation-text p+.preparation-header {
   margin-top: 1em;
 }
 
@@ -485,7 +496,7 @@
   .booking-card-container .booking-card {
     flex-direction: column;
   }
-  
+
   .booking-card-container .booking-card .left {
     display: block;
     width: 100%;
@@ -499,51 +510,51 @@
     flex-direction: row;
     align-items: center;
   }
-  
+
   .booking-card-container .booking-card .left .weekday,
   .booking-card-container .booking-card .left p.date,
   .booking-card-container .booking-card .left p.time {
     display: inline-block;
     font-size: 16px;
   }
-  
+
   .booking-card .left .time {
     margin: 1px 0 0 0;
   }
-  
+
   .booking-card-container .booking-card .left p.time::before {
     content: ' - ';
   }
-  
+
   .booking-card-container .booking-card .left .status {
     width: fit-content;
     margin-bottom: 12px;
   }
-  
+
   .booking-card-container .booking-card .left .plan {
     margin-top: 0;
   }
-  
+
   .booking-card-container .booking-card button.mobile-actions-btn,
   .booking-card-container .booking-card .left button.show-actions,
   .booking-card-container .booking-card .actions button.hide-actions {
     display: block;
   }
-  
+
   .booking-card-container .booking-card .right {
     padding: 16px 10px;
   }
-  
+
   .booking-card-container .booking-card .right .top,
   .booking-card-container .booking-card .right .bottom {
     padding-left: 8px;
   }
-  
+
   .booking-card-container .booking-card .right .top {
     padding-bottom: 16px;
     margin-bottom: 8px;
   }
-  
+
   .booking-card-container .booking-card .right .name {
     margin-bottom: 2px;
     line-height: 18px;
@@ -552,30 +563,30 @@
   .booking-card button.mobile-actions-btn {
     display: block;
   }
-  
+
   .booking-card-container .booking-card .actions {
     width: 100%;
     transform: translateX(0) translateY(-100%) !important;
   }
-  
+
   .booking-card-container .booking-card .actions.visible {
     transform: translateY(0) !important;
   }
-  
+
   .booking-card-container .booking-card .actions .action .action-label {
     font-size: 16px;
   }
-  
+
   .booking-card-container .booking-card+.layover .line,
   .booking-card-container .booking-card-container+.layover .line {
     height: 280px !important;
     top: -130px;
   }
-  
+
   .booking-card-container .sub-card .form * {
     flex-shrink: 1;
   }
-  
+
   .booking-card-container .sub-card .form-field {
     margin: 0;
     grid-template-columns: 2fr;
@@ -585,9 +596,9 @@
       "input"
       "error-msg"
   }
-  
+
   .booking-card-container .sub-card .form-field label {
-    text-align: left!important;
+    text-align: left !important;
     max-width: 100%;
     width: 100%;
     margin-bottom: 10px;
