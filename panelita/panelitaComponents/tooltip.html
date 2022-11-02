@@ -1,0 +1,27 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/panelita/panelitaComponents/css/panelita.css">
+    <link rel="stylesheet" href="/panelita/panelitaComponents/tooltipster/css/tooltipster.bundle.min.css">
+    <link rel="stylesheet" href="/panelita/panelitaComponents/tooltipster/css/tooltipster-panelita.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- requiere jquery 3.6 y tooltipster, se baja de acá y tiene documentación de opciones https://www.heteroclito.fr/modules/tooltipster/-->
+    <!-- requiere el archivo tooltipster-panelita.css -->
+    <span class="tooltip" title="I'm a short tooltip">Hover to show short tooltip</span>
+    <span class="tooltip" title="I'm a long, very, very, very, very, very, very, very, very, very, very, very, very, very, very, very, long tooltip">Hover to show long tooltip</span>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/panelita/panelitaComponents/tooltipster/panelita/js/tooltipster.bundle.min.js"></script>
+    <script>
+      $('.tooltip').tooltipster({
+        theme: 'tooltipster-panelita',
+        position: 'right'
+      });
+    </script>
+  </body>
+  </html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Panelita - Dropdowns</title>
+<link rel="icon" type="image/x-icon" href="/panelita/assetsIso.svg">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/panelita/style.css" rel="stylesheet">
+        <!-- Boostrap css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">     
+    
+</head>
+    <body>
+        <div id="navLoader" class="loader"></div>
+        <div id="bodyContent" class="container">
+            <div class="row mainLayout">
+                <!--Side Nav-->
+                <div id="sideNavComponents" class="loader col-2 d-none d-lg-block">
+                </div>
+                <main id="mainContent" class="col-12 col-lg-10">
+                    <div class="commonBody">
+                        <header id="pageHeader" class="row pageHeader">
+                            <div id="titlePage" class="col-12 col-lg-12">
+                                <h1 id="title" class="title">Dropdowns</h1>
+                                <h2 id="description" class="description" data-lang="en">
+                                    A dropdown menu displays a list of actions for a user to make a decision. 
+                                </h2>
+                        </header>
+
+                        <!-- Common body -->
+                        <section id="pageContent" class="row pageContent">
+                            <div id="pageText" class="col-12 col-lg-12">
+                            
+                            <!-- Nav -->
+                            <ul id="pageNav" class="pageNav nav nav-tabs" role="tablist">
+                                <li class="nav-item" data-bs-toggle="tooltip" type="submit" data-bs-placement="bottom" title="Code">
+                                  <a class="nav-link active" type="button" aria-current="page" data-bs-target="#dropdownsCodeTab" data-bs-toggle="tab" role="tab" data-lang="en">Code</a>
+                                </li>
+                                <li class="nav-item" data-bs-toggle="tooltip" type="submit" data-bs-placement="bottom" title="Usage" >
+                                  <a class="nav-link" type="button" data-bs-target="#dropdownsUsageTab" data-bs-toggle="tab" role="tab" data-lang="en">Usage</a>
+                                </li>
+                              </ul>
+                            
+                            <!-- Tabs content -->
+                              <div class="tab-content" id="myTabContent">
+                                    <!--Code-->
+                                    <div class="tab-pane fade show active" id="dropdownsCodeTab">
+                                    <!-- Component section -->
+
+
+                                        <!-- Text with link-->
+                                        <h6 class="text" data-lang="en">Dropdowns are used for a list of actions like an options menu of <a class="textLink" href="/panelita/components/cards.html">Cards</a> and <a class="textLink" href="/panelita/components/table.html">Table</a> rows which are usually accompanied by <a class="textLink" href="/panelita/foundations/icons.html">Icons</a>.
+                                        </h6>
+                                        <br>
+                                        <!-- Text-->
+                                         <h6 class="text" data-lang="en">When there are more than a few options to choose from, you can wrap them in a Dropdown. By hovering or clicking on the trigger, a dropdown menu will appear, which allows you to choose an option and execute the relevant action.
+                                        </h6>
+
+                                        <!-- Code Box -->
+                                        <div class="codeBox row row-cols-12">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-header">
+                                                        <!-- Here we will add panelitaComponents -->
+                                                        <div id="dropdownMenuLoader" class="loader card-img-top" alt="..."></div>
+                                                    </div>
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample1">
+                                                        <div class="accordion-item">
+                                                            <div id="flush-collapseOne1" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample1">
+                                                                <div id="myCode" class="myCode">
+                                                                    <!-- id to call codeBox code with JavaScript -->
+                                                                    <pre id="codeId1" class="card-text accordion-body" type="text"><code>&ltdiv class="pdropdown-menu">
+    &ltdiv class="menu-section">
+        &ltdiv class="menu-title">
+            &ltp>Title&lt/p>
+        &lt/div>
+        &ltdiv class="menu-links">
+            &ltdiv class="menu-link">
+                &ltdiv class="icon-container">
+                    &lti class="material-symbols-outlined">question_answer&lt/i>
+                &lt/div>
+                &ltp>Label&lt/p>
+            &lt/div>
+            &ltdiv class="menu-link">
+                &ltdiv class="icon-container">
+                    &lti class="material-symbols-outlined">question_answer&lt/i>
+                &lt/div>
+                &ltp>Label&lt/p>
+            &lt/div>
+            &ltdiv class="menu-link">
+                &ltdiv class="icon-container">
+                    &lti class="material-symbols-outlined">cached&lt/i>
+                &lt/div>
+                &ltp>Label&lt/p>
+            &lt/div>
+        &lt/div>
+    &lt/div>
+    &ltdiv class="menu-section">
+        &ltdiv class="menu-title">
+            &ltp>Title&lt/p>
+        &lt/div>
+        &ltdiv class="menu-link red">
+            &ltdiv class="icon-container">
+                &lti class="material-symbols-outlined">close&lt/i>
+            &lt/div>
+            &ltp>Label&lt/p>
+        &lt/div>
+    &lt/div>
+&lt/div></code></pre>
+                                                                </div>
+                                                                </div>
+                                                            <div class="card-footer accordion-header" id="flush-headingOne">
+                                                                <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
+                                                                    
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
+                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" 
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne1" onclick="">Show code
+                                                                    </button>
+
+                                                                </div>
+                                                                <div id="copyBtn1" class="text-end copyBtn material-symbols-outlined" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId1')">content_copy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <!--Usage-->
+                                    <div class="tab-pane fade" id="dropdownsUsageTab">
+                                        <!-- Usage section -->
+
+                                        <!-- Title -->
+                                         <h6 class="textTitle" data-lang="en">General guidelines
+                                        </h6>
+
+                                        <!-- List -->
+                                        <ul class="text outside" data-lang="en">
+                                            <li>Navigate in a menu of options to perform an action.
+                                            </li>
+                                            <br>
+                                            <li>Respond to a question or prompt from a set of possible answers.
+                                            </li>
+                                            <br>
+                                            <li>Keep the interface uncluttered.
+                                            </li>
+                                        </ul>
+
+
+                                        <!-- Title -->
+                                        <h6 class="textTitle" data-lang="en">Structure
+                                        </h6>
+
+                                        <!-- Img -->
+                                        <div id="imgContent" class="imgContent">
+                                            <img src="/panelita/assets/components/dropdownUsage.svg">
+                                        </div>
+
+                                        <!--Usage Dots-->
+                                        <div class="imgExplanation">
+                                            <div class="numberDotContainer">
+                                                <div class="numberDot">1</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Title:</b> It is optional. Informs users about the options theme.
+                                                </h6>
+                                            </div>
+                                            <div class="numberDotContainer">
+                                                <div class="numberDot">2</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Navigation:</b> Each option has a hover and active color to guide the user.
+                                                </h6>
+                                            </div>
+                                            <div class="numberDotContainer">
+                                                <div class="numberDot">3</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Icon:</b> It is optional. Each option can be reinforced with a specific icon.
+                                                </h6>
+                                            </div>
+                                            <div class="numberDotContainer">
+                                                <div class="numberDot">4</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Accent Color:</b> As in any call to action, reinforcement colors are implemented.
+                                                </h6>
+                                            </div>
+                                        </div>
+
+                                    <!-- Usage Cards -->
+                                    <div id="usageCards" class="container col-12">
+                                        <div class="usageCards row">
+                                            <div class="usageCard card col-sm">
+                                                <div class="card-header" data-lang="en"><img src="/panelita/assets/doIcon.svg">
+                                                DO
+                                                </div>
+                                                    <div class="card-body">
+                                                        <ul class="text outside" data-lang="en">
+                                                            <li>Use this component when there are too many options to display as buttons.
+                                                            </li>
+                                                            <li>When you need to offer a call to action without affecting the rest of the information in a page or component.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            </div>
+                                            <div class="usageCard card col-sm">
+                                                <div class="card-header" data-lang="en"><img src="/panelita/assets/doNotIcon.svg">
+                                                DON'T
+                                                </div>
+                                                    <div class="card-body">
+                                                        <ul class="text outside" data-lang="en">
+                                                            <li>If a user is selecting a single text option from a group of options within a form, consider using a select component, radio group, or checkboxes instead. 
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end usage cards -->
+
+
+                                    </div>
+                                    <!-- end usage -->
+
+                                </div>
+                              <!-- end tabs content -->
+                              </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer id="footerLoader" class="loader footerLoader"></footer>
+    </body>
+      
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0" />
+
+        <!-- Boostrap js-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- archivo que carga archivo JavaScript principal -->
+        <script src="/panelita/js/JavaScript.js"></script>
+      
+        <!-- Inicializa tooltips -->
+        <script src="/panelita/js/tooltips.js"></script>
+        
+        <!-- File input -->
+        <script src="/panelita/panelitaComponents/fileinput.js"></script>
+
+        <!-- Select Js -->
+        <script src="/panelita/panelitaComponents/chosen/chosen.jquery.min.js"></script>
+
+        <!-- Dropdown -->
+        <script src="/panelita/panelitaComponents/dropdown.js"></script>
+        
+        <!-- archivo que carga el top nav y el footer -->
+        <script src="/panelita/js/loaders.js"></script>
+    
+</html>

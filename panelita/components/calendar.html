@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Panelita - Calendar</title>
+<link rel="icon" type="image/x-icon" href="/panelita/assetsIso.svg">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/panelita/style.css" rel="stylesheet">
+        <!-- Boostrap css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">     
+    
+</head>
+    <body>
+        <div id="navLoader" class="loader"></div>
+        <div id="bodyContent" class="container">
+            <div class="row mainLayout">
+                <!--Side Nav-->
+                <div id="sideNavComponents" class="loader col-2 d-none d-lg-block">
+                </div>
+                <main id="mainContent" class="col-12 col-lg-10">
+                    <div class="commonBody">
+                        <header id="pageHeader" class="row pageHeader">
+                            <div id="titlePage" class="col-12 col-lg-12">
+                                <h1 id="title" class="title">Calendar</h1>
+                                <h2 id="description" class="description" data-lang="en">
+                                    The calendar component provides a way to render dates for selection or presentation purposes.
+                                </h2>
+                        </header>
+
+                        <!-- Common body -->
+                        <section id="pageContent" class="row pageContent">
+                            <div id="pageText" class="col-12 col-lg-12">
+                            
+                            <!-- Nav -->
+                            <ul id="pageNav" class="pageNav nav nav-tabs" role="tablist">
+                                <li class="nav-item" data-bs-toggle="tooltip" type="submit" data-bs-placement="bottom" title="Code">
+                                  <a class="nav-link active" type="button" aria-current="page" data-bs-target="#calendarCodeTab" data-bs-toggle="tab" role="tab" data-lang="en">Code</a>
+                                </li>
+                                <li class="nav-item" data-bs-toggle="tooltip" type="submit" data-bs-placement="bottom" title="Usage" >
+                                  <a class="nav-link" type="button" data-bs-target="#calendarUsageTab" data-bs-toggle="tab" role="tab" data-lang="en">Usage</a>
+                                </li>
+                              </ul>
+                            
+                            <!-- Tabs content -->
+                              <div class="tab-content" id="myTabContent">
+                                    <!--Code-->
+                                    <div class="tab-pane fade show active" id="calendarCodeTab">
+                                    <!-- Component section -->
+                                        <!-- Text with link-->
+                                         <h6 class="text" data-lang="en">We use as a base <a class="textLink" href="https://api.jqueryui.com/datepicker">JQuery UI</a> changing its style with the characteristics of our design system.
+                                        </h6>
+
+                                        <!-- Code Box -->
+                                        <div class="codeBox row row-cols-12">
+                                            <div class="col">
+                                                <div class="card h-100">
+                                                    <div class="card-header">
+                                                        <!-- Here we will add panelitaComponents -->
+                                                        <div id="loader" class="card-img-top" alt="...">
+                                                            <div class="date-inline"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion accordion-flush" id="accordionFlushExample1">
+                                                        <div class="accordion-item">
+                                                            <div id="flush-collapseOne1" class="card-body accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample1">
+                                                                <div id="myCode" class="myCode">
+                                                                    <!-- id to call codeBox code with JavaScript -->
+                                                                    <pre id="codeId1" class="card-text accordion-body" type="text"><code>&ltdiv class="pforms"
+    &ltdiv class="title">
+        &lth1>Title&lt/h1>
+    &lt/div>
+    &ltdiv class="form-field vertical">
+        <code class="codeHighlighted">Select or Inputs code here</code>
+    &lt/div>
+    &ltdiv class="form-field vertical double">
+        <code class="codeHighlighted">Double select code here</code>
+    &lt/div>
+    &ltdiv class="form-field">
+    <code class="codeHighlighted">Checkbox or Radio code here</code>
+    &lt/div>
+    &ltdiv class="form-field horizontal">
+        <code class="codeHighlighted">Buttons code here</code>
+    &lt/div>
+&lt/div></code></pre>
+                                                                </div>
+                                                                </div>
+                                                            <div class="card-footer accordion-header" id="flush-headingOne">
+                                                                <div class="text-center" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Code">
+                                                                    
+                                                                    <button class="showHideCode closed btn btn-link collapsed" data-lang="en"
+                                                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" 
+                                                                    aria-expanded="false" aria-controls="flush-collapseOne1" onclick="">Show code
+                                                                    </button>
+
+                                                                </div>
+                                                                <div id="copyBtn1" class="text-end copyBtn material-symbols-outlined" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                                                                    title="Copy to clipboard" onclick="copyToClipboard('codeId1')">content_copy
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <!--Usage-->
+                                    <div class="tab-pane fade" id="calendarUsageTab">
+                                        <!-- Usage section -->
+
+                                        <!-- Title -->
+                                         <h6 class="textTitle" data-lang="en">General guidelines
+                                        </h6>
+
+                                        <!-- List -->
+                                        <ul class="text outside" data-lang="en">
+                                            <li>Ensure that locale is appropriately set so that users see dates and times in a familiar format.
+                                            </li>
+                                            <br>
+                                            <li>If helper text is necessary, place helper text above the input (below the area label).
+                                            </li>
+                                            <br>
+                                            <li>Use a concise label to indicate what the date and time selections refer to.
+                                            </li>
+                                        </ul>
+
+                                        <!-- Img -->
+                                        <div id="imgContent" class="imgContent">
+                                            <img src="/panelita/assets/components/calendarUsage.svg">
+                                        </div>
+
+                                        <!--Usage Dots-->
+                                        <div class="imgExplanation">
+                                            <div class="numberDotContainer">
+                                                <div class="numberDot">1</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Month and Year:</b> Indicates the menu where a date may be selected.
+                                                </h6>
+                                            </div>
+                                            <div class="numberDotContainer">
+                                                <div class="numberDot">2</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Controls:</b> Allows the user to navigate through past and future time frames.
+                                                </h6>
+                                            </div>
+                                            <div class="numberDotContainer">
+                                                <div class="numberDot">3</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Days:</b> Shows the available days to select.
+                                                </h6>
+                                            </div>
+                                            <div class="numberDotContainer">
+                                                <div class="numberDot">4</div>
+                                                 <h6 class="text" data-lang="en">
+                                                    <b>Selected Option:</b> Indicates the user the option selected.
+                                                </h6>
+                                            </div>
+                                        </div>
+
+                                        <!-- Usage Cards -->
+                                    <div id="usageCards" class="container col-12">
+                                        <div class="usageCards row">
+                                            <div class="usageCard card col-sm">
+                                                <div class="card-header" data-lang="en"><img src="/panelita/assets/doIcon.svg">
+                                                DO
+                                                </div>
+                                                    <div class="card-body">
+                                                        <ul class="text outside" data-lang="en">
+                                                            <li>Use date and time pickers when you are asking the user for a time or date, or for scheduling tasks.
+                                                            </li>
+                                                            <li>Use hover states to preview a user’s selection.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            </div>
+                                            <div class="usageCard card col-sm">
+                                                <div class="card-header" data-lang="en"><img src="/panelita/assets/doNotIcon.svg">
+                                                DON'T
+                                                </div>
+                                                    <div class="card-body">
+                                                        <ul class="text outside" data-lang="en">
+                                                            <li>Do not use a complex date picker every time you ask for any date.
+                                                            </li>
+                                                            <li>Don't use a calendar picker to prompt for dates in the distant past or future, such as a date of birth.
+                                                            </li>
+                                                            <li>Don't use the same style for hover and selected states.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end usage cards -->
+
+                                    </div>
+                                    <!-- end usage -->
+
+                                </div>
+                              <!-- end tabs content -->
+                              </div>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer id="footerLoader" class="loader footerLoader"></footer>
+    </body>
+      
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0" />
+
+        <!-- Boostrap js-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- archivo que carga archivo JavaScript principal -->
+        <script src="/panelita/js/JavaScript.js"></script>
+      
+        <!-- Inicializa tooltips -->
+        <script src="/panelita/js/tooltips.js"></script>
+        
+        <!-- File input -->
+        <script src="/panelita/panelitaComponents/fileinput.js"></script>
+
+        <!-- Select Js -->
+        <script src="/panelita/panelitaComponents/chosen/chosen.jquery.min.js"></script>
+
+        <!-- Datepicker -->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="/panelita/panelitaComponents/calendar.js"></script>
+        
+        <!-- archivo que carga el top nav y el footer -->
+        <script src="/panelita/js/loaders.js"></script>
+    
+</html>
