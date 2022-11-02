@@ -185,10 +185,10 @@ $(document).ready(function() {
     $('#sectionBtnForms').load('/webComponents/sectionBtn.html', function() {
         $('sectionBtn').unwrap();
         const p = $(this).find('p.card-text');
-        p.text("Forms");
+        p.text("Form");
         const img = $(this).find('img.card-img-top');
         img.attr('src', '/assets/icons/forms.svg');
-        img.attr('alt', 'Forms');
+        img.attr('alt', 'Form');
         triggerLoaded($(this));
     })
 
