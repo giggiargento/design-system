@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0" />
+  <link rel="stylesheet" type="text/css" href="/panelitaComponents/css/panelita.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="pforms">
+    <!-- Text -->
+    <div class="title">
+      <h1>Title</h1>
+    </div>
+
+    <!-- Datepicker -->
+    <div class="form-field vertical">
+      <label>Select a date</label>
+      <input type="text" class="date" placeholder="Date">
+    </div>
+
+    <!-- Timepicker -->
+    <div class="form-field vertical double">
+      <label>Select a time</label>
+      <div class="flex-h gap8">
+        <div class="flex-v">
+          <p class="form-field-description">From</p>
+          <input type="text" class="time" placeholder="00:00">
+        </div>
+        <div class="flex-v">
+          <p class="form-field-description">To</p>
+          <input type="text" class="time" placeholder="00:00">
+        </div>
+      </div>
+    </div>
+
+    <!-- Checkboxes -->
+    <div class="form-field">
+      <input type="checkbox">
+      <label>Label</label>
+      <input type="checkbox">
+      <label>Label</label>
+    </div>
+
+    <!-- input con label -->
+    <div class="form-field vertical">
+      <label>Label</label>
+      <input type="text" placeholder="Placeholder">
+    </div>
+
+    <!-- textarea con descripción -->
+    <div class="form-field vertical">
+      <label>Label</label>
+      <p class="form-field-description">Description</p>
+      <textarea placeholder="Placeholder"></textarea>
+    </div>
+
+  <!-- file input -->
+  <div class="file-input-container">
+    <input type="file" class="file-input" id="fileinput1" onchange="uploadFile(this)">
+    <label class="file-input-box" for="fileinput1">
+      <div class="filename-container">
+        <span class="filename"></span>
+      </div>
+      <div class="pbtn btn-secondary btn-sm">Select file</div>
+    </label>	
+  </div>
+
+    <!-- Buttons -->
+    <div class="btn-container">
+      <button class="pbtn btn-secondary">Cancel</button>
+      <button class="pbtn btn-primary">Save</button>
+    </div>
+
+  </div>
+
+</body>
+</html>

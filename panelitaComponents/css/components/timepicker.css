@@ -1,0 +1,51 @@
+input.time {
+  /* width: 160px; */
+  padding: 0 32px 0 36px;
+  background-image: url(/panelitaComponents/icons/schedule.svg),
+	url(/panelitaComponents/icons/chevron_down.svg);
+  background-size: 16px;
+  background-position: center left 12px,
+		center right 12px;
+  cursor: pointer;
+}
+
+input.time:focus {
+  background-image: url(/panelitaComponents/icons/schedule.svg),
+	url(/panelitaComponents/icons/chevron_up.svg);
+}
+
+.ui-timepicker-container {
+  position: absolute;
+}
+
+.ui-timepicker.ui-widget-content {
+	/* width: 160px!important; */
+  max-height: 260px;
+	margin-top: 8px!important;
+	box-shadow: none!important;
+  border: 1px solid var(--input-border-color)!important;
+	border-radius: var(--input-border-radius)!important;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: var(--color-n0);
+}
+
+.ui-timepicker-viewport {
+  padding-right: 0!important;
+  padding-left: 0!important;
+}
+
+.ui-timepicker li.ui-menu-item {
+  width: 100%!important;
+  padding: 10px 16px!important;
+	color: var(--input-color)!important;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+li.ui-timepicker-selected,
+.ui-timepicker li.ui-menu-item:hover,
+.ui-timepicker-list .ui-timepicker-selected:hover {
+	background: var(--color-n100)!important;
+	color: var(--input-color)!important;
+}

@@ -1,0 +1,148 @@
+<!-- para estos componentes que vamos a insertar en otros html, no necesitamos toda la estructura de una página sino sólo la del elemento -->
+<nav id="topNav" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <div class="navbar-brand">
+            <!--Logo-->
+            <a href="/"><img src="/assets/bukealaLogo.svg" alt="Panelita" class="panelitaLogo"></a>
+        </div>
+
+        <!-- Toggle icon -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="navbarTogglerBg()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="me-auto mb-2 mb-lg-0">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link brand" href="/brand" aria-current="page" role="button" data-lang="en">Brand</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/mission.svg"></div><a class="dropdown-item" href="/brand/mission.html">Mission</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/promise.svg"></div><a class="dropdown-item" href="/brand/promise.html">Promise</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/values.svg"></div><a class="dropdown-item" href="/brand/values.html">Values</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/personality.svg"></div><a class="dropdown-item" href="/brand/personality.html">Personality</a></li>
+                          </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link foundations" href="/foundations" role="button" data-lang="en">Foundations</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/grids.svg"></div><a class="dropdown-item" href="/foundations/grid.html">Grid</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/science.svg"></div><a class="dropdown-item" href="/foundations/icons.html">Icons</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/typography.svg"></div><a class="dropdown-item" href="/foundations/typography.html">Typography</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/colors.svg"></div><a class="dropdown-item" href="/foundations/colors.html">Colors</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/illustrations.svg"></div><a class="dropdown-item" href="/foundations/illustrations.html">Illustrations</a></li>
+                          </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link components" href="/components" role="button" data-lang="en">Components</a>
+                        <div class="dropdown-menu">
+                        <div class="components-container">
+                        <ul class="dropdown-menu-components">
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/buttons.svg"></div><a class="dropdown-item" href="/components/buttons.html">Buttons</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/calendar.svg"></div><a class="dropdown-item" href="/components/calendar.html">Calendar</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/cards.svg"></div><a class="dropdown-item" href="/components/cards.html">Cards</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/checkbox.svg"></div><a class="dropdown-item" href="/components/checkbox.html">Checkbox</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/dropdowns.svg"></div><a class="dropdown-item" href="/components/dropdowns.html">Dropdowns</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/forms.svg"></div><a class="dropdown-item" href="/components/form.html">Forms</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/inputs.svg"></div><a class="dropdown-item" href="/components/inputs.html">Inputs</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/navigation.svg"></div><a class="dropdown-item" href="/components/navigation.html">Navigation</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/notifications.svg"></div><a class="dropdown-item" href="/components/notifications.html">Notifications</a></li>
+                        </ul>
+                        <ul class="dropdown-menu-components">
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/pagination.svg"></div><a class="dropdown-item" href="/components/pagination.html">Pagination</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/radio.svg"></div><a class="dropdown-item" href="/components/radio.html">Radio</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/select.svg"></div><a class="dropdown-item" href="/components/select.html">Select</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/sidesheet.svg"></div><a class="dropdown-item" href="/components/sidesheet.html">Sidesheet</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/switch.svg"></div><a class="dropdown-item" href="/components/switch.html">Switch</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/table.svg"></div><a class="dropdown-item" href="/components/table.html">Table</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/tabs.svg"></div><a class="dropdown-item" href="/components/tabs.html">Tabs</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/tags.svg"></div><a class="dropdown-item" href="/components/tags.html">Tags</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/tooltip.svg"></div><a class="dropdown-item" href="/components/tooltip.html">Tooltip</a></li>
+                        </ul>
+                        </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link patterns" href="/patterns" role="button" data-lang="en">Patterns</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/emptyStates.svg"></div><a class="dropdown-item" href="/patterns/emptyStates.html">Empty States</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/forms.svg"></div><a class="dropdown-item" href="/patterns/patternsForms.html">Forms</a></li>
+                            <li class="dropdownItemContainer"><div class="drowpdownImg"><img src="/assets/icons/messages.svg"></div><a class="dropdown-item" href="/patterns/messages.html">Messages</a></li>
+                          </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link resources" href="/resources" role="button" data-lang="en">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/resources/introduction.html">Introduction</a></li>
+                            <li><a class="dropdown-item" href="/resources/download.html">Download</a></li>
+                          </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Search-->
+            <div class="barSearch">
+                <form class="d-flex" role="search">
+                    <input id="inputSearch" class="form-control me-2 siteSearchInput" type="search" placeholder="Search" aria-label="Search" autocomplete="off">
+                    <span type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Search" data-lang="en" class="material-symbols-outlined">search</span>
+                </form>
+
+                <!-- Search Box -->
+                <ul id="boxSearch" class="topNavBoxSearch dropdown-menu">
+                    <!-- Brand -->
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/brand">Brand</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/brand/mission.html">Mission</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/brand/promise.html">Promise</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/brand/values.html">Values</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/brand/personality.html">Personality</a></li>
+
+                    <!-- Foundations -->
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/foundations">Foundations</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/foundations/grid.html">Grid</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/foundations/icons.html">Icons</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/foundations/typography.html">Typography</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/foundations/colors.html">Colors</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/foundations/illustrations.html">Illustrations</a></li>
+
+                    <!-- Components -->
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/components">Components</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/components/buttons.html">Buttons</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/components/calendar.html">Calendar</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/components/cards.html">Cards</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/components/checkbox.html">Checkbox</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/components/dropdowns.html">Dropdowns</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/components/componentsForms.html">Form</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/components/inputs.html">Input</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/components/navigation.html">Navigation</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/components/notifications.html">Notifications</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/components/pagination.html">Pagination</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/components/radio.html">Radio</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/components/select.html">Select</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/components/sidesheet.html">Sidesheet</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/components/switch.html">Switch</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/components/table.html">Table</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/components/tabs.html">Tabs</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/components/tags.html">Tags</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/components/tooltip.html">Tooltip</a></li>
+
+                    <!-- Patterns -->
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/patterns">Patterns</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/patterns/emptyStates.html">Empty States</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/patterns/patternsForms.html">Forms</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/patterns/messages.html">Messages</a></li>
+
+                    <!-- Resources -->
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/resources">Resources</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/resources/introduction.html">Introduction</a></li>
+                    <li class="dropdown-item searchItem"><span type="submit" class="boxSearchIcon material-symbols-outlined">search</span><a class="searchLabel" href="/resources/download.html">Download</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<script src="/js/JavaScript.js"></script>
+
