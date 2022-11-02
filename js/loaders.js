@@ -349,7 +349,7 @@ $(document).ready(function() {
         const p = $(this).find('#cardText');
         p.text("Bukeala is based on Panelita visual design language principles and helps designers and developers maintain brand consistency across projects and design assets.");
         const a = $(this).find('#cardLink');
-        a.attr('href', '/pages/mission.html');
+        a.attr('href', '/brand/mission.html');
     }) 
 
     $('#mainCardPromise').load('/webComponents/mainCards.html', function() {
@@ -360,7 +360,7 @@ $(document).ready(function() {
         const p = $(this).find('#cardText');
         p.text("We are here to help create effective, aesthetically appealing and meaningful products that can help others teams build a unique system.");
         const a = $(this).find('#cardLink');
-        a.attr('href', '/pages/promise.html');
+        a.attr('href', '/brand/promise.html');
     }) 
 
 //Download Cards
