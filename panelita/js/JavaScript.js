@@ -26,19 +26,19 @@ var resourcesPages = ['introduction', 'download'];
 
 function activateTopNavLink() {
   $('#topNav a.active').removeClass('active').removeAttr('aria-current');
-    if (brandPages.find(page => location.pathname.includes(page))) {
+    if (brandPages.find(page => location.pathname.toLowerCase().includes(page))) {
       $('.nav-link.brand').addClass('active')
   }
-  if (foundationsPages.find(page => location.pathname.includes(page))) {
+  if (foundationsPages.find(page => location.pathname.toLowerCase().includes(page))) {
     $('.nav-link.foundations').addClass('active')
   }
-  if (componentsPages.find(page => location.pathname.includes(page))) {
+  if (componentsPages.find(page => location.pathname.toLowerCase().includes(page))) {
       $('.nav-link.components').addClass('active')
   }
-  if (patternsPages.find(page => location.pathname.includes(page))) {
+  if (patternsPages.find(page => location.pathname.toLowerCase().includes(page))) {
     $('.nav-link.patterns').addClass('active')
   }
-  if (resourcesPages.find(page => location.pathname.includes(page))) {
+  if (resourcesPages.find(page => location.pathname.toLowerCase().includes(page))) {
     $('.nav-link.resources').addClass('active')
   }
 
@@ -50,7 +50,8 @@ function activateTopNavLink() {
 //Nav links active
 function activateSideNavLink() {
   $('.sidenav a.active').removeClass('active').removeAttr('aria-current');
-  $('.sidenav a[href="' + location.pathname + '"]').addClass('active').attr('aria-current', 'page'); 
+  const pageName = location.pathname.split('/').pop();
+  $(`.sidenav a[href="${pageName}"]`).addClass('active').attr('aria-current', 'page'); 
 }; 
 
 // Notifications onclick
