@@ -1106,3 +1106,104 @@ table{
         justify-content: flex-start;
       }
 }
+
+/* Page Not Found */
+#pageNotFoundBody{
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+}
+
+#pageNotFoundHeader{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#titleSection{
+    align-self: center;
+    width: 40%;
+    padding: 16px;
+}
+
+#pageNotFoundtitle{
+    color: #3366FF;
+    font-size: 96px;
+    font-weight: 600;
+    padding-bottom: 24px;
+}
+
+#pageNotFoundtitle:hover{
+    color: var(--dark-blue);
+}
+
+#pageNotFounddescription{
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 24px;
+}
+
+#pageNotFoundimgSection{
+    align-self: center;
+    width: 40%;
+    padding: 16px;
+}
+
+#pageNotFoundimgSection img{
+    width: 100%;
+}
+
+#titleSection h6{
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+#titleSection li{
+    padding-bottom: 4px;
+    width: 100%;
+}
+
+#titleSection a{
+    width: 100%;
+}
+
+.pageNotFoundLinkList{
+    width: 70px;
+}
+
+.pageNotFoundLink{
+    list-style: none;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+@media screen and (max-width:990px) {
+    #pageNotFoundHeader{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-top: 50px;
+    }
+    
+    #titleSection{
+        width: 80%;
+        padding: 16px;
+    }
+
+    #pageNotFounddescription{
+        font-size: 24px;
+        font-weight: 600;
+        padding-bottom: 24px;
+    }
+
+    #pageNotFoundimgSection{
+        display: flex;
+        position: relative;
+        width: 80%;
+        padding: 16px;
+    }
+}
