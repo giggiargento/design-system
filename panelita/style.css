@@ -153,6 +153,10 @@ a.textLink:hover{
     color: var(--dark-blue) !important;
 }
 
+#sectionPreviewLink:hover{
+    color: var(--dark-blue) !important;
+}
+
 ul{
     list-style: none;
 }
