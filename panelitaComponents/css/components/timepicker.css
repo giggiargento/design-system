@@ -46,6 +46,6 @@ input.time:focus {
 li.ui-timepicker-selected,
 .ui-timepicker li.ui-menu-item:hover,
 .ui-timepicker-list .ui-timepicker-selected:hover {
-	background: var(--color-n100)!important;
+	background: var(--color-b50)!important;
 	color: var(--input-color)!important;
 }
