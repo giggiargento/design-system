@@ -1,32 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0" />
-  <link rel="stylesheet" type="text/css" href="./css/panelita.css">
-  <title>Document</title>
-</head>
-<body>
-  <!-- requiere jquery 3.6 y jquery-ui 1.12 -->
-  <!-- se inicializa con: $('input.date').datepicker({showOtherMonths: true}); y acepta opciones, documentadas en: https://api.jqueryui.com/datepicker -->
-  <div class="form-field vertical double">
-    <label>Select the date</label>
-    <div class="flex-h gap8">
-      <div class="flex-v">
-        <p class="form-field-description">From</p>
-        <input type="text" class="date" placeholder="00/00/00">
-      </div>
-      <div class="flex-v">
-        <p class="form-field-description">To</p>
-        <input type="text" class="date" placeholder="00/00/00">
-      </div>
+<div class="form-field vertical double">
+  <label>Select the date</label>
+  <div class="flex-h gap8">
+    <div class="flex-v">
+      <p class="form-field-description">From</p>
+      <input type="text" class="date" placeholder="00/00/00">
+    </div>
+    <div class="flex-v">
+      <p class="form-field-description">To</p>
+      <input type="text" class="date" placeholder="00/00/00">
     </div>
   </div>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="datepicker.js"></script>
-</body>
-</html>
+</div>
