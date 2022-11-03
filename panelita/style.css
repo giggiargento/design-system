@@ -1140,10 +1140,6 @@ table{
     padding-bottom: 24px;
 }
 
-#pageNotFoundtitle:hover{
-    color: var(--dark-blue);
-}
-
 #pageNotFounddescription{
     color: var(--text-color);
     font-size: 24px;
