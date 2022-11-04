@@ -114,7 +114,7 @@ body{
 body#homeBody {
     width: 100%;
     background-image: url("/panelita/assets/homeBackground.svg");
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-position: center top;
     overflow-x: hidden;
     height: 100%;
@@ -180,6 +180,14 @@ ul{
 
 #homeHeader #titleSection{
     margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+@media screen and (max-width:990px){
+    #homeHeader #titleSection{
+        margin-bottom: 40px;
+        margin-right: 0px;
+    }
 }
 
 #homeHeader .title{
