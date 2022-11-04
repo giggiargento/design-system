@@ -347,7 +347,7 @@ $(document).ready(function() {
         const h5 = $(this).find('#cardTitle');
         h5.text("Mission");
         const p = $(this).find('#cardText');
-        p.text("Bukeala is based on Panelita visual design language principles and helps designers and developers maintain brand consistency across projects and design assets.");
+        p.text("Bukeala is based on Panelita visual design language principles and helps designers and developers maintain...");
         const a = $(this).find('#cardLink');
         a.attr('href', '/panelita/brand/mission.html');
     }) 
@@ -358,7 +358,7 @@ $(document).ready(function() {
         const h5 = $(this).find('#cardTitle');
         h5.text("Promise");
         const p = $(this).find('#cardText');
-        p.text("We are here to help create effective, aesthetically appealing and meaningful products that can help others teams build a unique system.");
+        p.text("We are here to help create effective, aesthetically appealing and meaningful products that can help others...");
         const a = $(this).find('#cardLink');
         a.attr('href', '/panelita/brand/promise.html');
     }) 
