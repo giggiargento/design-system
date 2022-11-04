@@ -285,6 +285,11 @@ ul{
 div#imgSection{
     display: flex;
     justify-content: center;
+    padding: 24px;
+}
+
+#imgSection img{
+    width: 100%;
 }
 
 @media (max-width: 992px) {
@@ -1207,3 +1212,4 @@ table{
         padding: 16px;
     }
 }
+
