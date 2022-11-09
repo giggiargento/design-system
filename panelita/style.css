@@ -294,6 +294,7 @@ div#imgSection{
     display: flex;
     justify-content: center;
     padding: 24px;
+    max-height: 500px;
 }
 
 #imgSection img{
